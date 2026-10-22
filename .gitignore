@@ -1,0 +1,10 @@
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*~
+.idea/
+.vscode/
+*.xcf
+*.psd

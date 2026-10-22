@@ -1,0 +1,57 @@
+add_namespace = unthinkable
+
+# Joint Planning Staff Report: Operation Unthinkable
+country_event = {
+	id = unthinkable.1
+	title = unthinkable.1.t
+	desc = unthinkable.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Approve the offensive plan (July 1, 1945)
+	option = {
+		name = unthinkable.1.a
+		ai_chance = { factor = 75 }
+		set_country_flag = unthinkable_offensive_approved
+		add_war_support = 0.05
+		add_stability = -0.05
+		add_named_threat = {
+			threat = 15
+			name = unthinkable.1.t
+		}
+	}
+
+	# Adopt the defensive stance only
+	option = {
+		name = unthinkable.1.b
+		ai_chance = { factor = 25 }
+		set_country_flag = unthinkable_defensive_only
+		add_stability = 0.05
+	}
+}
+
+# World News: Operation Unthinkable Launched
+news_event = {
+	id = unthinkable.100
+	title = unthinkable.100.t
+	desc = unthinkable.100.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.100.a
+		trigger = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+
+	option = {
+		name = unthinkable.100.b
+		trigger = {
+			has_war_with = ROOT
+		}
+	}
+}

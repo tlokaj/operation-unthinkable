@@ -1,0 +1,20 @@
+unthinkable_decisions_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = USA
+		}
+	}
+
+	visible = {
+		has_government = democratic
+		SOV = {
+			exists = yes
+			has_government = communism
+		}
+	}
+
+	priority = 100
+}
