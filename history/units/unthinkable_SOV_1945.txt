@@ -1,0 +1,300 @@
+division_template = {
+	name = "Gvardeyskaya Strelkovaya Diviziya"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Strelkovaya Diviziya"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Gvardeyskiy Tankovyy Korpus"
+	division_names_group = SOV_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Gvardeyskiy Mekhanizirovannyy Korpus"
+	division_names_group = SOV_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Kavaleriskiy Korpus"
+	division_names_group = SOV_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# GROUP OF SOVIET OCCUPATION FORCES IN GERMANY (GSFG / GSVG)
+	# Commander-in-Chief: Marshal Georgy Zhukov
+	# =========================================================================
+
+	# --- 1ST BELORUSSIAN FRONT (Berlin / Elbe Demarcation Line) ---
+	division = {
+		name = "8-ya Gvardeyskaya Armiya (Chuikov - Stalingrad)"
+		location = 6521 # Berlin
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "3-ya Udarnaya Armiya (Kuznetsov - Reichstag Stormers)"
+		location = 3522 # Magdeburg (Elbe frontier facing British XXX Corps)
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "5-ya Udarnaya Armiya (Berzarin)"
+		location = 6521 # Berlin
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "1-ya Gvardeyskaya Tankovaya Armiya (Katukov)"
+		location = 3535 # Leipzig (Demarcation Line spearhead)
+		division_template = "Gvardeyskiy Tankovyy Korpus"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "2-ya Gvardeyskaya Tankovaya Armiya (Bogdanov)"
+		location = 6521 # Berlin
+		division_template = "Gvardeyskiy Tankovyy Korpus"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "47-ya Armiya (Perkhorovich)"
+		location = 3522 # Magdeburg / Stendal
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "33-ya Armiya (Tsvetayev)"
+		location = 9496 # Seelow (East Brandenburg)
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "69-ya Armiya (Kolpakchi)"
+		location = 9496 # Seelow / Oder Line
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+
+	# --- 1ST UKRAINIAN FRONT (Marshal Ivan Konev - Saxony & Thuringia) ---
+	division = {
+		name = "3-ya Gvardeyskaya Tankovaya Armiya (Rybalko)"
+		location = 514 # Dresden
+		division_template = "Gvardeyskiy Tankovyy Korpus"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "4-ya Gvardeyskaya Tankovaya Armiya (Lelyushenko)"
+		location = 3535 # Leipzig
+		division_template = "Gvardeyskiy Tankovyy Korpus"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "5-ya Gvardeyskaya Armiya (Zhadov)"
+		location = 3561 # Erfurt (Facing US Ninth Army at Kassel)
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "13-ya Armiya (Pukhov)"
+		location = 9471 # Chemnitz
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "28-ya Armiya (Luchinsky)"
+		location = 425 # Weimar
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "52-ya Armiya (Koroteyev)"
+		location = 538 # Jena
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "7-y Gvardeyskiy Mekhanizirovannyy Korpus"
+		location = 514 # Dresden
+		division_template = "Gvardeyskiy Mekhanizirovannyy Korpus"
+		start_experience_factor = 0.90
+	}
+
+	# --- 2ND BELORUSSIAN FRONT (Marshal Konstantin Rokossovsky - Mecklenburg & Baltic) ---
+	division = {
+		name = "65-ya Armiya (Batov)"
+		location = 11305 # Lübeck / Schwerin (Facing British 6th Airborne)
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "70-ya Armiya (Popov)"
+		location = 321 # Rostock
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "49-ya Armiya (Grishin)"
+		location = 11305 # Schwerin
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "1-y Gvardeyskiy Donskoy Tankovyy Korpus"
+		location = 321 # Rostock
+		division_template = "Gvardeyskiy Tankovyy Korpus"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "3-y Gvardeyskiy Kavaleriskiy Korpus"
+		location = 11305 # Ludwigslust
+		division_template = "Kavaleriskiy Korpus"
+		start_experience_factor = 0.85
+	}
+
+	# --- BALTIC STRATEGIC GARRISON ---
+	division = {
+		name = "11-ya Gvardeyskaya Armiya (Galitsky)"
+		location = 6332 # Königsberg (Kaliningrad)
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.90
+	}
+}
+
+# =============================================================================
+# STARTING MILITARY PRODUCTION QUEUES (Mid-1945 Status)
+# =============================================================================
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "SOV"
+		}
+		requested_factories = 10
+		progress = 0.50
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 4
+		progress = 0.35
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_3
+			creator = "SOV"
+		}
+		requested_factories = 5
+		progress = 0.40
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 5
+		progress = 0.30
+		efficiency = 85
+	}
+}

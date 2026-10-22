@@ -1,0 +1,576 @@
+focus_tree = {
+	id = french_unthinkable_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = FRA
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	# =========================================================================
+	# BRANCH 1: THE MONNET PLAN & INDUSTRIAL RECONSTRUCTION (X: 0 - 6)
+	# =========================================================================
+
+	focus = {
+		id = FRA_monnet_plan
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_ideas = industrial_effort
+		}
+	}
+
+	focus = {
+		id = FRA_nationalize_energy_and_transport
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FRA_monnet_plan }
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			16 = { # Île-de-France
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = FRA_renault_and_heavy_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FRA_monnet_plan }
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			24 = { # Centre
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_saar_coal_exploitation
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = FRA_nationalize_energy_and_transport }
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			42 = { # Rhineland / Saar
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_modernize_rhine_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = FRA_nationalize_energy_and_transport }
+		x = 2
+		y = 2
+		cost = 5
+		completion_reward = {
+			28 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } } # Alsace
+			42 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = FRA_rebuilding_normandy_and_north
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = FRA_renault_and_heavy_industry }
+		x = 4
+		y = 2
+		cost = 5
+		completion_reward = {
+			15 = { # Normandy
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_marseille_and_mediterranean_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = FRA_renault_and_heavy_industry }
+		x = 6
+		y = 2
+		cost = 5
+		completion_reward = {
+			21 = { # Provence
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_cea_atomic_energy_commission
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = FRA_saar_coal_exploitation focus = FRA_modernize_rhine_infrastructure }
+		x = 1
+		y = 3
+		cost = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_political_power = 60
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = FRA_french_economic_renaissance
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = FRA_rebuilding_normandy_and_north focus = FRA_marseille_and_mediterranean_ports }
+		x = 5
+		y = 3
+		cost = 6
+		completion_reward = {
+			add_ideas = economic_miracle_idea
+			add_stability = 0.10
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 2: MILITARY, NAVY & JET AVIATION (X: 8 - 14)
+	# =========================================================================
+
+	focus = {
+		id = FRA_reorganize_armed_forces
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = FRA_arl44_heavy_tank
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = FRA_reorganize_armed_forces }
+		x = 9
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_marine_nationale_rebirth
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = FRA_reorganize_armed_forces }
+		x = 13
+		y = 1
+		cost = 5
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_panhard_ebr_development
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = FRA_arl44_heavy_tank }
+		x = 8
+		y = 2
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_elite_colonial_and_foreign_legion
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = FRA_arl44_heavy_tank }
+		x = 10
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_ideas = foreign_legion_idea
+			add_manpower = 40000
+		}
+	}
+
+	focus = {
+		id = FRA_carrier_aviation_arromanches
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = FRA_marine_nationale_rebirth }
+		x = 12
+		y = 2
+		cost = 5
+		completion_reward = {
+			navy_experience = 20
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_modernize_submarine_fleet
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = FRA_marine_nationale_rebirth }
+		x = 14
+		y = 2
+		cost = 5
+		completion_reward = {
+			navy_experience = 20
+			add_tech_bonus = {
+				name = sub_bonus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_recruit_german_technicians
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = FRA_arl44_heavy_tank }
+		x = 8
+		y = 3
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			add_equipment_to_stockpile = {
+				type = medium_tank_equipment_3
+				amount = 60
+				producer = GER
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = jet_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_jet_propulsion_snecma
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = FRA_panhard_ebr_development focus = FRA_carrier_aviation_arromanches focus = FRA_recruit_german_technicians }
+		x = 10
+		y = 3
+		cost = 5
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = jet_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_dassault_ouragan_fighter
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = FRA_jet_propulsion_snecma }
+		x = 10
+		y = 4
+		cost = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 3: POLITICS, GERMAN ZONE & EUROPEAN ALIGNMENT (X: 16 - 26)
+	# =========================================================================
+
+	focus = {
+		id = FRA_gprf_leadership
+		icon = GFX_goal_generic_propaganda
+		x = 21
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = FRA_the_german_question
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_gprf_leadership }
+		x = 18
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = FRA_demand_saarland_protectorate
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = FRA_the_german_question }
+		x = 17
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_state_claim = 42
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = FRA_colonial_union
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = FRA_gprf_leadership }
+		x = 24
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 50000
+			add_stability = 0.05
+		}
+	}
+
+	# PATH A: GAULLIST GRANDEUR - THIRD FORCE (X: 18 - 20)
+	focus = {
+		id = FRA_de_gaulle_grandeur
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = FRA_demand_saarland_protectorate }
+		mutually_exclusive = { focus = FRA_commit_to_unthinkable focus = FRA_compromise_with_thorez focus = FRA_nationalist_resurgence }
+		x = 19
+		y = 3
+		cost = 7
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.20 }
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = FRA_rhineland_buffer_state
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FRA_de_gaulle_grandeur }
+		x = 19
+		y = 4
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = FRA_european_third_force
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = FRA_rhineland_buffer_state }
+		x = 19
+		y = 5
+		cost = 6
+		completion_reward = {
+			create_faction = "European Coalition"
+			add_stability = 0.10
+		}
+	}
+
+	# PATH B: ATLANTICIST - JOIN OPERATION UNTHINKABLE (X: 21 - 23)
+	focus = {
+		id = FRA_ratify_dunkirk_treaty
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = FRA_demand_saarland_protectorate focus = FRA_colonial_union }
+		mutually_exclusive = { focus = FRA_de_gaulle_grandeur focus = FRA_compromise_with_thorez focus = FRA_nationalist_resurgence }
+		x = 22
+		y = 3
+		cost = 7
+		completion_reward = {
+			ENG = { add_opinion_modifier = { target = FRA modifier = positive_100 } }
+			USA = { add_opinion_modifier = { target = FRA modifier = positive_100 } }
+		}
+	}
+
+	focus = {
+		id = FRA_reinforce_rhine_frontline
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = FRA_ratify_dunkirk_treaty }
+		x = 22
+		y = 4
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_ideas = unthinkable_operation_unthinkable_planning
+		}
+	}
+
+	focus = {
+		id = FRA_commit_to_unthinkable
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = FRA_reinforce_rhine_frontline }
+		x = 22
+		y = 5
+		cost = 6
+		completion_reward = {
+			ENG = { add_to_faction = FRA }
+			add_war_support = 0.15
+			remove_ideas = unthinkable_war_weariness
+		}
+	}
+
+	# PATH C: LEFT-WING / POPULAR FRONT & PCF (X: 24 - 26)
+	focus = {
+		id = FRA_compromise_with_thorez
+		icon = GFX_goal_generic_communist_drift
+		prerequisite = { focus = FRA_colonial_union }
+		mutually_exclusive = { focus = FRA_de_gaulle_grandeur focus = FRA_ratify_dunkirk_treaty focus = FRA_nationalist_resurgence }
+		x = 25
+		y = 3
+		cost = 7
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.25 }
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = FRA_franco_soviet_pact_renewal
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = FRA_compromise_with_thorez }
+		x = 25
+		y = 4
+		cost = 5
+		completion_reward = {
+			SOV = { add_opinion_modifier = { target = FRA modifier = positive_100 } }
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = FRA_neutralist_france
+		icon = GFX_goal_generic_support_the_left_right
+		prerequisite = { focus = FRA_franco_soviet_pact_renewal }
+		x = 25
+		y = 5
+		cost = 6
+		completion_reward = {
+			add_ideas = neutral_foreign_policy
+			add_stability = 0.10
+		}
+	}
+
+	# PATH D: NATIONALIST & AUTHORITARIAN RESURGENCE (X: 28 - 30)
+	focus = {
+		id = FRA_nationalist_resurgence
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = FRA_colonial_union }
+		mutually_exclusive = { focus = FRA_de_gaulle_grandeur focus = FRA_ratify_dunkirk_treaty focus = FRA_compromise_with_thorez }
+		x = 28
+		y = 3
+		cost = 7
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.25 }
+			add_ideas = unthinkable_generic_fascist_revanchism
+			add_political_power = 80
+		}
+	}
+
+	focus = {
+		id = FRA_rallier_anciens_combattants
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = FRA_nationalist_resurgence }
+		x = 28
+		y = 4
+		cost = 5
+		completion_reward = {
+			add_manpower = 60000
+			army_experience = 30
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = FRA_nouvel_etat_francais
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FRA_rallier_anciens_combattants }
+		x = 28
+		y = 5
+		cost = 6
+		completion_reward = {
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			add_ideas = unthinkable_generic_totalitarian_rule
+			add_stability = 0.10
+			add_war_support = 0.15
+		}
+	}
+}

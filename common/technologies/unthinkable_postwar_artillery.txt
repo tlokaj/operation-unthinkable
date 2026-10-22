@@ -1,0 +1,103 @@
+technologies = {
+	postwar_heavy_howitzers = {
+		category_artillery = {
+			soft_attack = 0.15
+			hard_attack = 0.10
+		}
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 14 }
+		}
+		categories = {
+			artillery
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	infantry_recoilless_rifles = {
+		category_light_infantry = {
+			hard_attack = 0.15
+			ap_attack = 0.20
+		}
+		research_cost = 2.0
+		start_year = 1947
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 16 }
+		}
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	postwar_heavy_mrls = {
+		category_artillery = {
+			soft_attack = 0.20
+			breakthrough = 0.05
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 16 }
+		}
+		categories = {
+			artillery
+			mot_rockets
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	radar_directed_anti_air = {
+		category_anti_air = {
+			air_attack = 0.25
+			hard_attack = 0.15
+		}
+		modifier = {
+			static_anti_air_damage_factor = 0.20
+		}
+		path = {
+			leads_to_tech = surface_to_air_missiles_1
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 16 }
+		}
+		categories = {
+			artillery
+			cat_anti_air
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	surface_to_air_missiles_1 = {
+		dependencies = {
+			radar_directed_anti_air = 1
+		}
+		category_anti_air = {
+			air_attack = 0.35
+		}
+		modifier = {
+			static_anti_air_damage_factor = 0.35
+		}
+		research_cost = 3.0
+		start_year = 1951
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 18 }
+		}
+		categories = {
+			artillery
+			cat_anti_air
+			rocketry
+		}
+		ai_will_do = { factor = 2 }
+	}
+}

@@ -1,0 +1,225 @@
+unthinkable_setup_1945_world = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = unthinkable_world_setup_done }
+		}
+		set_global_flag = unthinkable_world_setup_done
+
+		# 1. France and Benelux restoration
+		FRA = {
+			transfer_state = 28 # Alsace-Lorraine
+		}
+
+		# 2. Poland - borders on Oder-Neisse line, ceding eastern lands
+		POL = {
+			transfer_state = 5   # Ermland-Masuren
+			transfer_state = 62  # Pommern
+			transfer_state = 63  # Westpreussen
+			transfer_state = 66  # Niederschlesien
+			transfer_state = 67  # Oberschlesien
+			transfer_state = 68  # Wartheland
+			transfer_state = 85  # Danzig
+			transfer_state = 762 # Katowice
+			add_state_core = 5
+			add_state_core = 62
+			add_state_core = 63
+			add_state_core = 66
+			add_state_core = 67
+			add_state_core = 68
+			add_state_core = 85
+			add_state_core = 762
+		}
+
+		# 3. Soviet gains: Königsberg, Subcarpathian Ruthenia, Kresy, Memel
+		SOV = {
+			transfer_state = 763 # Königsberg
+			add_state_core = 763
+			transfer_state = 188 # Memel
+			add_state_core = 188
+			transfer_state = 73  # Carpathian Ruthenia
+			add_state_core = 73
+			transfer_state = 90  # Lwów
+			add_state_core = 90
+			transfer_state = 91  # Tarnopol
+			add_state_core = 91
+			transfer_state = 93  # Volhynia
+			add_state_core = 93
+			transfer_state = 94  # Polesie
+			add_state_core = 94
+			transfer_state = 95  # Nowogródek
+			add_state_core = 95
+			transfer_state = 96  # Wilno / Wilejka
+			add_state_core = 96
+			# Bessarabia and Northern Bukovina from Romania
+			transfer_state = 78  # Bessarabia
+			add_state_core = 78
+			transfer_state = 80  # Northern Bukovina
+			add_state_core = 80
+		}
+
+		# 3b. Italy, Balkans & Southern Europe Alignment
+		ITA = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		YUG = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			transfer_state = 852 # Istria
+		}
+		ROM = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		BUL = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+
+		# 3c. Factions Alignment (July 1, 1945)
+		ENG = {
+			if = {
+				limit = { NOT = { is_in_faction_with = USA } }
+				add_to_faction = USA
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = FRA } }
+				add_to_faction = FRA
+			}
+		}
+		SOV = {
+			if = {
+				limit = { NOT = { is_in_faction_with = YUG } }
+				add_to_faction = YUG
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = ROM } }
+				add_to_faction = ROM
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = BUL } }
+				add_to_faction = BUL
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = POL } }
+				add_to_faction = POL
+			}
+		}
+
+		# 3d. Leaders and Government Setup
+		USA = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Harry S. Truman"
+				desc = "POLITICS_HARRY_TRUMAN_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_Harry_Truman.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+					anti_communist
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		GER = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Konrad Adenauer"
+				desc = "POLITICS_KONRAD_ADENAUER_DESC"
+				picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				expire = "1967.1.1"
+				ideology = conservatism
+				traits = {
+					anti_communist
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		POL = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+		CZE = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+
+		# 4. Czechoslovakia restored
+		CZE = {
+			transfer_state = 9   # Bohemia
+			transfer_state = 75  # Moravia
+			transfer_state = 69  # Sudetenland
+			transfer_state = 74  # East Sudetenland
+			transfer_state = 972 # South Sudetenland
+			transfer_state = 72  # Zaolzie
+			transfer_state = 70  # West Slovakia
+			transfer_state = 71  # East Slovakia
+			transfer_state = 664 # South Slovakia
+			add_state_core = 9
+			add_state_core = 75
+			add_state_core = 69
+			add_state_core = 74
+			add_state_core = 972
+			add_state_core = 72
+			add_state_core = 70
+			add_state_core = 71
+			add_state_core = 664
+		}
+
+		# [Sections 5 & 6 handled natively in history/states/]
+		# 7. National Ideas setup
+		ENG = {
+			add_ideas = unthinkable_war_weariness
+			add_ideas = unthinkable_operation_unthinkable_planning
+		}
+		USA = {
+			add_ideas = unthinkable_pacific_priority
+			add_ideas = unthinkable_demobilization_pressure
+		}
+		SOV = {
+			add_ideas = unthinkable_victors_of_berlin
+			add_ideas = unthinkable_devastated_heartland
+			add_ideas = unthinkable_extended_supply_lines
+		}
+		POL = {
+			add_ideas = unthinkable_anders_crusade
+		}
+		CZE = {
+			add_ideas = unthinkable_cze_demarcation_line
+			add_ideas = unthinkable_cze_skoda_works
+			add_ideas = unthinkable_cze_reconstruction
+		}
+
+		# 8. Load Frontline 1945 OOBs
+		ENG = {
+			load_oob = "unthinkable_ENG_1945"
+		}
+		USA = {
+			load_oob = "unthinkable_USA_1945"
+		}
+		SOV = {
+			load_oob = "unthinkable_SOV_1945"
+		}
+		CZE = {
+			load_oob = "unthinkable_CZE_1945"
+		}
+	}
+}

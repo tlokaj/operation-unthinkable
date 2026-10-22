@@ -1,0 +1,127 @@
+characters = {
+	SOV_georgy_zhukov_unthinkable = {
+		name = "Georgy Zhukov"
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_georgy_zhukov"
+				small = "GFX_idea_georgy_zhukov"
+			}
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+				fast_planner
+				armor_officer
+				panzer_leader
+				winter_specialist
+				war_hero
+				organizer
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = SOV_georgy_zhukov_unthinkable_token
+			ledger = army
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	SOV_konstantin_rokossovsky_unthinkable = {
+		name = "Konstantin Rokossovsky"
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_konstantin_rokossovsky"
+				small = "GFX_idea_konstantin_rokossovsky"
+			}
+		}
+		field_marshal = {
+			traits = {
+				brilliant_strategist
+				offensive_doctrine
+				panzer_expert
+				winter_specialist
+				skilled_staffer
+				trait_cautious
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
+	SOV_ivan_konev_unthinkable = {
+		name = "Ivan Konev"
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_ivan_konev"
+				small = "GFX_idea_ivan_konev"
+			}
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+				aggressive_assault
+				artillery_officer
+				winter_specialist
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	SOV_vyacheslav_molotov_advisor = {
+		name = "Vyacheslav Molotov"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SOV_vyacheslav_molotov"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_molotov_advisor_token
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				ideologue
+			}
+			cost = 100
+		}
+	}
+
+	SOV_lavrenty_beriya_advisor = {
+		name = "Lavrentiy Beria"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SOV_lavrenty_beriya"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_beria_advisor_token
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				prince_of_terror
+			}
+			cost = 100
+		}
+	}
+}

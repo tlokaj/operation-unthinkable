@@ -1,0 +1,104 @@
+characters = {
+	USA_harry_s_truman = {
+		name = "Harry S. Truman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_USA_Harry_Truman.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				anti_communist
+			}
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+
+	USA_george_marshall_advisor = {
+		name = "George Marshall"
+		portraits = {
+			army = {
+				small = "GFX_idea_george_marshall"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = USA_george_marshall_pol_token
+			allowed = {
+				original_tag = USA
+			}
+			traits = {
+				anti_communist
+			}
+			cost = 100
+		}
+	}
+
+	USA_dwight_d_eisenhower_unthinkable = {
+		name = "Dwight D. Eisenhower"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+				small = "GFX_idea_dwight_d_eisenhower"
+			}
+		}
+		field_marshal = {
+			traits = {
+				organizer
+				logistics_wizard
+				inspirational_leader
+				thorough_planner
+				offensive_doctrine
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 6
+		}
+	}
+
+	USA_george_s_patton_unthinkable = {
+		name = "George S. Patton"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Portrait_USA_George_S_Patton.dds"
+				small = "GFX_idea_george_s_patton"
+			}
+		}
+		field_marshal = {
+			traits = {
+				aggressive_assault
+				fast_planner
+				offensive_doctrine
+				armor_officer
+				panzer_expert
+				trickster
+				harsh_leader
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	USA_wernher_von_braun = {
+		name = "Wernher von Braun"
+		portraits = {
+			army = {
+				large = "GFX_portrait_GER_wernher_von_braun"
+				small = "GFX_idea_von_braun"
+			}
+		}
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_air = 3
+			}
+		}
+	}
+}

@@ -1,0 +1,187 @@
+technologies = {
+
+	# =========================================================================
+	# TECH TREE BRIDGES
+	# Links late-war vanilla research nodes to 1946-1952 post-war technologies
+	# =========================================================================
+
+	advanced_infantry_weapons2 = {
+		category_light_infantry = { soft_attack = 0.05 }
+		category_cavalry = { soft_attack = 0.05 }
+		category_vehicle_infantry = { soft_attack = 0.1 }
+		path = {
+			leads_to_tech = assault_rifle_standardization
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 16 }
+		}
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 1 }
+	}
+
+	tech_recon4 = {
+		path = {
+			leads_to_tech = early_helicopters
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 10 }
+		}
+		categories = { support_tech recon_tech }
+	}
+
+	artillery4 = {
+		path = {
+			leads_to_tech = postwar_heavy_howitzers
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 12 }
+		}
+		categories = { artillery }
+	}
+
+	antitank4 = {
+		path = {
+			leads_to_tech = infantry_recoilless_rifles
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 14 }
+		}
+		categories = { artillery cat_anti_tank }
+	}
+
+	rocket_artillery2 = {
+		path = {
+			leads_to_tech = postwar_heavy_mrls
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 14 }
+		}
+		categories = { artillery mot_rockets }
+	}
+
+	antiair4 = {
+		path = {
+			leads_to_tech = radar_directed_anti_air
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 14 }
+		}
+		categories = { artillery cat_anti_air }
+	}
+
+	construction5 = {
+		path = {
+			leads_to_tech = postwar_prefab_construction
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 14 }
+		}
+		categories = { industry construction_tech }
+	}
+
+	advanced_machine_tools = {
+		path = {
+			leads_to_tech = automation_transfer_machines
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+		categories = { industry cat_production }
+	}
+
+	advanced_computing_machine = {
+		path = {
+			leads_to_tech = electronic_computing_machines
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 12 }
+		}
+		categories = { electronics computing_tech }
+	}
+
+	centimetric_radar = {
+		path = {
+			leads_to_tech = proximity_vt_fuzes
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = airborne_interception_radar
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1942
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 12 }
+		}
+		categories = { electronics radar_tech }
+	}
+
+	jet_fighter1 = {
+		path = {
+			leads_to_tech = swept_wing_jet_fighters
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = axial_flow_turbojets
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1944
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = 12 }
+		}
+		categories = { air_equipment jet_technology }
+	}
+
+	nukes = {
+		path = {
+			leads_to_tech = levitated_core_implosion
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1945
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 13 }
+		}
+		categories = { nuclear }
+	}
+}

@@ -1,0 +1,190 @@
+division_template = {
+	name = "Dywizja Piechoty LWP"
+	division_names_group = POL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Korpus Pancerny LWP"
+	division_names_group = POL_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Samodzielna Brygada Kawalerii"
+	division_names_group = POL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# LUDOWE WOJSKO POLSKIE (1. & 2. Armia WP) - Ziemie Odzyskane & Granica Odra-Nysa
+	# =========================================================================
+
+	# 1. Armia Wojska Polskiego (Gen. Stanisław Popławski)
+	division = {
+		name = "1 Dywizja Piechoty im. Tadeusza Kościuszki"
+		location = 3473 # Küstrin (Kostrzyn nad Odrą)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "3 Pomorska Dywizja Piechoty"
+		location = 362 # Gdańsk (Danzig)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "4 Pomorska Dywizja Piechoty"
+		location = 6282 # Szczecin (Stettin)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "6 Pomorska Dywizja Piechoty"
+		location = 9388 # Stralsund (Pomorze Zachodnie)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "1 Warszawska Samodzielna Brygada Kawalerii"
+		location = 11372 # Koszalin (Köslin)
+		division_template = "Samodzielna Brygada Kawalerii"
+		start_experience_factor = 0.85
+	}
+
+	# 2. Armia Wojska Polskiego (Gen. Karol Świerczewski - Śląsk & Łużyce)
+	division = {
+		name = "1 Drezdeński Korpus Pancerny"
+		location = 9570 # Wrocław (Breslau)
+		division_template = "Korpus Pancerny LWP"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "2 Warszawska Dywizja Piechoty"
+		location = 9570 # Wrocław (Breslau)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "5 Saska Dywizja Piechoty"
+		location = 552 # Legnica (Liegnitz)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "7 Łużycka Dywizja Piechoty"
+		location = 3258 # Neustrelitz
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "8 Drezdeńska Dywizja Piechoty"
+		location = 6464 # Katowice (Górny Śląsk)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "10 Sudecka Dywizja Piechoty"
+		location = 11467 # Gliwice (Gleiwitz)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "Mazurska Dywizja Piechoty"
+		location = 6375 # Olsztyn (Allenstein)
+		division_template = "Dywizja Piechoty LWP"
+		start_experience_factor = 0.75
+	}
+}
+
+# =============================================================================
+# PRODUKCJA WOJSKOWA (Polska 1945)
+# =============================================================================
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "POL"
+		}
+		requested_factories = 10
+		progress = 0.50
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 4
+		progress = 0.35
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_3
+			creator = "POL"
+		}
+		requested_factories = 5
+		progress = 0.40
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 5
+		progress = 0.30
+		efficiency = 85
+	}
+}

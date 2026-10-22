@@ -1,0 +1,288 @@
+ideas = {
+	country = {
+		unthinkable_war_weariness = {
+			picture = generic_disloyal_deputy
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.10
+				conscription = -0.01
+			}
+		}
+
+		unthinkable_operation_unthinkable_planning = {
+			picture = generic_morale_bonus
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.20
+				max_planning = 0.15
+				army_speed_factor = 0.05
+			}
+		}
+
+		unthinkable_pacific_priority = {
+			picture = generic_navy_bonus
+			allowed = { original_tag = USA }
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = 0.10
+				mobilization_speed = -0.10
+			}
+		}
+
+		unthinkable_demobilization_pressure = {
+			picture = generic_disloyal_deputy
+			allowed = { original_tag = USA }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.05
+				war_support_factor = -0.10
+			}
+		}
+
+		unthinkable_victors_of_berlin = {
+			picture = generic_morale_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+
+		unthinkable_devastated_heartland = {
+			picture = generic_destroyer_escort_effort
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_efficiency_gain_factor = -0.10
+				repair_speed_factor = -0.15
+			}
+		}
+
+		unthinkable_extended_supply_lines = {
+			picture = generic_agrarian_society
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = 0.20
+				out_of_supply_factor = 0.15
+			}
+		}
+
+		unthinkable_anders_crusade = {
+			picture = generic_morale_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.15
+				army_attack_factor = 0.10
+			}
+		}
+
+		unthinkable_cze_demarcation_line = {
+			picture = generic_disloyal_deputy
+			allowed = { original_tag = CZE }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				army_defence_factor = 0.10
+			}
+		}
+
+		unthinkable_cze_skoda_works = {
+			picture = generic_production_bonus
+			allowed = { original_tag = CZE }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+
+		unthinkable_cze_reconstruction = {
+			picture = generic_morale_bonus
+			allowed = { original_tag = CZE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+
+		unthinkable_lend_lease_cutoff = {
+			picture = generic_agrarian_society
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.15
+				supply_consumption_factor = 0.25
+				fuel_gain_factor = -0.20
+			}
+		}
+
+		unthinkable_german_command_advisors = {
+			picture = generic_intel_bonus
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.15
+				max_planning = 0.10
+				army_org_factor = 0.05
+			}
+		}
+
+		unthinkable_tactical_evaluation = {
+			picture = generic_intel_bonus
+			allowed = { original_tag = USA }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.05
+				planning_speed = 0.10
+				recon_factor = 0.10
+			}
+		}
+
+		unthinkable_free_germany_committee = {
+			picture = generic_intel_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				recon_factor = 0.15
+				foreign_subversive_activites = -0.20
+				encryption = 1
+			}
+		}
+
+		unthinkable_red_army_onslaught = {
+			picture = generic_morale_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.20
+				army_org_regain = 0.15
+			}
+		}
+
+		unthinkable_allied_surprise_strike = {
+			picture = generic_morale_bonus
+			allowed = { OR = { original_tag = ENG original_tag = USA } }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				breakthrough_factor = 0.15
+				planning_speed = 0.25
+			}
+		}
+
+		unthinkable_sov_atomic_crash_program = {
+			picture = generic_intel_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		unthinkable_win_insurgency = {
+			picture = generic_disloyal_deputy
+			allowed = { original_tag = POL }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.10
+			}
+		}
+
+		# =====================================================================
+		# GENERIC & CROSS-NATIONAL UNTHINKABLE IDEAS
+		# =====================================================================
+		unthinkable_generic_economic_planning = {
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		unthinkable_generic_military_production = {
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		unthinkable_generic_marshall_aid = {
+			picture = generic_goods_redistribution
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+		unthinkable_generic_anticommunist_crusade = {
+			picture = generic_morale_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+
+		unthinkable_generic_peoples_republic = {
+			picture = generic_manpower_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		unthinkable_generic_fascist_revanchism = {
+			picture = generic_fascism_drift_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.15
+				army_attack_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+
+		unthinkable_generic_totalitarian_rule = {
+			picture = generic_fascism_drift_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				mobilization_speed = 0.20
+				drift_defence_factor = 0.50
+			}
+		}
+
+		unthinkable_generic_armed_neutrality = {
+			picture = generic_neutrality_drift_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.15
+				max_dig_in = 5
+				trade_opinion_factor = 0.20
+			}
+		}
+	}
+}

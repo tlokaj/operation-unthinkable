@@ -1,0 +1,93 @@
+technologies = {
+	levitated_core_implosion = {
+		dependencies = {
+			nukes = 1
+		}
+		modifier = {
+			nuclear_production = 0.5
+			nuclear_production_factor = 0.15
+		}
+		path = {
+			leads_to_tech = industrial_breeding_reactors
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tactical_nuclear_warheads
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 15 }
+		}
+		categories = {
+			nuclear
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	industrial_breeding_reactors = {
+		dependencies = {
+			levitated_core_implosion = 1
+		}
+		modifier = {
+			nuclear_production = 1.0
+			production_speed_nuclear_reactor_factor = 0.20
+		}
+		path = {
+			leads_to_tech = unthinkable_thermonuclear_foundations
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 17 }
+		}
+		categories = {
+			nuclear
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	tactical_nuclear_warheads = {
+		dependencies = {
+			levitated_core_implosion = 1
+		}
+		modifier = {
+			nuclear_production_factor = 0.10
+		}
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = industry_folder
+			position = { x = 12 y = 17 }
+		}
+		categories = {
+			nuclear
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	unthinkable_thermonuclear_foundations = {
+		dependencies = {
+			industrial_breeding_reactors = 1
+		}
+		modifier = {
+			research_speed_factor = 0.05
+			nuclear_production = 0.5
+			nuclear_production_factor = 0.20
+		}
+		research_cost = 3.0
+		start_year = 1950
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 19 }
+		}
+		categories = {
+			nuclear
+		}
+		ai_will_do = { factor = 3 }
+	}
+}

@@ -1,0 +1,112 @@
+# Intelligence Agencies for Operation Unthinkable (1945)
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_usa
+	names = {
+		"OSS"
+		"Office of Strategic Services"
+		"Central Intelligence Group"
+		"CIA"
+	}
+	default = {
+		tag = USA
+	}
+	available = {
+		original_tag = USA
+	}
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_uk
+	names = {
+		"MI6"
+		"SIS"
+		"SOE"
+		"Secret Intelligence Service"
+	}
+	default = {
+		tag = ENG
+	}
+	available = {
+		original_tag = ENG
+	}
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_sov
+	names = {
+		"SMERSH"
+		"NKVD"
+		"MGB"
+		"GRU"
+	}
+	default = {
+		tag = SOV
+	}
+	available = {
+		original_tag = SOV
+	}
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_fra
+	names = {
+		"DGER"
+		"SDECE"
+		"DGSS"
+		"BCRA"
+	}
+	default = {
+		tag = FRA
+	}
+	available = {
+		original_tag = FRA
+	}
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_ger
+	names = {
+		"Organisation Gehlen"
+		"Abwehr"
+		"BND"
+	}
+	default = {
+		tag = GER
+	}
+	available = {
+		original_tag = GER
+	}
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_generic_1
+	names = {
+		"WiN"
+		"Oddzial II"
+		"UB"
+		"Ministerstwo Bezpieczenstwa Publicznego"
+	}
+	default = {
+		tag = POL
+	}
+	available = {
+		original_tag = POL
+	}
+}
+
+intelligence_agency = {
+	picture = GFX_intelligence_agency_logo_generic_2
+	names = {
+		"OBZ"
+		"Obranne zpravodajstvi"
+		"2. oddeleni HSK"
+		"Hlavni sprava rozvedky"
+	}
+	default = {
+		tag = CZE
+	}
+	available = {
+		original_tag = CZE
+	}
+}

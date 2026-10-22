@@ -1,0 +1,542 @@
+# ==============================================================================
+# OPERATION UNTHINKABLE (1945) - ECONOMIC & RESOURCE DECISIONS
+# ==============================================================================
+
+unthinkable_jachymov_uranium_category = {
+
+	unthinkable_sov_demand_jachymov_uranium = {
+		icon = generic_nuclear
+		allowed = { original_tag = SOV }
+
+		visible = {
+			NOT = { has_global_flag = unthinkable_jachymov_settled }
+			CZE = { exists = yes }
+		}
+
+		available = {
+			NOT = { has_war_with = CZE }
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = unthinkable_jachymov_settled
+			CZE = {
+				country_event = { id = unthinkable_econ.1 hours = 6 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	unthinkable_cze_expand_jachymov_mines = {
+		icon = generic_exploit_mines
+		allowed = { original_tag = CZE }
+
+		visible = {
+			has_global_flag = unthinkable_jachymov_settled
+			NOT = { has_country_flag = unthinkable_jachymov_expanded }
+			controls_state = 69
+		}
+
+		available = {
+			controls_state = 69
+		}
+
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = unthinkable_jachymov_expanded
+			69 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	unthinkable_allies_intel_mission_jachymov = {
+		icon = generic_intel_bonus
+		allowed = {
+			OR = {
+				original_tag = ENG
+				original_tag = USA
+			}
+		}
+
+		visible = {
+			NOT = { has_global_flag = unthinkable_jachymov_allied_intel_done }
+			CZE = { exists = yes }
+		}
+
+		available = {
+			NOT = { has_war_with = CZE }
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = unthinkable_jachymov_allied_intel_done
+			country_event = { id = unthinkable_econ.4 hours = 6 }
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+	}
+}
+
+unthinkable_sbz_reparations_category = {
+
+	unthinkable_sov_dismantle_saxon_industry = {
+		icon = generic_industry
+		allowed = { original_tag = SOV }
+
+		visible = {
+			controls_state = 65
+			NOT = { has_country_flag = unthinkable_saxon_industry_dismantled }
+		}
+
+		available = {
+			controls_state = 65
+		}
+
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = unthinkable_saxon_industry_dismantled
+			65 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			227 = { # Donbas
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			573 = { # Chelyabinsk
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = unthinkable_sbz_plunder_active
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	unthinkable_sov_dismantle_brandenburg_railways = {
+		icon = generic_infrastructure
+		allowed = { original_tag = SOV }
+
+		visible = {
+			controls_state = 64
+			NOT = { has_country_flag = unthinkable_brandenburg_railways_dismantled }
+		}
+
+		available = {
+			controls_state = 64
+		}
+
+		cost = 35
+		days_remove = 20
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = unthinkable_brandenburg_railways_dismantled
+			64 = {
+				remove_building = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			219 = { # Moscow
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			195 = { # Leningrad
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 25
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	unthinkable_sov_execute_operation_osoaviachim = {
+		icon = generic_scientific_exchange
+		allowed = { original_tag = SOV }
+
+		visible = {
+			OR = {
+				controls_state = 60
+				controls_state = 64
+				controls_state = 65
+			}
+			NOT = { has_country_flag = unthinkable_osoaviachim_done }
+		}
+
+		available = {
+			has_idea = unthinkable_sbz_plunder_active
+		}
+
+		cost = 75
+		days_remove = 45
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = unthinkable_osoaviachim_done
+			add_ideas = unthinkable_osoaviachim_tech_boost
+			add_tech_bonus = {
+				name = rocket_bonus
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
+		}
+
+		ai_will_do = {
+			factor = 80
+		}
+	}
+
+	unthinkable_sov_found_sag_corporations = {
+		icon = generic_production_bonus
+		allowed = { original_tag = SOV }
+
+		visible = {
+			controls_state = 65
+			NOT = { has_country_flag = unthinkable_sag_founded }
+		}
+
+		available = {
+			controls_state = 65
+		}
+
+		cost = 50
+		days_remove = 30
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = unthinkable_sag_founded
+			add_ideas = unthinkable_sag_enterprises
+		}
+
+		ai_will_do = {
+			factor = 30
+		}
+	}
+}
+
+unthinkable_ruhr_recovery_category = {
+
+	unthinkable_halt_western_reparations_to_ussr = {
+		icon = generic_embargo
+		allowed = {
+			OR = {
+				original_tag = ENG
+				original_tag = USA
+			}
+		}
+
+		visible = {
+			NOT = { has_global_flag = unthinkable_western_reparations_halted }
+			NOT = { has_war_with = SOV }
+		}
+
+		available = {
+			NOT = { has_war_with = SOV }
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			set_global_flag = unthinkable_western_reparations_halted
+			add_ideas = unthinkable_reparation_cutoff
+			SOV = {
+				country_event = { id = unthinkable_econ.21 hours = 6 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 30
+		}
+	}
+
+	unthinkable_revitalize_ruhr_coal_and_steel = {
+		icon = generic_production_bonus
+		allowed = {
+			OR = {
+				original_tag = ENG
+				original_tag = USA
+				original_tag = FRA
+				original_tag = GER
+			}
+		}
+
+		visible = {
+			controls_state = 57
+			NOT = { has_country_flag = unthinkable_ruhr_revitalized_done }
+		}
+
+		available = {
+			has_global_flag = unthinkable_western_reparations_halted
+		}
+
+		cost = 75
+		days_remove = 60
+		fire_only_once = yes
+
+		remove_effect = {
+			set_country_flag = unthinkable_ruhr_revitalized_done
+			57 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			42 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			add_ideas = unthinkable_ruhr_revitalized
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	unthinkable_abandon_morgenthau_doctrine = {
+		icon = generic_morale_bonus
+		allowed = {
+			OR = {
+				original_tag = USA
+				original_tag = ENG
+			}
+		}
+
+		visible = {
+			NOT = { has_country_flag = unthinkable_morgenthau_abandoned }
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 40
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = unthinkable_morgenthau_abandoned
+			add_ideas = unthinkable_morgenthau_scrapped
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+
+unthinkable_postwar_conversion_category = {
+
+	unthinkable_us_concede_to_bring_boys_home = {
+		icon = generic_goods_redistribution
+		allowed = { original_tag = USA }
+
+		visible = {
+			has_idea = unthinkable_demobilization_pressure
+			NOT = { has_war_with = SOV }
+		}
+
+		available = {
+			NOT = { has_war_with = SOV }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = unthinkable_demobilization_pressure
+			add_ideas = unthinkable_peace_dividend
+			add_stability = 0.10
+			add_war_support = -0.15
+			378 = { # California
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	unthinkable_us_resist_demobilization_unthinkable = {
+		icon = generic_war_support_bonus
+		allowed = { original_tag = USA }
+
+		visible = {
+			has_idea = unthinkable_demobilization_pressure
+		}
+
+		available = {
+			OR = {
+				has_country_flag = unthinkable_plans_drafted
+				has_country_flag = unthinkable_offensive_approved
+				threat > 0.30
+			}
+		}
+
+		cost = 75
+		fire_only_once = yes
+
+		complete_effect = {
+			remove_ideas = unthinkable_demobilization_pressure
+			add_ideas = unthinkable_war_footing_maintained
+			add_war_support = 0.15
+			add_stability = -0.10
+		}
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	unthinkable_uk_convert_war_factories_to_housing = {
+		icon = generic_construct_civ_factory
+		allowed = { original_tag = ENG }
+
+		visible = {
+			NOT = { has_country_flag = unthinkable_uk_reconversion_enacted }
+			NOT = { has_war_with = SOV }
+		}
+
+		available = {
+			NOT = { has_war_with = SOV }
+		}
+
+		cost = 40
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = unthinkable_uk_reconversion_enacted
+			add_ideas = unthinkable_british_austerity_production
+			123 = { # Greater London
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+
+	unthinkable_uk_emergency_munitions_act = {
+		icon = generic_construct_mil_factory
+		allowed = { original_tag = ENG }
+
+		visible = {
+			has_country_flag = unthinkable_plans_drafted
+			NOT = { has_country_flag = unthinkable_uk_emergency_munitions_done }
+		}
+
+		available = {
+			has_country_flag = unthinkable_offensive_approved
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = unthinkable_uk_emergency_munitions_done
+			add_ideas = unthinkable_war_footing_maintained
+			123 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 60
+		}
+	}
+}

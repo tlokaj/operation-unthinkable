@@ -1,0 +1,39 @@
+air_wings = {
+	# State 9: Czechoslovakia / Bohemia (Prague-Kbely, Ruzyně, Čakovice)
+	9 = {
+		small_plane_airframe_3 = {
+			owner = "CZE"
+			amount = 100
+			version_name = "Avia S-89"
+		}
+		small_plane_airframe_3 = {
+			owner = "CZE"
+			amount = 100
+			version_name = "Avia S-97"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "CZE"
+			amount = 100
+			version_name = "Avia B-33"
+		}
+		small_plane_airframe_3 = {
+			owner = "CZE"
+			amount = 20
+			version_name = "Avia S-92"
+		}
+	}
+
+	# State 69: Sudetenland / West Bohemia (Plzeň-Bory, Cheb - Demarcation line)
+	69 = {
+		small_plane_airframe_3 = {
+			owner = "CZE"
+			amount = 50
+			version_name = "Avia S-199"
+		}
+		small_plane_airframe_3 = {
+			owner = "CZE"
+			amount = 50
+			version_name = "Avia S-89"
+		}
+	}
+}

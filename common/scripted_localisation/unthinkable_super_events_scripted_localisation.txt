@@ -1,0 +1,240 @@
+# =============================================================================
+# OPERATION UNTHINKABLE: SCRIPTED LOCALISATION (SUPER-EVENTS & TENSION METER)
+# =============================================================================
+
+defined_text = {
+	name = GetSuperEventTitle
+	text = {
+		trigger = { has_global_flag = unthinkable_se_operation_unthinkable }
+		localization_key = UNTHINKABLE_SE_OPERATION_UNTHINKABLE_T
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_trinity_test }
+		localization_key = UNTHINKABLE_SE_TRINITY_TEST_T
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_first_nuke_europe }
+		localization_key = UNTHINKABLE_SE_FIRST_NUKE_EUROPE_T
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_berlin }
+		localization_key = UNTHINKABLE_SE_FALL_OF_BERLIN_T
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_moscow }
+		localization_key = UNTHINKABLE_SE_FALL_OF_MOSCOW_T
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_polish_uprising }
+		localization_key = UNTHINKABLE_SE_POLISH_UPRISING_T
+	}
+	text = {
+		localization_key = UNTHINKABLE_SE_UNKNOWN_T
+	}
+}
+
+defined_text = {
+	name = GetSuperEventQuote
+	text = {
+		trigger = { has_global_flag = unthinkable_se_operation_unthinkable }
+		localization_key = UNTHINKABLE_SE_OPERATION_UNTHINKABLE_D
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_trinity_test }
+		localization_key = UNTHINKABLE_SE_TRINITY_TEST_D
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_first_nuke_europe }
+		localization_key = UNTHINKABLE_SE_FIRST_NUKE_EUROPE_D
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_berlin }
+		localization_key = UNTHINKABLE_SE_FALL_OF_BERLIN_D
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_moscow }
+		localization_key = UNTHINKABLE_SE_FALL_OF_MOSCOW_D
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_polish_uprising }
+		localization_key = UNTHINKABLE_SE_POLISH_UPRISING_D
+	}
+	text = {
+		localization_key = UNTHINKABLE_SE_UNKNOWN_D
+	}
+}
+
+defined_text = {
+	name = GetSuperEventAuthor
+	text = {
+		trigger = { has_global_flag = unthinkable_se_operation_unthinkable }
+		localization_key = UNTHINKABLE_SE_OPERATION_UNTHINKABLE_AUTHOR
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_trinity_test }
+		localization_key = UNTHINKABLE_SE_TRINITY_TEST_AUTHOR
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_first_nuke_europe }
+		localization_key = UNTHINKABLE_SE_FIRST_NUKE_EUROPE_AUTHOR
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_berlin }
+		localization_key = UNTHINKABLE_SE_FALL_OF_BERLIN_AUTHOR
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_moscow }
+		localization_key = UNTHINKABLE_SE_FALL_OF_MOSCOW_AUTHOR
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_polish_uprising }
+		localization_key = UNTHINKABLE_SE_POLISH_UPRISING_AUTHOR
+	}
+	text = {
+		localization_key = UNTHINKABLE_SE_UNKNOWN_AUTHOR
+	}
+}
+
+defined_text = {
+	name = GetSuperEventButton
+	text = {
+		trigger = { has_global_flag = unthinkable_se_operation_unthinkable }
+		localization_key = UNTHINKABLE_SE_OPERATION_UNTHINKABLE_BTN
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_trinity_test }
+		localization_key = UNTHINKABLE_SE_TRINITY_TEST_BTN
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_first_nuke_europe }
+		localization_key = UNTHINKABLE_SE_FIRST_NUKE_EUROPE_BTN
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_berlin }
+		localization_key = UNTHINKABLE_SE_FALL_OF_BERLIN_BTN
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_fall_of_moscow }
+		localization_key = UNTHINKABLE_SE_FALL_OF_MOSCOW_BTN
+	}
+	text = {
+		trigger = { has_global_flag = unthinkable_se_polish_uprising }
+		localization_key = UNTHINKABLE_SE_POLISH_UPRISING_BTN
+	}
+	text = {
+		localization_key = UNTHINKABLE_SE_UNKNOWN_BTN
+	}
+}
+
+defined_text = {
+	name = GetColdWarTensionStatus
+	text = {
+		trigger = {
+			has_war_with = SOV
+		}
+		localization_key = COLD_WAR_TENSION_STATUS_5
+	}
+	text = {
+		trigger = {
+			check_variable = { global.unthinkable_tension > 74 }
+		}
+		localization_key = COLD_WAR_TENSION_STATUS_4
+	}
+	text = {
+		trigger = {
+			check_variable = { global.unthinkable_tension > 49 }
+		}
+		localization_key = COLD_WAR_TENSION_STATUS_3
+	}
+	text = {
+		trigger = {
+			check_variable = { global.unthinkable_tension > 24 }
+		}
+		localization_key = COLD_WAR_TENSION_STATUS_2
+	}
+	text = {
+		localization_key = COLD_WAR_TENSION_STATUS_1
+	}
+}
+
+defined_text = {
+	name = GetElbeStatus
+	text = {
+		trigger = {
+			has_war_with = SOV
+		}
+		localization_key = HOTSPOT_ELBE_CRITICAL
+	}
+	text = {
+		trigger = {
+			has_country_flag = unthinkable_wehrmacht_rearmed
+		}
+		localization_key = HOTSPOT_ELBE_CRITICAL
+	}
+	text = {
+		trigger = {
+			check_variable = { global.unthinkable_tension > 49 }
+		}
+		localization_key = HOTSPOT_ELBE_TENSE
+	}
+	text = {
+		localization_key = HOTSPOT_ELBE_QUIET
+	}
+}
+
+defined_text = {
+	name = GetTriesteStatus
+	text = {
+		trigger = {
+			has_war_with = SOV
+		}
+		localization_key = HOTSPOT_TRIESTE_CRITICAL
+	}
+	text = {
+		trigger = {
+			has_global_flag = unthinkable_trieste_crisis_active
+		}
+		localization_key = HOTSPOT_TRIESTE_TENSE
+	}
+	text = {
+		localization_key = HOTSPOT_TRIESTE_QUIET
+	}
+}
+
+defined_text = {
+	name = GetPolandStatus
+	text = {
+		trigger = {
+			has_global_flag = unthinkable_polish_insurgency_active
+		}
+		localization_key = HOTSPOT_POLAND_CRITICAL
+	}
+	text = {
+		trigger = {
+			has_country_flag = unthinkable_polish_mobilized
+		}
+		localization_key = HOTSPOT_POLAND_TENSE
+	}
+	text = {
+		localization_key = HOTSPOT_POLAND_QUIET
+	}
+}
+
+defined_text = {
+	name = GetNukeStatus
+	text = {
+		trigger = {
+			has_global_flag = unthinkable_super_event_first_nuke_done
+		}
+		localization_key = HOTSPOT_NUKE_DEPLOYED
+	}
+	text = {
+		trigger = {
+			has_global_flag = unthinkable_trinity_completed
+		}
+		localization_key = HOTSPOT_NUKE_TESTED
+	}
+	text = {
+		localization_key = HOTSPOT_NUKE_NONE
+	}
+}

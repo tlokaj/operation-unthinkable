@@ -1,0 +1,936 @@
+# =========================================================================
+# OPERATION UNTHINKABLE - 1945 STARTING TECHNOLOGY SCRIPTED EFFECT
+# Applies authentic 1945 historical research levels to all nations
+# =========================================================================
+
+unthinkable_apply_1945_technologies = {
+
+	# ---------------------------------------------------------------------
+	# UNITED STATES (USA)
+	# ---------------------------------------------------------------------
+	USA = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			advanced_infantry_weapons = 1
+			infantry_at = 1
+			infantry_at2 = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_recon2 = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_engineers3 = 1
+			tech_military_police = 1
+			tech_field_hospital = 1
+			tech_field_hospital2 = 1
+			tech_logistics_company = 1
+			tech_logistics_company2 = 1
+			tech_maintenance_company = 1
+			tech_maintenance_company2 = 1
+			tech_signal_company = 1
+			tech_signal_company2 = 1
+
+			early_helicopters = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			artillery4 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			antiair3 = 1
+			antiair4 = 1
+			antiair5 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+			antitank4 = 1
+			rocket_artillery = 1
+			rocket_artillery2 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			construction4 = 1
+			construction5 = 1
+			dispersed_industry = 1
+			dispersed_industry2 = 1
+			dispersed_industry3 = 1
+			dispersed_industry4 = 1
+			dispersed_industry5 = 1
+			synth_oil_experiments = 1
+			oil_processing = 1
+			improved_oil_processing = 1
+			advanced_oil_processing = 1
+			excavation1 = 1
+			excavation2 = 1
+			excavation3 = 1
+			excavation4 = 1
+			excavation5 = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			cavity_magnatron = 1
+			improved_cavity_magnatron = 1
+			centimetric_radar = 1
+			phased_array = 1
+			mechanical_computing = 1
+			computing_machine = 1
+			improved_computing_machine = 1
+			advanced_computing_machine = 1
+
+			atomic_research = 1
+			nuclear_reactor = 1
+			nukes = 1
+
+			proximity_vt_fuzes = 1
+
+			experimental_rockets = 1
+			rocket_engines = 1
+			jet_engines = 1
+			jet_fighter1 = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+				advanced_medium_tank = 1
+				basic_heavy_tank = 1
+				improved_heavy_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+				advanced_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				improved_heavy_tank_chassis = 1
+			}
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "By Blood Alone" } }
+			set_technology = {
+				early_fighter = 1
+				fighter1 = 1
+				fighter2 = 1
+				fighter3 = 1
+				early_bomber = 1
+				tactical_bomber1 = 1
+				tactical_bomber2 = 1
+				tactical_bomber3 = 1
+				strategic_bomber1 = 1
+				strategic_bomber2 = 1
+				strategic_bomber3 = 1
+				CAS1 = 1
+				CAS2 = 1
+				CAS3 = 1
+				naval_bomber1 = 1
+				naval_bomber2 = 1
+				naval_bomber3 = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+			set_technology = {
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				improved_small_airframe = 1
+				advanced_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				improved_medium_airframe = 1
+				advanced_medium_airframe = 1
+				iw_large_airframe = 1
+				basic_large_airframe = 1
+				improved_large_airframe = 1
+				advanced_large_airframe = 1
+				engines_1 = 1
+				engines_2 = 1
+				engines_3 = 1
+				engines_4 = 1
+			}
+		}
+
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+			set_technology = {
+				basic_ship_hull_light = 1
+				improved_ship_hull_light = 1
+				advanced_ship_hull_light = 1
+				basic_ship_hull_cruiser = 1
+				improved_ship_hull_cruiser = 1
+				advanced_ship_hull_cruiser = 1
+				basic_ship_hull_heavy = 1
+				improved_ship_hull_heavy = 1
+				basic_ship_hull_carrier = 1
+				improved_ship_hull_carrier = 1
+				advanced_ship_hull_carrier = 1
+				basic_ship_hull_submarine = 1
+				improved_ship_hull_submarine = 1
+				advanced_ship_hull_submarine = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Man the Guns" } }
+			set_technology = {
+				early_destroyer = 1
+				basic_destroyer = 1
+				improved_destroyer = 1
+				advanced_destroyer = 1
+				early_light_cruiser = 1
+				basic_light_cruiser = 1
+				improved_light_cruiser = 1
+				early_heavy_cruiser = 1
+				basic_heavy_cruiser = 1
+				improved_heavy_cruiser = 1
+				early_battleship = 1
+				basic_battleship = 1
+				early_carrier = 1
+				basic_carrier = 1
+				improved_carrier = 1
+				advanced_carrier = 1
+				early_submarine = 1
+				basic_submarine = 1
+				improved_submarine = 1
+			}
+		}
+	}
+
+	# ---------------------------------------------------------------------
+	# UNITED KINGDOM (ENG)
+	# ---------------------------------------------------------------------
+	ENG = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			advanced_infantry_weapons = 1
+			infantry_at = 1
+			infantry_at2 = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_recon2 = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_engineers3 = 1
+			tech_military_police = 1
+			tech_field_hospital = 1
+			tech_field_hospital2 = 1
+			tech_logistics_company = 1
+			tech_logistics_company2 = 1
+			tech_maintenance_company = 1
+			tech_maintenance_company2 = 1
+			tech_signal_company = 1
+			tech_signal_company2 = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			artillery4 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			antiair3 = 1
+			antiair4 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+			antitank4 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			construction4 = 1
+			construction5 = 1
+			concentrated_industry = 1
+			concentrated_industry2 = 1
+			concentrated_industry3 = 1
+			concentrated_industry4 = 1
+			concentrated_industry5 = 1
+			excavation1 = 1
+			excavation2 = 1
+			excavation3 = 1
+			excavation4 = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			cavity_magnatron = 1
+			improved_cavity_magnatron = 1
+			centimetric_radar = 1
+			phased_array = 1
+			advanced_centimetric_radar = 1
+			mechanical_computing = 1
+			computing_machine = 1
+			improved_computing_machine = 1
+			advanced_computing_machine = 1
+
+			atomic_research = 1
+			jet_engines = 1
+			jet_fighter1 = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+				advanced_medium_tank = 1
+				modern_tank = 1
+				basic_heavy_tank = 1
+				improved_heavy_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+				advanced_medium_tank_chassis = 1
+				main_battle_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				improved_heavy_tank_chassis = 1
+			}
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "By Blood Alone" } }
+			set_technology = {
+				early_fighter = 1
+				fighter1 = 1
+				fighter2 = 1
+				fighter3 = 1
+				early_bomber = 1
+				tactical_bomber1 = 1
+				tactical_bomber2 = 1
+				tactical_bomber3 = 1
+				strategic_bomber1 = 1
+				strategic_bomber2 = 1
+				strategic_bomber3 = 1
+				CAS1 = 1
+				CAS2 = 1
+				naval_bomber1 = 1
+				naval_bomber2 = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+			set_technology = {
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				improved_small_airframe = 1
+				advanced_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				improved_medium_airframe = 1
+				advanced_medium_airframe = 1
+				iw_large_airframe = 1
+				basic_large_airframe = 1
+				improved_large_airframe = 1
+				engines_1 = 1
+				engines_2 = 1
+				engines_3 = 1
+				engines_4 = 1
+			}
+		}
+
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+			set_technology = {
+				basic_ship_hull_light = 1
+				improved_ship_hull_light = 1
+				advanced_ship_hull_light = 1
+				basic_ship_hull_cruiser = 1
+				improved_ship_hull_cruiser = 1
+				advanced_ship_hull_cruiser = 1
+				basic_ship_hull_heavy = 1
+				improved_ship_hull_heavy = 1
+				advanced_ship_hull_heavy = 1
+				basic_ship_hull_carrier = 1
+				improved_ship_hull_carrier = 1
+				advanced_ship_hull_carrier = 1
+				basic_ship_hull_submarine = 1
+				improved_ship_hull_submarine = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Man the Guns" } }
+			set_technology = {
+				early_destroyer = 1
+				basic_destroyer = 1
+				improved_destroyer = 1
+				advanced_destroyer = 1
+				early_light_cruiser = 1
+				basic_light_cruiser = 1
+				improved_light_cruiser = 1
+				early_heavy_cruiser = 1
+				basic_heavy_cruiser = 1
+				early_battleship = 1
+				basic_battleship = 1
+				improved_battleship = 1
+				early_carrier = 1
+				basic_carrier = 1
+				improved_carrier = 1
+				early_submarine = 1
+				basic_submarine = 1
+			}
+		}
+	}
+
+	# ---------------------------------------------------------------------
+	# SOVIET UNION (SOV)
+	# ---------------------------------------------------------------------
+	SOV = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			advanced_infantry_weapons = 1
+			infantry_at = 1
+			infantry_at2 = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_recon2 = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_engineers3 = 1
+			tech_military_police = 1
+			tech_military_police2 = 1
+			tech_field_hospital = 1
+			tech_logistics_company = 1
+			tech_maintenance_company = 1
+			tech_signal_company = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			artillery4 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			antiair3 = 1
+			antiair4 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+			antitank4 = 1
+			rocket_artillery = 1
+			rocket_artillery2 = 1
+			rocket_artillery3 = 1
+			rocket_artillery4 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			construction4 = 1
+			construction5 = 1
+			concentrated_industry = 1
+			concentrated_industry2 = 1
+			concentrated_industry3 = 1
+			concentrated_industry4 = 1
+			concentrated_industry5 = 1
+			excavation1 = 1
+			excavation2 = 1
+			excavation3 = 1
+			excavation4 = 1
+			excavation5 = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			cavity_magnatron = 1
+			mechanical_computing = 1
+			computing_machine = 1
+			improved_computing_machine = 1
+
+			atomic_research = 1
+			experimental_rockets = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+				advanced_medium_tank = 1
+				basic_heavy_tank = 1
+				improved_heavy_tank = 1
+				advanced_heavy_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+				advanced_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				improved_heavy_tank_chassis = 1
+				advanced_heavy_tank_chassis = 1
+			}
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "By Blood Alone" } }
+			set_technology = {
+				early_fighter = 1
+				fighter1 = 1
+				fighter2 = 1
+				fighter3 = 1
+				early_bomber = 1
+				tactical_bomber1 = 1
+				tactical_bomber2 = 1
+				tactical_bomber3 = 1
+				CAS1 = 1
+				CAS2 = 1
+				CAS3 = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+			set_technology = {
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				improved_small_airframe = 1
+				advanced_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				improved_medium_airframe = 1
+				advanced_medium_airframe = 1
+				engines_1 = 1
+				engines_2 = 1
+				engines_3 = 1
+			}
+		}
+
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+			set_technology = {
+				basic_ship_hull_light = 1
+				improved_ship_hull_light = 1
+				basic_ship_hull_cruiser = 1
+				improved_ship_hull_cruiser = 1
+				basic_ship_hull_heavy = 1
+				basic_ship_hull_submarine = 1
+				improved_ship_hull_submarine = 1
+			}
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Man the Guns" } }
+			set_technology = {
+				early_destroyer = 1
+				basic_destroyer = 1
+				improved_destroyer = 1
+				early_light_cruiser = 1
+				basic_light_cruiser = 1
+				early_heavy_cruiser = 1
+				early_battleship = 1
+				early_submarine = 1
+				basic_submarine = 1
+				improved_submarine = 1
+			}
+		}
+	}
+
+	# ---------------------------------------------------------------------
+	# FRANCE (FRA)
+	# ---------------------------------------------------------------------
+	FRA = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			infantry_at = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_field_hospital = 1
+			tech_logistics_company = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			antiair3 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			construction4 = 1
+			concentrated_industry = 1
+			concentrated_industry2 = 1
+			concentrated_industry3 = 1
+			concentrated_industry4 = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			cavity_magnatron = 1
+			mechanical_computing = 1
+			computing_machine = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+				basic_heavy_tank = 1
+				improved_heavy_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				improved_heavy_tank_chassis = 1
+			}
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "By Blood Alone" } }
+			set_technology = {
+				early_fighter = 1
+				fighter1 = 1
+				fighter2 = 1
+				early_bomber = 1
+				tactical_bomber1 = 1
+				tactical_bomber2 = 1
+				CAS1 = 1
+				CAS2 = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+			set_technology = {
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				improved_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				improved_medium_airframe = 1
+				engines_1 = 1
+				engines_2 = 1
+				engines_3 = 1
+			}
+		}
+	}
+
+	# ---------------------------------------------------------------------
+	# CZECHOSLOVAKIA (CZE)
+	# ---------------------------------------------------------------------
+	CZE = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			infantry_at = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_recon2 = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_field_hospital = 1
+			tech_logistics_company = 1
+			tech_maintenance_company = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			antiair3 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			construction4 = 1
+			concentrated_industry = 1
+			concentrated_industry2 = 1
+			concentrated_industry3 = 1
+			concentrated_industry4 = 1
+			synth_oil_experiments = 1
+			oil_processing = 1
+			excavation1 = 1
+			excavation2 = 1
+			excavation3 = 1
+			excavation4 = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			cavity_magnatron = 1
+			mechanical_computing = 1
+			computing_machine = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+				basic_heavy_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+			}
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "By Blood Alone" } }
+			set_technology = {
+				early_fighter = 1
+				fighter1 = 1
+				fighter2 = 1
+				early_bomber = 1
+				tactical_bomber1 = 1
+				CAS1 = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+			set_technology = {
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				improved_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				engines_1 = 1
+				engines_2 = 1
+				engines_3 = 1
+			}
+		}
+	}
+
+	# ---------------------------------------------------------------------
+	# POLAND (POL)
+	# ---------------------------------------------------------------------
+	POL = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			infantry_at = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_field_hospital = 1
+			tech_logistics_company = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			concentrated_industry = 1
+			concentrated_industry2 = 1
+			concentrated_industry3 = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			mechanical_computing = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+			}
+		}
+	}
+
+	# ---------------------------------------------------------------------
+	# GERMANY / OCCUPIED REGIONS (GER)
+	# ---------------------------------------------------------------------
+	GER = {
+		set_technology = {
+			infantry_weapons = 1
+			infantry_weapons1 = 1
+			infantry_weapons2 = 1
+			improved_infantry_weapons = 1
+			advanced_infantry_weapons = 1
+			infantry_at = 1
+			infantry_at2 = 1
+			motorised_infantry = 1
+
+			tech_support = 1
+			tech_recon = 1
+			tech_recon2 = 1
+			tech_engineers = 1
+			tech_engineers2 = 1
+			tech_engineers3 = 1
+
+			gw_artillery = 1
+			interwar_artillery = 1
+			artillery1 = 1
+			artillery2 = 1
+			artillery3 = 1
+			artillery4 = 1
+			interwar_antiair = 1
+			antiair1 = 1
+			antiair2 = 1
+			antiair3 = 1
+			antiair4 = 1
+			antiair5 = 1
+			interwar_antitank = 1
+			antitank1 = 1
+			antitank2 = 1
+			antitank3 = 1
+			antitank4 = 1
+
+			basic_machine_tools = 1
+			improved_machine_tools = 1
+			advanced_machine_tools = 1
+			construction1 = 1
+			construction2 = 1
+			construction3 = 1
+			construction4 = 1
+			construction5 = 1
+			dispersed_industry = 1
+			dispersed_industry2 = 1
+			dispersed_industry3 = 1
+			dispersed_industry4 = 1
+			dispersed_industry5 = 1
+			synth_oil_experiments = 1
+			oil_processing = 1
+			improved_oil_processing = 1
+
+			electronic_mechanical_engineering = 1
+			radio = 1
+			radio_detection = 1
+			cavity_magnatron = 1
+			improved_cavity_magnatron = 1
+			centimetric_radar = 1
+			mechanical_computing = 1
+			computing_machine = 1
+			improved_computing_machine = 1
+			advanced_computing_machine = 1
+
+			atomic_research = 1
+			experimental_rockets = 1
+			rocket_engines = 1
+			advanced_rocket_engines = 1
+			jet_engines = 1
+			jet_fighter1 = 1
+		}
+
+		if = {
+			limit = { NOT = { has_dlc = "No Step Back" } }
+			set_technology = {
+				basic_medium_tank = 1
+				improved_medium_tank = 1
+				advanced_medium_tank = 1
+				basic_heavy_tank = 1
+				improved_heavy_tank = 1
+				advanced_heavy_tank = 1
+			}
+		}
+		if = {
+			limit = { has_dlc = "No Step Back" }
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				improved_medium_tank_chassis = 1
+				advanced_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+				improved_heavy_tank_chassis = 1
+				advanced_heavy_tank_chassis = 1
+			}
+		}
+	}
+}

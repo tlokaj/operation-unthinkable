@@ -1,0 +1,190 @@
+technologies = {
+	proximity_vt_fuzes = {
+		modifier = {
+			static_anti_air_damage_factor = 0.15
+		}
+		path = {
+			leads_to_tech = early_warning_radar_networks
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1945
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 14 }
+		}
+		categories = {
+			electronics
+			radar_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	electronic_computing_machines = {
+		modifier = {
+			research_speed_factor = 0.08
+			decryption_power = 1.5
+			encryption = 1.0
+		}
+		path = {
+			leads_to_tech = transistor_technology
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 14 }
+		}
+		categories = {
+			electronics
+			computing_tech
+			decryption_tech
+			encryption_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	transistor_technology = {
+		dependencies = {
+			electronic_computing_machines = 1
+		}
+		modifier = {
+			army_org_factor = 0.05
+			planning_speed = 0.10
+			research_speed_factor = 0.05
+		}
+		path = {
+			leads_to_tech = active_night_vision
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 16 }
+		}
+		categories = {
+			electronics
+			computing_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	early_warning_radar_networks = {
+		dependencies = {
+			proximity_vt_fuzes = 1
+		}
+		modifier = {
+			air_detection = 0.20
+			air_accidents_factor = -0.10
+			air_mission_efficiency = 0.10
+		}
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = electronics_folder
+			position = { x = 4 y = 16 }
+		}
+		categories = {
+			electronics
+			radar_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	active_night_vision = {
+		dependencies = {
+			transistor_technology = 1
+		}
+		modifier = {
+			recon_factor = 0.10
+			land_night_attack = 0.20
+		}
+		research_cost = 2.5
+		start_year = 1951
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 18 }
+		}
+		categories = {
+			electronics
+			night_vision
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	airborne_interception_radar = {
+		dependencies = {
+			centimetric_radar = 1
+		}
+		modifier = {
+			air_night_penalty = -0.30
+			air_detection = 0.15
+			navy_submarine_detection_factor = 0.10
+		}
+		path = {
+			leads_to_tech = radar_ranging_gunsights
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1946
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 14 }
+		}
+		categories = {
+			electronics
+			radar_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	radar_ranging_gunsights = {
+		dependencies = {
+			airborne_interception_radar = 1
+		}
+		modifier = {
+			air_mission_efficiency = 0.10
+			air_attack_factor = 0.15
+			air_agility_factor = 0.05
+		}
+		path = {
+			leads_to_tech = instrument_flight_and_tacan
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 16 }
+		}
+		categories = {
+			electronics
+			radar_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	instrument_flight_and_tacan = {
+		dependencies = {
+			radar_ranging_gunsights = 1
+		}
+		modifier = {
+			air_accidents_factor = -0.25
+			air_weather_penalty = -0.20
+			air_mission_efficiency = 0.10
+		}
+		research_cost = 2.5
+		start_year = 1950
+		folder = {
+			name = electronics_folder
+			position = { x = 6 y = 18 }
+		}
+		categories = {
+			electronics
+			radar_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+}

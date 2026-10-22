@@ -1,0 +1,195 @@
+# ==============================================================================
+# OPERATION UNTHINKABLE (1945) - ECONOMIC & RESOURCE IDEAS
+# ==============================================================================
+
+ideas = {
+	country = {
+		# ----------------------------------------------------------------------
+		# JACHYMOV URANIUM & RDS-1 PROJECT
+		# ----------------------------------------------------------------------
+		unthinkable_jachymov_soviet_pipeline = {
+			picture = generic_scientific_exchange
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_nuclear_reactor_factor = 0.20
+			}
+		}
+
+		unthinkable_jachymov_soviet_monopoly_cze = {
+			picture = generic_goods_redistribution
+			allowed = { original_tag = CZE }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = -0.10
+				drift_defence_factor = -0.20
+			}
+		}
+
+		unthinkable_jachymov_western_diversion = {
+			picture = generic_scientific_exchange
+			allowed = {
+				OR = {
+					original_tag = USA
+					original_tag = ENG
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_nuclear_reactor_factor = 0.15
+			}
+		}
+
+		unthinkable_jachymov_nationalized_independent = {
+			picture = generic_production_bonus
+			allowed = { original_tag = CZE }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		# ----------------------------------------------------------------------
+		# SOVIET DISMANTLING IN SBZ & OPERATION OSOAVIACHIM
+		# ----------------------------------------------------------------------
+		unthinkable_sbz_plunder_active = {
+			picture = generic_production_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.04
+				production_factory_max_efficiency_factor = 0.05
+				repair_speed_factor = 0.10
+			}
+		}
+
+		unthinkable_osoaviachim_tech_boost = {
+			picture = generic_intel_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.07
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		unthinkable_sag_enterprises = {
+			picture = generic_production_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.06
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		# ----------------------------------------------------------------------
+		# RUHR RESCUE & REPARATIONS CRISIS
+		# ----------------------------------------------------------------------
+		unthinkable_ruhr_revitalized = {
+			picture = generic_production_bonus
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = USA
+					original_tag = FRA
+					original_tag = GER
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.15
+			}
+		}
+
+		unthinkable_reparation_cutoff = {
+			picture = generic_disloyal_deputy
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = USA
+					original_tag = FRA
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = -0.20
+				war_support_factor = 0.05
+			}
+		}
+
+		unthinkable_morgenthau_scrapped = {
+			picture = generic_morale_bonus
+			allowed = {
+				OR = {
+					original_tag = ENG
+					original_tag = USA
+					original_tag = FRA
+					original_tag = GER
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		# ----------------------------------------------------------------------
+		# POST-WAR DEMOBILIZATION & RECONVERSION
+		# ----------------------------------------------------------------------
+		unthinkable_peace_dividend = {
+			picture = generic_goods_redistribution
+			allowed = {
+				OR = {
+					original_tag = USA
+					original_tag = ENG
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.15
+				conscription = -0.02
+				war_support_factor = -0.15
+			}
+		}
+
+		unthinkable_war_footing_maintained = {
+			picture = generic_manpower_bonus
+			allowed = {
+				OR = {
+					original_tag = USA
+					original_tag = ENG
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				industrial_capacity_factory = 0.08
+				stability_factor = -0.10
+				political_power_gain = -0.10
+			}
+		}
+
+		unthinkable_british_austerity_production = {
+			picture = generic_disloyal_deputy
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.04
+				production_speed_infrastructure_factor = 0.15
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+	}
+}

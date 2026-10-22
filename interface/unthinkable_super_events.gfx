@@ -1,0 +1,47 @@
+spriteTypes = {
+	# =============================================================================
+	# OPERATION UNTHINKABLE: SUPER-EVENTS GFX DEFINITIONS
+	# =============================================================================
+
+	# 1. Operation Unthinkable (World War 3 Launched)
+	spriteType = {
+		name = "GFX_super_event_operation_unthinkable"
+		texturefile = "gfx/interface/super_events/super_event_operation_unthinkable.dds"
+		legacy_lazy_load = no
+	}
+
+	# 2. The Trinity Test
+	spriteType = {
+		name = "GFX_super_event_trinity_test"
+		texturefile = "gfx/interface/super_events/super_event_trinity_test.dds"
+		legacy_lazy_load = no
+	}
+
+	# 3. First Atomic Strike in Europe
+	spriteType = {
+		name = "GFX_super_event_first_nuke_europe"
+		texturefile = "gfx/interface/super_events/super_event_first_nuke_europe.dds"
+		legacy_lazy_load = no
+	}
+
+	# 4. Fall of Berlin
+	spriteType = {
+		name = "GFX_super_event_fall_of_berlin"
+		texturefile = "gfx/interface/super_events/super_event_fall_of_berlin.dds"
+		legacy_lazy_load = no
+	}
+
+	# 5. Fall of Moscow
+	spriteType = {
+		name = "GFX_super_event_fall_of_moscow"
+		texturefile = "gfx/interface/super_events/super_event_fall_of_moscow.dds"
+		legacy_lazy_load = no
+	}
+
+	# 6. Polish Uprising
+	spriteType = {
+		name = "GFX_super_event_polish_uprising"
+		texturefile = "gfx/interface/super_events/super_event_polish_uprising.dds"
+		legacy_lazy_load = no
+	}
+}

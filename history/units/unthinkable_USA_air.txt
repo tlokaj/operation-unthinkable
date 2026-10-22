@@ -1,0 +1,62 @@
+air_wings = {
+	# State 55: Nassau (Frankfurt / Wiesbaden - HQ USAFE)
+	55 = {
+		small_plane_airframe_3 = {
+			owner = "USA"
+			amount = 200
+			version_name = "P-51D Mustang"
+		}
+		small_plane_airframe_3 = {
+			owner = "USA"
+			amount = 100
+			version_name = "P-80A Shooting Star"
+		}
+		medium_plane_airframe_2 = {
+			owner = "USA"
+			amount = 100
+			version_name = "A-26B Invader"
+		}
+	}
+
+	# State 54: Bayreuth (Nuremberg / Franconia)
+	54 = {
+		small_plane_airframe_3 = {
+			owner = "USA"
+			amount = 200
+			version_name = "P-51D Mustang"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "USA"
+			amount = 200
+			version_name = "P-47D Thunderbolt"
+		}
+	}
+
+	# State 53: Oberbayern (Munich / Lechfeld - Watson's Whizzers Me 262)
+	53 = {
+		small_plane_cas_airframe_3 = {
+			owner = "USA"
+			amount = 200
+			version_name = "P-47D Thunderbolt"
+		}
+		medium_plane_airframe_2 = {
+			owner = "USA"
+			amount = 100
+			version_name = "A-26B Invader"
+		}
+		small_plane_airframe_3 = {
+			owner = "USA"
+			amount = 40
+			version_name = "Me 262 Trophy"
+		}
+	}
+
+	# State 126: Strategic Air Command (UK forward bases)
+	126 = {
+		large_plane_airframe_2 = {
+			owner = "USA"
+			amount = 150
+			version_name = "B-29 Superfortress"
+		}
+	}
+}

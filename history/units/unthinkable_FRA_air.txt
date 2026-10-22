@@ -1,0 +1,34 @@
+air_wings = {
+	# State 52: Württemberg (Stuttgart / Friedrichshafen)
+	52 = {
+		small_plane_airframe_3 = {
+			owner = "FRA"
+			amount = 100
+			version_name = "Spitfire LF Mk IX"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "FRA"
+			amount = 150
+			version_name = "P-47D Thunderbolt"
+		}
+		medium_plane_airframe_2 = {
+			owner = "FRA"
+			amount = 50
+			version_name = "A-26B Invader"
+		}
+	}
+
+	# State 50: Baden / Alsace border
+	50 = {
+		small_plane_airframe_3 = {
+			owner = "FRA"
+			amount = 50
+			version_name = "NC 900"
+		}
+		small_plane_airframe_3 = {
+			owner = "FRA"
+			amount = 100
+			version_name = "Spitfire LF Mk IX"
+		}
+	}
+}

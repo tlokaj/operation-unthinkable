@@ -8,3 +8,5 @@ Thumbs.db
 .vscode/
 *.xcf
 *.psd
+.agents/
+

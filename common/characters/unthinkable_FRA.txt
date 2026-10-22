@@ -1,0 +1,103 @@
+characters = {
+	FRA_charles_de_gaulle_unthinkable = {
+		name = "Charles de Gaulle"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+			army = {
+				large = "gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+				small = "GFX_idea_charles_de_gaulle"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				anti_communist
+			}
+			expire = "1970.11.9"
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+				brilliant_strategist
+				armor_officer
+				offensive_doctrine
+				inspirational_leader
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+
+	FRA_jean_de_lattre_de_tassigny_unthinkable = {
+		name = "Jean de Lattre de Tassigny"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+				small = "GFX_idea_jean_de_lattre_de_tassigny"
+			}
+		}
+		field_marshal = {
+			traits = {
+				offensive_doctrine
+				aggressive_assault
+				war_hero
+				organizer
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	FRA_philippe_leclerc_unthinkable = {
+		name = "Philippe Leclerc"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/portrait_france_philippe_leclerc.dds"
+				small = "GFX_idea_philippe_leclerc"
+			}
+		}
+		field_marshal = {
+			traits = {
+				armor_officer
+				panzer_expert
+				fast_planner
+				trickster
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	FRA_alphonse_juin_unthinkable = {
+		name = "Alphonse Juin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+				small = "GFX_idea_alphonse_juin"
+			}
+		}
+		field_marshal = {
+			traits = {
+				defensive_doctrine
+				trait_mountaineer
+				skilled_staffer
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}

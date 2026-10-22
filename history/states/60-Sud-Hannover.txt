@@ -1,0 +1,62 @@
+state = {
+	id = 60
+	name = "STATE_60"
+	manpower = 3005214
+	resources = {
+		steel = 9
+		chromium = 3
+		tungsten = 3
+		coal = 8
+	}
+	
+	state_category = large_city
+
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = THU
+
+		victory_points = { 
+			3561 5 # Erfurt
+		}
+
+		victory_points = { 
+			425 1 # Weimar
+		}
+
+		victory_points = { 
+			538 2 # Jena
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		
+		1939.1.1 = {
+			buildings = {
+				synthetic_refinery = 3
+				arms_factory = 2
+				industrial_complex = 2
+			}
+		}
+
+		1945.7.1 = {
+			owner = GER
+			controller = SOV
+			buildings = {
+				infrastructure = 4
+				air_base = 4
+				3561 = {
+					air_facility = 1 # Mittelwerk (Kohnstein) & Institut Rabe / Nordhausen
+				}
+			}
+		}
+	}
+
+	provinces = {
+		425 482 538 3500 3561 6501 6524 6582 9497 
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,78 @@
+﻿l_english:
+ # Super-Events System
+ UNTHINKABLE_SE_OPERATION_UNTHINKABLE_T: "OPERATION UNTHINKABLE"
+ UNTHINKABLE_SE_OPERATION_UNTHINKABLE_D: "\"The overall or total object is to impose upon Russia the will of the United States and the British Empire. Even though 'the will' of these two countries may be considered as merely a square deal for Poland, that does not necessarily limit the military commitment.\""
+ UNTHINKABLE_SE_OPERATION_UNTHINKABLE_AUTHOR: "— British War Cabinet, Joint Planning Staff (May 22, 1945)"
+ UNTHINKABLE_SE_OPERATION_UNTHINKABLE_BTN: "The clash of titans has begun."
+
+ UNTHINKABLE_SE_TRINITY_TEST_T: "THE TRINITY TEST"
+ UNTHINKABLE_SE_TRINITY_TEST_D: "\"We knew the world would not be the same. A few people laughed, a few people cried, most people were silent. I remembered the line from the Hindu scripture, the Bhagavad-Gita: 'Now I am become Death, the destroyer of worlds.'\""
+ UNTHINKABLE_SE_TRINITY_TEST_AUTHOR: "— J. Robert Oppenheimer (Alamogordo, July 16, 1945)"
+ UNTHINKABLE_SE_TRINITY_TEST_BTN: "A sinister sun rises over the Jornada del Muerto."
+
+ UNTHINKABLE_SE_FIRST_NUKE_EUROPE_T: "ATOMIC FIRE IN EUROPE"
+ UNTHINKABLE_SE_FIRST_NUKE_EUROPE_D: "\"Sixteen hours ago an American airplane dropped one bomb on the continent. It is an harnessing of the basic power of the universe. The force from which the sun draws its power has been loosed against those who brought war to mankind.\""
+ UNTHINKABLE_SE_FIRST_NUKE_EUROPE_AUTHOR: "— President Harry S. Truman (White House Address)"
+ UNTHINKABLE_SE_FIRST_NUKE_EUROPE_BTN: "Prometheus has unchained the apocalypse."
+
+ UNTHINKABLE_SE_FALL_OF_BERLIN_T: "THE FALL OF BERLIN"
+ UNTHINKABLE_SE_FALL_OF_BERLIN_D: "\"We may have to fight the Russians now or later. If we have to do it, why not now while we have the army here with its fists balled up? Let's kick their behinds back to Moscow!\""
+ UNTHINKABLE_SE_FALL_OF_BERLIN_AUTHOR: "— General George S. Patton Jr."
+ UNTHINKABLE_SE_FALL_OF_BERLIN_BTN: "The ruins of the Reichstag echo with Allied boots."
+
+ UNTHINKABLE_SE_FALL_OF_MOSCOW_T: "THE FALL OF MOSCOW"
+ UNTHINKABLE_SE_FALL_OF_MOSCOW_D: "\"The Red Star over the Kremlin has been shattered. The greatest totalitarian machine in the East has crumbled under the united wrath of the free world. Yet across the vast, frozen plains, the ashes still smolder.\""
+ UNTHINKABLE_SE_FALL_OF_MOSCOW_AUTHOR: "— Supreme Headquarters Allied Expeditionary Force (SHAEF)"
+ UNTHINKABLE_SE_FALL_OF_MOSCOW_BTN: "Victory in the East, whatever the cost."
+
+ UNTHINKABLE_SE_POLISH_UPRISING_T: "THE POLISH UPRISING"
+ UNTHINKABLE_SE_POLISH_UPRISING_D: "\"We did not shed our blood for six long years of agony merely to exchange the black terror of the Gestapo for the red terror of the NKVD. Poland will never surrender her freedom. To arms!\""
+ UNTHINKABLE_SE_POLISH_UPRISING_AUTHOR: "— General Władysław Anders & The Underground Command"
+ UNTHINKABLE_SE_POLISH_UPRISING_BTN: "Jeszcze Polska nie zginęła!"
+
+ # Scripted Localization Fallback
+ UNTHINKABLE_SE_UNKNOWN_T: "HISTORICAL FLASHPOINT"
+ UNTHINKABLE_SE_UNKNOWN_D: "\"Events have overtaken the peace of nations. The destiny of the post-war world is now being forged in fire.\""
+ UNTHINKABLE_SE_UNKNOWN_AUTHOR: "— War Correspondent Dispatch"
+ UNTHINKABLE_SE_UNKNOWN_BTN: "History marches on."
+
+ # Cold War Tension Meter Scripted GUI
+ COLD_WAR_TENSION_METER_TITLE: "COLD WAR TENSION / BAROMETR NAPĚTÍ"
+ COLD_WAR_TENSION_METER_SUBTITLE: "Demarcation Line Security & Escalation Index (1945)"
+ COLD_WAR_TENSION_INDEX_DISPLAY: "Current Index: §Y[?global.unthinkable_tension|0]%§!"
+ COLD_WAR_TENSION_STATUS_LABEL: "Escalation Status: [GetColdWarTensionStatus]"
+ 
+ COLD_WAR_TENSION_STATUS_1: "§G[FRAGILE DEMARCATION]§! - Demarcation lines hold, diplomatic channels open."
+ COLD_WAR_TENSION_STATUS_2: "§Y[COLD FRICTION]§! - Airspace violations, border skirmishes, intelligence probing."
+ COLD_WAR_TENSION_STATUS_3: "§O[FLASHPOINT MOBILIZATION]§! - Frontline rearming, division alerts, diplomatic ultimatums."
+ COLD_WAR_TENSION_STATUS_4: "§R[IMMINENT WAR - DEFCON 1]§! - All units on maximum alert. General war impending!"
+ COLD_WAR_TENSION_STATUS_5: "§R[TOTAL CONFLAGRATION]§! - Operation Unthinkable has commenced."
+
+ # Hotspots
+ COLD_WAR_HOTSPOTS_LABEL: "Demarcation Hotspots:"
+ HOTSPOT_ELBE_NAME: "Elbe & Berlin: [GetElbeStatus]"
+ HOTSPOT_ELBE_QUIET: "§GQuiet§!"
+ HOTSPOT_ELBE_TENSE: "§YStandoff at Helmstedt§!"
+ HOTSPOT_ELBE_CRITICAL: "§RArmor Deployed on Autobahn§!"
+
+ HOTSPOT_TRIESTE_NAME: "Trieste & Morgan Line: [GetTriesteStatus]"
+ HOTSPOT_TRIESTE_QUIET: "§GCalm Patrols§!"
+ HOTSPOT_TRIESTE_TENSE: "§YYugoslav IX Korpus Incursions§!"
+ HOTSPOT_TRIESTE_CRITICAL: "§RAllied Fleet Bombardment Alert§!"
+
+ HOTSPOT_POLAND_NAME: "Polish Frontier: [GetPolandStatus]"
+ HOTSPOT_POLAND_QUIET: "§GSuppressed Resistance§!"
+ HOTSPOT_POLAND_TENSE: "§YWiN Partisan Sabotage§!"
+ HOTSPOT_POLAND_CRITICAL: "§ROpen Anti-Soviet Rebellion§!"
+
+ HOTSPOT_NUKE_NAME: "Atomic Posture: [GetNukeStatus]"
+ HOTSPOT_NUKE_NONE: "§GCovert Manhattan Project§!"
+ HOTSPOT_NUKE_TESTED: "§YTrinity Test Confirmed (Atomic Monopoly)§!"
+ HOTSPOT_NUKE_DEPLOYED: "§RSilverplate B-29s Armed in Britain§!"
+
+ # Tension Meter Tooltip & Actions
+ COLD_WAR_TENSION_TOOLTIP: "§HThe Cold War Tension Index§!\nMeasures the proximity to armed conflict between the Western Allies and the Soviet Union in Europe.\n\n§WCurrent Value:§! [?global.unthinkable_tension|0]%\n§WCurrent Phase:§! [GetColdWarTensionStatus]\n\n§CEscalation Triggers:§!\n- Re-arming Wehrmacht divisions in the British zone (+15%)\n- Confrontations along the Morgan Line in Trieste (+10%)\n- Polish underground (WiN) armed uprising (+10%)\n- Demarcation air corridor shootdowns (+10%)\n- Atomic diplomatic ultimatums (+25%)\n\n§GDe-escalation Measures:§!\n- Diplomatic accords at Potsdam (-15%)\n- Concessions on demarcation checkpoints (-10%)\n\nAt §R100% Tension§!, armed conflict is triggered immediately!"
+ 
+ # Action Buttons
+ unthinkable_tension_probe_btn_tt: "§HExecute Border Reconnaissance Flight§!\nSend RAF / USAAF reconnaissance flights across the Soviet demarcation line.\n§RIncreases Tension by +5%§!\n§YGains Demarcation Intelligence§!"
+ unthinkable_tension_deescalate_btn_tt: "§HInitiate Direct Demarche / Hot-Line Talk§!\nOrder Allied commanders to de-escalate frontline checkpoints.\n§GDecreases Tension by -5%§!\n§YCost: 25 Political Power§!"

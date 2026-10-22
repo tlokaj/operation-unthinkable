@@ -1,0 +1,82 @@
+air_wings = {
+	# State 64: Brandenburg (Berlin area - Strausberg, Werneuchen, Gatow, Oranienburg)
+	64 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 300
+			version_name = "Yak-9U"
+		}
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 300
+			version_name = "La-7"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "Il-10"
+		}
+	}
+
+	# State 60: Süd-Hannover (Magdeburg, Erfurt, Altenburg)
+	60 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "Yak-9U"
+		}
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "La-7"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "Il-10"
+		}
+		medium_plane_airframe_2 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Tu-2S"
+		}
+	}
+
+	# State 65: Sachsen (Dresden, Leipzig, Großenhain)
+	65 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "La-7"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "Il-10"
+		}
+		medium_plane_airframe_2 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Tu-2S"
+		}
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 40
+			version_name = "Yak-15"
+		}
+	}
+
+	# State 61: Mecklenburg (Rostock, Schwerin)
+	61 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 200
+			version_name = "Yak-9U"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 150
+			version_name = "Il-10"
+		}
+	}
+}

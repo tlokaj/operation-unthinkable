@@ -1,0 +1,682 @@
+focus_tree = {
+	id = american_unthinkable_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = USA
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1400 }
+
+	# =========================================================================
+	# TIER 0: WWII WAR EFFORT & HERITAGE (COMPLETED BY 1 JULY 1945)
+	# =========================================================================
+
+	# Branch 1 War Legacy: Domestic Mobilization
+	focus = {
+		id = USA_war_department
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 3
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			air_experience = 20
+			add_command_power = 20
+		}
+	}
+
+	focus = {
+		id = USA_fair_labour_standards_act
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = USA_war_department }
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_agricultural_adjustment_act
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = USA_war_department }
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_the_giant_wakes
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = USA_war_department }
+		x = 3
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = economic_miracle_idea
+		}
+	}
+
+	# Branch 2 War Legacy: Pacific Front
+	focus = {
+		id = USA_war_plan_orange
+		icon = GFX_goal_generic_navy_battleship
+		x = 11
+		y = 0
+		cost = 5
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = USA_intervention_in_asia
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = USA_war_plan_orange }
+		x = 11
+		y = 1
+		cost = 5
+		completion_reward = {
+			navy_experience = 25
+			add_war_support = 0.05
+		}
+	}
+
+	# Branch 3 War Legacy: Strategic Bombing & Manhattan
+	focus = {
+		id = USA_strategic_bombing
+		icon = GFX_goal_generic_air_bomber
+		x = 19
+		y = 0
+		cost = 5
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = strat_bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_air_war_plans_division
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = USA_strategic_bombing }
+		x = 19
+		y = 1
+		cost = 5
+		completion_reward = {
+			air_experience = 20
+			add_tech_bonus = {
+				name = air_doctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	# Branch 4 War Legacy: European Theater
+	focus = {
+		id = USA_war_plans_division
+		icon = GFX_goal_generic_army_doctrines
+		x = 27
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_intervention_in_europe
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = USA_war_plans_division }
+		x = 25
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_war_plan_black
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = USA_war_plans_division }
+		x = 29
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			add_command_power = 20
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 1: POST-WAR TRANSITION & DOMESTIC STRENGTH (X: 0 - 6)
+	# =========================================================================
+
+	focus = {
+		id = USA_postwar_transition
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = USA_the_giant_wakes }
+		x = 3
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_gi_bill_of_rights
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_postwar_transition }
+		x = 1
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = home_of_the_free
+		}
+	}
+
+	focus = {
+		id = USA_industrial_reconversion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = USA_postwar_transition }
+		x = 5
+		y = 3
+		cost = 5
+		completion_reward = {
+			361 = { # New York
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			396 = { # California
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = USA_curb_postwar_strikes
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = USA_gi_bill_of_rights }
+		x = 1
+		y = 4
+		cost = 5
+		completion_reward = {
+			remove_ideas = unthinkable_demobilization_pressure
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = USA_arsenal_of_peace
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = USA_industrial_reconversion }
+		x = 5
+		y = 4
+		cost = 5
+		completion_reward = {
+			add_ideas = economic_miracle_idea
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_the_marshall_plan
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = USA_arsenal_of_peace }
+		x = 3
+		y = 5
+		cost = 6
+		completion_reward = {
+			add_political_power = 100
+			if = { limit = { country_exists = ENG } ENG = { add_ideas = economic_miracle_idea } }
+			if = { limit = { country_exists = FRA } FRA = { add_ideas = economic_miracle_idea } }
+			if = { limit = { country_exists = GER } GER = { add_ideas = economic_miracle_idea } }
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 2: THE PACIFIC WAR & OPERATION DOWNFALL (X: 8 - 14)
+	# =========================================================================
+
+	focus = {
+		id = USA_pacific_crossroads
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = USA_intervention_in_asia }
+		x = 11
+		y = 2
+		cost = 5
+		completion_reward = {
+			navy_experience = 30
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = USA_operation_olympic_preparations
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = USA_pacific_crossroads }
+		x = 9
+		y = 3
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+		}
+	}
+
+	focus = {
+		id = USA_pacific_fleet_supremacy
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = USA_pacific_crossroads }
+		x = 13
+		y = 3
+		cost = 5
+		completion_reward = {
+			navy_experience = 35
+			add_tech_bonus = {
+				name = carrier_bonus
+				bonus = 1.0
+				uses = 1
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_operation_coronet_preparations
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = USA_operation_olympic_preparations focus = USA_pacific_fleet_supremacy }
+		x = 11
+		y = 4
+		cost = 6
+		completion_reward = {
+			army_experience = 30
+			add_ideas = military_youth_effort
+		}
+	}
+
+	focus = {
+		id = USA_scientific_research_act
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = USA_arsenal_of_peace focus = USA_operation_paperclip }
+		x = 11
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 3: THE MANHATTAN PROJECT & NUCLEAR DOCTRINE (X: 16 - 22)
+	# =========================================================================
+
+	focus = {
+		id = USA_manhattan_culmination
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = USA_air_war_plans_division }
+		x = 19
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = USA_trinity_test_alamogordo
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = USA_manhattan_culmination }
+		x = 19
+		y = 3
+		cost = 5
+		completion_reward = {
+			country_event = { id = unthinkable.30 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = USA_atomic_monopoly_diplomacy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_trinity_test_alamogordo }
+		x = 17
+		y = 4
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_named_threat = { threat = 20 name = USA_atomic_monopoly_diplomacy }
+		}
+	}
+
+	focus = {
+		id = USA_operation_paperclip
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = USA_trinity_test_alamogordo }
+		x = 19
+		y = 4
+		cost = 5
+		completion_reward = {
+			recruit_character = USA_wernher_von_braun
+			if = {
+				limit = { has_dlc = "Gotterdammerung" }
+				add_breakthrough_points = {
+					specialization = specialization_air
+					value = 2
+				}
+				custom_effect_tooltip = USA_paperclip_project_hermes_tt
+				sp:sp_rockets_ballistic_missile = {
+					add_project_progress_ratio = 0.25
+				}
+			}
+			add_tech_bonus = {
+				name = rocket_bonus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = jet_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = USA_deploy_b29_superfortress_europe
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = USA_trinity_test_alamogordo }
+		x = 21
+		y = 4
+		cost = 5
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = strat_bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_alsos_mission_trophy_tech
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = USA_atomic_monopoly_diplomacy }
+		x = 17
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = sub_bonus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USA_strategic_air_command
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = USA_deploy_b29_superfortress_europe }
+		x = 19
+		y = 5
+		cost = 5
+		completion_reward = {
+			air_experience = 40
+			if = {
+				limit = { has_dlc = "Gotterdammerung" }
+				add_breakthrough_points = {
+					specialization = specialization_air
+					value = 2
+				}
+				custom_effect_tooltip = USA_b36_peacemaker_project_tt
+				sp:sp_air_intercontinental_bomber = {
+					add_project_progress_ratio = 0.35
+				}
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_baruch_plan_ultimatum
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = USA_atomic_monopoly_diplomacy }
+		mutually_exclusive = { focus = USA_tactical_nuclear_deployment }
+		x = 16
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			SOV = { add_opinion_modifier = { target = USA modifier = hostile } }
+		}
+	}
+
+	focus = {
+		id = USA_tactical_nuclear_deployment
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_atomic_monopoly_diplomacy focus = USA_strategic_air_command }
+		mutually_exclusive = { focus = USA_baruch_plan_ultimatum }
+		x = 18
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = unthinkable_tactical_evaluation
+		}
+	}
+
+	focus = {
+		id = USA_national_security_act
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_strategic_air_command focus = USA_scientific_research_act }
+		x = 15
+		y = 7
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 75
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 4: MILITARY READINESS & OPERATION UNTHINKABLE (X: 24 - 30)
+	# =========================================================================
+
+	focus = {
+		id = USA_halt_demobilization_europe
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = USA_intervention_in_europe }
+		x = 27
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.10
+			remove_ideas = unthinkable_pacific_priority
+		}
+	}
+
+	focus = {
+		id = USA_mass_produce_m26_pershing
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = USA_halt_demobilization_europe }
+		x = 25
+		y = 3
+		cost = 5
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = USA_german_tactical_debriefings
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = USA_halt_demobilization_europe }
+		x = 27
+		y = 3
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_ideas = unthinkable_tactical_evaluation
+		}
+	}
+
+	focus = {
+		id = USA_jet_fighter_lockheed_p80
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = USA_halt_demobilization_europe }
+		x = 29
+		y = 3
+		cost = 5
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = jet_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = USA_potsdam_unyielding_stance
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_german_tactical_debriefings }
+		x = 27
+		y = 4
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_war_support = 0.05
+			SOV = { add_opinion_modifier = { target = USA modifier = hostile } }
+		}
+	}
+
+	focus = {
+		id = USA_lend_lease_leverage_threat
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = USA_mass_produce_m26_pershing focus = USA_atomic_monopoly_diplomacy }
+		x = 25
+		y = 4
+		cost = 5
+		completion_reward = {
+			SOV = { add_opinion_modifier = { target = USA modifier = hostile } }
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = USA_b36_peacemaker_program
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = USA_jet_fighter_lockheed_p80 }
+		x = 29
+		y = 4
+		cost = 5
+		completion_reward = {
+			air_experience = 35
+			add_tech_bonus = {
+				name = heavy_bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = USA_cancel_soviet_lend_lease
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = USA_lend_lease_leverage_threat }
+		x = 23
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_war_support = 0.05
+			SOV = { add_opinion_modifier = { target = USA modifier = hostile } }
+		}
+	}
+
+	focus = {
+		id = USA_endorse_operation_unthinkable
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = USA_lend_lease_leverage_threat focus = USA_deploy_b29_superfortress_europe focus = USA_potsdam_unyielding_stance }
+		x = 25
+		y = 5
+		cost = 6
+		completion_reward = {
+			set_country_flag = unthinkable_offensive_approved
+			ENG = { add_opinion_modifier = { target = USA modifier = positive_100 } }
+			add_war_support = 0.15
+		}
+	}
+
+}

@@ -1,0 +1,285 @@
+division_template = {
+	name = "British Infantry Division"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "British Armoured Division"
+	division_names_group = ENG_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "British Airborne Division"
+	division_names_group = ENG_PAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Canadian Infantry Division"
+	division_names_group = CAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Polish Armoured Division"
+	division_names_group = ENG_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# 21ST ARMY GROUP (HQ: Field Marshal Montgomery) - British Zone Germany
+	# =========================================================================
+
+	# British XXX Corps (Lt. Gen. Brian Horrocks - Elbe & Baltic Sector)
+	division = {
+		name = "7th Armoured Division 'Desert Rats'"
+		location = 6298 # Lüneburg (Elbe frontier)
+		division_template = "British Armoured Division"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "Guards Armoured Division"
+		location = 9347 # Hamburg
+		division_template = "British Armoured Division"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "11th Armoured Division 'The Black Bull'"
+		location = 6389 # Kiel (Schleswig-Holstein)
+		division_template = "British Armoured Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "15th (Scottish) Infantry Division"
+		location = 6298 # Lüneburg (Elbe front)
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "6th Airborne Division 'Red Devils'"
+		location = 9347 # Hamburg (Demarcation Line contact at Wismar)
+		division_template = "British Airborne Division"
+		start_experience_factor = 0.95
+	}
+
+	# British VIII Corps (Lt. Gen. Evelyn Barker - Lower Saxony & Harz)
+	division = {
+		name = "3rd Infantry Division 'Iron Division'"
+		location = 6377 # Hannover
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "5th Infantry Division"
+		location = 6377 # Hannover / Braunschweig line
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "51st (Highland) Infantry Division"
+		location = 374 # Cuxhaven / North Sea estuary
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.85
+	}
+
+	# British XII Corps (Lt. Gen. Neil Ritchie - Westphalia & North Rhine)
+	division = {
+		name = "43rd (Wessex) Infantry Division"
+		location = 317 # Flensburg (Danish frontier)
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "49th (West Riding) Infantry Division 'Polar Bears'"
+		location = 495 # Dortmund (Ruhr)
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "52nd (Lowland) Infantry Division"
+		location = 3326 # Bremen Enclave boundary
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "53rd (Welsh) Infantry Division"
+		location = 11388 # Münster
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.75
+	}
+
+	# Canadian & Allied Attached Formations
+	division = {
+		name = "1st Canadian Infantry Division"
+		location = 241 # Wilhelmshaven
+		division_template = "Canadian Infantry Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "1st Polish Armoured Division (Maczek)"
+		location = 241 # Wilhelmshaven (Emsland Polish enclave)
+		division_template = "Polish Armoured Division"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "1st Polish Independent Parachute Brigade"
+		location = 6298 # Lüneburg
+		division_template = "British Airborne Division"
+		start_experience_factor = 0.85
+	}
+
+	# =========================================================================
+	# STRATEGIC RESERVE & HOME FORCES (United Kingdom)
+	# =========================================================================
+	division = {
+		name = "1st Infantry Division"
+		location = 126 # Greater London
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "2nd Infantry Division"
+		location = 341 # Dover
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "46th Infantry Division"
+		location = 133 # Edinburgh
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.70
+	}
+}
+
+# =============================================================================
+# STARTING MILITARY PRODUCTION QUEUES (Mid-1945 Status)
+# =============================================================================
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "ENG"
+		}
+		requested_factories = 10
+		progress = 0.50
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ENG"
+		}
+		requested_factories = 4
+		progress = 0.35
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_3
+			creator = "ENG"
+		}
+		requested_factories = 5
+		progress = 0.40
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "ENG"
+		}
+		requested_factories = 5
+		progress = 0.30
+		efficiency = 85
+	}
+}

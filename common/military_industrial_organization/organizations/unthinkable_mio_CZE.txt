@@ -1,0 +1,140 @@
+# =========================================================================
+# OPERATION UNTHINKABLE (1945) - MILITARY INDUSTRIAL ORGANIZATIONS
+# Tag: CZE (Czechoslovakia)
+# =========================================================================
+
+CZE_avia_postwar_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_CZE_avia
+
+	allowed = {
+		tag = CZE
+	}
+
+	available = {
+		FROM = { tag = CZE }
+	}
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_interceptor
+		mio_cat_eq_all_jet_fighter
+	}
+
+	research_categories = {
+		mio_cat_all_light_fighter_and_modules
+	}
+
+	initial_trait = {
+		name = CZE_mio_initial_trait_avia_postwar
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.08
+		}
+		equipment_bonus = {
+			maximum_speed = 0.06
+			air_agility = 0.05
+		}
+	}
+
+	add_trait = {
+		token = CZE_mio_trait_avia_s199_mezek
+		name = CZE_mio_trait_avia_s199_mezek
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x = 9 y = 1 }
+
+		production_bonus = {
+			production_cost_factor = -0.10
+			production_efficiency_gain_factor = 0.08
+		}
+		equipment_bonus = {
+			reliability = -0.05
+			air_attack = 0.05
+		}
+	}
+
+	add_trait = {
+		token = CZE_mio_trait_avia_s92_turbojet
+		name = CZE_mio_trait_avia_s92_turbojet
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		special_trait_background = yes
+
+		position = { x = 9 y = 2 }
+		all_parents = { CZE_mio_trait_avia_s199_mezek }
+
+		equipment_bonus = {
+			maximum_speed = 0.12
+			thrust = 0.10
+			air_attack = 0.08
+		}
+	}
+}
+
+CZE_skoda_plzen_postwar_organization = {
+	include = generic_assault_guns_organization
+	icon = GFX_idea_CZE_skoda_armor
+
+	allowed = {
+		tag = CZE
+	}
+
+	available = {
+		FROM = { tag = CZE }
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_tank_destroyers
+		mio_cat_eq_all_artillery
+	}
+
+	research_categories = {
+		mio_cat_tech_medium_armor_and_modules
+		mio_cat_tech_artillery_and_modules
+	}
+
+	initial_trait = {
+		name = CZE_mio_initial_trait_skoda_plzen
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.08
+		}
+		equipment_bonus = {
+			hard_attack = 0.08
+			armor_value = 0.05
+		}
+	}
+
+	add_trait = {
+		token = CZE_mio_trait_skoda_sti_hetzer_rebuild
+		name = CZE_mio_trait_skoda_sti_hetzer_rebuild
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		special_trait_background = yes
+
+		position = { x = 9 y = 1 }
+
+		production_bonus = {
+			production_cost_factor = -0.08
+		}
+		equipment_bonus = {
+			reliability = 0.08
+			armor_value = 0.05
+		}
+	}
+
+	add_trait = {
+		token = CZE_mio_trait_skoda_heavy_artillery_casting
+		name = CZE_mio_trait_skoda_heavy_artillery_casting
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+		special_trait_background = yes
+
+		position = { x = 9 y = 2 }
+		all_parents = { CZE_mio_trait_skoda_sti_hetzer_rebuild }
+
+		equipment_bonus = {
+			soft_attack = 0.08
+			hard_attack = 0.08
+			ap_attack = 0.10
+		}
+	}
+}

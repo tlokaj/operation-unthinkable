@@ -1,5 +1,6 @@
 unthinkable_decisions_category = {
 	icon = generic_political_actions
+	scripted_gui = unthinkable_tension_meter_decision_ui
 
 	allowed = {
 		OR = {
@@ -18,3 +19,4 @@ unthinkable_decisions_category = {
 
 	priority = 100
 }
+

@@ -18,3 +18,20 @@
    - Always check bracket `{ }` balance in Paradox Clausewitz scripts.
 3. **Namespace Prefix:**
    - Prefix custom events, decisions, ideas, and flags with `unthinkable_` to avoid collisions with vanilla HoI4 or DLC content.
+
+## Available Agent Skills & Toolkits
+- **HOI4 Agent Tools MCP (`hoi4_agent_tools`):**
+  - Integrated via MCP server (`hoi4-agent-tools.cmd`).
+  - Provides offline focus tree rendering/linting, event chain inspections, scripted GUI previews, probability/weight analysis, and game documentation search.
+- **Mod Diagnostics & Audit Scripts:**
+  - `powershell -ExecutionPolicy Bypass -File .agents/skills/hoi4-review-debug/scripts/audit-hoi4-mod.ps1` (HOI4 Mod Doctor)
+  - `powershell -ExecutionPolicy Bypass -File .agents/skills/hoi4-review-debug/scripts/analyze-hoi4-log.ps1` (Error log parser)
+  - `powershell -ExecutionPolicy Bypass -File .agents/skills/hoi4-review-debug/scripts/audit-localisation.ps1` (Localisation format & key audit)
+- **Agent Skills (`.agents/skills/`):**
+  - `hoi4-modding`: Comprehensive syntax, scopes, effects, triggers, and templates across all HoI4 systems.
+  - `hoi4-review-debug`: Mod Doctor diagnostics, error log analysis, and regression checks.
+  - `hoi4-pdx-modding`: Paradox script language standards, lifecycle rules, and UTF-8 BOM encoding.
+  - `hoi4-content-builder`: Structured workflows and kits for creating events, decisions, focuses, and ideas.
+  - Modular skills: `hoi4-focus-trees`, `hoi4-events`, `hoi4-decisions-missions`, `hoi4-ideas-modifiers`, `hoi4-characters-leaders`, `hoi4-scripted-gui`, `hoi4-map-states`, `hoi4-super-events`.
+- **Offline Wiki Reference (`.agents/references/paradox_wiki/`):**
+  - Complete snapshot of Paradox Interactive HOI4 Wiki for fast, hallucination-free lookups.

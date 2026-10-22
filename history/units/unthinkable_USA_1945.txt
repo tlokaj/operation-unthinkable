@@ -1,0 +1,275 @@
+division_template = {
+	name = "US Infantry Division"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "US Armored Division"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "US Heavy Armored Division"
+	division_names_group = USA_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "US Airborne Division"
+	division_names_group = USA_PAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "US Cavalry Recon Group"
+	division_names_group = USA_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# 12TH ARMY GROUP & US THIRD ARMY (Bradley & Patton) - American Zone Germany
+	# =========================================================================
+
+	# US Third Army (Gen. George S. Patton Jr. - Bavaria & Demarcation Line)
+	division = {
+		name = "2nd Armored Division 'Hell on Wheels'"
+		location = 11544 # Nuremberg
+		division_template = "US Heavy Armored Division"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "4th Armored Division 'Rolling Forth'"
+		location = 9515 # Regensburg (Demarcation Line screen)
+		division_template = "US Armored Division"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "11th Armored Division 'Thunderbolt'"
+		location = 9515 # Regensburg / Austrian approach
+		division_template = "US Armored Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "5th Infantry Division 'Red Diamond'"
+		location = 9515 # Regensburg / Passau border
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "26th Infantry Division 'Yankee Division'"
+		location = 11544 # Nuremberg
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "90th Infantry Division 'Tough 'Ombres'"
+		location = 6421 # Coburg (Demarcation Line facing Thuringia/Saxony)
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+	}
+
+	# US Seventh Army (Gen. Alexander Patch - Central Germany / Franconia)
+	division = {
+		name = "10th Armored Division 'Tiger'"
+		location = 9557 # Würzburg
+		division_template = "US Armored Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "3rd Infantry Division 'Rock of the Marne'"
+		location = 11544 # Nuremberg
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "45th Infantry Division 'Thunderbird'"
+		location = 9557 # Würzburg
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "100th Infantry Division 'Century'"
+		location = 6488 # Frankfurt am Main
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+	}
+
+	# US Ninth Army & US Strategic Sector (Simpson / Gerow - Kassel & Hesse)
+	division = {
+		name = "3rd Armored Division 'Spearhead'"
+		location = 564 # Kassel (Facing Soviet forces at Erfurt/Eisenach)
+		division_template = "US Heavy Armored Division"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "5th Armored Division 'Victory'"
+		location = 6488 # Frankfurt am Main
+		division_template = "US Armored Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "1st Infantry Division 'Big Red One'"
+		location = 6488 # Frankfurt am Main
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "8th Infantry Division 'Pathfinder'"
+		location = 564 # Kassel (Demarcation Line vanguard)
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "29th Infantry Division 'Blue and Gray'"
+		location = 3326 # Bremen Enclave (Allied supply lifeline)
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "84th Infantry Division 'Railsplitters'"
+		location = 564 # Kassel (Harz / Thuringian sector)
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+	}
+
+	# US Airborne Formations (Strategic Airborne Reserve)
+	division = {
+		name = "82nd Airborne Division 'All American'"
+		location = 6444 # Wiesbaden
+		division_template = "US Airborne Division"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "101st Airborne Division 'Screaming Eagles'"
+		location = 11560 # Mainz
+		division_template = "US Airborne Division"
+		start_experience_factor = 0.95
+	}
+}
+
+# =============================================================================
+# STARTING MILITARY PRODUCTION QUEUES (Mid-1945 Status)
+# =============================================================================
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "USA"
+		}
+		requested_factories = 10
+		progress = 0.50
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 4
+		progress = 0.35
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_3
+			creator = "USA"
+		}
+		requested_factories = 5
+		progress = 0.40
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "USA"
+		}
+		requested_factories = 5
+		progress = 0.30
+		efficiency = 85
+	}
+}

@@ -1,0 +1,89 @@
+units = {
+	##### MARINE NATIONALE: FORCE DE HAUTE MER (Toulon) #####
+	fleet = {
+		name = "Force de Haute Mer"
+		naval_base = 911 # Toulon
+		task_force = {
+			name = "1ère Division de Ligne"
+			location = 911 # Toulon
+			
+			# Battleship Richelieu (Modernized in US, 1943)
+			ship = { name = "Richelieu" definition = battleship start_experience_factor = 0.90 equipment = { ship_hull_heavy_2 = { amount = 1 owner = FRA version_name = "Richelieu Class" } } }
+			
+			# Light Cruisers: La Galissonnière Class
+			ship = { name = "Montcalm" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "Georges Leygues" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			ship = { name = "Gloire" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
+			
+			# Large Destroyers (Contre-Torpilleurs): Le Fantasque Class
+			ship = { name = "Le Fantasque" definition = destroyer start_experience_factor = 0.90 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			ship = { name = "Le Malin" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			ship = { name = "Le Terrible" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			ship = { name = "Le Triomphant" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+		}
+
+		task_force = {
+			name = "Sous-marins de la Méditerranée"
+			location = 911 # Toulon
+			
+			ship = { name = "Casabianca" definition = submarine start_experience_factor = 0.95 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Rubis" definition = submarine start_experience_factor = 0.95 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Perle" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "Saphir Class" } } }
+			ship = { name = "Glorieux" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+		}
+	}
+
+	##### MARINE NATIONALE: ESCADRE DE L'ATLANTIQUE (Brest) #####
+	fleet = {
+		name = "Escadre de l'Atlantique"
+		naval_base = 3552 # Brest
+		task_force = {
+			name = "Division Navale de l'Atlantique"
+			location = 3552 # Brest
+			
+			# Cruisers
+			ship = { name = "Émile Bertin" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Émile Bertin Class" } } }
+			ship = { name = "Duguay-Trouin" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
+			
+			# Torpilleurs
+			ship = { name = "L'Alcyon" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			ship = { name = "Le Fortuné" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			ship = { name = "Basque" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			ship = { name = "Forbin" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
+			
+			# Sous-marins
+			ship = { name = "Curie" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Doris" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+			ship = { name = "Morse" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = FRA version_name = "Redoutable Class" } } }
+		}
+	}
+}
+
+##### STARTING NAVAL PRODUCTION QUEUES #####
+instant_effect = {
+	# Jean Bart (Richelieu Class BB, finishing at Brest)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "FRA"
+			version_name = "Richelieu Class"
+		}
+		name = "Jean Bart"
+		requested_factories = 4
+		progress = 0.60
+		amount = 1
+	}
+
+	# Desaix (Destroyer)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "FRA"
+			version_name = "Mogador Class"
+		}
+		name = "Desaix"
+		requested_factories = 2
+		progress = 0.70
+		amount = 1
+	}
+}

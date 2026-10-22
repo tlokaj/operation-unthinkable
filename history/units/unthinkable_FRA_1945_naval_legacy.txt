@@ -1,0 +1,79 @@
+units = {
+	##### MARINE NATIONALE: FORCE DE HAUTE MER (Toulon) #####
+	fleet = {
+		name = "Force de Haute Mer"
+		naval_base = 911 # Toulon
+		task_force = {
+			name = "1ère Division de Ligne"
+			location = 911 # Toulon
+			
+			ship = { name = "Richelieu" definition = battleship start_experience_factor = 0.90 equipment = { battleship_2 = { amount = 1 owner = FRA } } }
+			
+			ship = { name = "Montcalm" definition = light_cruiser start_experience_factor = 0.85 equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Georges Leygues" definition = light_cruiser start_experience_factor = 0.85 equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Gloire" definition = light_cruiser start_experience_factor = 0.80 equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }
+			
+			ship = { name = "Le Fantasque" definition = destroyer start_experience_factor = 0.90 equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Le Malin" definition = destroyer start_experience_factor = 0.85 equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Le Terrible" definition = destroyer start_experience_factor = 0.85 equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Le Triomphant" definition = destroyer start_experience_factor = 0.85 equipment = { destroyer_2 = { amount = 1 owner = FRA } } }
+		}
+
+		task_force = {
+			name = "Sous-marins de la Méditerranée"
+			location = 911 # Toulon
+			
+			ship = { name = "Casabianca" definition = submarine start_experience_factor = 0.95 equipment = { submarine_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Rubis" definition = submarine start_experience_factor = 0.95 equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Perle" definition = submarine start_experience_factor = 0.80 equipment = { submarine_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Glorieux" definition = submarine start_experience_factor = 0.80 equipment = { submarine_2 = { amount = 1 owner = FRA } } }
+		}
+	}
+
+	##### MARINE NATIONALE: ESCADRE DE L'ATLANTIQUE (Brest) #####
+	fleet = {
+		name = "Escadre de l'Atlantique"
+		naval_base = 3552 # Brest
+		task_force = {
+			name = "Division Navale de l'Atlantique"
+			location = 3552 # Brest
+			
+			ship = { name = "Émile Bertin" definition = light_cruiser start_experience_factor = 0.85 equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Duguay-Trouin" definition = light_cruiser start_experience_factor = 0.80 equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
+			
+			ship = { name = "L'Alcyon" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Le Fortuné" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Basque" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+			ship = { name = "Forbin" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_1 = { amount = 1 owner = FRA } } }
+			
+			ship = { name = "Curie" definition = submarine start_experience_factor = 0.85 equipment = { submarine_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Doris" definition = submarine start_experience_factor = 0.80 equipment = { submarine_2 = { amount = 1 owner = FRA } } }
+			ship = { name = "Morse" definition = submarine start_experience_factor = 0.80 equipment = { submarine_2 = { amount = 1 owner = FRA } } }
+		}
+	}
+}
+
+##### STARTING NAVAL PRODUCTION QUEUES (Legacy) #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "FRA"
+		}
+		name = "Jean Bart"
+		requested_factories = 4
+		progress = 0.60
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "FRA"
+		}
+		name = "Desaix"
+		requested_factories = 2
+		progress = 0.70
+		amount = 1
+	}
+}

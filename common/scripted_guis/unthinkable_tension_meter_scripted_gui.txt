@@ -1,0 +1,33 @@
+# =============================================================================
+# OPERATION UNTHINKABLE: TENSION METER SCRIPTED GUI
+# =============================================================================
+
+scripted_gui = {
+	unthinkable_tension_meter_decision_ui = {
+		context_type = decision_category
+		window_name = "unthinkable_tension_meter_decision_ui_window"
+
+		effects = {
+			unthinkable_tension_probe_btn_click = {
+				unthinkable_add_tension_5 = yes
+				add_political_power = -15
+			}
+			unthinkable_tension_deescalate_btn_click = {
+				unthinkable_sub_tension_5 = yes
+				add_political_power = -25
+			}
+		}
+
+		triggers = {
+			unthinkable_tension_probe_btn_click_enabled = {
+				has_political_power > 15
+				NOT = { has_war_with = SOV }
+			}
+			unthinkable_tension_deescalate_btn_click_enabled = {
+				has_political_power > 25
+				check_variable = { global.unthinkable_tension > 5 }
+				NOT = { has_war_with = SOV }
+			}
+		}
+	}
+}

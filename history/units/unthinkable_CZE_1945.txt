@@ -1,0 +1,163 @@
+division_template = {
+	name = "Pěší divize"
+	division_names_group = CZE_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Obrněná brigáda"
+	division_names_group = CZE_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Horská divize"
+	division_names_group = CZE_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# ČESKOSLOVENSKÁ ARMÁDA (Gen. Ludvík Svoboda / gen. Alois Liška)
+	# Demarkační linie Čechy, Morava & Slovensko
+	# =========================================================================
+
+	# 1. československý armádní sbor (Gen. Ludvík Svoboda - východní výzbroj)
+	division = {
+		name = "1. československá pěší divize"
+		location = 11542 # Praha
+		division_template = "Pěší divize"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "3. československá pěší divize"
+		location = 3569 # Brno
+		division_template = "Pěší divize"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "4. československá pěší divize"
+		location = 9692 # Bratislava
+		division_template = "Pěší divize"
+		start_experience_factor = 0.80
+	}
+	division = {
+		name = "2. československá samostatná paradesantní brigáda"
+		location = 6573 # Košice / Tatry
+		division_template = "Horská divize"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "1. československá tanková brigáda (Východ)"
+		location = 3583 # Ostrava
+		division_template = "Obrněná brigáda"
+		start_experience_factor = 0.85
+	}
+
+	# Československá samostatná obrněná brigáda (Západní odboj / Dunkerque - gen. Alois Liška)
+	division = {
+		name = "1. československá samostatná obrněná brigáda (Dunkerque)"
+		location = 6418 # Plzeň (Pattonův americký sektor)
+		division_template = "Obrněná brigáda"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "Pohraniční pluk Cheb (Demarkační linie)"
+		location = 6470 # Cheb (Západní demarkační linie)
+		division_template = "Pěší divize"
+		start_experience_factor = 0.80
+	}
+}
+
+# =============================================================================
+# PRODUKCE VÝZBROJE (Československo 1945 - Škoda & ČKD)
+# =============================================================================
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "CZE"
+		}
+		requested_factories = 6
+		progress = 0.50
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CZE"
+		}
+		requested_factories = 3
+		progress = 0.35
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_3
+			creator = "CZE"
+		}
+		requested_factories = 3
+		progress = 0.40
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "CZE"
+		}
+		requested_factories = 2
+		progress = 0.30
+		efficiency = 80
+	}
+}

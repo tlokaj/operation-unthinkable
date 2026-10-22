@@ -1,0 +1,139 @@
+# =========================================================================
+# OPERATION UNTHINKABLE (1945) - MILITARY INDUSTRIAL ORGANIZATIONS
+# Tag: ENG (Great Britain)
+# =========================================================================
+
+ENG_rolls_royce_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+
+	allowed = {
+		tag = ENG
+	}
+
+	available = {
+		FROM = { tag = ENG }
+	}
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_heavy_fighter
+		mio_cat_eq_all_interceptor
+		mio_cat_eq_all_jet_fighter
+	}
+
+	research_categories = {
+		mio_cat_all_light_fighter_and_modules
+		mio_cat_all_heavy_fighter_and_modules
+	}
+
+	initial_trait = {
+		name = ENG_mio_initial_trait_rolls_royce
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		equipment_bonus = {
+			maximum_speed = 0.08
+			air_agility = 0.05
+			reliability = 0.05
+		}
+	}
+
+	add_trait = {
+		token = ENG_mio_trait_rolls_royce_merlin_griffon
+		name = ENG_mio_trait_rolls_royce_merlin_griffon
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		special_trait_background = yes
+
+		position = { x = 0 y = 1 }
+		relative_position_id = generic_mio_trait_liquid_cooled_engines
+		all_parents = { generic_mio_trait_liquid_cooled_engines }
+
+		equipment_bonus = {
+			maximum_speed = 0.07
+			air_agility = 0.05
+			thrust = 0.05
+		}
+	}
+
+	add_trait = {
+		token = ENG_mio_trait_rolls_royce_nene_derwent
+		name = ENG_mio_trait_rolls_royce_nene_derwent
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		special_trait_background = yes
+
+		position = { x = 0 y = 2 }
+		relative_position_id = generic_mio_trait_liquid_cooled_engines
+		all_parents = { ENG_mio_trait_rolls_royce_merlin_griffon }
+
+		equipment_bonus = {
+			maximum_speed = 0.10
+			thrust = 0.10
+			air_attack = 0.03
+		}
+	}
+}
+
+ENG_gloster_aircraft_organization = {
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_3
+
+	allowed = {
+		tag = ENG
+	}
+
+	available = {
+		FROM = { tag = ENG }
+	}
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_interceptor
+		mio_cat_eq_all_jet_fighter
+	}
+
+	research_categories = {
+		mio_cat_all_light_fighter_and_modules
+	}
+
+	initial_trait = {
+		name = ENG_mio_initial_trait_gloster
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.08
+		}
+		equipment_bonus = {
+			maximum_speed = 0.10
+			air_agility = 0.05
+		}
+	}
+
+	add_trait = {
+		token = ENG_mio_trait_gloster_twin_jet_airframe
+		name = ENG_mio_trait_gloster_twin_jet_airframe
+		icon = GFX_generic_mio_department_icon_plane_fighter_aerodynamics
+		special_trait_background = yes
+
+		position = { x = 9 y = 1 }
+
+		equipment_bonus = {
+			maximum_speed = 0.08
+			air_agility = 0.05
+			air_defence = 0.05
+		}
+	}
+
+	add_trait = {
+		token = ENG_mio_trait_gloster_meteor_cannon_battery
+		name = ENG_mio_trait_gloster_meteor_cannon_battery
+		icon = GFX_generic_mio_department_icon_plane_fighter_weapons
+		special_trait_background = yes
+
+		position = { x = 9 y = 2 }
+		all_parents = { ENG_mio_trait_gloster_twin_jet_airframe }
+
+		equipment_bonus = {
+			air_attack = 0.10
+			reliability = 0.05
+		}
+	}
+}

@@ -1,0 +1,23 @@
+air_wings = {
+	64 = {
+		fighter_equipment_3 = { owner = "SOV" amount = 300 }
+		fighter_equipment_2 = { owner = "SOV" amount = 300 }
+		CAS_equipment_3 = { owner = "SOV" amount = 200 }
+	}
+	60 = {
+		fighter_equipment_3 = { owner = "SOV" amount = 200 }
+		fighter_equipment_2 = { owner = "SOV" amount = 200 }
+		CAS_equipment_3 = { owner = "SOV" amount = 200 }
+		tac_bomber_equipment_2 = { owner = "SOV" amount = 100 }
+	}
+	65 = {
+		fighter_equipment_2 = { owner = "SOV" amount = 200 }
+		CAS_equipment_3 = { owner = "SOV" amount = 200 }
+		tac_bomber_equipment_2 = { owner = "SOV" amount = 100 }
+		jet_fighter_equipment_1 = { owner = "SOV" amount = 40 }
+	}
+	61 = {
+		fighter_equipment_3 = { owner = "SOV" amount = 200 }
+		CAS_equipment_3 = { owner = "SOV" amount = 150 }
+	}
+}

@@ -1,0 +1,96 @@
+technologies = {
+	early_helicopters = {
+		enable_equipments = {
+			helicopter_equipment_1
+		}
+		enable_subunits = {
+			helicopter_brigade
+		}
+		path = {
+			leads_to_tech = unthinkable_helicopter_recon_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = unthinkable_helicopter_medevac_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = unthinkable_helicopter_logistics_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1944
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 12 }
+		}
+		categories = {
+			support_tech
+			helicopter_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	unthinkable_helicopter_recon_tech = {
+		enable_subunits = {
+			helicopter_recon
+		}
+		dependencies = {
+			early_helicopters = 1
+		}
+		research_cost = 2.0
+		start_year = 1946
+		folder = {
+			name = support_folder
+			position = { x = 1 y = 14 }
+		}
+		categories = {
+			support_tech
+			recon_tech
+			helicopter_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	unthinkable_helicopter_medevac_tech = {
+		enable_subunits = {
+			helicopter_field_hospital
+		}
+		dependencies = {
+			early_helicopters = 1
+		}
+		research_cost = 2.0
+		start_year = 1947
+		folder = {
+			name = support_folder
+			position = { x = 2 y = 14 }
+		}
+		categories = {
+			support_tech
+			hospital_tech
+			helicopter_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	unthinkable_helicopter_logistics_tech = {
+		enable_subunits = {
+			helicopter_transport
+		}
+		dependencies = {
+			early_helicopters = 1
+		}
+		research_cost = 2.0
+		start_year = 1948
+		folder = {
+			name = support_folder
+			position = { x = 3 y = 14 }
+		}
+		categories = {
+			support_tech
+			logistics_tech
+			helicopter_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+}

@@ -1,0 +1,142 @@
+technologies = {
+	axial_flow_turbojets = {
+		dependencies = {
+			jet_fighter1 = 1
+		}
+		modifier = {
+			air_maximum_speed_factor = 0.10
+			air_mission_efficiency = 0.05
+		}
+		path = {
+			leads_to_tech = early_afterburner_reheat
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+		start_year = 1946
+		folder = {
+			name = air_techs_folder
+			position = { x = 5 y = 14 }
+		}
+		categories = {
+			air_equipment
+			jet_technology
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	swept_wing_jet_fighters = {
+		modifier = {
+			air_attack_factor = 0.20
+			air_maximum_speed_factor = 0.25
+			air_agility_factor = 0.15
+		}
+		path = {
+			leads_to_tech = afterburner_transonic_flight
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = jet_strike_tactics
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = 14 }
+		}
+		categories = {
+			air_equipment
+			jet_technology
+			light_fighter
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	jet_strike_tactics = {
+		dependencies = {
+			swept_wing_jet_fighters = 1
+		}
+		modifier = {
+			air_cas_present_factor = 0.15
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = air_techs_folder
+			position = { x = 7 y = 16 }
+		}
+		categories = {
+			air_equipment
+			jet_technology
+			cas_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	early_afterburner_reheat = {
+		dependencies = {
+			axial_flow_turbojets = 1
+		}
+		modifier = {
+			air_maximum_speed_factor = 0.10
+			air_intercept_efficiency = 0.15
+		}
+		path = {
+			leads_to_tech = afterburner_transonic_flight
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = air_techs_folder
+			position = { x = 5 y = 16 }
+		}
+		categories = {
+			air_equipment
+			jet_technology
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	postwar_jet_bombers = {
+		modifier = {
+			air_strategic_bomber_bombing_factor = 0.20
+			air_range_factor = 0.15
+			air_defence_factor = 0.20
+		}
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = air_techs_folder
+			position = { x = 9 y = 14 }
+		}
+		categories = {
+			air_equipment
+			jet_technology
+			cat_strategic_bomber
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	afterburner_transonic_flight = {
+		dependencies = {
+			swept_wing_jet_fighters = 1
+			early_afterburner_reheat = 1
+		}
+		modifier = {
+			air_maximum_speed_factor = 0.20
+			air_intercept_efficiency = 0.15
+		}
+		research_cost = 3.0
+		start_year = 1951
+		folder = {
+			name = air_techs_folder
+			position = { x = 6 y = 16 }
+		}
+		categories = {
+			air_equipment
+			jet_technology
+		}
+		ai_will_do = { factor = 3 }
+	}
+}

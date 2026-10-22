@@ -1,0 +1,77 @@
+characters = {
+	POL_boleslaw_bierut_leader = {
+		name = "Bolesław Bierut"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_Poland_Generic_1.dds"
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+				staunch_stalinist
+			}
+			expire = "1956.3.12"
+			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = POL_boleslaw_bierut_advisor_token
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 100
+		}
+	}
+
+	POL_wladyslaw_anders_unthinkable = {
+		name = "Władysław Anders"
+		portraits = {
+			army = {
+				large = "GFX_POL_wladislaw_anders"
+				small = "GFX_portrait_POL_wladyslaw_anders_small"
+			}
+		}
+		field_marshal = {
+			traits = {
+				cavalry_officer
+				war_hero
+				offensive_doctrine
+				trait_mountaineer
+				organizer
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	POL_stanislav_maczek_unthinkable = {
+		name = "Stanisław Maczek"
+		portraits = {
+			army = {
+				large = "gfx/leaders/POL/Portrait_Poland_Generic_land_1.dds"
+				small = "GFX_idea_POL_stanislav_maczek"
+			}
+		}
+		field_marshal = {
+			traits = {
+				armor_officer
+				panzer_expert
+				fast_planner
+				aggressive_assault
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

@@ -1,0 +1,89 @@
+# =========================================================================
+# OPERATION UNTHINKABLE (1945) - MILITARY INDUSTRIAL ORGANIZATIONS
+# Tag: USA (United States of America)
+# =========================================================================
+
+USA_chrysler_tank_plant_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_chrysler
+
+	allowed = {
+		tag = USA
+	}
+
+	available = {
+		FROM = { tag = USA }
+	}
+
+	equipment_type = {
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank
+		mio_cat_eq_all_tank_destroyers
+		mio_cat_eq_all_modern_tank
+	}
+
+	research_categories = {
+		mio_cat_tech_medium_armor_and_modules
+		mio_cat_tech_heavy_armor_and_modules
+		mio_cat_tech_all_armor_and_modules
+	}
+
+	initial_trait = {
+		name = USA_mio_initial_trait_chrysler_plant
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.10
+		}
+		production_bonus = {
+			production_capacity_factor = 0.12
+			production_efficiency_cap_factor = 0.08
+		}
+		equipment_bonus = {
+			reliability = 0.08
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_detroit_assembly_line
+		name = USA_mio_trait_detroit_assembly_line
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x = 9 y = 0 }
+
+		production_bonus = {
+			production_cost_factor = -0.10
+			production_efficiency_gain_factor = 0.10
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_chrysler_m26_90mm
+		name = USA_mio_trait_chrysler_m26_90mm
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+		special_trait_background = yes
+
+		position = { x = 9 y = 1 }
+
+		equipment_bonus = {
+			hard_attack = 0.10
+			ap_attack = 0.12
+			soft_attack = 0.05
+		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_chrysler_heavy_suspension
+		name = USA_mio_trait_chrysler_heavy_suspension
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
+		special_trait_background = yes
+
+		position = { x = 9 y = 2 }
+		all_parents = { USA_mio_trait_chrysler_m26_90mm }
+
+		equipment_bonus = {
+			reliability = 0.08
+			maximum_speed = 0.05
+			breakthrough = 0.06
+		}
+	}
+}

@@ -1,0 +1,75 @@
+# =============================================================================
+# OPERATION UNTHINKABLE: SUPER-EVENTS SCRIPTED EFFECTS
+# =============================================================================
+
+# 1. Operation Unthinkable (World War 3 Outbreak)
+unthinkable_trigger_super_event_unthinkable = {
+	set_global_flag = unthinkable_super_event_active
+	set_global_flag = unthinkable_se_operation_unthinkable
+	clr_global_flag = unthinkable_se_trinity_test
+	clr_global_flag = unthinkable_se_first_nuke_europe
+	clr_global_flag = unthinkable_se_fall_of_berlin
+	clr_global_flag = unthinkable_se_fall_of_moscow
+	clr_global_flag = unthinkable_se_polish_uprising
+	#play_sound = "unthinkable_se_unthinkable_sound"
+}
+
+# 2. The Trinity Nuclear Test
+unthinkable_trigger_super_event_trinity = {
+	set_global_flag = unthinkable_super_event_active
+	set_global_flag = unthinkable_se_trinity_test
+	clr_global_flag = unthinkable_se_operation_unthinkable
+	clr_global_flag = unthinkable_se_first_nuke_europe
+	clr_global_flag = unthinkable_se_fall_of_berlin
+	clr_global_flag = unthinkable_se_fall_of_moscow
+	clr_global_flag = unthinkable_se_polish_uprising
+	#play_sound = "unthinkable_se_trinity_sound"
+}
+
+# 3. First Atomic Strike in Europe
+unthinkable_trigger_super_event_nuke = {
+	set_global_flag = unthinkable_super_event_active
+	set_global_flag = unthinkable_se_first_nuke_europe
+	clr_global_flag = unthinkable_se_operation_unthinkable
+	clr_global_flag = unthinkable_se_trinity_test
+	clr_global_flag = unthinkable_se_fall_of_berlin
+	clr_global_flag = unthinkable_se_fall_of_moscow
+	clr_global_flag = unthinkable_se_polish_uprising
+	#play_sound = "unthinkable_se_nuke_sound"
+}
+
+# 4. Fall of Berlin
+unthinkable_trigger_super_event_berlin = {
+	set_global_flag = unthinkable_super_event_active
+	set_global_flag = unthinkable_se_fall_of_berlin
+	clr_global_flag = unthinkable_se_operation_unthinkable
+	clr_global_flag = unthinkable_se_trinity_test
+	clr_global_flag = unthinkable_se_first_nuke_europe
+	clr_global_flag = unthinkable_se_fall_of_moscow
+	clr_global_flag = unthinkable_se_polish_uprising
+	#play_sound = "unthinkable_se_berlin_sound"
+}
+
+# 5. Fall of Moscow
+unthinkable_trigger_super_event_moscow = {
+	set_global_flag = unthinkable_super_event_active
+	set_global_flag = unthinkable_se_fall_of_moscow
+	clr_global_flag = unthinkable_se_operation_unthinkable
+	clr_global_flag = unthinkable_se_trinity_test
+	clr_global_flag = unthinkable_se_first_nuke_europe
+	clr_global_flag = unthinkable_se_fall_of_berlin
+	clr_global_flag = unthinkable_se_polish_uprising
+	#play_sound = "unthinkable_se_moscow_sound"
+}
+
+# 6. Polish Uprising
+unthinkable_trigger_super_event_poland = {
+	set_global_flag = unthinkable_super_event_active
+	set_global_flag = unthinkable_se_polish_uprising
+	clr_global_flag = unthinkable_se_operation_unthinkable
+	clr_global_flag = unthinkable_se_trinity_test
+	clr_global_flag = unthinkable_se_first_nuke_europe
+	clr_global_flag = unthinkable_se_fall_of_berlin
+	clr_global_flag = unthinkable_se_fall_of_moscow
+	#play_sound = "unthinkable_se_poland_sound"
+}

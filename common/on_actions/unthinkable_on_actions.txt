@@ -1,0 +1,160 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ENG = {
+				unthinkable_setup_1945_world = yes
+			}
+			unthinkable_apply_1945_mios = yes
+			# Cold War Tension initialization (1945 Demarcation baseline)
+			set_variable = { global.unthinkable_tension = 35 }
+			# Scheduled historical crisis chain events (July 1945)
+			# July 5, 1945 (4 days after start): Trieste Standoff
+			ENG = {
+				country_event = { id = unthinkable.60 days = 4 }
+			}
+			# July 10, 1945 (9 days after start): Teschen / Zaolzie Border Crisis
+			CZE = {
+				country_event = { id = unthinkable.40 days = 9 }
+			}
+			# July 16, 1945 (15 days after start): The Trinity Nuclear Test
+			USA = {
+				country_event = { id = unthinkable.30 days = 15 }
+			}
+			# July 17, 1945 (16 days after start): The Potsdam Conference Begins
+			ENG = {
+				country_event = { id = unthinkable.50 days = 16 }
+			}
+			# July 21, 1945 (20 days after start): Polish Underground (WiN) Insurgency
+			SOV = {
+				country_event = { id = unthinkable.71 days = 20 }
+			}
+			# July 26, 1945 (25 days after start): British General Election Declaration
+			ENG = {
+				country_event = { id = unthinkable.15 days = 25 }
+			}
+		}
+	}
+
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = GER }
+					NOT = { has_global_flag = unthinkable_world_setup_done }
+				}
+				country_event = { id = unthinkable.10 hours = 24 }
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { original_tag = SOV }
+							FROM = { OR = { original_tag = ENG original_tag = USA } }
+						}
+						AND = {
+							FROM = { original_tag = SOV }
+							ROOT = { OR = { original_tag = ENG original_tag = USA } }
+						}
+					}
+				}
+				if = {
+					limit = {
+						SOV = {
+							NOT = { has_idea = unthinkable_lend_lease_cutoff }
+						}
+					}
+					SOV = {
+						add_ideas = unthinkable_lend_lease_cutoff
+					}
+				}
+				# Trigger Zhukov's Counter-Offensive for Soviets if not already triggered
+				if = {
+					limit = {
+						NOT = { has_global_flag = unthinkable_zhukov_offensive_launched }
+					}
+					set_global_flag = unthinkable_zhukov_offensive_launched
+					SOV = {
+						country_event = { id = unthinkable.85 hours = 6 }
+					}
+				}
+				# Trigger World News of War if not already triggered
+				if = {
+					limit = {
+						NOT = { has_global_flag = unthinkable_war_news_fired }
+					}
+					set_global_flag = unthinkable_war_news_fired
+					news_event = { id = unthinkable.100 hours = 2 }
+				}
+				# Trigger Super-Event: Operation Unthinkable Launched
+				if = {
+					limit = {
+						NOT = { has_global_flag = unthinkable_super_event_unthinkable_done }
+					}
+					set_global_flag = unthinkable_super_event_unthinkable_done
+					set_variable = { global.unthinkable_tension = 100 }
+					unthinkable_trigger_super_event_unthinkable = yes
+				}
+			}
+		}
+	}
+
+	on_nuke_drop = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_global_flag = unthinkable_super_event_first_nuke_done }
+					FROM = { is_on_continent = europe }
+				}
+				set_global_flag = unthinkable_super_event_first_nuke_done
+				unthinkable_trigger_super_event_nuke = yes
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			# Fall of Berlin (State 64)
+			if = {
+				limit = {
+					FROM = { state = 64 }
+					NOT = { has_global_flag = unthinkable_super_event_berlin_done }
+					ROOT = {
+						OR = {
+							original_tag = ENG
+							original_tag = USA
+							original_tag = FRA
+							original_tag = GER
+						}
+						has_war_with = SOV
+					}
+				}
+				set_global_flag = unthinkable_super_event_berlin_done
+				unthinkable_trigger_super_event_berlin = yes
+			}
+			# Fall of Moscow (State 219)
+			if = {
+				limit = {
+					FROM = { state = 219 }
+					NOT = { has_global_flag = unthinkable_super_event_moscow_done }
+					ROOT = {
+						OR = {
+							original_tag = ENG
+							original_tag = USA
+							original_tag = FRA
+							original_tag = GER
+							original_tag = POL
+						}
+						has_war_with = SOV
+					}
+				}
+				set_global_flag = unthinkable_super_event_moscow_done
+				unthinkable_trigger_super_event_moscow = yes
+			}
+		}
+	}
+}

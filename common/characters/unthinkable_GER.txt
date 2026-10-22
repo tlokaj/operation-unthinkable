@@ -1,0 +1,18 @@
+characters = {
+	GER_konrad_adenauer_unthinkable = {
+		name = "Konrad Adenauer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				anti_communist
+			}
+			expire = "1967.4.19"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,76 @@
+bookmarks = {
+	bookmark = {
+		name = "UNTHINKABLE_1945_NAME"
+		desc = "UNTHINKABLE_1945_DESC"
+		date = 1945.7.1.12
+		picture = "GFX_select_date_1939"
+		default_country = "ENG"
+		default = yes
+
+		"ENG" = {
+			history = "ENG_UNTHINKABLE_DESC"
+			ideology = democratic
+			ideas = {
+				unthinkable_war_weariness
+				unthinkable_operation_unthinkable_planning
+			}
+		}
+
+		"USA" = {
+			history = "USA_UNTHINKABLE_DESC"
+			ideology = democratic
+			ideas = {
+				unthinkable_pacific_priority
+				unthinkable_demobilization_pressure
+			}
+		}
+
+		"SOV" = {
+			history = "SOV_UNTHINKABLE_DESC"
+			ideology = communism
+			ideas = {
+				unthinkable_victors_of_berlin
+				unthinkable_devastated_heartland
+				unthinkable_extended_supply_lines
+			}
+		}
+
+		"FRA" = {
+			history = "FRA_UNTHINKABLE_DESC"
+			ideology = democratic
+			ideas = {
+				unthinkable_war_weariness
+			}
+		}
+
+		"GER" = {
+			history = "GER_UNTHINKABLE_DESC"
+			ideology = democratic
+			ideas = {
+				unthinkable_war_weariness
+			}
+		}
+
+		"POL" = {
+			history = "POL_UNTHINKABLE_DESC"
+			ideology = communism
+			ideas = {
+				unthinkable_anders_crusade
+			}
+		}
+
+		"CZE" = {
+			history = "CZE_UNTHINKABLE_DESC"
+			ideology = democratic
+			ideas = {
+				unthinkable_cze_demarcation_line
+				unthinkable_cze_skoda_works
+				unthinkable_cze_reconstruction
+			}
+		}
+
+		effect = {
+			randomize_weather = 19457
+		}
+	}
+}

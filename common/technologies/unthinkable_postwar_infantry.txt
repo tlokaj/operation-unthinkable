@@ -1,0 +1,48 @@
+technologies = {
+	assault_rifle_standardization = {
+		category_light_infantry = {
+			soft_attack = 0.15
+			defense = 0.10
+		}
+		modifier = {
+			army_org_factor = 0.05
+		}
+		path = {
+			leads_to_tech = postwar_infantry_at_weapons
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 18 }
+		}
+		categories = {
+			infantry_weapons
+			infantry_tech
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	postwar_infantry_at_weapons = {
+		dependencies = {
+			assault_rifle_standardization = 1
+		}
+		category_light_infantry = {
+			hard_attack = 0.20
+			ap_attack = 0.25
+		}
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 20 }
+		}
+		categories = {
+			infantry_weapons
+			infantry_tech
+			cat_anti_tank
+		}
+		ai_will_do = { factor = 3 }
+	}
+}

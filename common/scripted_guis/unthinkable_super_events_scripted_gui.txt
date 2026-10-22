@@ -1,0 +1,47 @@
+# =============================================================================
+# OPERATION UNTHINKABLE: SUPER-EVENTS SCRIPTED GUI LOGIC
+# =============================================================================
+
+scripted_gui = {
+	unthinkable_super_event_ui = {
+		context_type = player_context
+		window_name = "unthinkable_super_event_window"
+
+		visible = {
+			has_global_flag = unthinkable_super_event_active
+		}
+
+		effects = {
+			unthinkable_se_button_click = {
+				clr_global_flag = unthinkable_super_event_active
+				clr_global_flag = unthinkable_se_operation_unthinkable
+				clr_global_flag = unthinkable_se_trinity_test
+				clr_global_flag = unthinkable_se_first_nuke_europe
+				clr_global_flag = unthinkable_se_fall_of_berlin
+				clr_global_flag = unthinkable_se_fall_of_moscow
+				clr_global_flag = unthinkable_se_polish_uprising
+			}
+		}
+
+		triggers = {
+			super_event_image_operation_unthinkable_visible = {
+				has_global_flag = unthinkable_se_operation_unthinkable
+			}
+			super_event_image_trinity_test_visible = {
+				has_global_flag = unthinkable_se_trinity_test
+			}
+			super_event_image_first_nuke_europe_visible = {
+				has_global_flag = unthinkable_se_first_nuke_europe
+			}
+			super_event_image_fall_of_berlin_visible = {
+				has_global_flag = unthinkable_se_fall_of_berlin
+			}
+			super_event_image_fall_of_moscow_visible = {
+				has_global_flag = unthinkable_se_fall_of_moscow
+			}
+			super_event_image_polish_uprising_visible = {
+				has_global_flag = unthinkable_se_polish_uprising
+			}
+		}
+	}
+}

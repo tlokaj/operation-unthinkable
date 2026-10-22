@@ -1,0 +1,63 @@
+characters = {
+	ENG_clement_attlee_leader = {
+		name = "Clement Attlee"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+				small = "GFX_idea_clement_attlee"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = {
+				democratic_reformer
+			}
+			expire = "1967.1.1"
+			id = -1
+		}
+	}
+
+	ENG_ernest_bevin_advisor = {
+		name = "Ernest Bevin"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_ENG_ernest_bevin"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ENG_ernest_bevin_advisor_token
+			allowed = {
+				original_tag = ENG
+			}
+			traits = {
+				anti_communist
+			}
+			cost = 100
+		}
+	}
+
+	ENG_bernard_montgomery_unthinkable = {
+		name = "Bernard Montgomery"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ENG/Portrait_Britain_Bernard_Montgomery.dds"
+				small = "GFX_idea_bernard_montgomery"
+			}
+		}
+		field_marshal = {
+			traits = {
+				defensive_doctrine
+				thorough_planner
+				organizer
+				logistics_wizard
+				trait_cautious
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+}

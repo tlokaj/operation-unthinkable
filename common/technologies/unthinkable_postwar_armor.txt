@@ -1,0 +1,65 @@
+technologies = {
+	main_battle_tank_generation_1 = {
+		category_all_armor = {
+			hard_attack = 0.15
+			soft_attack = 0.10
+			breakthrough = 0.10
+		}
+		path = {
+			leads_to_tech = main_battle_tank_generation_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 14 }
+		}
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		ai_will_do = { factor = 3 }
+	}
+
+	postwar_apc_mechanization = {
+		category_vehicle_infantry = {
+			defense = 0.15
+			soft_attack = 0.10
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 14 }
+		}
+		categories = {
+			armor
+			cat_mechanized_equipment
+			motorized_equipment
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	main_battle_tank_generation_2 = {
+		dependencies = {
+			main_battle_tank_generation_1 = 1
+		}
+		category_all_armor = {
+			hard_attack = 0.20
+			ap_attack = 0.20
+			breakthrough = 0.15
+		}
+		research_cost = 3.0
+		start_year = 1951
+		folder = {
+			name = armour_folder
+			position = { x = 6 y = 16 }
+		}
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		ai_will_do = { factor = 3 }
+	}
+}

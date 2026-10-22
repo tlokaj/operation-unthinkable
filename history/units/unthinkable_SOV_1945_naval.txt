@@ -1,0 +1,167 @@
+units = {
+	##### RED BANNER BALTIC FLEET #####
+	fleet = {
+		name = "Krasnoznamennyy Baltiyskiy Flot"
+		naval_base = 6332 # Königsberg
+		task_force = {
+			name = "Baltic Fleet Strike Force"
+			location = 6332 # Königsberg
+			
+			# Battleship
+			ship = { name = "Oktyabrskaya Revolyutsiya" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
+			
+			# Heavy Cruisers (Project 26 / 26-bis)
+			ship = { name = "Kirov" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			ship = { name = "Maksim Gorkiy" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			
+			# Destroyers: Ognevoy Class (Project 30)
+			ship = { name = "Ognevoy" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Ognevoy Class" } } }
+			ship = { name = "Ozornyy" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Ognevoy Class" } } }
+			ship = { name = "Otlichnyy" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Ognevoy Class" } } }
+			
+			# Destroyers: Soobrazitelnyi Class (Project 7U)
+			ship = { name = "Strogy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Stoyky" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Slavny" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Silny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Strashny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Surovy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Serdity" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+		}
+
+		task_force = {
+			name = "1st Baltic Submarine Brigade"
+			location = 6332 # Königsberg
+			
+			# K-Class (Series XIV)
+			ship = { name = "K-51" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_3 = { amount = 1 owner = SOV version_name = "Series XIV K-Class" } } }
+			ship = { name = "K-52" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_3 = { amount = 1 owner = SOV version_name = "Series XIV K-Class" } } }
+			ship = { name = "K-53" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = SOV version_name = "Series XIV K-Class" } } }
+			ship = { name = "K-54" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = SOV version_name = "Series XIV K-Class" } } }
+			ship = { name = "K-55" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = SOV version_name = "Series XIV K-Class" } } }
+			ship = { name = "K-56" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = SOV version_name = "Series XIV K-Class" } } }
+			
+			# S-Class (Series IX Srednyaya - 'Stalinets')
+			ship = { name = "S-12" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-13" definition = submarine start_experience_factor = 0.95 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } } # Marinesko
+			ship = { name = "S-14" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-15" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-16" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-17" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			
+			# Shchuka Class (Series X)
+			ship = { name = "Shch-303" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-307" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-310" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-318" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+		}
+	}
+
+	##### KRONSTADT NAVAL DISTRICT #####
+	fleet = {
+		name = "Kronstadt Naval District"
+		naval_base = 3151 # Leningrad / Kronstadt
+		task_force = {
+			name = "Kronstadt Guard Force"
+			location = 3151 # Leningrad / Kronstadt
+			
+			# Floating Heavy Battery Petropavlovsk (ex-Lützow hull)
+			ship = { name = "Petropavlovsk" definition = heavy_cruiser start_experience_factor = 0.70 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			
+			# Gnevnyy Class (Project 7)
+			ship = { name = "Grozny" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Gordy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Grozyashchy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Svirepy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			
+			# Submarines
+			ship = { name = "Shch-311" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-313" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-320" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-322" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+		}
+	}
+
+	##### BLACK SEA FLEET #####
+	fleet = {
+		name = "Chernomorskiy Flot"
+		naval_base = 3686 # Sevastopol
+		task_force = {
+			name = "Black Sea Fleet Squadron"
+			location = 3686 # Sevastopol
+			
+			# Battleship
+			ship = { name = "Sevastopol" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_1 = { amount = 1 owner = SOV version_name = "Marat Class" } } }
+			
+			# Cruisers
+			ship = { name = "Voroshilov" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			ship = { name = "Molotov" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			
+			# Destroyers: Soobrazitelnyi Class
+			ship = { name = "Soobrazitelnyy" definition = destroyer start_experience_factor = 0.90 equipment = { ship_hull_light_3 = { amount = 1 owner = SOV version_name = "Soobrazitelnyi Class" } } }
+			ship = { name = "Bodry" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Boyky" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Besposhchadny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Bditelny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Bezuprechny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Zheleznyakov" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Shaumyan" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+		}
+
+		task_force = {
+			name = "Black Sea Submarine Division"
+			location = 3686 # Sevastopol
+			
+			ship = { name = "S-31" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-32" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-33" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-34" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "Shch-201" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-205" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-207" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-209" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+		}
+	}
+}
+
+##### STARTING NAVAL PRODUCTION QUEUES #####
+instant_effect = {
+	# Chapayev (Project 68)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_3
+			creator = "SOV"
+			version_name = "Chapayev Class"
+		}
+		name = "Chapayev"
+		requested_factories = 3
+		progress = 0.65
+		amount = 1
+	}
+
+	# Zheleznyakov (Project 68)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_3
+			creator = "SOV"
+			version_name = "Chapayev Class"
+		}
+		name = "Zheleznyakov"
+		requested_factories = 3
+		progress = 0.40
+		amount = 1
+	}
+
+	# Otchayannyy (Project 30)
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_3
+			creator = "SOV"
+			version_name = "Ognevoy Class"
+		}
+		name = "Otchayannyy"
+		requested_factories = 2
+		progress = 0.70
+		amount = 1
+	}
+}

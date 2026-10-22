@@ -1,0 +1,761 @@
+focus_tree = {
+	id = soviet_unthinkable_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = SOV
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1400 }
+
+	# =========================================================================
+	# TIER 0: WWII WAR EFFORT & HERITAGE (COMPLETED BY 1 JULY 1945)
+	# =========================================================================
+
+	# Branch 1 War Legacy: Industrialization & Pre-war Five-Year Plans
+	focus = {
+		id = SOV_heavy_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 0
+		cost = 5
+		completion_reward = {
+			219 = { # Moscow
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_infrastructure_effort_nsb
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 0
+		cost = 5
+		completion_reward = {
+			195 = { # Leningrad
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			219 = { # Moscow
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_develop_the_urals
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 5
+		y = 0
+		cost = 5
+		completion_reward = {
+			573 = { # Chelyabinsk
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_finish_the_five_year_plan
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = SOV_heavy_industry focus = SOV_infrastructure_effort_nsb }
+		x = 2
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = SOV_the_ussr_academy_of_sciences
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = SOV_develop_the_urals }
+		x = 4
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	# Branch 2 War Legacy: Agitprop, State Security & Eastern Development
+	focus = {
+		id = SOV_expand_the_agitprop
+		icon = GFX_goal_generic_propaganda
+		x = 9
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_found_the_pcdi
+		icon = GFX_goal_generic_national_unity
+		x = 11
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_ideas = secret_police_idea
+		}
+	}
+
+	focus = {
+		id = SOV_baltic_security
+		icon = GFX_goal_generic_occupy_start_war
+		x = 13
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 60
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_national_specialists
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_found_the_pcdi }
+		x = 10
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SOV_eastern_development
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_found_the_pcdi }
+		x = 12
+		y = 1
+		cost = 5
+		completion_reward = {
+			408 = { # Vladivostok
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	# Branch 3 War Legacy: The Great Patriotic War & Red Fleet
+	focus = {
+		id = SOV_transpolar_flights
+		icon = GFX_goal_generic_air_doctrine
+		x = 17
+		y = 0
+		cost = 5
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+
+	focus = {
+		id = SOV_great_patriotic_war
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 19
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 40
+			add_war_support = 0.15
+			add_ideas = unthinkable_victors_of_berlin
+		}
+	}
+
+	focus = {
+		id = SOV_expand_the_red_fleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 21
+		y = 0
+		cost = 5
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = SOV_order_227
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = SOV_great_patriotic_war }
+		x = 18
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.10
+			add_command_power = 25
+		}
+	}
+
+	focus = {
+		id = SOV_fall_of_berlin
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = SOV_great_patriotic_war }
+		x = 19
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = SOV_pc_of_the_ussr_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = SOV_expand_the_red_fleet }
+		x = 21
+		y = 1
+		cost = 5
+		completion_reward = {
+			navy_experience = 20
+			217 = { # Murmansk
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	# Branch 4 War Legacy: Far Eastern Security
+	focus = {
+		id = SOV_the_threat_from_the_land_of_the_rising_sun
+		icon = GFX_goal_generic_danger
+		x = 26
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_support_the_kuomintang
+		icon = GFX_goal_generic_military_deal
+		x = 28
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 1: THE FOURTH FIVE-YEAR PLAN & RECONSTRUCTION (X: 0 - 6)
+	# =========================================================================
+
+	focus = {
+		id = SOV_fourth_five_year_plan
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = SOV_finish_the_five_year_plan focus = SOV_the_ussr_academy_of_sciences }
+		x = 3
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = industrial_effort
+		}
+	}
+
+	focus = {
+		id = SOV_reparations_and_dismantling
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_fourth_five_year_plan }
+		x = 1
+		y = 3
+		cost = 5
+		completion_reward = {
+			219 = { # Moscow
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			195 = { # Leningrad
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_tankograd_and_uralvagonzavod
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_fourth_five_year_plan }
+		x = 5
+		y = 3
+		cost = 5
+		completion_reward = {
+			573 = { # Chelyabinsk
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_rebuild_donbas_and_dnieper
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SOV_reparations_and_dismantling }
+		x = 1
+		y = 4
+		cost = 5
+		completion_reward = {
+			227 = { # Stalino
+				add_resource = { type = steel amount = 24 }
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_soviet_industrial_might
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SOV_rebuild_donbas_and_dnieper focus = SOV_tankograd_and_uralvagonzavod }
+		x = 3
+		y = 5
+		cost = 6
+		completion_reward = {
+			remove_ideas = unthinkable_devastated_heartland
+			add_ideas = economic_miracle_idea
+			add_stability = 0.10
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 2: SECURITY, ANTI-PARTISAN & EASTERN BLOC (X: 8 - 14)
+	# =========================================================================
+
+	focus = {
+		id = SOV_smersh_and_nkvd_vigilance
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = SOV_national_specialists focus = SOV_baltic_security }
+		x = 11
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_ideas = secret_police_idea
+		}
+	}
+
+	focus = {
+		id = SOV_crush_anti_soviet_partisans
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = SOV_smersh_and_nkvd_vigilance }
+		x = 9
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			remove_ideas = unthinkable_extended_supply_lines
+		}
+	}
+
+	focus = {
+		id = SOV_iron_curtain_consolidation
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_smersh_and_nkvd_vigilance }
+		x = 13
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_faction_name = SOV_warsaw_pact_faction
+			POL = { add_opinion_modifier = { target = SOV modifier = positive_100 } }
+			ROM = { add_opinion_modifier = { target = SOV modifier = positive_100 } }
+			BUL = { add_opinion_modifier = { target = SOV modifier = positive_100 } }
+			YUG = { add_opinion_modifier = { target = SOV modifier = positive_100 } }
+			add_political_power = 60
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_council_for_mutual_economic_assistance
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = SOV_iron_curtain_consolidation }
+		x = 11
+		y = 4
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			if = { limit = { country_exists = POL } POL = { add_ideas = economic_miracle_idea } }
+			if = { limit = { country_exists = CZE } CZE = { add_opinion_modifier = { target = SOV modifier = positive_50 } } }
+		}
+	}
+
+	focus = {
+		id = SOV_establish_german_democratic_republic
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = SOV_iron_curtain_consolidation }
+		x = 13
+		y = 4
+		cost = 5
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			64 = { # Brandenburg (Berlin)
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_ideas = military_youth_effort
+			add_manpower = 60000
+			add_political_power = 80
+		}
+	}
+
+	focus = {
+		id = SOV_warsaw_treaty_organization
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = SOV_council_for_mutual_economic_assistance focus = SOV_establish_german_democratic_republic }
+		x = 12
+		y = 5
+		cost = 5
+		completion_reward = {
+			set_faction_name = warsaw_pact
+			add_war_support = 0.10
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_academy_of_sciences_expansion
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = SOV_soviet_industrial_might focus = SOV_operation_osoaviakhim }
+		x = 11
+		y = 6
+		cost = 5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 3: ARMORED SUPREMACY, ATOMIC BOMB & AVIATION (X: 16 - 22)
+	# =========================================================================
+
+	focus = {
+		id = SOV_lessons_of_great_patriotic_war
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = SOV_fall_of_berlin }
+		x = 19
+		y = 2
+		cost = 5
+		completion_reward = {
+			army_experience = 35
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_mass_produce_is3_heavy_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SOV_lessons_of_great_patriotic_war }
+		x = 17
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_trophy_panzer_and_u_boats
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SOV_lessons_of_great_patriotic_war }
+		x = 19
+		y = 3
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			navy_experience = 20
+			add_equipment_to_stockpile = {
+				type = medium_tank_equipment_3
+				amount = 200
+				producer = GER
+			}
+			add_tech_bonus = {
+				name = sub_bonus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_kalashnikov_infantry_rifle
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SOV_lessons_of_great_patriotic_war }
+		x = 21
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_soviet_atomic_bomb_project
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = SOV_mass_produce_is3_heavy_tanks focus = SOV_kalashnikov_infantry_rifle }
+		x = 17
+		y = 4
+		cost = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_political_power = 80
+		}
+	}
+
+	focus = {
+		id = SOV_tupolev_tu4_strategic_bomber
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = SOV_mass_produce_is3_heavy_tanks focus = SOV_kalashnikov_infantry_rifle }
+		x = 21
+		y = 4
+		cost = 5
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = strat_bomber_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_operation_osoaviakhim
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = SOV_soviet_atomic_bomb_project focus = SOV_tupolev_tu4_strategic_bomber }
+		x = 19
+		y = 5
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "Gotterdammerung" }
+				add_breakthrough_points = {
+					specialization = specialization_air
+					value = 2
+				}
+				custom_effect_tooltip = SOV_osoaviakhim_kapustin_yar_tt
+				236 = {
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+					}
+				}
+				sp:sp_rockets_ballistic_missile = {
+					add_project_progress_ratio = 0.25
+				}
+			}
+			add_tech_bonus = {
+				name = rocket_bonus
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = jet_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_enormoz_atomic_espionage
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = SOV_soviet_atomic_bomb_project }
+		x = 17
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = SOV_rds1_first_lightning
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = SOV_enormoz_atomic_espionage focus = SOV_operation_osoaviakhim }
+		x = 17
+		y = 6
+		cost = 7
+		completion_reward = {
+			set_technology = {
+				atomic_research = 1
+				nuclear_reactor = 1
+			}
+			add_war_support = 0.10
+			add_stability = 0.05
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 4: MANCHURIA VS. PREEMPTIVE STRIKE IN EUROPE (X: 24 - 30)
+	# =========================================================================
+
+	focus = {
+		id = SOV_western_imperialist_threat
+		icon = GFX_goal_generic_danger
+		prerequisite = { focus = SOV_the_threat_from_the_land_of_the_rising_sun focus = SOV_support_the_kuomintang }
+		x = 27
+		y = 2
+		cost = 5
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			add_ideas = unthinkable_victors_of_berlin
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = SOV_manchurian_offensive_august_storm
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = SOV_western_imperialist_threat }
+		x = 25
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 35
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_strengthen_order_of_battle_germany
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = SOV_western_imperialist_threat }
+		x = 29
+		y = 3
+		cost = 5
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			army_experience = 30
+			add_manpower = 100000
+		}
+	}
+
+	focus = {
+		id = SOV_potsdam_unyielding_demands
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_strengthen_order_of_battle_germany }
+		x = 27
+		y = 4
+		cost = 5
+		ai_will_do = { factor = 8 }
+		completion_reward = {
+			add_political_power = 80
+			add_war_support = 0.05
+			ENG = { add_opinion_modifier = { target = SOV modifier = hostile } }
+			USA = { add_opinion_modifier = { target = SOV modifier = hostile } }
+		}
+	}
+
+	focus = {
+		id = SOV_free_germany_committee_officers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = SOV_strengthen_order_of_battle_germany }
+		x = 25
+		y = 4
+		cost = 5
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_manpower = 40000
+			add_ideas = unthinkable_free_germany_committee
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SOV_annex_kuril_and_sakhalin
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = SOV_manchurian_offensive_august_storm }
+		x = 25
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = SOV_operation_storm_preemptive_strike
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SOV_strengthen_order_of_battle_germany focus = SOV_potsdam_unyielding_demands }
+		x = 29
+		y = 5
+		cost = 6
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_war_with = ENG
+			}
+			modifier = {
+				factor = 5
+				ENG = { has_country_flag = unthinkable_offensive_approved }
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = ENG
+				type = topple_government
+			}
+			hidden_effect = {
+				news_event = { id = unthinkable.100 hours = 6 }
+			}
+		}
+	}
+
+}

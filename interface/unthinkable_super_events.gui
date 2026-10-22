@@ -1,0 +1,102 @@
+guiTypes = {
+	# =============================================================================
+	# OPERATION UNTHINKABLE: SUPER-EVENTS INTERFACE (1945)
+	# =============================================================================
+
+	containerWindowType = {
+		name = "unthinkable_super_event_window"
+		position = { x = 0 y = 0 }
+		size = { width = 640 height = 590 }
+		orientation = center
+		origo = center
+		clipping = no
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_1b_border"
+		}
+
+		# Event Title
+		instantTextboxType = {
+			name = "super_event_title"
+			position = { x = 20 y = 18 }
+			font = "hoi_24header"
+			text = "[GetSuperEventTitle]"
+			maxWidth = 600
+			maxHeight = 30
+			format = center
+			fixedsize = yes
+		}
+
+		# Super-Event Images (Visible depending on which event is active)
+		iconType = {
+			name = "super_event_image_operation_unthinkable"
+			position = { x = 30 y = 55 }
+			spriteType = "GFX_super_event_operation_unthinkable"
+		}
+
+		iconType = {
+			name = "super_event_image_trinity_test"
+			position = { x = 30 y = 55 }
+			spriteType = "GFX_super_event_trinity_test"
+		}
+
+		iconType = {
+			name = "super_event_image_first_nuke_europe"
+			position = { x = 30 y = 55 }
+			spriteType = "GFX_super_event_first_nuke_europe"
+		}
+
+		iconType = {
+			name = "super_event_image_fall_of_berlin"
+			position = { x = 30 y = 55 }
+			spriteType = "GFX_super_event_fall_of_berlin"
+		}
+
+		iconType = {
+			name = "super_event_image_fall_of_moscow"
+			position = { x = 30 y = 55 }
+			spriteType = "GFX_super_event_fall_of_moscow"
+		}
+
+		iconType = {
+			name = "super_event_image_polish_uprising"
+			position = { x = 30 y = 55 }
+			spriteType = "GFX_super_event_polish_uprising"
+		}
+
+		# Historical Quote Box
+		instantTextboxType = {
+			name = "super_event_quote"
+			position = { x = 40 y = 410 }
+			font = "hoi_18mbs"
+			text = "[GetSuperEventQuote]"
+			maxWidth = 560
+			maxHeight = 70
+			format = center
+			vertical_alignment = center
+		}
+
+		# Citation / Author
+		instantTextboxType = {
+			name = "super_event_author"
+			position = { x = 40 y = 488 }
+			font = "hoi_16mbs"
+			text = "[GetSuperEventAuthor]"
+			maxWidth = 560
+			maxHeight = 24
+			format = right
+		}
+
+		# Confirmation Dismiss Button
+		buttonType = {
+			name = "unthinkable_se_button"
+			position = { x = 190 y = 530 }
+			spriteType = "GFX_button_261x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "[GetSuperEventButton]"
+			shortcut = "ESCAPE"
+		}
+	}
+}

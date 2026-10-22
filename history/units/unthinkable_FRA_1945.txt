@@ -1,0 +1,207 @@
+division_template = {
+	name = "Division d'Infanterie"
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Division Blindée"
+	division_names_group = FRA_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Division d'Infanterie Coloniale"
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Division de Montagne"
+	division_names_group = FRA_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# PREMIÈRE ARMÉE FRANÇAISE (Général Jean de Lattre de Tassigny)
+	# French Zone of Occupation (Baden, Württemberg, Rhineland, Palatinate)
+	# =========================================================================
+
+	# Legendary French Armored Formations
+	division = {
+		name = "2e Division Blindée (Général Leclerc - Libérateurs de Paris)"
+		location = 3530 # Karlsruhe (Baden)
+		division_template = "Division Blindée"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "1re Division Blindée (Touzet du Vigier)"
+		location = 6712 # Freiburg im Breisgau
+		division_template = "Division Blindée"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "5e Division Blindée (de Vernejoul)"
+		location = 9575 # Trier (Moselle sector)
+		division_template = "Division Blindée"
+		start_experience_factor = 0.85
+	}
+
+	# Veteran Free French & Colonial Divisions
+	division = {
+		name = "1re Division Française Libre (1re DFL - Garbay)"
+		location = 11531 # Saarbrücken
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.95
+	}
+	division = {
+		name = "3e Division d'Infanterie Algérienne (3e DIA - de Monsabert)"
+		location = 9517 # Stuttgart (Württemberg)
+		division_template = "Division d'Infanterie Coloniale"
+		start_experience_factor = 0.90
+	}
+	division = {
+		name = "9e Division d'Infanterie Coloniale (9e DIC - Magnan)"
+		location = 6529 # Strasbourg (Alsace)
+		division_template = "Division d'Infanterie Coloniale"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "4e Division Marocaine de Montagne (4e DMM - Hesdin)"
+		location = 11499 # Ulm (Danube border)
+		division_template = "Division de Montagne"
+		start_experience_factor = 0.85
+	}
+	division = {
+		name = "14e Division d'Infanterie"
+		location = 587 # Köln (Northern Rhineland)
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.75
+	}
+	division = {
+		name = "27e Division Alpine"
+		location = 549 # Mulhouse
+		division_template = "Division de Montagne"
+		start_experience_factor = 0.80
+	}
+
+	# Metropolitan Reserve
+	division = {
+		name = "10e Division d'Infanterie (Billiotte)"
+		location = 16 # Paris
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.70
+	}
+}
+
+# =============================================================================
+# STARTING MILITARY PRODUCTION QUEUES (Mid-1945 Status)
+# =============================================================================
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_3
+			creator = "FRA"
+		}
+		requested_factories = 10
+		progress = 0.50
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 4
+		progress = 0.35
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_3
+			creator = "FRA"
+		}
+		requested_factories = 5
+		progress = 0.40
+		efficiency = 85
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "FRA"
+		}
+		requested_factories = 5
+		progress = 0.30
+		efficiency = 85
+	}
+}

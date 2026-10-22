@@ -1,0 +1,70 @@
+# =============================================================================
+# OPERATION UNTHINKABLE: COLD WAR TENSION SCRIPTED EFFECTS
+# =============================================================================
+
+# Clamp tension variable between 0 and 100
+unthinkable_clamp_tension = {
+	if = {
+		limit = {
+			check_variable = { global.unthinkable_tension < 0 }
+		}
+		set_variable = { global.unthinkable_tension = 0 }
+	}
+	if = {
+		limit = {
+			check_variable = { global.unthinkable_tension > 100 }
+		}
+		set_variable = { global.unthinkable_tension = 100 }
+	}
+	# Check for 100% Tension - triggers immediate flashpoint if not already at war
+	if = {
+		limit = {
+			check_variable = { global.unthinkable_tension > 99 }
+			NOT = { has_war_with = SOV }
+			NOT = { has_global_flag = unthinkable_super_event_unthinkable_done }
+		}
+		ENG = { country_event = { id = unthinkable.100 hours = 2 } }
+	}
+}
+
+# Increase tension by 5%
+unthinkable_add_tension_5 = {
+	add_to_variable = { global.unthinkable_tension = 5 }
+	unthinkable_clamp_tension = yes
+}
+
+# Increase tension by 10%
+unthinkable_add_tension_10 = {
+	add_to_variable = { global.unthinkable_tension = 10 }
+	unthinkable_clamp_tension = yes
+}
+
+# Increase tension by 15%
+unthinkable_add_tension_15 = {
+	add_to_variable = { global.unthinkable_tension = 15 }
+	unthinkable_clamp_tension = yes
+}
+
+# Increase tension by 25%
+unthinkable_add_tension_25 = {
+	add_to_variable = { global.unthinkable_tension = 25 }
+	unthinkable_clamp_tension = yes
+}
+
+# Decrease tension by 5%
+unthinkable_sub_tension_5 = {
+	subtract_from_variable = { global.unthinkable_tension = 5 }
+	unthinkable_clamp_tension = yes
+}
+
+# Decrease tension by 10%
+unthinkable_sub_tension_10 = {
+	subtract_from_variable = { global.unthinkable_tension = 10 }
+	unthinkable_clamp_tension = yes
+}
+
+# Decrease tension by 15%
+unthinkable_sub_tension_15 = {
+	subtract_from_variable = { global.unthinkable_tension = 15 }
+	unthinkable_clamp_tension = yes
+}

@@ -1,0 +1,675 @@
+focus_tree = {
+	id = czechoslovak_unthinkable_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = CZE
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	# =========================================================================
+	# BRANCH 1: INDUSTRY, ECONOMY & THE TWO-YEAR PLAN (X: 0 - 6)
+	# =========================================================================
+
+	focus = {
+		id = CZE_two_year_plan
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			add_ideas = industrial_effort
+		}
+	}
+
+	focus = {
+		id = CZE_nationalize_heavy_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = CZE_two_year_plan }
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			75 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_skoda_reconstruction
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CZE_two_year_plan }
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = unthinkable_cze_skoda_works
+		}
+	}
+
+	focus = {
+		id = CZE_ostrava_coal_and_steel
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = CZE_nationalize_heavy_industry }
+		x = 0
+		y = 2
+		cost = 5
+		completion_reward = {
+			75 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_ckd_and_praga_arsenal
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = CZE_nationalize_heavy_industry }
+		x = 2
+		y = 2
+		cost = 5
+		completion_reward = {
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_zbrojovka_brno_and_povazie
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = CZE_skoda_reconstruction }
+		x = 4
+		y = 2
+		cost = 5
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_railway_network_expansion
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = CZE_skoda_reconstruction }
+		x = 6
+		y = 2
+		cost = 5
+		completion_reward = {
+			9 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			75 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			70 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = CZE_synthetic_fuel_zaluzi
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = CZE_ostrava_coal_and_steel focus = CZE_ckd_and_praga_arsenal }
+		x = 1
+		y = 3
+		cost = 5
+		completion_reward = {
+			69 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_jachymov_uranium_mines
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = CZE_zbrojovka_brno_and_povazie focus = CZE_railway_network_expansion }
+		x = 5
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = CZE_economic_miracle
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = CZE_synthetic_fuel_zaluzi focus = CZE_jachymov_uranium_mines }
+		x = 3
+		y = 4
+		cost = 6
+		completion_reward = {
+			add_ideas = economic_miracle_idea
+			add_stability = 0.10
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 2: MILITARY, TANK ARSENAL & AIR FORCE (X: 8 - 14)
+	# =========================================================================
+
+	focus = {
+		id = CZE_veterans_of_two_fronts
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 11
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = CZE_modernize_hetzer_and_armor
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = CZE_veterans_of_two_fronts }
+		x = 9
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_rebuild_air_force
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = CZE_veterans_of_two_fronts }
+		x = 13
+		y = 1
+		cost = 5
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_avia_s199_production
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = CZE_rebuild_air_force }
+		x = 12
+		y = 2
+		cost = 5
+		completion_reward = {
+			9 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_integrate_raf_squadrons
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = CZE_rebuild_air_force }
+		x = 14
+		y = 2
+		cost = 5
+		completion_reward = {
+			air_experience = 20
+			add_ideas = air_war_plans_division_focus
+		}
+	}
+
+	focus = {
+		id = CZE_heavy_artillery_tradition
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = CZE_modernize_hetzer_and_armor }
+		x = 8
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_tank_brigade_reorganization
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = CZE_modernize_hetzer_and_armor }
+		x = 10
+		y = 2
+		cost = 5
+		completion_reward = {
+			army_experience = 20
+			add_ideas = unthinkable_operation_unthinkable_planning
+		}
+	}
+
+	focus = {
+		id = CZE_jet_aviation_research
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = CZE_avia_s199_production focus = CZE_integrate_raf_squadrons }
+		x = 13
+		y = 3
+		cost = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_bonus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = CZE_military_general_staff_reform
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = CZE_heavy_artillery_tradition focus = CZE_tank_brigade_reorganization }
+		x = 9
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_ideas = general_staff
+			add_command_power = 25
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 3: POLITICS, FOREIGN POLICY & CRISES (X: 16 - 26)
+	# =========================================================================
+
+	focus = {
+		id = CZE_legacy_of_may_uprising
+		icon = GFX_goal_generic_propaganda
+		x = 21
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			add_ideas = unthinkable_cze_reconstruction
+		}
+	}
+
+	# Regional Border Crises
+	focus = {
+		id = CZE_resolve_teschen_crisis
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CZE_legacy_of_may_uprising }
+		x = 17
+		y = 1
+		cost = 5
+		completion_reward = {
+			country_event = { id = unthinkable.40 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = CZE_reclaim_zaolzie
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = CZE_resolve_teschen_crisis }
+		mutually_exclusive = { focus = CZE_teschen_accord }
+		x = 16
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_state_claim = 72
+			add_war_support = 0.10
+			POL = { add_opinion_modifier = { target = CZE modifier = hostile } }
+		}
+	}
+
+	focus = {
+		id = CZE_teschen_accord
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = CZE_resolve_teschen_crisis }
+		mutually_exclusive = { focus = CZE_reclaim_zaolzie }
+		x = 18
+		y = 2
+		cost = 5
+		completion_reward = {
+			add_stability = 0.10
+			POL = { add_opinion_modifier = { target = CZE modifier = positive_50 } }
+		}
+	}
+
+	focus = {
+		id = CZE_kosice_government_program
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CZE_legacy_of_may_uprising }
+		x = 23
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+
+	# PATH A: WESTERN DEMOCRACY & PATTON (X: 19 - 21)
+	focus = {
+		id = CZE_embrace_west
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = CZE_kosice_government_program }
+		mutually_exclusive = { focus = CZE_align_with_moscow focus = CZE_bridge_west_east focus = CZE_nationalist_resurgence }
+		x = 20
+		y = 2
+		cost = 7
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.25 }
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+		}
+	}
+
+	focus = {
+		id = CZE_secret_talks_patton
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = CZE_embrace_west }
+		x = 20
+		y = 3
+		cost = 5
+		completion_reward = {
+			USA = { add_opinion_modifier = { target = CZE modifier = positive_50 } }
+			add_ideas = unthinkable_operation_unthinkable_planning
+		}
+	}
+
+	focus = {
+		id = CZE_integrate_western_brigade
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = CZE_secret_talks_patton }
+		x = 20
+		y = 4
+		cost = 5
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = { name = armor_bonus bonus = 1.0 uses = 1 category = armor }
+		}
+	}
+
+	focus = {
+		id = CZE_reject_subcarpathian_diktat
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CZE_integrate_western_brigade }
+		x = 20
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_state_claim = 73
+			SOV = { add_opinion_modifier = { target = CZE modifier = hostile } }
+		}
+	}
+
+	focus = {
+		id = CZE_open_demarcation_line
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = CZE_reject_subcarpathian_diktat }
+		x = 20
+		y = 6
+		cost = 5
+		completion_reward = {
+			USA = { give_military_access = CZE }
+			ENG = { give_military_access = CZE }
+			remove_ideas = unthinkable_cze_demarcation_line
+		}
+	}
+
+	focus = {
+		id = CZE_join_unthinkable
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = CZE_open_demarcation_line }
+		x = 20
+		y = 7
+		cost = 5
+		completion_reward = {
+			ENG = { add_to_faction = CZE }
+			add_war_support = 0.15
+		}
+	}
+
+	# PATH B: ARMED NEUTRALITY - BRIDGE (X: 22 - 24)
+	focus = {
+		id = CZE_bridge_west_east
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = CZE_kosice_government_program }
+		mutually_exclusive = { focus = CZE_embrace_west focus = CZE_align_with_moscow focus = CZE_nationalist_resurgence }
+		x = 23
+		y = 2
+		cost = 7
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = CZE_negotiate_troop_withdrawal
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = CZE_bridge_west_east }
+		x = 23
+		y = 3
+		cost = 5
+		completion_reward = {
+			remove_ideas = unthinkable_cze_demarcation_line
+			add_stability = 0.10
+		}
+	}
+
+	focus = {
+		id = CZE_national_defense_doctrine
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = CZE_negotiate_troop_withdrawal }
+		x = 23
+		y = 4
+		cost = 5
+		completion_reward = {
+			9 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11542
+				}
+			}
+			add_ideas = national_defense_idea
+		}
+	}
+
+	focus = {
+		id = CZE_independent_arms_export
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = CZE_national_defense_doctrine }
+		x = 23
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = export_focus
+		}
+	}
+
+	# PATH C: SOVIET SOLIDARITY & GOTTWALD (X: 25 - 27)
+	focus = {
+		id = CZE_align_with_moscow
+		icon = GFX_goal_generic_communist_drift
+		prerequisite = { focus = CZE_kosice_government_program }
+		mutually_exclusive = { focus = CZE_embrace_west focus = CZE_bridge_west_east focus = CZE_nationalist_resurgence }
+		x = 26
+		y = 2
+		cost = 7
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.25 }
+			set_politics = { ruling_party = communism elections_allowed = no }
+		}
+	}
+
+	focus = {
+		id = CZE_arm_workers_militias
+		icon = GFX_goal_generic_support_the_left_right
+		prerequisite = { focus = CZE_align_with_moscow }
+		x = 26
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_manpower = 60000
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = CZE_ratify_ruthenia_cession
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = CZE_arm_workers_militias }
+		x = 26
+		y = 4
+		cost = 5
+		completion_reward = {
+			SOV = { add_opinion_modifier = { target = CZE modifier = positive_100 } }
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CZE_subordinate_to_konev
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = CZE_ratify_ruthenia_cession }
+		x = 26
+		y = 5
+		cost = 5
+		completion_reward = {
+			army_experience = 35
+			SOV = { add_to_faction = CZE }
+			remove_ideas = unthinkable_cze_demarcation_line
+		}
+	}
+
+	focus = {
+		id = CZE_vojensky_technicky_ustav
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = CZE_economic_miracle focus = CZE_military_general_staff_reform }
+		x = 7
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	# PATH D: NATIONALIST RESURGENCE & PATRIOTIC GUARD (X: 26 - 28)
+	focus = {
+		id = CZE_nationalist_resurgence
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = CZE_kosice_government_program }
+		mutually_exclusive = { focus = CZE_embrace_west focus = CZE_bridge_west_east focus = CZE_align_with_moscow }
+		x = 27
+		y = 2
+		cost = 7
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.25 }
+			add_ideas = unthinkable_generic_fascist_revanchism
+			add_political_power = 80
+		}
+	}
+
+	focus = {
+		id = CZE_patriotic_guard_militia
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = CZE_nationalist_resurgence }
+		x = 27
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_manpower = 40000
+			army_experience = 30
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = CZE_authoritarian_republic
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = CZE_patriotic_guard_militia }
+		x = 27
+		y = 4
+		cost = 6
+		completion_reward = {
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			add_ideas = unthinkable_generic_totalitarian_rule
+			add_stability = 0.10
+			add_war_support = 0.15
+		}
+	}
+}

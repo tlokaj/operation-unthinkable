@@ -1,0 +1,132 @@
+guiTypes = {
+	# =============================================================================
+	# OPERATION UNTHINKABLE: COLD WAR TENSION METER SCRIPTED GUI (DECISION HEADER)
+	# =============================================================================
+
+	containerWindowType = {
+		name = "unthinkable_tension_meter_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 225 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_thin_border2"
+		}
+
+		# Header Title
+		instantTextboxType = {
+			name = "title"
+			position = { x = 10 y = 10 }
+			font = "hoi_18mbs"
+			text = "COLD_WAR_TENSION_METER_TITLE"
+			maxWidth = 480
+			maxHeight = 20
+			format = center
+			fixedsize = yes
+		}
+
+		# Subtitle
+		instantTextboxType = {
+			name = "subtitle"
+			position = { x = 10 y = 30 }
+			font = "hoi_16mbs"
+			text = "COLD_WAR_TENSION_METER_SUBTITLE"
+			maxWidth = 480
+			maxHeight = 18
+			format = center
+			fixedsize = yes
+		}
+
+		# Tension Index Display
+		instantTextboxType = {
+			name = "tension_value"
+			position = { x = 20 y = 56 }
+			font = "hoi_20b"
+			text = "COLD_WAR_TENSION_INDEX_DISPLAY"
+			maxWidth = 460
+			maxHeight = 24
+			format = center
+			pdx_tooltip = "COLD_WAR_TENSION_TOOLTIP"
+		}
+
+		# Tension Status Label
+		instantTextboxType = {
+			name = "tension_status"
+			position = { x = 20 y = 80 }
+			font = "hoi_16mbs"
+			text = "COLD_WAR_TENSION_STATUS_LABEL"
+			maxWidth = 460
+			maxHeight = 22
+			format = center
+			pdx_tooltip = "COLD_WAR_TENSION_TOOLTIP"
+		}
+
+		# Hotspot 1: Elbe & Berlin
+		instantTextboxType = {
+			name = "hotspot_elbe"
+			position = { x = 20 y = 110 }
+			font = "hoi_16mbs"
+			text = "HOTSPOT_ELBE_NAME"
+			maxWidth = 230
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+
+		# Hotspot 2: Trieste & Morgan Line
+		instantTextboxType = {
+			name = "hotspot_trieste"
+			position = { x = 250 y = 110 }
+			font = "hoi_16mbs"
+			text = "HOTSPOT_TRIESTE_NAME"
+			maxWidth = 230
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+
+		# Hotspot 3: Polish Frontier
+		instantTextboxType = {
+			name = "hotspot_poland"
+			position = { x = 20 y = 135 }
+			font = "hoi_16mbs"
+			text = "HOTSPOT_POLAND_NAME"
+			maxWidth = 230
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+
+		# Hotspot 4: Atomic Posture
+		instantTextboxType = {
+			name = "hotspot_nuke"
+			position = { x = 250 y = 135 }
+			font = "hoi_16mbs"
+			text = "HOTSPOT_NUKE_NAME"
+			maxWidth = 230
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+
+		# Action Button 1: Reconnaissance Flight (+5%)
+		buttonType = {
+			name = "unthinkable_tension_probe_btn"
+			position = { x = 20 y = 172 }
+			spriteType = "GFX_button_221x34"
+			font = "hoi_16mbs"
+			buttonText = "Recon Flight (+5%)"
+			pdx_tooltip = "unthinkable_tension_probe_btn_tt"
+		}
+
+		# Action Button 2: Frontline Demarche (-5%)
+		buttonType = {
+			name = "unthinkable_tension_deescalate_btn"
+			position = { x = 258 y = 172 }
+			spriteType = "GFX_button_221x34"
+			font = "hoi_16mbs"
+			buttonText = "Frontline Demarche (-5%)"
+			pdx_tooltip = "unthinkable_tension_deescalate_btn_tt"
+		}
+	}
+}

@@ -1,0 +1,64 @@
+characters = {
+	CZE_jan_masaryk = {
+		name = "Jan Masaryk"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CZE_jan_masaryk_token
+			allowed = {
+				original_tag = CZE
+			}
+			traits = {
+				democratic_reformer
+			}
+			cost = 100
+		}
+	}
+
+	CZE_klement_gottwald_advisor = {
+		name = "Klement Gottwald"
+		portraits = {
+			civilian = {
+				small = "GFX_portrait_CZE_klement_gottwald_small"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = CZE_klement_gottwald_advisor_token
+			allowed = {
+				original_tag = CZE
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 100
+		}
+	}
+
+	CZE_ludvik_svoboda_unthinkable = {
+		name = "Ludvík Svoboda"
+		portraits = {
+			army = {
+				large = "gfx/leaders/CZE/Portrait_Czech_Generic_land_1.dds"
+				small = "GFX_idea_CZE_ludvik_svoboda"
+			}
+		}
+		field_marshal = {
+			traits = {
+				infantry_officer
+				war_hero
+				winter_specialist
+				organizer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+}

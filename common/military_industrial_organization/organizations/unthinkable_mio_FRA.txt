@@ -1,0 +1,135 @@
+# =========================================================================
+# OPERATION UNTHINKABLE (1945) - MILITARY INDUSTRIAL ORGANIZATIONS
+# Tag: FRA (France)
+# =========================================================================
+
+FRA_arsenal_aeronautique_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_2
+
+	allowed = {
+		tag = FRA
+	}
+
+	available = {
+		FROM = { tag = FRA }
+	}
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_heavy_fighter
+		mio_cat_eq_all_interceptor
+		mio_cat_eq_all_jet_fighter
+	}
+
+	research_categories = {
+		mio_cat_all_light_fighter_and_modules
+		mio_cat_all_heavy_fighter_and_modules
+	}
+
+	initial_trait = {
+		name = FRA_mio_initial_trait_arsenal
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.08
+		}
+		equipment_bonus = {
+			maximum_speed = 0.05
+			air_agility = 0.05
+		}
+	}
+
+	add_trait = {
+		token = FRA_mio_trait_arsenal_tandem_power
+		name = FRA_mio_trait_arsenal_tandem_power
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		special_trait_background = yes
+
+		position = { x = 9 y = 1 }
+
+		equipment_bonus = {
+			maximum_speed = 0.08
+			air_range = 0.10
+		}
+	}
+
+	add_trait = {
+		token = FRA_mio_trait_arsenal_jet_research
+		name = FRA_mio_trait_arsenal_jet_research
+		icon = GFX_generic_mio_department_icon_plane_fighter_aerodynamics
+		special_trait_background = yes
+
+		position = { x = 9 y = 2 }
+		all_parents = { FRA_mio_trait_arsenal_tandem_power }
+
+		equipment_bonus = {
+			maximum_speed = 0.10
+			thrust = 0.08
+			air_defence = 0.05
+		}
+	}
+}
+
+FRA_dassault_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_bloch
+
+	allowed = {
+		tag = FRA
+	}
+
+	available = {
+		FROM = { tag = FRA }
+	}
+
+	equipment_type = {
+		mio_cat_eq_only_light_fighter
+		mio_cat_eq_all_interceptor
+		mio_cat_eq_all_jet_fighter
+	}
+
+	research_categories = {
+		mio_cat_all_light_fighter_and_modules
+	}
+
+	initial_trait = {
+		name = FRA_mio_initial_trait_dassault
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.08
+		}
+		equipment_bonus = {
+			air_agility = 0.08
+			maximum_speed = 0.06
+		}
+	}
+
+	add_trait = {
+		token = FRA_mio_trait_dassault_fighter_spirit
+		name = FRA_mio_trait_dassault_fighter_spirit
+		icon = GFX_generic_mio_department_icon_plane_fighter_aerodynamics
+		special_trait_background = yes
+
+		position = { x = 9 y = 1 }
+
+		equipment_bonus = {
+			air_agility = 0.08
+			maximum_speed = 0.06
+			air_defence = 0.05
+		}
+	}
+
+	add_trait = {
+		token = FRA_mio_trait_dassault_ouragan_project
+		name = FRA_mio_trait_dassault_ouragan_project
+		icon = GFX_generic_mio_department_icon_plane_fighter_weapons
+		special_trait_background = yes
+
+		position = { x = 9 y = 2 }
+		all_parents = { FRA_mio_trait_dassault_fighter_spirit }
+
+		equipment_bonus = {
+			air_attack = 0.08
+			thrust = 0.08
+			reliability = 0.05
+		}
+	}
+}

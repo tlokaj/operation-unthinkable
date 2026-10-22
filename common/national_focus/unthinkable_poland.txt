@@ -1,0 +1,316 @@
+focus_tree = {
+	id = polish_unthinkable_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = POL
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	# =========================================================================
+	# BRANCH 1: POST-WAR RECONSTRUCTION & RECOVERED LANDS (X: 0 - 6)
+	# =========================================================================
+
+	focus = {
+		id = POL_rebuild_from_ashes
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = POL_rebuild_warsaw_brick_by_brick
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = POL_rebuild_from_ashes }
+		x = 1
+		y = 1
+		cost = 5
+		completion_reward = {
+			10 = { # Warsaw
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = POL_settle_recovered_territories
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = POL_rebuild_from_ashes }
+		x = 5
+		y = 1
+		cost = 5
+		completion_reward = {
+			66 = { add_extra_state_shared_building_slots = 2 } # Lower Silesia
+			62 = { add_extra_state_shared_building_slots = 2 } # Pomerania
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = POL_reopen_baltic_ports_gdansk
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = POL_rebuild_warsaw_brick_by_brick }
+		x = 1
+		y = 2
+		cost = 5
+		completion_reward = {
+			763 = { # Danzig
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = POL_reconstruct_silesian_coal_basin
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = POL_settle_recovered_territories }
+		x = 5
+		y = 2
+		cost = 5
+		completion_reward = {
+			67 = { # Upper Silesia
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = POL_politechnika_warszawska_expansion
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = POL_reopen_baltic_ports_gdansk }
+		x = 1
+		y = 3
+		cost = 5
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = POL_central_industrial_district_revival
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = POL_reconstruct_silesian_coal_basin }
+		x = 5
+		y = 3
+		cost = 5
+		completion_reward = {
+			88 = { # Kielce / COP
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 2: EASTERN PATH - COOPERATE WITH MOSCOW (X: 8 - 14)
+	# =========================================================================
+
+	focus = {
+		id = POL_cooperate_with_red_army
+		icon = GFX_goal_generic_communist_drift
+		x = 11
+		y = 0
+		cost = 5
+		mutually_exclusive = { focus = POL_contact_anders_and_london focus = POL_nsz_national_armed_forces }
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.25 }
+			SOV = { add_opinion_modifier = { target = POL modifier = positive_100 } }
+		}
+	}
+
+	focus = {
+		id = POL_purge_london_reactionaries
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_cooperate_with_red_army }
+		x = 9
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 80
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = POL_peoples_army_rearmament
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = POL_cooperate_with_red_army }
+		x = 13
+		y = 1
+		cost = 5
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = POL_integrate_with_comintern
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = POL_purge_london_reactionaries focus = POL_peoples_army_rearmament }
+		x = 11
+		y = 2
+		cost = 6
+		completion_reward = {
+			SOV = { add_to_faction = POL }
+			add_war_support = 0.10
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 3: WESTERN PATH - ANDERS, WIN & LIBERATION (X: 16 - 22)
+	# =========================================================================
+
+	focus = {
+		id = POL_contact_anders_and_london
+		icon = GFX_goal_generic_major_alliance
+		x = 19
+		y = 0
+		cost = 5
+		mutually_exclusive = { focus = POL_cooperate_with_red_army focus = POL_nsz_national_armed_forces }
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.25 }
+			ENG = { add_opinion_modifier = { target = POL modifier = positive_100 } }
+		}
+	}
+
+	focus = {
+		id = POL_coordinate_with_win_underground
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_contact_anders_and_london }
+		x = 17
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_ideas = unthinkable_anders_crusade
+			add_war_support = 0.10
+		}
+	}
+
+	focus = {
+		id = POL_rally_free_polish_divisions
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = POL_contact_anders_and_london }
+		x = 21
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 50000
+			army_experience = 30
+		}
+	}
+
+	focus = {
+		id = POL_rise_up_and_join_unthinkable
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = POL_coordinate_with_win_underground focus = POL_rally_free_polish_divisions }
+		x = 19
+		y = 2
+		cost = 6
+		completion_reward = {
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			ENG = { add_to_faction = POL }
+			add_stability = 0.10
+		}
+	}
+
+	# =========================================================================
+	# BRANCH 4: NSZ - NATIONAL ARMED FORCES & RADICAL RESURGENCE (X: 24 - 28)
+	# =========================================================================
+
+	focus = {
+		id = POL_nsz_national_armed_forces
+		icon = GFX_goal_generic_secret_weapon
+		x = 26
+		y = 0
+		cost = 5
+		mutually_exclusive = { focus = POL_cooperate_with_red_army focus = POL_contact_anders_and_london }
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.25 }
+			add_ideas = unthinkable_generic_fascist_revanchism
+			add_political_power = 80
+		}
+	}
+
+	focus = {
+		id = POL_mobilize_forest_partisans
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = POL_nsz_national_armed_forces }
+		x = 24
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_manpower = 60000
+			army_experience = 35
+			add_war_support = 0.15
+		}
+	}
+
+	focus = {
+		id = POL_anti_communist_anti_allied_struggle
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_nsz_national_armed_forces }
+		x = 28
+		y = 1
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = POL_national_salvation_regime
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = POL_mobilize_forest_partisans focus = POL_anti_communist_anti_allied_struggle }
+		x = 26
+		y = 2
+		cost = 5
+		completion_reward = {
+			set_politics = { ruling_party = fascism elections_allowed = no }
+			add_ideas = unthinkable_generic_totalitarian_rule
+			add_stability = 0.15
+		}
+	}
+
+	focus = {
+		id = POL_sanacja_and_nsz_intermarium
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = POL_national_salvation_regime }
+		x = 26
+		y = 3
+		cost = 6
+		completion_reward = {
+			add_war_support = 0.20
+			add_state_claim = 96  # Lwow
+			add_state_claim = 95  # Stanislawow
+			add_state_claim = 89  # Wilno
+			add_state_claim = 90  # Wolyn
+			create_faction = "Intermarium Alliance"
+		}
+	}
+}

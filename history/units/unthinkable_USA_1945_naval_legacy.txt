@@ -1,0 +1,165 @@
+units = {
+	##### US NAVAL FORCES EUROPE (12th Fleet) #####
+	fleet = {
+		name = "United States Naval Forces Europe"
+		naval_base = 9434 # Cherbourg
+		task_force = {
+			name = "TF 125 - European Battleship & Strike Group"
+			location = 9434 # Cherbourg
+			
+			ship = { name = "USS Iowa" definition = battleship start_experience_factor = 0.75 equipment = { battleship_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Wisconsin" definition = battleship start_experience_factor = 0.70 equipment = { battleship_3 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Baltimore" definition = heavy_cruiser start_experience_factor = 0.75 equipment = { heavy_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Boston" definition = heavy_cruiser start_experience_factor = 0.70 equipment = { heavy_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Quincy" definition = heavy_cruiser start_experience_factor = 0.70 equipment = { heavy_cruiser_3 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Cleveland" definition = light_cruiser start_experience_factor = 0.80 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Columbia" definition = light_cruiser start_experience_factor = 0.75 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Montpelier" definition = light_cruiser start_experience_factor = 0.75 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Denver" definition = light_cruiser start_experience_factor = 0.75 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Allen M. Sumner" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Moale" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Ingraham" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Cooper" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS English" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Charles S. Sperry" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Ault" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Waldron" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Fletcher" definition = destroyer start_experience_factor = 0.85 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Radford" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Jenkins" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS La Vallette" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Nicholas" definition = destroyer start_experience_factor = 0.85 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O'Bannon" definition = destroyer start_experience_factor = 0.90 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Chevalier" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Strong" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+		}
+
+		task_force = {
+			name = "TF 126 - Atlantic Hunter-Killer ASW Group"
+			location = 9434 # Cherbourg
+			
+			ship = { name = "USS Guadalcanal" definition = carrier start_experience_factor = 0.80 equipment = { carrier_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Mission Bay" definition = carrier start_experience_factor = 0.75 equipment = { carrier_1 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Card" definition = carrier start_experience_factor = 0.85 equipment = { carrier_1 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Buckley" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Charles Lawrence" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Daniel T. Griffin" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Donnell" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Fogg" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Foss" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Gantner" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS George W. Ingram" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Ira Jeffery" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Lee Fox" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Amesbury" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Bates" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_2 = { amount = 1 owner = USA } } }
+		}
+
+		task_force = {
+			name = "TF 127 - 8th Submarine Squadron"
+			location = 9434 # Cherbourg
+			
+			ship = { name = "USS Balao" definition = submarine start_experience_factor = 0.85 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Billfish" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Bowfin" definition = submarine start_experience_factor = 0.90 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Cabrilla" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Capelin" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Cisco" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Crevalle" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Devilfish" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }
+		}
+	}
+
+	##### UNITED STATES ATLANTIC FLEET #####
+	fleet = {
+		name = "United States Atlantic Fleet"
+		naval_base = 788 # Norfolk
+		task_force = {
+			name = "TF 28 - Atlantic Fast Carrier Strike Force"
+			location = 788 # Norfolk
+			
+			ship = { name = "USS Essex" definition = carrier start_experience_factor = 0.85 equipment = { carrier_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Yorktown" definition = carrier start_experience_factor = 0.85 equipment = { carrier_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Intrepid" definition = carrier start_experience_factor = 0.85 equipment = { carrier_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Hornet" definition = carrier start_experience_factor = 0.85 equipment = { carrier_3 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Missouri" definition = battleship start_experience_factor = 0.80 equipment = { battleship_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS New Jersey" definition = battleship start_experience_factor = 0.85 equipment = { battleship_3 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Canberra" definition = heavy_cruiser start_experience_factor = 0.75 equipment = { heavy_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Chicago" definition = heavy_cruiser start_experience_factor = 0.75 equipment = { heavy_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Miami" definition = light_cruiser start_experience_factor = 0.75 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Biloxi" definition = light_cruiser start_experience_factor = 0.75 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Houston" definition = light_cruiser start_experience_factor = 0.75 equipment = { light_cruiser_3 = { amount = 1 owner = USA } } }
+			
+			ship = { name = "USS Frank Knox" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Southerland" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS William R. Rush" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Bordelon" definition = destroyer start_experience_factor = 0.70 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Barton" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Walke" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Laffey" definition = destroyer start_experience_factor = 0.90 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS O'Brien" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Bristol" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Haynsworth" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Harry E. Hubbard" definition = destroyer start_experience_factor = 0.75 equipment = { destroyer_4 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Braine" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Erben" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Hale" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Stembel" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+			ship = { name = "USS Black" definition = destroyer start_experience_factor = 0.80 equipment = { destroyer_3 = { amount = 1 owner = USA } } }
+		}
+	}
+}
+
+##### STARTING NAVAL PRODUCTION QUEUES (Legacy) #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = carrier_3
+			creator = "USA"
+		}
+		name = "USS Midway"
+		requested_factories = 5
+		progress = 0.75
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = carrier_3
+			creator = "USA"
+		}
+		name = "USS Franklin D. Roosevelt"
+		requested_factories = 5
+		progress = 0.50
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_4
+			creator = "USA"
+		}
+		name = "USS Gearing"
+		requested_factories = 3
+		progress = 0.85
+		amount = 1
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_4
+			creator = "USA"
+		}
+		name = "USS Eugene A. Greene"
+		requested_factories = 3
+		progress = 0.65
+		amount = 1
+	}
+}

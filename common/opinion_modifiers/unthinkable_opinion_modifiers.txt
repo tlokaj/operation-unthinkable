@@ -1,0 +1,17 @@
+opinion_modifiers = {
+	positive_50 = {
+		value = 50
+	}
+	positive_100 = {
+		value = 100
+	}
+	hostile = {
+		value = -100
+	}
+	negative_50 = {
+		value = -50
+	}
+	negative_25 = {
+		value = -25
+	}
+}

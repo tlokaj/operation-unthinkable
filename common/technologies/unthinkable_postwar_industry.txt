@@ -1,0 +1,106 @@
+technologies = {
+	postwar_prefab_construction = {
+		modifier = {
+			production_speed_buildings_factor = 0.10
+			industry_repair_factor = 0.15
+			production_speed_infrastructure_factor = 0.10
+		}
+		path = {
+			leads_to_tech = commercial_nuclear_power
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 16 }
+		}
+		categories = {
+			industry
+			construction_tech
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	automation_transfer_machines = {
+		modifier = {
+			production_factory_max_efficiency_factor = 0.10
+			line_change_production_efficiency_factor = 0.05
+			industrial_capacity_factory = 0.05
+		}
+		path = {
+			leads_to_tech = high_temp_aerospace_alloys
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+		start_year = 1947
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 12 }
+		}
+		categories = {
+			industry
+			cat_production
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	high_temp_aerospace_alloys = {
+		dependencies = {
+			automation_transfer_machines = 1
+		}
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.10
+			industrial_capacity_dockyard = 0.05
+		}
+		research_cost = 2.5
+		start_year = 1948
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 14 }
+		}
+		categories = {
+			industry
+			cat_production
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	advanced_synthetic_kerosene = {
+		modifier = {
+			fuel_gain_factor = 0.15
+		}
+		research_cost = 2.5
+		start_year = 1949
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 14 }
+		}
+		categories = {
+			industry
+			cat_synth_oil
+		}
+		ai_will_do = { factor = 2 }
+	}
+
+	commercial_nuclear_power = {
+		dependencies = {
+			postwar_prefab_construction = 1
+		}
+		modifier = {
+			consumer_goods_factor = -0.02
+			production_speed_industrial_complex_factor = 0.10
+		}
+		research_cost = 3.0
+		start_year = 1951
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 18 }
+		}
+		categories = {
+			industry
+			nuclear
+		}
+		ai_will_do = { factor = 2 }
+	}
+}

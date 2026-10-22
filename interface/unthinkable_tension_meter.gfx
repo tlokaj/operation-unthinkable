@@ -1,0 +1,17 @@
+spriteTypes = {
+	# =============================================================================
+	# OPERATION UNTHINKABLE: COLD WAR TENSION METER GFX DEFINITIONS
+	# =============================================================================
+
+	spriteType = {
+		name = "GFX_unthinkable_tension_header_bg"
+		texturefile = "gfx/interface/decisionview/category_header_bg.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_unthinkable_tension_box_bg"
+		texturefile = "gfx/interface/tiles/tiled_window_thin_border.dds"
+		legacy_lazy_load = no
+	}
+}

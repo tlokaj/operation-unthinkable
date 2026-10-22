@@ -1,0 +1,57 @@
+air_wings = {
+	# State 59: Ost-Hannover (Celle / Fassberg - RAF 2nd TAF)
+	59 = {
+		small_plane_airframe_3 = {
+			owner = "ENG"
+			amount = 100
+			version_name = "Gloster Meteor F.3"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "ENG"
+			amount = 200
+			version_name = "Hawker Tempest Mk V"
+		}
+		medium_plane_airframe_2 = {
+			owner = "ENG"
+			amount = 100
+			version_name = "Mosquito FB Mk VI"
+		}
+	}
+
+	# State 58: Schleswig-Holstein (Kiel / Lübeck)
+	58 = {
+		small_plane_airframe_3 = {
+			owner = "ENG"
+			amount = 150
+			version_name = "Spitfire Mk XIV"
+		}
+		small_plane_airframe_3 = {
+			owner = "ENG"
+			amount = 50
+			version_name = "de Havilland Vampire F.1"
+		}
+	}
+
+	# State 57: Westfalen (Gütersloh / Dortmund)
+	57 = {
+		small_plane_cas_airframe_3 = {
+			owner = "ENG"
+			amount = 200
+			version_name = "Hawker Tempest Mk V"
+		}
+		medium_plane_airframe_2 = {
+			owner = "ENG"
+			amount = 100
+			version_name = "Mosquito FB Mk VI"
+		}
+	}
+
+	# State 126: Bomber Command (UK home bases)
+	126 = {
+		large_plane_airframe_2 = {
+			owner = "ENG"
+			amount = 200
+			version_name = "Avro Lancaster Mk III"
+		}
+	}
+}

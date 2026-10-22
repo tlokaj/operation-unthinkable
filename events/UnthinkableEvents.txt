@@ -1,6 +1,14 @@
 add_namespace = unthinkable
 
-# Joint Planning Staff Report: Operation Unthinkable
+# =============================================================================
+# OPERATION UNTHINKABLE: EVENT SYSTEM (1945)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. OPERATION UNTHINKABLE INITIATION & PLANNING
+# -----------------------------------------------------------------------------
+
+# unthinkable.1: Joint Planning Staff Report: Operation Unthinkable
 country_event = {
 	id = unthinkable.1
 	title = unthinkable.1.t
@@ -20,6 +28,10 @@ country_event = {
 			threat = 15
 			name = unthinkable.1.t
 		}
+		if = {
+			limit = { tag = ENG }
+			USA = { country_event = { id = unthinkable.25 hours = 6 } }
+		}
 	}
 
 	# Adopt the defensive stance only
@@ -31,7 +43,1034 @@ country_event = {
 	}
 }
 
-# World News: Operation Unthinkable Launched
+# unthinkable.5: Soviet Outrage: Wehrmacht Re-armed in Schleswig-Holstein
+country_event = {
+	id = unthinkable.5
+	title = unthinkable.5.t
+	desc = unthinkable.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.5.a
+		add_war_support = 0.10
+		unthinkable_add_tension_15 = yes
+		add_opinion_modifier = {
+			target = ENG
+			modifier = hostile
+		}
+		add_opinion_modifier = {
+			target = USA
+			modifier = hostile
+		}
+	}
+}
+
+# unthinkable.10: The Partition of Germany (Post-war Setup Trigger)
+country_event = {
+	id = unthinkable.10
+	title = unthinkable.10.t
+	desc = unthinkable.10.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.10.a
+		unthinkable_setup_1945_world = yes
+	}
+}
+
+# unthinkable.15: British General Election: July 1945
+country_event = {
+	id = unthinkable.15
+	title = unthinkable.15.t
+	desc = unthinkable.15.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = unthinkable_election_happened }
+	}
+
+	immediate = {
+		set_country_flag = unthinkable_election_happened
+	}
+
+	# Churchill's Conservatives win
+	option = {
+		name = unthinkable.15.a
+		ai_chance = { factor = 40 }
+		add_war_support = 0.10
+		set_country_flag = unthinkable_churchill_reelected
+	}
+
+	# Clement Attlee's Labour landslide
+	option = {
+		name = unthinkable.15.b
+		ai_chance = { factor = 60 }
+		add_stability = 0.10
+		add_war_support = -0.05
+		set_country_flag = unthinkable_attlee_elected
+		retire_character = ENG_winston_churchill
+		promote_character = ENG_clement_attlee_leader
+	}
+}
+
+# unthinkable.20: Allied Ultimatum to the Soviet Union
+country_event = {
+	id = unthinkable.20
+	title = unthinkable.20.t
+	desc = unthinkable.20.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Stalin: "Not one step back! The Red Army will not be intimidated!"
+	option = {
+		name = unthinkable.20.a
+		ai_chance = { factor = 90 }
+		ENG = { country_event = { id = unthinkable.21 hours = 6 } }
+		USA = { country_event = { id = unthinkable.21 hours = 6 } }
+	}
+
+	# Stalin backs down over Poland
+	option = {
+		name = unthinkable.20.b
+		ai_chance = { factor = 10 }
+		add_stability = -0.15
+		POL = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+# unthinkable.21: Stalin's Defiance Delivered to London and Washington
+country_event = {
+	id = unthinkable.21
+	title = unthinkable.21.t
+	desc = unthinkable.21.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.21.a
+		create_wargoal = {
+			type = topple_government
+			target = SOV
+		}
+	}
+}
+
+# unthinkable.25: Truman's Dilemma: Europe vs. the Pacific War
+country_event = {
+	id = unthinkable.25
+	title = unthinkable.25.t
+	desc = unthinkable.25.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	# Support Churchill: Stop the Soviets in Europe!
+	option = {
+		name = unthinkable.25.a
+		ai_chance = { factor = 70 }
+		set_country_flag = unthinkable_offensive_approved
+		add_war_support = 0.05
+		add_stability = -0.05
+	}
+
+	# Caution: The war with Japan is not yet won
+	option = {
+		name = unthinkable.25.b
+		ai_chance = { factor = 30 }
+		set_country_flag = unthinkable_pacific_priority_strict
+		add_stability = 0.05
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 2. NUCLEAR ATOMIC CRISIS (TRINITY & DIPLOMACY)
+# -----------------------------------------------------------------------------
+
+# unthinkable.30: The Trinity Test: Dawn of the Atomic Era (July 16, 1945)
+country_event = {
+	id = unthinkable.30
+	title = unthinkable.30.t
+	desc = unthinkable.30.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = unthinkable_trinity_completed
+		set_global_flag = unthinkable_trinity_completed
+		unthinkable_trigger_super_event_trinity = yes
+		unthinkable_add_tension_10 = yes
+	}
+
+	option = {
+		name = unthinkable.30.a
+		add_war_support = 0.10
+		add_named_threat = {
+			threat = 25
+			name = unthinkable.30.t
+		}
+		hidden_effect = {
+			news_event = { id = unthinkable.31 hours = 6 }
+		}
+	}
+}
+
+# unthinkable.31: World News: Trinity Test Successful
+news_event = {
+	id = unthinkable.31
+	title = unthinkable.31.t
+	desc = unthinkable.31.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.31.a
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 3. TESCHEN (ZAOLZIE & KLODZKO) BORDER CRISIS (CZE vs POL)
+# -----------------------------------------------------------------------------
+
+# unthinkable.40: The Teschen Dispute: Mobilization on the Olza (July 10, 1945)
+country_event = {
+	id = unthinkable.40
+	title = unthinkable.40.t
+	desc = unthinkable.40.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Reinforce garrison and press claims on Kłodzko
+	option = {
+		name = unthinkable.40.a
+		ai_chance = { factor = 60 }
+		add_war_support = 0.05
+		POL = { country_event = { id = unthinkable.41 hours = 12 } }
+	}
+
+	# Diplomatic moderation
+	option = {
+		name = unthinkable.40.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.41: Polish Response to Czechoslovak Mobilization
+country_event = {
+	id = unthinkable.41
+	title = unthinkable.41.t
+	desc = unthinkable.41.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Stand firm and appeal to Moscow
+	option = {
+		name = unthinkable.41.a
+		ai_chance = { factor = 75 }
+		add_war_support = 0.05
+		SOV = { country_event = { id = unthinkable.42 hours = 12 } }
+	}
+
+	# Compromise bilaterally
+	option = {
+		name = unthinkable.41.b
+		ai_chance = { factor = 25 }
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.42: Stalin Arbitrates the Teschen Dispute
+country_event = {
+	id = unthinkable.42
+	title = unthinkable.42.t
+	desc = unthinkable.42.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	# Status Quo: Czechoslovakia keeps Zaolzie, Poland keeps Kłodzko
+	option = {
+		name = unthinkable.42.a
+		ai_chance = { factor = 80 }
+		CZE = { country_event = { id = unthinkable.43 hours = 6 } }
+		POL = { country_event = { id = unthinkable.44 hours = 6 } }
+	}
+
+	# Support Poland: transfer Zaolzie to Poland
+	option = {
+		name = unthinkable.42.b
+		ai_chance = { factor = 10 }
+		POL = {
+			transfer_state = 72
+			add_state_core = 72
+		}
+		CZE = {
+			add_stability = -0.10
+			add_opinion_modifier = {
+				target = SOV
+				modifier = negative_50
+			}
+		}
+	}
+
+	# Support Czechoslovakia: urge Poland to concede Kłodzko
+	option = {
+		name = unthinkable.42.c
+		ai_chance = { factor = 10 }
+		POL = {
+			add_stability = -0.10
+			add_opinion_modifier = {
+				target = SOV
+				modifier = negative_50
+			}
+		}
+		CZE = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+# unthinkable.43: Teschen Arbitration Delivered: Czechoslovakia
+country_event = {
+	id = unthinkable.43
+	title = unthinkable.43.t
+	desc = unthinkable.43.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.43.a
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.44: Teschen Arbitration Delivered: Poland
+country_event = {
+	id = unthinkable.44
+	title = unthinkable.44.t
+	desc = unthinkable.44.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.44.a
+		add_stability = 0.05
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 4. POTSDAM CONFERENCE CHAIN (JULY 17 - AUGUST 2, 1945)
+# -----------------------------------------------------------------------------
+
+# unthinkable.50: The Potsdam Conference: Summit at Cecilienhof (July 17, 1945)
+country_event = {
+	id = unthinkable.50
+	title = unthinkable.50.t
+	desc = unthinkable.50.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	immediate = {
+		USA = { country_event = { id = unthinkable.501 hours = 3 } }
+		SOV = { country_event = { id = unthinkable.502 hours = 3 } }
+		SOV = { country_event = { id = unthinkable.51 days = 3 } }
+	}
+
+	# Constructive negotiations
+	option = {
+		name = unthinkable.50.a
+		ai_chance = { factor = 70 }
+		add_stability = 0.05
+	}
+
+	# Hardline stance against Moscow
+	option = {
+		name = unthinkable.50.b
+		ai_chance = { factor = 30 }
+		set_country_flag = unthinkable_potsdam_hardline
+		add_war_support = 0.05
+	}
+}
+
+# unthinkable.501: USA Delegation at Potsdam
+country_event = {
+	id = unthinkable.501
+	title = unthinkable.501.t
+	desc = unthinkable.501.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.501.a
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.502: Soviet Delegation at Cecilienhof
+country_event = {
+	id = unthinkable.502
+	title = unthinkable.502.t
+	desc = unthinkable.502.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.502.a
+		add_war_support = 0.05
+	}
+}
+
+# unthinkable.51: Potsdam: The German Question & The Oder-Neisse Line
+country_event = {
+	id = unthinkable.51
+	title = unthinkable.51.t
+	desc = unthinkable.51.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Demand recognition of Oder-Neisse and 10B in reparations
+	option = {
+		name = unthinkable.51.a
+		ai_chance = { factor = 85 }
+		ENG = { country_event = { id = unthinkable.511 hours = 6 } }
+		USA = { country_event = { id = unthinkable.511 hours = 6 } }
+	}
+
+	# Propose compromise border
+	option = {
+		name = unthinkable.51.b
+		ai_chance = { factor = 15 }
+		add_stability = 0.05
+		ENG = { country_event = { id = unthinkable.511 hours = 6 } }
+		USA = { country_event = { id = unthinkable.511 hours = 6 } }
+	}
+}
+
+# unthinkable.511: Potsdam: Western Response to Soviet Demands
+country_event = {
+	id = unthinkable.511
+	title = unthinkable.511.t
+	desc = unthinkable.511.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Schedule next stage: Polish Question
+		ENG = { country_event = { id = unthinkable.52 days = 3 } }
+	}
+
+	# Accede to Oder-Neisse line de facto
+	option = {
+		name = unthinkable.511.a
+		ai_chance = { factor = 70 }
+		add_stability = 0.05
+	}
+
+	# Flatly reject border and freeze industrial deliveries from West!
+	option = {
+		name = unthinkable.511.b
+		ai_chance = { factor = 30 }
+		set_global_flag = unthinkable_potsdam_rupture_germany
+		add_war_support = 0.05
+		add_named_threat = {
+			threat = 10
+			name = unthinkable.511.t
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = hostile
+			}
+		}
+	}
+}
+
+# unthinkable.52: Potsdam: The Polish Question & Arrest of the Sixteen
+country_event = {
+	id = unthinkable.52
+	title = unthinkable.52.t
+	desc = unthinkable.52.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Schedule next stage: Atomic Revelation
+		USA = { country_event = { id = unthinkable.53 days = 3 } }
+	}
+
+	# Demand free elections and release of Polish leaders
+	option = {
+		name = unthinkable.52.a
+		ai_chance = { factor = 75 }
+		SOV = { country_event = { id = unthinkable.521 hours = 6 } }
+	}
+
+	# Acquiesce to the Lublin government
+	option = {
+		name = unthinkable.52.b
+		ai_chance = { factor = 25 }
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+}
+
+# unthinkable.521: Potsdam: Stalin Confronted Over Poland
+country_event = {
+	id = unthinkable.521
+	title = unthinkable.521.t
+	desc = unthinkable.521.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Promise free elections in principle
+	option = {
+		name = unthinkable.521.a
+		ai_chance = { factor = 85 }
+		add_stability = 0.05
+	}
+
+	# Rebuff Western meddling in Eastern Europe
+	option = {
+		name = unthinkable.521.b
+		ai_chance = { factor = 15 }
+		add_war_support = 0.05
+		set_global_flag = unthinkable_potsdam_rupture_poland
+	}
+}
+
+# unthinkable.53: Potsdam: The Atomic Revelation (July 24, 1945)
+country_event = {
+	id = unthinkable.53
+	title = unthinkable.53.t
+	desc = unthinkable.53.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	immediate = {
+		ENG = { country_event = { id = unthinkable.54 days = 4 } }
+	}
+
+	# Casually inform Stalin of a new weapon of unusual destructive force
+	option = {
+		name = unthinkable.53.a
+		ai_chance = { factor = 80 }
+		SOV = { country_event = { id = unthinkable.531 hours = 3 } }
+	}
+
+	# Keep atomic monopoly strictly secret
+	option = {
+		name = unthinkable.53.b
+		ai_chance = { factor = 20 }
+	}
+}
+
+# unthinkable.531: Potsdam: Stalin Informed of American Super-Weapon
+country_event = {
+	id = unthinkable.531
+	title = unthinkable.531.t
+	desc = unthinkable.531.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Feign calm, order Beria to accelerate Soviet atomic project!
+	option = {
+		name = unthinkable.531.a
+		add_ideas = unthinkable_sov_atomic_crash_program
+		set_country_flag = unthinkable_sov_atomic_crash_program
+	}
+}
+
+# unthinkable.54: Potsdam: The Final Declaration (August 2, 1945)
+country_event = {
+	id = unthinkable.54
+	title = unthinkable.54.t
+	desc = unthinkable.54.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# If conference did not rupture: sign agreement
+	option = {
+		name = unthinkable.54.a
+		trigger = {
+			NOT = { has_global_flag = unthinkable_potsdam_rupture_germany }
+			NOT = { has_global_flag = unthinkable_potsdam_rupture_poland }
+		}
+		add_stability = 0.05
+		hidden_effect = {
+			news_event = { id = unthinkable.56 hours = 3 }
+		}
+	}
+
+	# If rupture occurred: collapse of conference
+	option = {
+		name = unthinkable.54.b
+		trigger = {
+			OR = {
+				has_global_flag = unthinkable_potsdam_rupture_germany
+				has_global_flag = unthinkable_potsdam_rupture_poland
+			}
+		}
+		add_war_support = 0.10
+		hidden_effect = {
+			news_event = { id = unthinkable.55 hours = 3 }
+		}
+	}
+}
+
+# unthinkable.55: World News: Collapse of the Potsdam Conference!
+news_event = {
+	id = unthinkable.55
+	title = unthinkable.55.t
+	desc = unthinkable.55.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.55.a
+	}
+}
+
+# unthinkable.56: World News: The Potsdam Agreement Signed!
+news_event = {
+	id = unthinkable.56
+	title = unthinkable.56.t
+	desc = unthinkable.56.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.56.a
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 5. TRIESTE CRISIS & THE MORGAN LINE (YUG vs ALLIES)
+# -----------------------------------------------------------------------------
+
+# unthinkable.60: The Confrontation at Trieste (July 5, 1945)
+country_event = {
+	id = unthinkable.60
+	title = unthinkable.60.t
+	desc = unthinkable.60.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = unthinkable_trieste_crisis_active
+		unthinkable_add_tension_10 = yes
+	}
+
+	# Deliver Morgan Line Ultimatum to Tito
+	option = {
+		name = unthinkable.60.a
+		ai_chance = { factor = 80 }
+		add_war_support = 0.05
+		YUG = { country_event = { id = unthinkable.61 hours = 6 } }
+	}
+
+	# Compromise and accept Yugoslav occupation
+	option = {
+		name = unthinkable.60.b
+		ai_chance = { factor = 20 }
+		add_stability = 0.05
+		add_war_support = -0.05
+		clr_global_flag = unthinkable_trieste_crisis_active
+		unthinkable_sub_tension_5 = yes
+	}
+}
+
+# unthinkable.61: Allied Ultimatum on the Morgan Line
+country_event = {
+	id = unthinkable.61
+	title = unthinkable.61.t
+	desc = unthinkable.61.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Withdraw behind the Morgan Line
+	option = {
+		name = unthinkable.61.a
+		ai_chance = { factor = 75 }
+		add_stability = -0.05
+		ENG = { country_event = { id = unthinkable.611 hours = 6 } }
+	}
+
+	# Defy the ultimatum and appeal to Stalin
+	option = {
+		name = unthinkable.61.b
+		ai_chance = { factor = 25 }
+		add_war_support = 0.10
+		unthinkable_add_tension_15 = yes
+		SOV = { country_event = { id = unthinkable.62 hours = 6 } }
+	}
+}
+
+# unthinkable.611: Tito Yields to the Morgan Line
+country_event = {
+	id = unthinkable.611
+	title = unthinkable.611.t
+	desc = unthinkable.611.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_global_flag = unthinkable_trieste_crisis_active
+		unthinkable_sub_tension_10 = yes
+	}
+
+	option = {
+		name = unthinkable.611.a
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.62: Tito Appeals to Stalin for Soviet Military Support
+country_event = {
+	id = unthinkable.62
+	title = unthinkable.62.t
+	desc = unthinkable.62.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	# Rebuff Tito: World War III will not start over Trieste
+	option = {
+		name = unthinkable.62.a
+		ai_chance = { factor = 80 }
+		YUG = { country_event = { id = unthinkable.64 hours = 6 } }
+	}
+
+	# Back Tito with the full power of the Red Army!
+	option = {
+		name = unthinkable.62.b
+		ai_chance = { factor = 20 }
+		add_war_support = 0.15
+		ENG = { country_event = { id = unthinkable.63 hours = 6 } }
+		USA = { country_event = { id = unthinkable.63 hours = 6 } }
+	}
+}
+
+# unthinkable.63: World News: War Erupts on the Adriatic!
+news_event = {
+	id = unthinkable.63
+	title = unthinkable.63.t
+	desc = unthinkable.63.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.63.a
+		trigger = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+
+	option = {
+		name = unthinkable.63.b
+		trigger = {
+			has_war_with = ROOT
+		}
+	}
+}
+
+# unthinkable.64: Moscow Rebuffs Belgrade: Tito Yields Bitterly
+country_event = {
+	id = unthinkable.64
+	title = unthinkable.64.t
+	desc = unthinkable.64.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.64.a
+		add_stability = -0.10
+		add_opinion_modifier = {
+			target = SOV
+			modifier = negative_50
+		}
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 6. POLISH EXILE & INSURGENCY
+# -----------------------------------------------------------------------------
+
+# unthinkable.70: Anders' Army: The Polish II Corps in the West
+country_event = {
+	id = unthinkable.70
+	title = unthinkable.70.t
+	desc = unthinkable.70.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Fully mobilize Polish forces for European vanguard
+	option = {
+		name = unthinkable.70.a
+		ai_chance = { factor = 70 }
+		add_manpower = 50000
+		add_war_support = 0.05
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = negative_25
+			}
+		}
+	}
+
+	# Maintain cautious reserve
+	option = {
+		name = unthinkable.70.b
+		ai_chance = { factor = 30 }
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.71: The "Cursed Soldiers": Insurgency in Poland (July 21, 1945)
+country_event = {
+	id = unthinkable.71
+	title = unthinkable.71.t
+	desc = unthinkable.71.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = unthinkable_polish_insurgency_active
+		unthinkable_trigger_super_event_poland = yes
+		unthinkable_add_tension_10 = yes
+	}
+
+	# Ruthless security measures
+	option = {
+		name = unthinkable.71.a
+		ai_chance = { factor = 75 }
+		add_stability = -0.05
+		POL = {
+			add_ideas = unthinkable_win_insurgency
+		}
+	}
+
+	# Offer tactical amnesties to divide the resistance
+	option = {
+		name = unthinkable.71.b
+		ai_chance = { factor = 25 }
+		add_stability = 0.05
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 7. OPERATION UNTHINKABLE OUTBREAK & ZHUKOV'S OFFENSIVE
+# -----------------------------------------------------------------------------
+
+# unthinkable.80: Churchill's German Divisions in Schleswig-Holstein
+country_event = {
+	id = unthinkable.80
+	title = unthinkable.80.t
+	desc = unthinkable.80.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	# Order rearmament of German divisions
+	option = {
+		name = unthinkable.80.a
+		ai_chance = { factor = 70 }
+		load_oob = "unthinkable_GER_rearmed_1945"
+		add_manpower = 50000
+		add_war_support = -0.05
+		add_stability = -0.05
+		SOV = { country_event = { id = unthinkable.5 hours = 12 } }
+	}
+
+	# Stand down Montgomery's plan
+	option = {
+		name = unthinkable.80.b
+		ai_chance = { factor = 30 }
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.81: Demarcation Line Flashpoint: The Air Corridor Incident
+country_event = {
+	id = unthinkable.81
+	title = unthinkable.81.t
+	desc = unthinkable.81.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# An act of war! Launch Operation Unthinkable!
+	option = {
+		name = unthinkable.81.a
+		ai_chance = { factor = 60 }
+		add_ideas = unthinkable_allied_surprise_strike
+		declare_war_on = {
+			target = SOV
+			type = topple_government
+		}
+	}
+
+	# Deliver a stern diplomatic protest and stand down
+	option = {
+		name = unthinkable.81.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.05
+	}
+}
+
+# unthinkable.85: Zhukov's Counter-Offensive: Plan Groza-2 (The Red Thunder)
+country_event = {
+	id = unthinkable.85
+	title = unthinkable.85.t
+	desc = unthinkable.85.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Unleash the Red Army: Drive the imperialists into the sea!
+	option = {
+		name = unthinkable.85.a
+		add_war_support = 0.15
+		add_ideas = unthinkable_red_army_onslaught
+		add_manpower = 100000
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 8. ATOMIC DIPLOMACY & ULTIMATA
+# -----------------------------------------------------------------------------
+
+# unthinkable.90: The Atomic Ultimatum Delivered to the Kremlin
+country_event = {
+	id = unthinkable.90
+	title = unthinkable.90.t
+	desc = unthinkable.90.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Defiant rejection!
+	option = {
+		name = unthinkable.90.a
+		ai_chance = { factor = 85 }
+		add_war_support = 0.10
+		unthinkable_add_tension_25 = yes
+		USA = { country_event = { id = unthinkable.91 hours = 6 } }
+		ENG = { country_event = { id = unthinkable.91 hours = 6 } }
+	}
+
+	# Offer concessions to avert atomic war
+	option = {
+		name = unthinkable.90.b
+		ai_chance = { factor = 15 }
+		add_stability = -0.10
+		POL = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+}
+
+# unthinkable.91: Stalin's Defiance to the Atomic Ultimatum
+country_event = {
+	id = unthinkable.91
+	title = unthinkable.91.t
+	desc = unthinkable.91.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	# Proceed with Operation Unthinkable!
+	option = {
+		name = unthinkable.91.a
+		create_wargoal = {
+			type = topple_government
+			target = SOV
+		}
+	}
+
+	# The risk of total war is too terrible
+	option = {
+		name = unthinkable.91.b
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+}
+
+# unthinkable.92: President Truman: Tactical Atomic Warfare in Europe?
+country_event = {
+	id = unthinkable.92
+	title = unthinkable.92.t
+	desc = unthinkable.92.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	# Authorize tactical atomic strikes on Soviet staging areas
+	option = {
+		name = unthinkable.92.a
+		ai_chance = { factor = 60 }
+		add_war_support = 0.05
+		set_country_flag = unthinkable_tactical_nukes_authorized
+	}
+
+	# Reserve atomic bombs exclusively for the Pacific
+	option = {
+		name = unthinkable.92.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.05
+		set_country_flag = unthinkable_nukes_pacific_only
+	}
+}
+
+# -----------------------------------------------------------------------------
+# 9. WORLD NEWS: OPERATION UNTHINKABLE BEGINS
+# -----------------------------------------------------------------------------
+
+# unthinkable.100: World News: Operation Unthinkable Launched
 news_event = {
 	id = unthinkable.100
 	title = unthinkable.100.t

@@ -1,0 +1,269 @@
+# Custom La Resistance Operations for Operation Unthinkable (1945)
+
+operation_unthinkable_atomic_espionage = {
+	icon = GFX_operations_steal_tech
+	map_icon = GFX_operations_steal_tech_map
+	name = operation_unthinkable_atomic_espionage
+	desc = operation_unthinkable_atomic_espionage_desc
+	priority = 15
+	days = 90
+	network_strength = 50
+	operatives = 2
+
+	visible = {
+		has_dlc = "La Resistance"
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		FROM = {
+			OR = {
+				has_tech = atomic_research
+				has_tech = nuclear_reactor
+				has_tech = nukes
+			}
+		}
+	}
+
+	available = {
+		NOT = { is_in_faction_with = FROM }
+		network_national_coverage = {
+			target = FROM
+			value > 0.49
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_unthinkable_atomic_espionage_outcome_tt
+	}
+
+	outcome_execute = {
+		add_tech_bonus = {
+			name = operation_unthinkable_atomic_espionage_bonus
+			bonus = 2.0
+			ahead_reduction = 2
+			category = nuclear
+		}
+		add_intel = {
+			target = FROM
+			civilian_intel = 25
+			military_intel = 15
+		}
+	}
+
+	phases = {
+		infiltration_border = { base = 50 }
+		infiltration_civilian = { base = 50 }
+	}
+}
+
+operation_unthinkable_paperclip = {
+	icon = GFX_operations_steal_tech
+	map_icon = GFX_operations_steal_tech_map
+	name = operation_unthinkable_paperclip
+	desc = operation_unthinkable_paperclip_desc
+	priority = 12
+	days = 60
+	network_strength = 35
+	operatives = 1
+
+	visible = {
+		has_dlc = "La Resistance"
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		OR = {
+			FROM = { tag = GER }
+			FROM = { controls_state = 64 } # Berlin/Brandenburg
+			FROM = { controls_state = 65 } # Thuringia/Saxony
+		}
+	}
+
+	available = {
+		network_national_coverage = {
+			target = FROM
+			value > 0.34
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_unthinkable_paperclip_outcome_tt
+	}
+
+	outcome_execute = {
+		add_tech_bonus = {
+			name = operation_unthinkable_paperclip_bonus
+			bonus = 1.5
+			ahead_reduction = 1
+			category = rocketry
+		}
+		add_tech_bonus = {
+			name = operation_unthinkable_paperclip_jet_bonus
+			bonus = 1.0
+			ahead_reduction = 1
+			category = jet_technology
+		}
+		add_air_experience = 30
+	}
+
+	phases = {
+		infiltration_border = { base = 50 }
+		infiltration_civilian = { base = 50 }
+	}
+}
+
+operation_unthinkable_demarcation_recon = {
+	icon = GFX_operations_infiltrate_civilian_govt
+	map_icon = GFX_operations_infiltrate_civilian_govt_map
+	name = operation_unthinkable_demarcation_recon
+	desc = operation_unthinkable_demarcation_recon_desc
+	priority = 10
+	days = 45
+	network_strength = 25
+	operatives = 1
+
+	visible = {
+		has_dlc = "La Resistance"
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+	}
+
+	available = {
+		NOT = { is_in_faction_with = FROM }
+		network_national_coverage = {
+			target = FROM
+			value > 0.24
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_unthinkable_demarcation_recon_outcome_tt
+	}
+
+	outcome_execute = {
+		add_intel = {
+			target = FROM
+			army_intel = 25
+			airforce_intel = 20
+		}
+	}
+
+	phases = {
+		infiltration_border = { base = 50 }
+		infiltration_civilian = { base = 50 }
+	}
+}
+
+operation_unthinkable_crush_win_insurgency = {
+	icon = GFX_operations_targeted_sabotage
+	map_icon = GFX_operations_targeted_sabotage_map
+	name = operation_unthinkable_crush_win_insurgency
+	desc = operation_unthinkable_crush_win_insurgency_desc
+	priority = 11
+	days = 50
+	network_strength = 30
+	operatives = 1
+
+	visible = {
+		has_dlc = "La Resistance"
+		OR = {
+			tag = SOV
+			tag = POL
+		}
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		FROM = {
+			OR = {
+				tag = POL
+				tag = SOV
+			}
+		}
+	}
+
+	available = {
+		network_national_coverage = {
+			target = FROM
+			value > 0.29
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_unthinkable_crush_win_insurgency_outcome_tt
+	}
+
+	outcome_execute = {
+		FROM = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_compliance = 10
+				add_resistance = -15
+			}
+		}
+		add_political_power = 25
+	}
+
+	phases = {
+		infiltration_border = { base = 50 }
+		infiltration_civilian = { base = 50 }
+	}
+}
+
+operation_unthinkable_werwolf_crackdown = {
+	icon = GFX_operations_targeted_sabotage
+	map_icon = GFX_operations_targeted_sabotage_map
+	name = operation_unthinkable_werwolf_crackdown
+	desc = operation_unthinkable_werwolf_crackdown_desc
+	priority = 10
+	days = 40
+	network_strength = 25
+	operatives = 1
+
+	visible = {
+		has_dlc = "La Resistance"
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		FROM = {
+			any_controlled_state = {
+				is_core_of = GER
+			}
+		}
+	}
+
+	available = {
+		network_national_coverage = {
+			target = FROM
+			value > 0.24
+		}
+	}
+
+	outcome_potential = {
+		custom_effect_tooltip = operation_unthinkable_werwolf_crackdown_outcome_tt
+	}
+
+	outcome_execute = {
+		FROM = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_compliance = 10
+				add_resistance = -15
+			}
+		}
+		add_stability = 0.02
+	}
+
+	phases = {
+		infiltration_border = { base = 50 }
+		infiltration_civilian = { base = 50 }
+	}
+}
