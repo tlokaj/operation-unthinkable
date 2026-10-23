@@ -2693,6 +2693,12 @@ technologies = {
 			breakthrough = 0.15
 			armor_value = 0.25
 		}
+		modern_armor = {
+			hard_attack = 0.20
+			ap_attack = 0.20
+			breakthrough = 0.15
+			armor_value = 0.25
+		}
 		research_cost = 3.0
 		start_year = 1949
 		folder = {
@@ -2701,7 +2707,6 @@ technologies = {
 		}
 		categories = {
 			armor
-			cat_medium_armor
 		}
 		ai_will_do = { factor = 3 }
 	}

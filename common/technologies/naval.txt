@@ -1393,39 +1393,41 @@ technologies = {
 
 
 	postwar_fast_attack_submarine = {
-		category_submarine = {
-			sub_surface_visibility = -0.20
-			sub_detection = 0.25
+		submarine = {
+			sub_visibility = -0.15
+			sub_detection = 0.20
 			torpedo_attack = 0.15
-			maximum_speed = 0.20
+			naval_speed = 0.15
 		}
+		navy_submarine_attack_factor = 0.15
+		navy_submarine_defence_factor = 0.15
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 23 }
 		}
 		categories = {
 			naval_equipment
-			submarines
 		}
 		ai_will_do = { factor = 2 }
 	}
 
 	angled_flight_deck_carriers = {
-		category_carrier = {
-			deck_size = 15
-			carrier_taskforce_mission_efficiency = 0.20
+		navy_carrier_air_attack_factor = 0.15
+		navy_carrier_air_agility_factor = 0.15
+		navy_carrier_air_targetting_factor = 0.15
+		carrier = {
+			naval_speed = 0.05
 		}
 		research_cost = 2.5
 		start_year = 1949
 		folder = {
 			name = naval_folder
-			position = { x = 4 y = 14 }
+			position = { x = 0 y = 23 }
 		}
 		categories = {
 			naval_equipment
-			carrier
 		}
 		ai_will_do = { factor = 2 }
 	}
