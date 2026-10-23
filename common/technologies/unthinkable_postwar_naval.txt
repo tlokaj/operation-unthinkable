@@ -3,95 +3,42 @@ technologies = {
 		dependencies = {
 			advanced_submarine = 1
 		}
-		modifier = {
-			navy_submarine_attack_factor = 0.15
-			navy_submarine_detection_factor = 0.20
-		}
-		path = {
-			leads_to_tech = asw_sonobuoys_and_helicopters
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = angled_flight_deck_carriers
-			research_cost_coeff = 1
-		}
-		research_cost = 2.5
-		start_year = 1946
-		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 0 y = 0 }
-		}
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-		ai_will_do = { factor = 2 }
-	}
-
-	asw_sonobuoys_and_helicopters = {
-		dependencies = {
-			postwar_fast_attack_submarine = 1
-		}
-		modifier = {
-			navy_submarine_detection_factor = 0.25
-			convoy_escort_efficiency = 0.20
+		category_submarine = {
+			sub_surface_visibility = -0.20
+			sub_detection = 0.25
+			torpedo_attack = 0.15
+			maximum_speed = 0.20
 		}
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 0 y = 1 }
+			name = naval_folder
+			position = { x = 0 y = 18 }
 		}
 		categories = {
 			naval_equipment
-			asw_tech
-			helicopter_tech
+			submarines
 		}
 		ai_will_do = { factor = 2 }
 	}
 
 	angled_flight_deck_carriers = {
 		dependencies = {
-			postwar_fast_attack_submarine = 1
+			advanced_carrier = 1
 		}
-		modifier = {
-			navy_carrier_air_attack_factor = 0.15
-		}
-		path = {
-			leads_to_tech = early_guided_missile_cruiser
-			research_cost_coeff = 1
+		category_carrier = {
+			deck_size = 15
+			carrier_taskforce_mission_efficiency = 0.20
 		}
 		research_cost = 2.5
-		start_year = 1948
+		start_year = 1949
 		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 1 y = 1 }
+			name = naval_folder
+			position = { x = 4 y = 18 }
 		}
 		categories = {
 			naval_equipment
-			cv_tech
-		}
-		ai_will_do = { factor = 2 }
-	}
-
-	early_guided_missile_cruiser = {
-		dependencies = {
-			angled_flight_deck_carriers = 1
-		}
-		modifier = {
-			navy_anti_air_attack_factor = 0.25
-			navy_capital_ship_attack_factor = 0.15
-		}
-		research_cost = 3.0
-		start_year = 1950
-		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 1 y = 2 }
-		}
-		categories = {
-			naval_equipment
-			ca_tech
-			rocketry
+			carrier
 		}
 		ai_will_do = { factor = 2 }
 	}

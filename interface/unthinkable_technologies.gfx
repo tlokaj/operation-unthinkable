@@ -4,16 +4,7 @@ spriteTypes = {
 	# OPERATION UNTHINKABLE - POST-WAR TECHNOLOGIES GFX
 	# =========================================================================
 
-	# Post-War Research Folder Tab
-	spriteType = {
-		name = "GFX_unthinkable_postwar_folder_tab"
-		textureFile = "gfx/interface/techtree/techtree_special_tab.dds"
-		noOfFrames = 2
-	}
-
-	# -------------------------------------------------------------------------
-	# 1. Infantry Weapons
-	# -------------------------------------------------------------------------
+	# Infantry & Support
 	SpriteType = {
 		name = "GFX_assault_rifle_standardization_medium"
 		texturefile = "gfx/interface/technologies/assault_rifle_standardization.dds"
@@ -22,30 +13,26 @@ spriteTypes = {
 		name = "GFX_postwar_infantry_at_weapons_medium"
 		texturefile = "gfx/interface/technologies/postwar_infantry_at_weapons.dds"
 	}
-
-	# -------------------------------------------------------------------------
-	# 2. Helicopters
-	# -------------------------------------------------------------------------
 	SpriteType = {
-		name = "GFX_early_helicopters_medium"
-		texturefile = "gfx/interface/technologies/early_helicopters.dds"
+		name = "GFX_postwar_turboshaft_helicopters_medium"
+		texturefile = "gfx/interface/technologies/postwar_turboshaft_helicopters.dds"
 	}
 	SpriteType = {
-		name = "GFX_unthinkable_helicopter_recon_tech_medium"
-		texturefile = "gfx/interface/technologies/unthinkable_helicopter_recon_tech.dds"
-	}
-	SpriteType = {
-		name = "GFX_unthinkable_helicopter_medevac_tech_medium"
-		texturefile = "gfx/interface/technologies/unthinkable_helicopter_medevac_tech.dds"
-	}
-	SpriteType = {
-		name = "GFX_unthinkable_helicopter_logistics_tech_medium"
-		texturefile = "gfx/interface/technologies/unthinkable_helicopter_logistics_tech.dds"
+		name = "GFX_heavy_cargo_and_attack_helicopters_medium"
+		texturefile = "gfx/interface/technologies/heavy_cargo_and_attack_helicopters.dds"
 	}
 
-	# -------------------------------------------------------------------------
-	# 3. Artillery & SAMs
-	# -------------------------------------------------------------------------
+	# Armor & APCs
+	SpriteType = {
+		name = "GFX_main_battle_tank_generation_2_medium"
+		texturefile = "gfx/interface/technologies/main_battle_tank_generation_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_postwar_apc_mechanization_medium"
+		texturefile = "gfx/interface/technologies/postwar_apc_mechanization.dds"
+	}
+
+	# Artillery & SAMs
 	SpriteType = {
 		name = "GFX_postwar_heavy_howitzers_medium"
 		texturefile = "gfx/interface/technologies/postwar_heavy_howitzers.dds"
@@ -67,36 +54,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/surface_to_air_missiles_1.dds"
 	}
 
-	# -------------------------------------------------------------------------
-	# 4. Armor & APCs
-	# -------------------------------------------------------------------------
-	SpriteType = {
-		name = "GFX_main_battle_tank_generation_1_medium"
-		texturefile = "gfx/interface/technologies/main_battle_tank_generation_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_postwar_apc_mechanization_medium"
-		texturefile = "gfx/interface/technologies/postwar_apc_mechanization.dds"
-	}
-	SpriteType = {
-		name = "GFX_main_battle_tank_generation_2_medium"
-		texturefile = "gfx/interface/technologies/main_battle_tank_generation_2.dds"
-	}
-
-	# -------------------------------------------------------------------------
-	# 5. Jet Aviation
-	# -------------------------------------------------------------------------
-	SpriteType = {
-		name = "GFX_axial_flow_turbojets_medium"
-		texturefile = "gfx/interface/technologies/axial_flow_turbojets.dds"
-	}
+	# Jet Aviation
 	SpriteType = {
 		name = "GFX_swept_wing_jet_fighters_medium"
 		texturefile = "gfx/interface/technologies/swept_wing_jet_fighters.dds"
-	}
-	SpriteType = {
-		name = "GFX_jet_strike_tactics_medium"
-		texturefile = "gfx/interface/technologies/jet_strike_tactics.dds"
 	}
 	SpriteType = {
 		name = "GFX_early_afterburner_reheat_medium"
@@ -106,46 +67,18 @@ spriteTypes = {
 		name = "GFX_postwar_jet_bombers_medium"
 		texturefile = "gfx/interface/technologies/postwar_jet_bombers.dds"
 	}
+
+	# Electronics & Radar
 	SpriteType = {
-		name = "GFX_afterburner_transonic_flight_medium"
-		texturefile = "gfx/interface/technologies/afterburner_transonic_flight.dds"
+		name = "GFX_transistor_technology_medium"
+		texturefile = "gfx/interface/technologies/transistor_technology.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_warning_radar_networks_medium"
+		texturefile = "gfx/interface/technologies/early_warning_radar_networks.dds"
 	}
 
-	# -------------------------------------------------------------------------
-	# 6. Industry
-	# -------------------------------------------------------------------------
-	SpriteType = {
-		name = "GFX_postwar_prefab_construction_medium"
-		texturefile = "gfx/interface/technologies/postwar_prefab_construction.dds"
-	}
-	SpriteType = {
-		name = "GFX_automation_transfer_machines_medium"
-		texturefile = "gfx/interface/technologies/automation_transfer_machines.dds"
-	}
-	SpriteType = {
-		name = "GFX_high_temp_aerospace_alloys_medium"
-		texturefile = "gfx/interface/technologies/high_temp_aerospace_alloys.dds"
-	}
-	SpriteType = {
-		name = "GFX_advanced_synthetic_kerosene_medium"
-		texturefile = "gfx/interface/technologies/advanced_synthetic_kerosene.dds"
-	}
-	SpriteType = {
-		name = "GFX_commercial_nuclear_power_medium"
-		texturefile = "gfx/interface/technologies/commercial_nuclear_power.dds"
-	}
-
-	# -------------------------------------------------------------------------
-	# 7. Nuclear Weapons & Physics
-	# -------------------------------------------------------------------------
-	SpriteType = {
-		name = "GFX_levitated_core_implosion_medium"
-		texturefile = "gfx/interface/technologies/levitated_core_implosion.dds"
-	}
-	SpriteType = {
-		name = "GFX_industrial_breeding_reactors_medium"
-		texturefile = "gfx/interface/technologies/industrial_breeding_reactors.dds"
-	}
+	# Nuclear
 	SpriteType = {
 		name = "GFX_tactical_nuclear_warheads_medium"
 		texturefile = "gfx/interface/technologies/tactical_nuclear_warheads.dds"
@@ -155,59 +88,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/unthinkable_thermonuclear_foundations.dds"
 	}
 
-	# -------------------------------------------------------------------------
-	# 8. Electronics & Avionics
-	# -------------------------------------------------------------------------
-	SpriteType = {
-		name = "GFX_proximity_vt_fuzes_medium"
-		texturefile = "gfx/interface/technologies/proximity_vt_fuzes.dds"
-	}
-	SpriteType = {
-		name = "GFX_electronic_computing_machines_medium"
-		texturefile = "gfx/interface/technologies/electronic_computing_machines.dds"
-	}
-	SpriteType = {
-		name = "GFX_transistor_technology_medium"
-		texturefile = "gfx/interface/technologies/transistor_technology.dds"
-	}
-	SpriteType = {
-		name = "GFX_early_warning_radar_networks_medium"
-		texturefile = "gfx/interface/technologies/early_warning_radar_networks.dds"
-	}
-	SpriteType = {
-		name = "GFX_active_night_vision_medium"
-		texturefile = "gfx/interface/technologies/active_night_vision.dds"
-	}
-	SpriteType = {
-		name = "GFX_airborne_interception_radar_medium"
-		texturefile = "gfx/interface/technologies/airborne_interception_radar.dds"
-	}
-	SpriteType = {
-		name = "GFX_radar_ranging_gunsights_medium"
-		texturefile = "gfx/interface/technologies/radar_ranging_gunsights.dds"
-	}
-	SpriteType = {
-		name = "GFX_instrument_flight_and_tacan_medium"
-		texturefile = "gfx/interface/technologies/instrument_flight_and_tacan.dds"
-	}
-
-	# -------------------------------------------------------------------------
-	# 9. Naval Warfare
-	# -------------------------------------------------------------------------
+	# Navy
 	SpriteType = {
 		name = "GFX_postwar_fast_attack_submarine_medium"
 		texturefile = "gfx/interface/technologies/postwar_fast_attack_submarine.dds"
 	}
 	SpriteType = {
-		name = "GFX_asw_sonobuoys_and_helicopters_medium"
-		texturefile = "gfx/interface/technologies/asw_sonobuoys_and_helicopters.dds"
-	}
-	SpriteType = {
 		name = "GFX_angled_flight_deck_carriers_medium"
 		texturefile = "gfx/interface/technologies/angled_flight_deck_carriers.dds"
-	}
-	SpriteType = {
-		name = "GFX_early_guided_missile_cruiser_medium"
-		texturefile = "gfx/interface/technologies/early_guided_missile_cruiser.dds"
 	}
 }

@@ -1,51 +1,42 @@
 technologies = {
 	assault_rifle_standardization = {
 		dependencies = {
-			advanced_infantry_weapons = 1
+			advanced_infantry_weapons2 = 1
 		}
-		category_light_infantry = {
-			soft_attack = 0.15
+		category_all_infantry = {
+			soft_attack = 0.20
+			breakthrough = 0.15
 			defense = 0.10
 		}
-		modifier = {
-			army_org_factor = 0.05
-		}
-		path = {
-			leads_to_tech = postwar_infantry_at_weapons
-			research_cost_coeff = 1
-		}
-		research_cost = 2.5
+		research_cost = 2.0
 		start_year = 1946
 		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 0 y = 0 }
+			name = infantry_folder
+			position = { x = 0 y = 20 }
 		}
 		categories = {
 			infantry_weapons
-			infantry_tech
 		}
 		ai_will_do = { factor = 3 }
 	}
 
 	postwar_infantry_at_weapons = {
 		dependencies = {
-			assault_rifle_standardization = 1
+			infantry_at2 = 1
 		}
-		category_light_infantry = {
-			hard_attack = 0.20
-			ap_attack = 0.25
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 0.30
 		}
-		research_cost = 2.5
+		research_cost = 2.0
 		start_year = 1948
 		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 0 y = 1 }
+			name = infantry_folder
+			position = { x = 4 y = 20 }
 		}
 		categories = {
 			infantry_weapons
-			infantry_tech
-			cat_anti_tank
 		}
-		ai_will_do = { factor = 3 }
+		ai_will_do = { factor = 2 }
 	}
 }

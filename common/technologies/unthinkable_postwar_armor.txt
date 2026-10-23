@@ -1,47 +1,19 @@
 technologies = {
-	main_battle_tank_generation_1 = {
-		dependencies = {
-			advanced_medium_tank = 1
-		}
-		category_all_armor = {
-			hard_attack = 0.15
-			soft_attack = 0.10
-			breakthrough = 0.10
-		}
-		path = {
-			leads_to_tech = main_battle_tank_generation_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = postwar_apc_mechanization
-			research_cost_coeff = 1
-		}
-		research_cost = 2.5
-		start_year = 1946
-		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 0 y = 0 }
-		}
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		ai_will_do = { factor = 3 }
-	}
-
 	postwar_apc_mechanization = {
 		dependencies = {
-			main_battle_tank_generation_1 = 1
+			mechanised_infantry3 = 1
 		}
 		category_vehicle_infantry = {
 			defense = 0.15
 			soft_attack = 0.10
+			hardness = 0.10
+			maximum_speed = 0.10
 		}
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 1 y = 1 }
+			name = armour_folder
+			position = { x = 11 y = 20 }
 		}
 		categories = {
 			armor
@@ -53,18 +25,19 @@ technologies = {
 
 	main_battle_tank_generation_2 = {
 		dependencies = {
-			main_battle_tank_generation_1 = 1
+			main_battle_tank = 1
 		}
 		category_all_armor = {
 			hard_attack = 0.20
 			ap_attack = 0.20
 			breakthrough = 0.15
+			armor_value = 0.25
 		}
 		research_cost = 3.0
-		start_year = 1950
+		start_year = 1949
 		folder = {
-			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			name = armour_folder
+			position = { x = 6 y = 22 }
 		}
 		categories = {
 			armor

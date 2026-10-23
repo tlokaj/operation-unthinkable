@@ -696,6 +696,12 @@
  early_guided_missile_cruiser: "Guided Missile Fleet Cruisers"
  early_guided_missile_cruiser_desc: "Re-arming heavy surface cruisers with surface-to-air Terrier missiles and antiship cruise missiles to dominate oceanic battlefields."
 
+ # HELICOPTERS
+ postwar_turboshaft_helicopters: "Turboshaft Utility Helicopters"
+ postwar_turboshaft_helicopters_desc: "Replacing heavy piston engines with lightweight turboshaft gas turbines, substantially boosting payload capacity, speed, and high-altitude mountain hover performance."
+ heavy_cargo_and_attack_helicopters: "Heavy Transport & Armed Gunship Helicopters"
+ heavy_cargo_and_attack_helicopters_desc: "Dedicated heavy-lift cargo airframes and armed escort gunships capable of slinging artillery batteries, evacuating entire trauma wards, and strafing enemy troop concentrations."
+
  # INFANTRY
  assault_rifle_standardization: "Standardized Selective-Fire Assault Rifles"
  assault_rifle_standardization_desc: "Equipping all frontline riflemen with intermediate-cartridge assault rifles like the AK-47 and FN FAL, dramatically multiplying squad firepower."
