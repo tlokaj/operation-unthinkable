@@ -1,5 +1,8 @@
 technologies = {
 	main_battle_tank_generation_1 = {
+		dependencies = {
+			advanced_medium_tank = 1
+		}
 		category_all_armor = {
 			hard_attack = 0.15
 			soft_attack = 0.10
@@ -27,6 +30,9 @@ technologies = {
 	}
 
 	postwar_apc_mechanization = {
+		dependencies = {
+			mechanised_infantry = 1
+		}
 		category_vehicle_infantry = {
 			defense = 0.15
 			soft_attack = 0.10

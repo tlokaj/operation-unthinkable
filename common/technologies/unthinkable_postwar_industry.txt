@@ -1,13 +1,12 @@
 technologies = {
 	postwar_prefab_construction = {
+		dependencies = {
+			construction5 = 1
+		}
 		modifier = {
 			production_speed_buildings_factor = 0.10
 			industry_repair_factor = 0.15
 			production_speed_infrastructure_factor = 0.10
-		}
-		path = {
-			leads_to_tech = commercial_nuclear_power
-			research_cost_coeff = 1
 		}
 		research_cost = 2.5
 		start_year = 1946
@@ -23,6 +22,9 @@ technologies = {
 	}
 
 	automation_transfer_machines = {
+		dependencies = {
+			advanced_machine_tools = 1
+		}
 		modifier = {
 			production_factory_max_efficiency_factor = 0.10
 			line_change_production_efficiency_factor = 0.05
@@ -67,6 +69,9 @@ technologies = {
 	}
 
 	advanced_synthetic_kerosene = {
+		dependencies = {
+			synth_oil_experiments = 1
+		}
 		modifier = {
 			fuel_gain_factor = 0.15
 		}
@@ -85,7 +90,7 @@ technologies = {
 
 	commercial_nuclear_power = {
 		dependencies = {
-			postwar_prefab_construction = 1
+			nukes = 1
 		}
 		modifier = {
 			consumer_goods_factor = -0.02
@@ -96,6 +101,10 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 18 }
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 12 y = 15 }
 		}
 		categories = {
 			industry

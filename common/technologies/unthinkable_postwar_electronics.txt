@@ -1,5 +1,8 @@
 technologies = {
 	proximity_vt_fuzes = {
+		dependencies = {
+			centimetric_radar = 1
+		}
 		modifier = {
 			static_anti_air_damage_factor = 0.15
 		}
@@ -21,6 +24,9 @@ technologies = {
 	}
 
 	electronic_computing_machines = {
+		dependencies = {
+			advanced_computing_machine = 1
+		}
 		modifier = {
 			research_speed_factor = 0.08
 			decryption_power = 1.5
@@ -98,18 +104,19 @@ technologies = {
 			transistor_technology = 1
 		}
 		modifier = {
-			recon_factor = 0.10
-			land_night_attack = 0.20
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+			night_penalty = -0.15
 		}
 		research_cost = 2.5
-		start_year = 1951
+		start_year = 1950
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 18 }
 		}
 		categories = {
 			electronics
-			night_vision
+			night_vision_tech
 		}
 		ai_will_do = { factor = 2 }
 	}
@@ -119,16 +126,15 @@ technologies = {
 			centimetric_radar = 1
 		}
 		modifier = {
-			air_night_penalty = -0.30
-			air_detection = 0.15
-			navy_submarine_detection_factor = 0.10
+			air_night_penalty = -0.20
+			air_intercept_efficiency = 0.15
 		}
 		path = {
 			leads_to_tech = radar_ranging_gunsights
 			research_cost_coeff = 1
 		}
-		research_cost = 2.0
-		start_year = 1946
+		research_cost = 2.5
+		start_year = 1947
 		folder = {
 			name = electronics_folder
 			position = { x = 6 y = 14 }
@@ -145,7 +151,6 @@ technologies = {
 			airborne_interception_radar = 1
 		}
 		modifier = {
-			air_mission_efficiency = 0.10
 			air_attack_factor = 0.15
 			air_agility_factor = 0.05
 		}
@@ -163,7 +168,7 @@ technologies = {
 			electronics
 			radar_tech
 		}
-		ai_will_do = { factor = 3 }
+		ai_will_do = { factor = 2 }
 	}
 
 	instrument_flight_and_tacan = {
@@ -171,9 +176,9 @@ technologies = {
 			radar_ranging_gunsights = 1
 		}
 		modifier = {
-			air_accidents_factor = -0.25
+			air_accidents_factor = -0.20
+			air_mission_efficiency = 0.15
 			air_weather_penalty = -0.20
-			air_mission_efficiency = 0.10
 		}
 		research_cost = 2.5
 		start_year = 1950

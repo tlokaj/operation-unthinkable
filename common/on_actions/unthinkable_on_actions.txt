@@ -4,6 +4,7 @@ on_actions = {
 			ENG = {
 				unthinkable_setup_1945_world = yes
 			}
+			unthinkable_apply_1945_technologies = yes
 			unthinkable_apply_1945_mios = yes
 			# Cold War Tension initialization (1945 Demarcation baseline)
 			set_variable = { global.unthinkable_tension = 35 }

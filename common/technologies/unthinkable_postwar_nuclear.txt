@@ -21,6 +21,10 @@ technologies = {
 			name = industry_folder
 			position = { x = 10 y = 15 }
 		}
+		folder = {
+			name = electronics_folder
+			position = { x = 10 y = 15 }
+		}
 		categories = {
 			nuclear
 		}
@@ -45,6 +49,10 @@ technologies = {
 			name = industry_folder
 			position = { x = 10 y = 17 }
 		}
+		folder = {
+			name = electronics_folder
+			position = { x = 10 y = 17 }
+		}
 		categories = {
 			nuclear
 		}
@@ -62,6 +70,10 @@ technologies = {
 		start_year = 1949
 		folder = {
 			name = industry_folder
+			position = { x = 12 y = 17 }
+		}
+		folder = {
+			name = electronics_folder
 			position = { x = 12 y = 17 }
 		}
 		categories = {
@@ -83,6 +95,10 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = industry_folder
+			position = { x = 10 y = 19 }
+		}
+		folder = {
+			name = electronics_folder
 			position = { x = 10 y = 19 }
 		}
 		categories = {

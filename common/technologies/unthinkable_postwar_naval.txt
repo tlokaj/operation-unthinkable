@@ -1,5 +1,8 @@
 technologies = {
 	postwar_fast_attack_submarine = {
+		dependencies = {
+			advanced_submarine = 1
+		}
 		modifier = {
 			navy_submarine_attack_factor = 0.15
 			navy_submarine_detection_factor = 0.20
@@ -52,6 +55,9 @@ technologies = {
 	}
 
 	angled_flight_deck_carriers = {
+		dependencies = {
+			advanced_carrier = 1
+		}
 		modifier = {
 			navy_carrier_air_attack_factor = 0.15
 		}

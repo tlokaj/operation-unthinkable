@@ -1,5 +1,8 @@
 technologies = {
 	assault_rifle_standardization = {
+		dependencies = {
+			advanced_infantry_weapons = 1
+		}
 		category_light_infantry = {
 			soft_attack = 0.15
 			defense = 0.10

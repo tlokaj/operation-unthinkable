@@ -19,7 +19,7 @@ technologies = {
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 14 }
+			position = { x = 0 y = 10 }
 		}
 		categories = {
 			air_equipment
@@ -29,6 +29,9 @@ technologies = {
 	}
 
 	swept_wing_jet_fighters = {
+		dependencies = {
+			jet_fighter1 = 1
+		}
 		modifier = {
 			air_attack_factor = 0.20
 			air_maximum_speed_factor = 0.25
@@ -50,7 +53,7 @@ technologies = {
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 14 }
+			position = { x = 3 y = 10 }
 		}
 		categories = {
 			air_equipment
@@ -75,7 +78,7 @@ technologies = {
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 14 }
+			position = { x = 5 y = 10 }
 		}
 		categories = {
 			air_equipment
@@ -98,68 +101,73 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1949
+		start_year = 1948
 		folder = {
 			name = air_techs_folder
 			position = { x = 5 y = 16 }
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 16 }
+			position = { x = 0 y = 12 }
 		}
 		categories = {
 			air_equipment
 			jet_technology
 		}
-		ai_will_do = { factor = 3 }
+		ai_will_do = { factor = 2 }
 	}
 
 	postwar_jet_bombers = {
+		dependencies = {
+			jet_tactical_bomber1 = 1
+		}
 		modifier = {
-			air_strategic_bomber_bombing_factor = 0.20
-			air_range_factor = 0.15
-			air_defence_factor = 0.20
+			air_bombing_targetting = 0.15
+			air_maximum_speed_factor = 0.15
 		}
 		research_cost = 2.5
 		start_year = 1949
 		folder = {
 			name = air_techs_folder
-			position = { x = 9 y = 14 }
+			position = { x = 7 y = 14 }
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 8 y = 14 }
+			position = { x = 6 y = 10 }
 		}
 		categories = {
 			air_equipment
 			jet_technology
-			cat_strategic_bomber
+			tactical_bomber
+			strategic_bomber
 		}
 		ai_will_do = { factor = 2 }
 	}
 
 	afterburner_transonic_flight = {
 		dependencies = {
-			swept_wing_jet_fighters = 1
 			early_afterburner_reheat = 1
+			swept_wing_jet_fighters = 1
 		}
 		modifier = {
 			air_maximum_speed_factor = 0.20
-			air_intercept_efficiency = 0.15
+			air_agility_factor = 0.10
+			air_air_superiority_factor = 0.15
 		}
 		research_cost = 3.0
 		start_year = 1951
 		folder = {
 			name = air_techs_folder
-			position = { x = 6 y = 16 }
+			position = { x = 6 y = 18 }
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 16 }
+			position = { x = 3 y = 14 }
 		}
 		categories = {
 			air_equipment
 			jet_technology
+			light_fighter
 		}
 		ai_will_do = { factor = 3 }
 	}
