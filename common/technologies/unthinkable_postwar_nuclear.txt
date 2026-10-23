@@ -1,13 +1,49 @@
 technologies = {
+	nukes = {
+	
+		start_year = 1945
+		research_cost = 5
+		
+		#folder = {
+		#	name = electronics_folder
+		#	position = { x = 0 y = 6 }
+		#}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		nuclear_production = 0.5
+		on_research_complete = {
+			if = {
+				limit = {
+					tag = USA
+					has_war_with = JAP
+				}
+				play_warning_to_japan_effect = yes
+			}
+		}
+		categories = {
+			nuclear
+		}
+		special_project_specialization = { specialization_nuclear }
+	
+		path = {
+			leads_to_tech = tactical_nuclear_warheads
+			research_cost_coeff = 1
+		}
+	}
+
 	tactical_nuclear_warheads = {
-		dependencies = {
-			nukes = 1
+		path = {
+			leads_to_tech = unthinkable_thermonuclear_foundations
+			research_cost_coeff = 1
 		}
 		research_cost = 3.0
 		start_year = 1948
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 18 }
+			position = { x = 0 y = 16 }
 		}
 		categories = {
 			nuclear
@@ -16,14 +52,11 @@ technologies = {
 	}
 
 	unthinkable_thermonuclear_foundations = {
-		dependencies = {
-			tactical_nuclear_warheads = 1
-		}
 		research_cost = 4.0
 		start_year = 1951
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 22 }
+			position = { x = 0 y = 20 }
 		}
 		categories = {
 			nuclear

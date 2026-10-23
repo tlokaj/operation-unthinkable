@@ -1,8 +1,95 @@
 technologies = {
-	postwar_fast_attack_submarine = {
-		dependencies = {
-			advanced_submarine = 1
+	advanced_submarine = {
+
+		enable_equipments = { 
+			submarine_4
 		}
+		
+		research_cost = 2
+
+		start_year = 1944
+		
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+			mio_cat_tech_all_submarine_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	
+		path = {
+			leads_to_tech = postwar_fast_attack_submarine
+			research_cost_coeff = 1
+		}
+	}
+
+	advanced_carrier = {
+
+		enable_equipments = { 
+			carrier_4
+		}
+
+		
+		research_cost = 2
+
+		start_year = 1944
+		
+		on_research_complete = {
+			if = {
+				limit = {has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_modern_carrier	
+				}
+			}
+		}
+
+		folder = {
+			name = naval_folder
+			position = { x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+			mio_cat_tech_all_carrier_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	
+		path = {
+			leads_to_tech = angled_flight_deck_carriers
+			research_cost_coeff = 1
+		}
+	}
+
+	postwar_fast_attack_submarine = {
 		category_submarine = {
 			sub_surface_visibility = -0.20
 			sub_detection = 0.25
@@ -13,7 +100,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 18 }
+			position = { x = 0 y = 14 }
 		}
 		categories = {
 			naval_equipment
@@ -23,9 +110,6 @@ technologies = {
 	}
 
 	angled_flight_deck_carriers = {
-		dependencies = {
-			advanced_carrier = 1
-		}
 		category_carrier = {
 			deck_size = 15
 			carrier_taskforce_mission_efficiency = 0.20
@@ -34,7 +118,7 @@ technologies = {
 		start_year = 1949
 		folder = {
 			name = naval_folder
-			position = { x = 4 y = 18 }
+			position = { x = 0 y = 14 }
 		}
 		categories = {
 			naval_equipment

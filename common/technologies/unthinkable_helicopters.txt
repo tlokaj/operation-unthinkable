@@ -1,8 +1,55 @@
 technologies = {
+	tech_recon4 = {
+
+		category_recon = {
+			recon = 2
+		}
+
+		helicopter_recon = {
+			recon = 2
+		}
+
+		research_cost = 2.0
+		start_year = 1945
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @1945 }
+		}
+
+		categories = {
+			support_tech
+			recon_tech
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	
+		path = {
+			leads_to_tech = postwar_turboshaft_helicopters
+			research_cost_coeff = 1
+		}
+	}
+
 	postwar_turboshaft_helicopters = {
-		dependencies = {
-			helicopter_brigade = 1
-			helicopter_transport = 1
+		path = {
+			leads_to_tech = heavy_cargo_and_attack_helicopters
+			research_cost_coeff = 1
 		}
 		category_helicopter_support_companies = {
 			maximum_speed = 0.25
@@ -21,7 +68,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 24 }
+			position = { x = 2 y = 14 }
 		}
 		categories = {
 			support_tech
@@ -31,9 +78,6 @@ technologies = {
 	}
 
 	heavy_cargo_and_attack_helicopters = {
-		dependencies = {
-			postwar_turboshaft_helicopters = 1
-		}
 		category_helicopter_support_companies = {
 			soft_attack = 0.15
 			hard_attack = 0.05
@@ -47,7 +91,7 @@ technologies = {
 		start_year = 1951
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 28 }
+			position = { x = 2 y = 18 }
 		}
 		categories = {
 			support_tech

@@ -1,32 +1,61 @@
 technologies = {
-	postwar_apc_mechanization = {
-		dependencies = {
-			mechanised_infantry3 = 1
+	main_battle_tank = { #E-50
+
+		enable_equipments = {
+			modern_tank_equipment_1
 		}
-		category_vehicle_infantry = {
-			defense = 0.15
-			soft_attack = 0.10
-			hardness = 0.10
-			maximum_speed = 0.10
+		enable_subunits = {
+			modern_armor
 		}
+
 		research_cost = 2.5
-		start_year = 1948
+		start_year = 1945
+
 		folder = {
 			name = armour_folder
-			position = { x = 11 y = 20 }
+			position = { x = 2 y = 12 }
 		}
+
+		sub_technologies = {
+			modern_td
+			modern_art
+			modern_spaa
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+
 		categories = {
 			armor
-			cat_mechanized_equipment
-			motorized_equipment
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
 		}
-		ai_will_do = { factor = 2 }
+		special_project_specialization = { specialization_land }
+	
+		path = {
+			leads_to_tech = main_battle_tank_generation_2
+			research_cost_coeff = 1
+		}
 	}
 
 	main_battle_tank_generation_2 = {
-		dependencies = {
-			main_battle_tank = 1
-		}
 		category_all_armor = {
 			hard_attack = 0.20
 			ap_attack = 0.20
@@ -37,7 +66,7 @@ technologies = {
 		start_year = 1949
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 22 }
+			position = { x = 2 y = 16 }
 		}
 		categories = {
 			armor

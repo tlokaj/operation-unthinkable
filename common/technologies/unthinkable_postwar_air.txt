@@ -1,7 +1,83 @@
 technologies = {
+	jet_fighter2 = {
+
+		allow = { 	 		
+			ROOT = {
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+			} 
+		}
+
+		enable_equipments = {
+			jet_fighter_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1950
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+			mio_cat_all_light_fighter_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		is_special_project_tech = yes		
+		ai_will_do = {
+			factor = 1
+		}
+	
+		path = {
+			leads_to_tech = swept_wing_jet_fighters
+			research_cost_coeff = 1
+		}
+	}
+
+	jet_tactical_bomber2 = {
+
+		allow = { 	 		
+			ROOT = {
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+			} 
+		}
+
+		enable_equipments = {
+			jet_tac_bomber_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			jet_technology
+			tactical_bomber
+			mio_cat_all_medium_aircraft_and_modules
+		}
+		special_project_specialization = { specialization_air }
+		is_special_project_tech = yes
+		ai_will_do = {
+			factor = 1
+		}
+	
+		path = {
+			leads_to_tech = postwar_jet_bombers
+			research_cost_coeff = 1
+		}
+	}
+
 	swept_wing_jet_fighters = {
-		dependencies = {
-			jet_fighter2 = 1
+		path = {
+			leads_to_tech = early_afterburner_reheat
+			research_cost_coeff = 1
 		}
 		category_all_fighter = {
 			air_agility = 0.20
@@ -22,9 +98,6 @@ technologies = {
 	}
 
 	early_afterburner_reheat = {
-		dependencies = {
-			swept_wing_jet_fighters = 1
-		}
 		category_all_fighter = {
 			maximum_speed = 0.15
 			air_climb_rate = 0.25
@@ -42,9 +115,6 @@ technologies = {
 	}
 
 	postwar_jet_bombers = {
-		dependencies = {
-			jet_tactical_bomber1 = 1
-		}
 		category_all_bomber = {
 			strat_bomber_bombing = 0.20
 			maximum_speed = 0.25
@@ -54,7 +124,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 18 }
+			position = { x = 0 y = 18 }
 		}
 		categories = {
 			jet_technology
