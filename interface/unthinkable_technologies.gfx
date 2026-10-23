@@ -4,6 +4,13 @@ spriteTypes = {
 	# OPERATION UNTHINKABLE - POST-WAR TECHNOLOGIES GFX
 	# =========================================================================
 
+	# Post-War Research Folder Tab
+	spriteType = {
+		name = "GFX_unthinkable_postwar_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_special_tab.dds"
+		noOfFrames = 2
+	}
+
 	# Infantry
 	SpriteType = {
 		name = "GFX_assault_rifle_standardization_medium"

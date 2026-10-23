@@ -10,8 +10,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1946
 		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 14 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 0 }
 		}
 		categories = {
 			artillery
@@ -30,8 +30,8 @@ technologies = {
 		research_cost = 2.0
 		start_year = 1947
 		folder = {
-			name = artillery_folder
-			position = { x = 2 y = 16 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 1 }
 		}
 		categories = {
 			artillery
@@ -51,8 +51,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
-			name = artillery_folder
-			position = { x = 4 y = 16 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 2 }
 		}
 		categories = {
 			artillery
@@ -79,8 +79,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
-			name = artillery_folder
-			position = { x = 6 y = 16 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 1 }
 		}
 		categories = {
 			artillery
@@ -102,8 +102,8 @@ technologies = {
 		research_cost = 3.0
 		start_year = 1951
 		folder = {
-			name = artillery_folder
-			position = { x = 6 y = 18 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 3 }
 		}
 		categories = {
 			artillery

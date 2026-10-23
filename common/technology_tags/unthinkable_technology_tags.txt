@@ -1,0 +1,5 @@
+technology_folders = {
+	unthinkable_postwar_folder = {
+		ledger = civilian
+	}
+}

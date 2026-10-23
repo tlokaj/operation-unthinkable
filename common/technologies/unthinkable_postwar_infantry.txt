@@ -17,8 +17,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1947
 		folder = {
-			name = infantry_folder
-			position = { x = 0 y = 18 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 0 }
 		}
 		categories = {
 			infantry_weapons
@@ -38,8 +38,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1949
 		folder = {
-			name = infantry_folder
-			position = { x = 0 y = 20 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 2 }
 		}
 		categories = {
 			infantry_weapons

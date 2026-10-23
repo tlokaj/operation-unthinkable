@@ -14,12 +14,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1946
 		folder = {
-			name = naval_folder
-			position = { x = 2 y = 14 }
-		}
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 2 y = 14 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 0 }
 		}
 		categories = {
 			naval_equipment
@@ -39,12 +35,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
-			name = naval_folder
-			position = { x = 2 y = 16 }
-		}
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 2 y = 16 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 2 }
 		}
 		categories = {
 			naval_equipment
@@ -68,12 +60,8 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1950
 		folder = {
-			name = naval_folder
-			position = { x = 6 y = 14 }
-		}
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 6 y = 14 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 2 }
 		}
 		categories = {
 			naval_equipment
@@ -93,12 +81,8 @@ technologies = {
 		research_cost = 3.0
 		start_year = 1952
 		folder = {
-			name = naval_folder
-			position = { x = 6 y = 16 }
-		}
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 6 y = 16 }
+			name = unthinkable_postwar_folder
+			position = { x = 0 y = 4 }
 		}
 		categories = {
 			naval_equipment

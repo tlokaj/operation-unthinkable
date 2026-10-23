@@ -315,13 +315,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-
-			gridboxtype = {
-				name = "assault_rifle_standardization_tree"
-				position = { x = 140 y = 325 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
 		}
 
 		containerWindowType = {
@@ -550,13 +543,6 @@ guiTypes = {
 				position = { x = 100 y = 1380 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "early_helicopters_tree"
-				position = { x = 260 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
 			}
 
 		}
@@ -845,22 +831,6 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "gwtank_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "main_battle_tank_generation_1_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "postwar_apc_mechanization_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
@@ -1182,22 +1152,6 @@ guiTypes = {
 			gridboxtype = {
 				name = "engine_tech_1_tree"
 				position = { x = 175 y = 40 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
-
-			gridboxtype = {
-				name = "main_battle_tank_generation_1_tree"
-				position = { x = 0 y = 40 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
-
-			gridboxtype = {
-				name = "postwar_apc_mechanization_tree"
-				position = { x = 0 y = 40 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UPPER_LEFT"
@@ -1556,38 +1510,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-
-			gridboxtype = {
-				name = "postwar_heavy_howitzers_tree"
-				position = { x = 300 y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "infantry_recoilless_rifles_tree"
-				position = { x = 300 y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "postwar_heavy_mrls_tree"
-				position = { x = 300 y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-
-			gridboxtype = {
-				name = "radar_directed_anti_air_tree"
-				position = { x = 300 y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
 		}
 
 		containerWindowType = {
@@ -1876,19 +1798,6 @@ guiTypes = {
 				name = "early_submarine_tree"
 				position = { x = 150 y = 1040 }
 				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "postwar_fast_attack_submarine_tree"
-				position = { x = 150 y = 1040 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "angled_flight_deck_carriers_tree"
-				position = { x = 150 y = 900 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
@@ -2351,19 +2260,6 @@ guiTypes = {
 				format = "LEFT"
 			}
 
-			gridboxtype = {
-				name = "postwar_fast_attack_submarine_tree"
-				position = { x = 150 y = 1020 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "angled_flight_deck_carriers_tree"
-				position = { x = 150 y = 900 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
 		}
 
 		containerWindowType = {
@@ -2740,25 +2636,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-
-			gridboxtype = {
-				name = "axial_flow_turbojets_tree"
-				position = { x = 200 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "swept_wing_jet_fighters_tree"
-				position = { x = 200 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "postwar_jet_bombers_tree"
-				position = { x = 200 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
 		}
 
 
@@ -3117,25 +2994,6 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-
-			gridboxtype = {
-				name = "axial_flow_turbojets_tree"
-				position = { x = 200 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "swept_wing_jet_fighters_tree"
-				position = { x = 200 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "postwar_jet_bombers_tree"
-				position = { x = 200 y = 135 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
 		}
 
 		containerWindowType = {
@@ -3460,37 +3318,6 @@ guiTypes = {
 				position = { x=790 y=312}
 				hide = yes
 				alwaystransparent = yes
-			}
-
-			gridboxtype = {
-				name = "postwar_prefab_construction_tree"
-				position = { x = 794 y = 312 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "automation_transfer_machines_tree"
-				position = { x = 300 y = 172 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "advanced_synthetic_kerosene_tree"
-				position = { x = 1150 y = 172 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "commercial_nuclear_power_tree"
-				position = { x = 794 y = 312 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "levitated_core_implosion_tree"
-				position = { x = 300 y = 172 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
 			}
 		}
 
@@ -3935,37 +3762,291 @@ guiTypes = {
 
 			}
 
+		}
+
+		containerWindowType = {
+			name = "unthinkable_postwar_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+			scroll_wheel_factor = 40
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_2b_border"
+			}
+
+			containerWindowType = {
+				name = "techtree_stripes"
+				position = { x = 0 y = 0 }
+				size = { width = 2400 height = 1300 min = { width = 100%% height = 100%% } }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_techtree_stripes"
+				}
+			}
+
+			# Years
+			containerWindowType = {
+				name = "unthinkable_years"
+				position = { x = 10 y = 135 }
+				size = { width = 70 height = 100% }
+
+				instantTextBoxType = {
+					name = "postwar_year1"
+					position = { x = 0 y = 0 }
+					font = "hoi_36header"
+					text = "1946"
+					maxWidth = 70
+					maxHeight = 32
+					format = left
+				}
+
+				instantTextBoxType = {
+					name = "postwar_year2"
+					position = { x = 0 y = 140 }
+					font = "hoi_36header"
+					text = "1948"
+					maxWidth = 70
+					maxHeight = 32
+					format = left
+				}
+
+				instantTextBoxType = {
+					name = "postwar_year3"
+					position = { x = 0 y = 280 }
+					font = "hoi_36header"
+					text = "1950"
+					maxWidth = 70
+					maxHeight = 32
+					format = left
+				}
+
+				instantTextBoxType = {
+					name = "postwar_year4"
+					position = { x = 0 y = 420 }
+					font = "hoi_36header"
+					text = "1952"
+					maxWidth = 70
+					maxHeight = 32
+					format = left
+				}
+			}
+
+			# Category Titles
+			instantTextBoxType = {
+				name = "postwar_infantry_subtitle"
+				position = { x = 70 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_INFANTRY_TITLE"
+				maxWidth = 180
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_helicopter_subtitle"
+				position = { x = 300 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_HELICOPTER_TITLE"
+				maxWidth = 240
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_artillery_subtitle"
+				position = { x = 580 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_ARTILLERY_TITLE"
+				maxWidth = 300
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_armor_subtitle"
+				position = { x = 910 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_ARMOR_TITLE"
+				maxWidth = 200
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_air_subtitle"
+				position = { x = 1130 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_AIR_TITLE"
+				maxWidth = 240
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_electronics_subtitle"
+				position = { x = 1400 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_ELECTRONICS_TITLE"
+				maxWidth = 260
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_nuclear_subtitle"
+				position = { x = 1690 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_NUCLEAR_TITLE"
+				maxWidth = 240
+				maxHeight = 40
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "postwar_naval_subtitle"
+				position = { x = 1960 y = 80 }
+				font = "hoi_22tech"
+				text = "POSTWAR_NAVAL_TITLE"
+				maxWidth = 220
+				maxHeight = 40
+				format = center
+			}
+
+			# Gridboxes (all columns)
+			gridboxtype = {
+				name = "assault_rifle_standardization_tree"
+				position = { x = 120 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "early_helicopters_tree"
+				position = { x = 320 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "postwar_heavy_howitzers_tree"
+				position = { x = 600 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "infantry_recoilless_rifles_tree"
+				position = { x = 675 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "postwar_heavy_mrls_tree"
+				position = { x = 750 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "radar_directed_anti_air_tree"
+				position = { x = 825 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "postwar_apc_mechanization_tree"
+				position = { x = 930 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "main_battle_tank_generation_1_tree"
+				position = { x = 1010 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "axial_flow_turbojets_tree"
+				position = { x = 1140 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "swept_wing_jet_fighters_tree"
+				position = { x = 1220 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "postwar_jet_bombers_tree"
+				position = { x = 1300 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
 			gridboxtype = {
 				name = "proximity_vt_fuzes_tree"
-				position = { x=0 y=172 }
-				slotsize = { width=60 height= 60 }
+				position = { x = 1420 y = 140 }
+				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "electronic_computing_machines_tree"
-				position = { x=0 y=172 }
-				slotsize = { width=60 height= 60 }
+				position = { x = 1500 y = 140 }
+				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "airborne_interception_radar_tree"
-				position = { x=0 y=172 }
-				slotsize = { width=60 height= 60 }
+				position = { x = 1580 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "postwar_prefab_construction_tree"
+				position = { x = 1700 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "automation_transfer_machines_tree"
+				position = { x = 1775 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "advanced_synthetic_kerosene_tree"
+				position = { x = 1850 y = 140 }
+				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 			gridboxtype = {
 				name = "levitated_core_implosion_tree"
-				position = { x=750 y=172 }
-				slotsize = { width=60 height= 60 }
-				format = "UP"
-			}
-			gridboxtype = {
-				name = "commercial_nuclear_power_tree"
-				position = { x=750 y=172 }
-				slotsize = { width=60 height= 60 }
+				position = { x = 1925 y = 140 }
+				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
+			gridboxtype = {
+				name = "postwar_fast_attack_submarine_tree"
+				position = { x = 2060 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "angled_flight_deck_carriers_tree"
+				position = { x = 2140 y = 140 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 
 		containerWindowType = {
@@ -4085,6 +4166,15 @@ guiTypes = {
 				position = { x=734 y=0}
 				hide = yes
 				alwaystransparent = yes
+			}
+
+			buttonType = {
+				position = { x = 823 y = 0 }
+				name = "unthinkable_postwar_folder_tab"
+				quadTextureSprite = "GFX_unthinkable_postwar_folder_tab"
+				frame = 1
+				clicksound = ui_research_tab_industry
+				pdx_tooltip = "UNTHINKABLE_POSTWAR_FOLDER_TITLE"
 			}
 		}
 
@@ -6874,6 +6964,81 @@ guiTypes = {
 		}
 	}
 
+
+	containerWindowType = {
+		name = "techtree_unthinkable_postwar_folder_item"
+		position = { x=0 y=5 }
+		size = { width = 204 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+		
+		gridboxtype = {
+			name = "special_project_specialization_list"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=34 y=35 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=-1 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+
+		iconType = {
+			name = "can_assign_design_team_icon"
+			position = { x=0 y=42 }
+			spriteType = "GFX_design_team_icon"
+		}
+	}
+
+	containerWindowType = {
+		name = "techtree_unthinkable_postwar_folder_small_item"
+		position = { x=0 y=5 }
+		size = { width = 72 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+		
+		gridboxtype = {
+			name = "special_project_specialization_list"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+	}
 
 	containerWindowType = {
 		name = "padding_window"
