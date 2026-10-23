@@ -256,6 +256,11 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	# Reinforce garrison and press claims on Kłodzko
 	option = {
 		name = unthinkable.40.a
@@ -391,6 +396,11 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	immediate = {
 		USA = { country_event = { id = unthinkable.501 hours = 3 } }
 		SOV = { country_event = { id = unthinkable.502 hours = 3 } }
@@ -422,6 +432,11 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	option = {
 		name = unthinkable.501.a
 		add_stability = 0.05
@@ -437,6 +452,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = ENG }
+		NOT = { has_war_with = USA }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	option = {
 		name = unthinkable.502.a
 		add_war_support = 0.05
@@ -451,6 +472,12 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = ENG }
+		NOT = { has_war_with = USA }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
 
 	# Demand recognition of Oder-Neisse and 10B in reparations
 	option = {
@@ -478,6 +505,11 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
 
 	immediate = {
 		# Schedule next stage: Polish Question
@@ -519,6 +551,11 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	immediate = {
 		# Schedule next stage: Atomic Revelation
 		USA = { country_event = { id = unthinkable.53 days = 3 } }
@@ -549,6 +586,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = ENG }
+		NOT = { has_war_with = USA }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	# Promise free elections in principle
 	option = {
 		name = unthinkable.521.a
@@ -573,6 +616,11 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
 
 	immediate = {
 		ENG = { country_event = { id = unthinkable.54 days = 4 } }
@@ -601,6 +649,12 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_war_with = ENG }
+		NOT = { has_war_with = USA }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
+
 	# Feign calm, order Beria to accelerate Soviet atomic project!
 	option = {
 		name = unthinkable.531.a
@@ -617,6 +671,11 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
 
 	# If conference did not rupture: sign agreement
 	option = {
@@ -689,6 +748,11 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = SOV }
+		NOT = { has_global_flag = unthinkable_war_started }
+	}
 
 	immediate = {
 		set_global_flag = unthinkable_trieste_crisis_active
@@ -1069,6 +1133,39 @@ country_event = {
 # -----------------------------------------------------------------------------
 # 9. WORLD NEWS: OPERATION UNTHINKABLE BEGINS
 # -----------------------------------------------------------------------------
+
+# unthinkable.95: World News: Operation August Storm - Soviet Union Attacks Japan!
+news_event = {
+	id = unthinkable.95
+	title = unthinkable.95.t
+	desc = unthinkable.95.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unthinkable.95.a
+		trigger = {
+			tag = SOV
+		}
+	}
+
+	option = {
+		name = unthinkable.95.b
+		trigger = {
+			tag = JAP
+		}
+	}
+
+	option = {
+		name = unthinkable.95.c
+		trigger = {
+			NOT = { tag = SOV }
+			NOT = { tag = JAP }
+		}
+	}
+}
 
 # unthinkable.100: World News: Operation Unthinkable Launched
 news_event = {

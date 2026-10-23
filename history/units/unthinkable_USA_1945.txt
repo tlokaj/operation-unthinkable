@@ -111,106 +111,122 @@ units = {
 	# 12TH ARMY GROUP & US THIRD ARMY (Bradley & Patton) - American Zone Germany
 	# =========================================================================
 
-	# US Third Army (Gen. George S. Patton Jr. - Bavaria & Demarcation Line)
+		# US Third Army (Gen. George S. Patton Jr. - Bavaria & Demarcation Line)
 	division = {
 		name = "2nd Armored Division 'Hell on Wheels'"
 		location = 11544 # Nuremberg
 		division_template = "US Heavy Armored Division"
 		start_experience_factor = 0.95
+		officer = { name = "Isaac D. White" }
 	}
 	division = {
 		name = "4th Armored Division 'Rolling Forth'"
 		location = 9515 # Regensburg (Demarcation Line screen)
 		division_template = "US Armored Division"
 		start_experience_factor = 0.90
+		officer = { name = "Hugh J. Gaffey" }
 	}
 	division = {
 		name = "11th Armored Division 'Thunderbolt'"
 		location = 9515 # Regensburg / Austrian approach
 		division_template = "US Armored Division"
 		start_experience_factor = 0.85
+		officer = { name = "Holmes E. Dager" }
 	}
 	division = {
 		name = "5th Infantry Division 'Red Diamond'"
 		location = 9515 # Regensburg / Passau border
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.85
+		officer = { name = "Albert E. Brown" }
 	}
 	division = {
 		name = "26th Infantry Division 'Yankee Division'"
 		location = 11544 # Nuremberg
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Willard S. Paul" }
 	}
 	division = {
 		name = "90th Infantry Division 'Tough 'Ombres'"
 		location = 6421 # Coburg (Demarcation Line facing Thuringia/Saxony)
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.85
+		officer = { name = "Herbert L. Earnest" }
 	}
 
 	# US Seventh Army (Gen. Alexander Patch - Central Germany / Franconia)
 	division = {
 		name = "10th Armored Division 'Tiger'"
-		location = 9557 # WÃ¼rzburg
+		location = 9557 # Würzburg
 		division_template = "US Armored Division"
 		start_experience_factor = 0.85
+		officer = { name = "William H. H. Morris Jr." }
 	}
 	division = {
 		name = "3rd Infantry Division 'Rock of the Marne'"
 		location = 11544 # Nuremberg
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.90
+		officer = { name = "John W. O'Daniel" }
 	}
 	division = {
 		name = "45th Infantry Division 'Thunderbird'"
-		location = 9557 # WÃ¼rzburg
+		location = 9557 # Würzburg
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.85
+		officer = { name = "Robert T. Frederick" }
 	}
 	division = {
 		name = "100th Infantry Division 'Century'"
-		location = 6488 # Frankfurt am Main
+		location = 9557 # Stuttgart
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Withers A. Burress" }
 	}
 
-	# US Ninth Army & US Strategic Sector (Simpson / Gerow - Kassel & Hesse)
+	# US First Army (Gen. Courtney Hodges - Rhineland & Hesse)
 	division = {
 		name = "3rd Armored Division 'Spearhead'"
-		location = 564 # Kassel (Facing Soviet forces at Erfurt/Eisenach)
+		location = 6444 # Frankfurt am Main
 		division_template = "US Heavy Armored Division"
 		start_experience_factor = 0.95
+		officer = { name = "Robert W. Grow" }
 	}
 	division = {
 		name = "5th Armored Division 'Victory'"
-		location = 6488 # Frankfurt am Main
+		location = 11560 # Mainz
 		division_template = "US Armored Division"
-		start_experience_factor = 0.85
+		start_experience_factor = 0.90
+		officer = { name = "Lunsford E. Oliver" }
 	}
 	division = {
 		name = "1st Infantry Division 'Big Red One'"
-		location = 6488 # Frankfurt am Main
+		location = 6444 # Frankfurt am Main
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.95
+		officer = { name = "Clift Andrus" }
 	}
 	division = {
 		name = "8th Infantry Division 'Pathfinder'"
-		location = 564 # Kassel (Demarcation Line vanguard)
+		location = 11560 # Koblenz / Rhine
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "William G. Weaver" }
 	}
 	division = {
 		name = "29th Infantry Division 'Blue and Gray'"
 		location = 3326 # Bremen Enclave (Allied supply lifeline)
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.85
+		officer = { name = "Charles H. Gerhardt" }
 	}
 	division = {
 		name = "84th Infantry Division 'Railsplitters'"
 		location = 564 # Kassel (Harz / Thuringian sector)
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Alexander R. Bolling" }
 	}
 
 	# US Airborne Formations (Strategic Airborne Reserve)
@@ -219,12 +235,14 @@ units = {
 		location = 6444 # Wiesbaden
 		division_template = "US Airborne Division"
 		start_experience_factor = 0.95
+		officer = { name = "James M. Gavin" }
 	}
 	division = {
 		name = "101st Airborne Division 'Screaming Eagles'"
 		location = 11560 # Mainz
 		division_template = "US Airborne Division"
 		start_experience_factor = 0.95
+		officer = { name = "Maxwell D. Taylor" }
 	}
 }
 

@@ -118,54 +118,62 @@ units = {
 	# Commander-in-Chief: Marshal Georgy Zhukov
 	# =========================================================================
 
-	# --- 1ST BELORUSSIAN FRONT (Berlin / Elbe Demarcation Line) ---
+		# --- 1ST BELORUSSIAN FRONT (Berlin / Elbe Demarcation Line) ---
 	division = {
 		name = "8-ya Gvardeyskaya Armiya (Chuikov - Stalingrad)"
 		location = 6521 # Berlin
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.95
+		officer = { name = "Vasily Chuikov" }
 	}
 	division = {
 		name = "3-ya Udarnaya Armiya (Kuznetsov - Reichstag Stormers)"
 		location = 3522 # Magdeburg (Elbe frontier facing British XXX Corps)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.95
+		officer = { name = "Vasily Kuznetsov" }
 	}
 	division = {
 		name = "5-ya Udarnaya Armiya (Berzarin)"
 		location = 6521 # Berlin
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.90
+		officer = { name = "Nikolay Berzarin" }
 	}
 	division = {
 		name = "1-ya Gvardeyskaya Tankovaya Armiya (Katukov)"
 		location = 3535 # Leipzig (Demarcation Line spearhead)
 		division_template = "Gvardeyskiy Tankovyy Korpus"
 		start_experience_factor = 0.95
+		officer = { name = "Mikhail Katukov" }
 	}
 	division = {
 		name = "2-ya Gvardeyskaya Tankovaya Armiya (Bogdanov)"
 		location = 6521 # Berlin
 		division_template = "Gvardeyskiy Tankovyy Korpus"
 		start_experience_factor = 0.95
+		officer = { name = "Semyon Bogdanov" }
 	}
 	division = {
 		name = "47-ya Armiya (Perkhorovich)"
 		location = 3522 # Magdeburg / Stendal
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Frants Perkhorovich" }
 	}
 	division = {
 		name = "33-ya Armiya (Tsvetayev)"
 		location = 9496 # Seelow (East Brandenburg)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Vyacheslav Tsvetayev" }
 	}
 	division = {
 		name = "69-ya Armiya (Kolpakchi)"
 		location = 9496 # Seelow / Oder Line
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Vladimir Kolpakchi" }
 	}
 
 	# --- 1ST UKRAINIAN FRONT (Marshal Ivan Konev - Saxony & Thuringia) ---
@@ -174,82 +182,95 @@ units = {
 		location = 514 # Dresden
 		division_template = "Gvardeyskiy Tankovyy Korpus"
 		start_experience_factor = 0.95
+		officer = { name = "Pavel Rybalko" }
 	}
 	division = {
 		name = "4-ya Gvardeyskaya Tankovaya Armiya (Lelyushenko)"
 		location = 3535 # Leipzig
 		division_template = "Gvardeyskiy Tankovyy Korpus"
 		start_experience_factor = 0.90
+		officer = { name = "Dmitry Lelyushenko" }
 	}
 	division = {
 		name = "5-ya Gvardeyskaya Armiya (Zhadov)"
 		location = 3561 # Erfurt (Facing US Ninth Army at Kassel)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.90
+		officer = { name = "Alexey Zhadov" }
 	}
 	division = {
 		name = "13-ya Armiya (Pukhov)"
 		location = 9471 # Chemnitz
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Nikolay Pukhov" }
 	}
 	division = {
 		name = "28-ya Armiya (Luchinsky)"
 		location = 425 # Weimar
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Alexander Luchinsky" }
 	}
 	division = {
 		name = "52-ya Armiya (Koroteyev)"
 		location = 538 # Jena
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Konstantin Koroteyev" }
 	}
 	division = {
 		name = "7-y Gvardeyskiy Mekhanizirovannyy Korpus"
 		location = 514 # Dresden
 		division_template = "Gvardeyskiy Mekhanizirovannyy Korpus"
 		start_experience_factor = 0.90
+		officer = { name = "Ivan Korchagin" }
 	}
 
 	# --- 2ND BELORUSSIAN FRONT (Marshal Konstantin Rokossovsky - Mecklenburg & Baltic) ---
 	division = {
 		name = "65-ya Armiya (Batov)"
-		location = 11305 # Lübeck / Schwerin (Facing British 6th Airborne)
+		location = 11305 # Lubeck / Schwerin (Facing British 6th Airborne)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.90
+		officer = { name = "Pavel Batov" }
 	}
 	division = {
 		name = "70-ya Armiya (Popov)"
 		location = 321 # Rostock
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Vasily Popov" }
 	}
 	division = {
 		name = "49-ya Armiya (Grishin)"
 		location = 11305 # Schwerin
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
+		officer = { name = "Ivan Grishin" }
 	}
 	division = {
 		name = "1-y Gvardeyskiy Donskoy Tankovyy Korpus"
 		location = 321 # Rostock
 		division_template = "Gvardeyskiy Tankovyy Korpus"
 		start_experience_factor = 0.90
+		officer = { name = "Mikhail Panov" }
 	}
 	division = {
 		name = "3-y Gvardeyskiy Kavaleriskiy Korpus"
 		location = 11305 # Ludwigslust
 		division_template = "Kavaleriskiy Korpus"
 		start_experience_factor = 0.85
+		officer = { name = "Nikolay Oslikovsky" }
 	}
 
 	# --- BALTIC STRATEGIC GARRISON ---
 	division = {
 		name = "11-ya Gvardeyskaya Armiya (Galitsky)"
-		location = 6332 # Königsberg (Kaliningrad)
+		location = 6332 # Koenigsberg (Kaliningrad)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.90
+		officer = { name = "Kuzma Galitsky" }
 	}
 }
 

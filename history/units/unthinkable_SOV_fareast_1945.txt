@@ -1,0 +1,141 @@
+units = {
+	# =========================================================================
+	# SOVIET FAR EASTERN THEATER OF OPERATIONS (Marshal Aleksandr Vasilevsky)
+	# =========================================================================
+
+	# -------------------------------------------------------------------------
+	# TRANSBAIKAL FRONT (Marshal Rodion Malinovsky - Chita / Mongolian Border)
+	# Target: Gobi Desert Crossing & Greater Khingan Mountains Strike
+	# -------------------------------------------------------------------------
+
+	# 6th Guards Tank Army (Gen. Andrey Kravchenko)
+	division = {
+		name = "5th Guards Tank Corps"
+		location = 10582 # Chita
+		division_template = "Gvardeyskiy Tankovyy Korpus"
+		start_experience_factor = 0.95
+		officer = { name = "Mikhail Saveliev" }
+	}
+	division = {
+		name = "9th Guards Mechanized Corps"
+		location = 10582 # Chita
+		division_template = "Mekhanizirovannyy Korpus"
+		start_experience_factor = 0.90
+		officer = { name = "Ivan Volkov" }
+	}
+
+	# 39th Army (Gen. Ivan Lyudnikov)
+	division = {
+		name = "5th Guards Rifle Division"
+		location = 10582 # Chita / Borzya
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.90
+		officer = { name = "Nikolay Kazakov" }
+	}
+	division = {
+		name = "19th Guards Rifle Division"
+		location = 10582 # Chita
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+		officer = { name = "Vasily Bibikov" }
+	}
+	division = {
+		name = "91st Guards Rifle Division"
+		location = 10582 # Chita
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+		officer = { name = "Vasily Kozhanov" }
+	}
+
+	# Soviet-Mongolian Cavalry-Mechanized Group (Gen. Issa Pliyev)
+	division = {
+		name = "7th Guards Cavalry Division"
+		location = 10582 # Tamtsak-Bulak staging
+		division_template = "Gvardeyskaya Kavaleriyskaya Diviziya"
+		start_experience_factor = 0.90
+		officer = { name = "Issa Pliyev" }
+	}
+
+	# -------------------------------------------------------------------------
+	# 1ST FAR EASTERN FRONT (Marshal Kirill Meretskov - Maritime Province / Vladivostok)
+	# Target: Breach of Eastern Manchurian Fortified Regions & Mudanjiang
+	# -------------------------------------------------------------------------
+
+	# 1st Red Banner Army (Gen. Afanasy Beloborodov)
+	division = {
+		name = "22nd Rifle Division"
+		location = 957 # Vladivostok
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+		officer = { name = "Gennady Semenov" }
+	}
+	division = {
+		name = "59th Rifle Division"
+		location = 957 # Vladivostok
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.80
+		officer = { name = "Pavel Fomenko" }
+	}
+
+	# 5th Army (Gen. Nikolay Krylov - Heroes of East Prussia)
+	division = {
+		name = "63rd Guards Rifle Division"
+		location = 957 # Ussuriysk / Grodekovo sector
+		division_template = "Gvardeyskaya Strelkovaya Diviziya"
+		start_experience_factor = 0.95
+		officer = { name = "Nikolay Polyakov" }
+	}
+	division = {
+		name = "97th Rifle Division"
+		location = 957 # Vladivostok border
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+		officer = { name = "Bogdan Gukalo" }
+	}
+
+	# 10th Mechanized Corps
+	division = {
+		name = "10th Mechanized Corps"
+		location = 957 # Vladivostok
+		division_template = "Mekhanizirovannyy Korpus"
+		start_experience_factor = 0.90
+		officer = { name = "Ivan Vasiliev" }
+	}
+
+	# -------------------------------------------------------------------------
+	# 2ND FAR EASTERN FRONT (Gen. Maksim Purkayev - Amur River & Khabarovsk)
+	# Target: Sungari River Axis, Northern Manchuria & Sakhalin / Kurils
+	# -------------------------------------------------------------------------
+
+	# 2nd Red Banner Army (Gen. Makar Teryokhin - Blagoveshchensk)
+	division = {
+		name = "3rd Rifle Division"
+		location = 7378 # Khabarovsk
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.80
+		officer = { name = "Ivan Karpov" }
+	}
+	division = {
+		name = "12th Rifle Division"
+		location = 7378 # Khabarovsk
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.80
+		officer = { name = "Vasily Malkov" }
+	}
+
+	# 16th Army (Gen. Leonty Cheremisov - North Sakhalin & Kamchatka Amphibious Force)
+	division = {
+		name = "79th Rifle Division"
+		location = 7378 # Sakhalin Line (Alexandrovsk)
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+		officer = { name = "Ivan Baturov" }
+	}
+	division = {
+		name = "101st Rifle Division (Kamchatka Defence)"
+		location = 7378 # Petropavlovsk-Kamchatsky / Kuril Assault
+		division_template = "Strelkovaya Diviziya"
+		start_experience_factor = 0.85
+		officer = { name = "Alexey Dyakov" }
+	}
+}

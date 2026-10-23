@@ -4,6 +4,21 @@ unthinkable_setup_1945_world = {
 			NOT = { has_global_flag = unthinkable_world_setup_done }
 		}
 		set_global_flag = unthinkable_world_setup_done
+		# Suppress legacy 1936-1944 events
+		set_global_flag = scw_over
+		set_global_flag = spanish_civil_war_ended
+		set_global_flag = SPA_civil_war_fired
+		set_global_flag = hindenburg_destroyed
+		set_global_flag = olympics_1936
+		set_global_flag = olympics_fin_1940
+		set_global_flag = olympics_jap_1940
+		set_global_flag = anschluss_done
+		set_global_flag = munich_conference_done
+		set_global_flag = fall_of_france_done
+		set_global_flag = poland_capitulated
+		set_global_flag = yalta_conference_happened
+		set_global_flag = sudetenland_acquired
+		set_global_flag = fate_of_czechoslovakia
 
 		# 1. France and Benelux restoration
 		FRA = {
@@ -84,6 +99,34 @@ unthinkable_setup_1945_world = {
 			}
 		}
 
+		
+		# 3b-1. Pacific War against Imperial Japan (July 1, 1945)
+		if = {
+			limit = { country_exists = JAP }
+			USA = {
+				declare_war_on = {
+					target = JAP
+					type = puppet_wargoal_focus
+				}
+			}
+			ENG = {
+				declare_war_on = {
+					target = JAP
+					type = puppet_wargoal_focus
+				}
+			}
+			if = { limit = { country_exists = AST } AST = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
+			if = { limit = { country_exists = NZL } NZL = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
+			if = { limit = { country_exists = CAN } CAN = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
+			if = { limit = { country_exists = RAJ } RAJ = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
+			if = { limit = { country_exists = FRA } FRA = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
+			if = { limit = { country_exists = CHI } CHI = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
+		}
+		# Pacific Island territories transferred to US liberation forces
+		USA = {
+			transfer_state = 526 # Okinawa
+			transfer_state = 645 # Iwo Jima
+		}
 		# 3c. Factions Alignment (July 1, 1945)
 		ENG = {
 			if = {
@@ -132,23 +175,7 @@ unthinkable_setup_1945_world = {
 				elections_allowed = yes
 			}
 		}
-		GER = {
-			retire_country_leader = yes
-			create_country_leader = {
-				name = "Konrad Adenauer"
-				desc = "POLITICS_KONRAD_ADENAUER_DESC"
-				picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
-				expire = "1967.1.1"
-				ideology = conservatism
-				traits = {
-					anti_communist
-				}
-			}
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-		}
+
 		POL = {
 			set_politics = {
 				ruling_party = communism
@@ -208,15 +235,18 @@ unthinkable_setup_1945_world = {
 			add_ideas = unthinkable_cze_reconstruction
 		}
 
-		# 8. Load Frontline 1945 OOBs
+		# 8. Load Frontline & Pacific 1945 OOBs
 		ENG = {
 			load_oob = "unthinkable_ENG_1945"
+			load_oob = "unthinkable_ENG_pacific_1945"
 		}
 		USA = {
 			load_oob = "unthinkable_USA_1945"
+			load_oob = "unthinkable_USA_pacific_1945"
 		}
 		SOV = {
 			load_oob = "unthinkable_SOV_1945"
+			load_oob = "unthinkable_SOV_fareast_1945"
 		}
 		CZE = {
 			load_oob = "unthinkable_CZE_1945"

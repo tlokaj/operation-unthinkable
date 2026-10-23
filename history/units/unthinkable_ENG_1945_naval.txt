@@ -138,6 +138,71 @@ units = {
 			ship = { name = "HMS Trusty" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = ENG version_name = "T Class" } } }
 		}
 	}
+
+	##### BRITISH PACIFIC FLEET (TF 57/37 - Adm. Sir Bruce Fraser) #####
+	fleet = {
+		name = "British Pacific Fleet"
+		naval_base = 4296 # Sydney, Australia
+		task_force = {
+			name = "1st Aircraft Carrier Squadron (TF 37)"
+			location = 4296 # Sydney / Manus staging
+			
+			# Armoured Fleet Carriers
+			ship = { name = "HMS Indomitable" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Illustrious Class" } } }
+			ship = { name = "HMS Victorious" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Illustrious Class" } } }
+			ship = { name = "HMS Formidable" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Illustrious Class" } } }
+			ship = { name = "HMS Implacable" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Implacable Class" } } }
+			ship = { name = "HMS Indefatigable" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Implacable Class" } } }
+			
+			# Fast Battleships
+			ship = { name = "HMS King George V" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.90 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "King George V Class" } } }
+			ship = { name = "HMS Duke of York" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "King George V Class" } } }
+			
+			# Light Cruisers
+			ship = { name = "HMS Swiftsure" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = ENG version_name = "Fiji Class" } } }
+			ship = { name = "HMS Black Prince" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Dido Class" } } }
+			ship = { name = "HMS Argonaut" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Dido Class" } } }
+			ship = { name = "HMS Euryalus" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Dido Class" } } }
+			
+			# Destroyer Screen (Battle & Tribal Classes)
+			ship = { name = "HMS Barfleur" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "Battle Class" } } }
+			ship = { name = "HMS Armada" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "Battle Class" } } }
+			ship = { name = "HMS Camperdown" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "Battle Class" } } }
+			ship = { name = "HMS Hogue" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = ENG version_name = "Battle Class" } } }
+			ship = { name = "HMS Grenville" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+			ship = { name = "HMS Urania" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+			ship = { name = "HMS Ursa" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+			ship = { name = "HMS Undaunted" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+		}
+
+		task_force = {
+			name = "4th Submarine Flotilla (Pacific)"
+			location = 4296 # Sydney, Australia
+			ship = { name = "HMS Amphion" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
+			ship = { name = "HMS Astute" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
+			ship = { name = "HMS Auriga" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
+			ship = { name = "HMS Aurochs" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
+		}
+	}
+
+	##### EAST INDIES FLEET (Adm. Sir Arthur Power) #####
+	fleet = {
+		name = "East Indies Fleet"
+		naval_base = 4256 # Trincomalee, Ceylon
+		task_force = {
+			name = "Battle Squadron & Escort Group"
+			location = 4256 # Trincomalee, Ceylon
+			ship = { name = "HMS Queen Elizabeth" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
+			ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
+			ship = { name = "HMS Colossus" definition = carrier start_experience_factor = 0.80 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Colossus Class" } } }
+			ship = { name = "HMS Cumberland" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+			ship = { name = "HMS London" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
+			ship = { name = "HMS Tartar" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+			ship = { name = "HMS Nubian" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+			ship = { name = "HMS Penn" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+			ship = { name = "HMS Petard" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "Tribal Class" } } }
+		}
+	}
 }
 
 ##### STARTING NAVAL PRODUCTION QUEUES #####

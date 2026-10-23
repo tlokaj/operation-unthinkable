@@ -284,5 +284,48 @@ ideas = {
 				trade_opinion_factor = 0.20
 			}
 		}
+
+		industrial_effort = {
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		secret_police_idea = {
+			picture = generic_spy_intel
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				foreign_subversive_activites = -0.30
+				encryption = 1
+			}
+		}
+
+		economic_miracle_idea = {
+			picture = generic_goods_red_bonus
+			allowed = { always = yes }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		unthinkable_sov_august_storm_offensive = {
+			picture = generic_morale_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				army_speed_factor = 0.15
+				out_of_supply_factor = -0.30
+				attrition = -0.20
+			}
+		}
 	}
 }

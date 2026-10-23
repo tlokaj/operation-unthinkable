@@ -117,36 +117,41 @@ units = {
 	# 21ST ARMY GROUP (HQ: Field Marshal Montgomery) - British Zone Germany
 	# =========================================================================
 
-	# British XXX Corps (Lt. Gen. Brian Horrocks - Elbe & Baltic Sector)
+		# British XXX Corps (Lt. Gen. Brian Horrocks - Elbe & Baltic Sector)
 	division = {
 		name = "7th Armoured Division 'Desert Rats'"
-		location = 6298 # LÃ¼neburg (Elbe frontier)
+		location = 6298 # Lüneburg (Elbe frontier)
 		division_template = "British Armoured Division"
 		start_experience_factor = 0.90
+		officer = { name = "Robert Wingfield" }
 	}
 	division = {
 		name = "Guards Armoured Division"
 		location = 9347 # Hamburg
 		division_template = "British Armoured Division"
 		start_experience_factor = 0.90
+		officer = { name = "Allan Adair" }
 	}
 	division = {
 		name = "11th Armoured Division 'The Black Bull'"
 		location = 6389 # Kiel (Schleswig-Holstein)
 		division_template = "British Armoured Division"
 		start_experience_factor = 0.85
+		officer = { name = "George Roberts" }
 	}
 	division = {
 		name = "15th (Scottish) Infantry Division"
-		location = 6298 # LÃ¼neburg (Elbe front)
+		location = 6298 # Lüneburg (Elbe front)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Colin Barber" }
 	}
 	division = {
 		name = "6th Airborne Division 'Red Devils'"
 		location = 9347 # Hamburg (Demarcation Line contact at Wismar)
 		division_template = "British Airborne Division"
 		start_experience_factor = 0.95
+		officer = { name = "Eric Bols" }
 	}
 
 	# British VIII Corps (Lt. Gen. Evelyn Barker - Lower Saxony & Harz)
@@ -155,18 +160,21 @@ units = {
 		location = 6377 # Hannover
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Lashmer Whistler" }
 	}
 	division = {
 		name = "5th Infantry Division"
 		location = 6377 # Hannover / Braunschweig line
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Richard Hull" }
 	}
 	division = {
 		name = "51st (Highland) Infantry Division"
 		location = 374 # Cuxhaven / North Sea estuary
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.85
+		officer = { name = "Thomas Rennie" }
 	}
 
 	# British XII Corps (Lt. Gen. Neil Ritchie - Westphalia & North Rhine)
@@ -175,24 +183,28 @@ units = {
 		location = 317 # Flensburg (Danish frontier)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.75
+		officer = { name = "Gwilym Thomas" }
 	}
 	division = {
 		name = "49th (West Riding) Infantry Division 'Polar Bears'"
 		location = 495 # Dortmund (Ruhr)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Gordon MacMillan" }
 	}
 	division = {
 		name = "52nd (Lowland) Infantry Division"
 		location = 3326 # Bremen Enclave boundary
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
+		officer = { name = "Edmund Hakewill-Smith" }
 	}
 	division = {
 		name = "53rd (Welsh) Infantry Division"
-		location = 11388 # MÃ¼nster
+		location = 11388 # Münster
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.75
+		officer = { name = "Robert Knox Ross" }
 	}
 
 	# Canadian & Allied Attached Formations
@@ -201,18 +213,21 @@ units = {
 		location = 241 # Wilhelmshaven
 		division_template = "Canadian Infantry Division"
 		start_experience_factor = 0.85
+		officer = { name = "Harry Foster" }
 	}
 	division = {
 		name = "1st Polish Armoured Division (Maczek)"
 		location = 241 # Wilhelmshaven (Emsland Polish enclave)
 		division_template = "Polish Armoured Division"
 		start_experience_factor = 0.90
+		officer = { name = "Stanis³aw Maczek" }
 	}
 	division = {
 		name = "1st Polish Independent Parachute Brigade"
-		location = 6298 # LÃ¼neburg
+		location = 6298 # Lüneburg
 		division_template = "British Airborne Division"
 		start_experience_factor = 0.85
+		officer = { name = "Stanis³aw Sosabowski" }
 	}
 
 	# =========================================================================
@@ -223,18 +238,21 @@ units = {
 		location = 6103 # London
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.75
+		officer = { name = "Charles Loewen" }
 	}
 	division = {
 		name = "2nd Infantry Division"
 		location = 3501 # Dover
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.75
+		officer = { name = "Cameron Nicholson" }
 	}
 	division = {
 		name = "46th Infantry Division"
 		location = 3273 # Edinburgh/Glasgow
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.70
+		officer = { name = "Stephen Weir" }
 	}
 }
 

@@ -2160,10 +2160,15 @@ if = {
 	}
 	promote_character = ENG_winston_churchill
 	retire_character = ENG_neville_chamberlain
+	retire_character = ENG_bernard_montgomery
 	recruit_character = ENG_bernard_montgomery_unthinkable
+	promote_character = ENG_bernard_montgomery_unthinkable
 	recruit_character = ENG_harold_alexander
+	promote_character = ENG_harold_alexander
 	recruit_character = ENG_alan_brooke
+	promote_character = ENG_alan_brooke
 	recruit_character = ENG_andrew_cunningham
+	recruit_character = ENG_bruce_fraser
 	recruit_character = ENG_louis_mountbatten
 	recruit_character = ENG_arthur_harris
 	recruit_character = ENG_clement_attlee_leader

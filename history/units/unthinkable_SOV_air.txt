@@ -79,4 +79,61 @@ air_wings = {
 			version_name = "Il-10"
 		}
 	}
+
+	# State 408: Vladivostok / Maritime Province (9th Air Army)
+	408 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 150
+			version_name = "Yak-9U"
+		}
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 150
+			version_name = "La-7"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Il-10"
+		}
+	}
+
+	# State 562: Khabarovsk / Amur (10th Air Army)
+	562 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Yak-9U"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Il-10"
+		}
+		medium_plane_airframe_2 = {
+			owner = "SOV"
+			amount = 50
+			version_name = "Tu-2S"
+		}
+	}
+
+	# State 570: Chita / Transbaikal (12th Air Army)
+	570 = {
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Yak-9U"
+		}
+		small_plane_airframe_3 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "La-7"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "SOV"
+			amount = 100
+			version_name = "Il-10"
+		}
+	}
 }

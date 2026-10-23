@@ -121,9 +121,9 @@ on_actions = {
 			# Fall of Berlin (State 64)
 			if = {
 				limit = {
-					FROM = { state = 64 }
+					ROOT = { state = 64 }
 					NOT = { has_global_flag = unthinkable_super_event_berlin_done }
-					ROOT = {
+					FROM.FROM = {
 						OR = {
 							original_tag = ENG
 							original_tag = USA
@@ -139,9 +139,9 @@ on_actions = {
 			# Fall of Moscow (State 219)
 			if = {
 				limit = {
-					FROM = { state = 219 }
+					ROOT = { state = 219 }
 					NOT = { has_global_flag = unthinkable_super_event_moscow_done }
-					ROOT = {
+					FROM.FROM = {
 						OR = {
 							original_tag = ENG
 							original_tag = USA

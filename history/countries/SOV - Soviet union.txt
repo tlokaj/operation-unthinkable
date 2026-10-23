@@ -2057,12 +2057,23 @@ if = {
 	}
 	promote_character = SOV_iosif_stalin
 	set_research_slots = 5
+	# Retire vanilla 1936 duplicate characters before recruiting upgraded 1945 marshals
+	retire_character = SOV_georgy_zhukov
+	retire_character = SOV_konstantin_rokossovsky
+	retire_character = SOV_ivan_konev
 	recruit_character = SOV_georgy_zhukov_unthinkable
 	recruit_character = SOV_konstantin_rokossovsky_unthinkable
 	recruit_character = SOV_ivan_konev_unthinkable
+	promote_character = SOV_georgy_zhukov_unthinkable
+	promote_character = SOV_konstantin_rokossovsky_unthinkable
+	promote_character = SOV_ivan_konev_unthinkable
 	recruit_character = SOV_aleksandr_vasilevsky
+	promote_character = SOV_aleksandr_vasilevsky
 	recruit_character = SOV_vasily_chuikov
 	recruit_character = SOV_rodion_malinovsky
+	promote_character = SOV_rodion_malinovsky
+	recruit_character = SOV_kirill_meretskov
+	promote_character = SOV_kirill_meretskov
 	recruit_character = SOV_nikolay_kuznetsov
 	recruit_character = SOV_vyacheslav_molotov_advisor
 	recruit_character = SOV_lavrenty_beriya_advisor

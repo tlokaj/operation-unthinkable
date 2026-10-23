@@ -1,0 +1,179 @@
+division_template = {
+	name = "US Marine Division"
+	division_names_group = USA_MAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	# =========================================================================
+	# UNITED STATES ARMY FORCES PACIFIC (Gen. Douglas MacArthur)
+	# =========================================================================
+
+	# US Sixth Army (Gen. Walter Krueger - Luzon / Manila)
+	division = {
+		name = "1st Cavalry Division (Special)"
+		location = 10265 # Manila
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.90
+		officer = { name = "William C. Chase" }
+	}
+	division = {
+		name = "6th Infantry Division 'Sightseeing Sixth'"
+		location = 10265 # Manila
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Charles E. Hurdis" }
+	}
+	division = {
+		name = "25th Infantry Division 'Tropic Lightning'"
+		location = 10265 # Manila / Central Luzon
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.90
+		officer = { name = "Charles L. Mullins" }
+	}
+	division = {
+		name = "32nd Infantry Division 'Red Arrow'"
+		location = 10265 # Lingayen Gulf / Luzon
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "William H. Gill" }
+	}
+	division = {
+		name = "33rd Infantry Division 'Golden Cross'"
+		location = 10265 # Baguio / Northern Luzon
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+		officer = { name = "Percy W. Clarkson" }
+	}
+	division = {
+		name = "37th Infantry Division 'Buckeye'"
+		location = 10265 # Manila Port Defense
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Robert S. Beightler" }
+	}
+
+	# US Eighth Army (Gen. Robert L. Eichelberger - Southern Philippines)
+	division = {
+		name = "24th Infantry Division 'Victory Division'"
+		location = 4484 # Davao / Mindanao
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Roscoe B. Woodruff" }
+	}
+	division = {
+		name = "31st Infantry Division 'Dixie'"
+		location = 4484 # Mindanao
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+		officer = { name = "Clarence A. Martin" }
+	}
+	division = {
+		name = "40th Infantry Division 'Sunshine'"
+		location = 10265 # Panay / Visayas
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.80
+		officer = { name = "Rapp Brush" }
+	}
+	division = {
+		name = "41st Infantry Division 'Jungleers'"
+		location = 4484 # Zamboanga
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Jens A. Doe" }
+	}
+
+	# US Tenth Army (Gen. Joseph W. Stilwell - Okinawa Base of Operations)
+	division = {
+		name = "7th Infantry Division 'Hourglass'"
+		location = 11932 # Okinawa / Naha
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.90
+		officer = { name = "Archibald V. Arnold" }
+	}
+	division = {
+		name = "77th Infantry Division 'Statue of Liberty'"
+		location = 11932 # Okinawa / Shuri
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.90
+		officer = { name = "Andrew D. Bruce" }
+	}
+	division = {
+		name = "96th Infantry Division 'Deadeyes'"
+		location = 11932 # Okinawa / Kadena
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "James L. Bradley" }
+	}
+	division = {
+		name = "1st Marine Division 'The Old Breed'"
+		location = 11932 # Okinawa / Motobu
+		division_template = "US Marine Division"
+		start_experience_factor = 0.95
+		officer = { name = "Pedro del Valle" }
+	}
+	division = {
+		name = "6th Marine Division"
+		location = 11932 # Okinawa / Naha
+		division_template = "US Marine Division"
+		start_experience_factor = 0.90
+		officer = { name = "Lemuel C. Shepherd Jr." }
+	}
+
+	# Fleet Marine Force Pacific (Marianas & Central Pacific staging)
+	division = {
+		name = "3rd Marine Division"
+		location = 12140 # Guam
+		division_template = "US Marine Division"
+		start_experience_factor = 0.90
+		officer = { name = "Graves B. Erskine" }
+	}
+	division = {
+		name = "4th Marine Division 'Fighting Fourth'"
+		location = 12140 # Guam
+		division_template = "US Marine Division"
+		start_experience_factor = 0.90
+		officer = { name = "Clifton B. Cates" }
+	}
+
+	# US Hawaiian Department & Central Pacific Reserve
+	division = {
+		name = "2nd Marine Division"
+		location = 4180 # Pearl Harbor / Oahu
+		division_template = "US Marine Division"
+		start_experience_factor = 0.95
+		officer = { name = "LeRoy P. Hunt" }
+	}
+	division = {
+		name = "5th Marine Division 'The Spearhead'"
+		location = 4180 # Pearl Harbor / Oahu
+		division_template = "US Marine Division"
+		start_experience_factor = 0.90
+		officer = { name = "Thomas E. Bourke" }
+	}
+	division = {
+		name = "98th Infantry Division"
+		location = 4180 # Honolulu / Oahu
+		division_template = "US Infantry Division"
+		start_experience_factor = 0.75
+		officer = { name = "Michael F. Davis" }
+	}
+}

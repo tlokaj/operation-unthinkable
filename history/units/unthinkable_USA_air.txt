@@ -59,4 +59,46 @@ air_wings = {
 			version_name = "B-29 Superfortress"
 		}
 	}
+
+	# State 638: Guam (XXI Bomber Command - Gen. Curtis LeMay)
+	638 = {
+		large_plane_airframe_2 = {
+			owner = "USA"
+			amount = 200
+			version_name = "B-29 Superfortress"
+		}
+	}
+
+	# State 526: Okinawa (Seventh Air Force)
+	526 = {
+		small_plane_airframe_3 = {
+			owner = "USA"
+			amount = 100
+			version_name = "P-51D Mustang"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "USA"
+			amount = 100
+			version_name = "P-47D Thunderbolt"
+		}
+	}
+
+	# State 327: Philippines / Luzon (Fifth Air Force)
+	327 = {
+		small_plane_airframe_3 = {
+			owner = "USA"
+			amount = 100
+			version_name = "P-51D Mustang"
+		}
+		small_plane_cas_airframe_3 = {
+			owner = "USA"
+			amount = 100
+			version_name = "P-47D Thunderbolt"
+		}
+		medium_plane_airframe_2 = {
+			owner = "USA"
+			amount = 50
+			version_name = "A-26B Invader"
+		}
+	}
 }

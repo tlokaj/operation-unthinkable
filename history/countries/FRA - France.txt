@@ -1415,12 +1415,20 @@ if = {
 		communism = 30
 		fascism = 5
 	}
+	# Retire vanilla 1936 duplicate characters
+	retire_character = FRA_charles_de_gaulle
+	retire_character = FRA_jean_de_lattre_de_tassigny
+	retire_character = FRA_philippe_leclerc
+	retire_character = FRA_alphonse_juin
 	recruit_character = FRA_charles_de_gaulle_unthinkable
 	promote_character = FRA_charles_de_gaulle_unthinkable
 	set_research_slots = 5
 	recruit_character = FRA_jean_de_lattre_de_tassigny_unthinkable
 	recruit_character = FRA_philippe_leclerc_unthinkable
 	recruit_character = FRA_alphonse_juin_unthinkable
+	promote_character = FRA_jean_de_lattre_de_tassigny_unthinkable
+	promote_character = FRA_philippe_leclerc_unthinkable
+	promote_character = FRA_alphonse_juin_unthinkable
 	recruit_character = FRA_marie_pierre_koenig
 	set_oob = "unthinkable_FRA_1945"
 	add_ideas = {

@@ -122,6 +122,43 @@ units = {
 			ship = { name = "Shch-209" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
 		}
 	}
+
+	##### PACIFIC FLEET (TOF - Adm. Ivan Yumashev) #####
+	fleet = {
+		name = "Pacific Fleet"
+		naval_base = 957 # Vladivostok
+		task_force = {
+			name = "Vladivostok Cruiser & Destroyer Brigade"
+			location = 957 # Vladivostok
+			
+			# Heavy Cruisers (Kirov Class / Project 26bis)
+			ship = { name = "Kalinin" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			ship = { name = "Lazar Kaganovich" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SOV version_name = "Kirov Class" } } }
+			
+			# Destroyers: Gnevnyy Class (Project 7)
+			ship = { name = "Revnostny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Razyashchy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Razyaryonny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Rekordny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Reshitelny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Rezvy" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Ryany" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+			ship = { name = "Rastoropny" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_2 = { amount = 1 owner = SOV version_name = "Gnevnyy Class" } } }
+		}
+
+		task_force = {
+			name = "Pacific Submarine Flotilla"
+			location = 957 # Vladivostok
+			ship = { name = "S-51" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-52" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "S-53" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "Shch-117" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-121" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "Shch-122" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series X Shchuka" } } }
+			ship = { name = "L-18" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+			ship = { name = "L-19" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series IX Srednyaya" } } }
+		}
+	}
 }
 
 ##### STARTING NAVAL PRODUCTION QUEUES #####

@@ -126,6 +126,84 @@ units = {
 			ship = { name = "USS Black" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
 		}
 	}
+
+	##### UNITED STATES PACIFIC FLEET (CINCPAC - Adm. Chester W. Nimitz) #####
+	fleet = {
+		name = "United States Pacific Fleet"
+		naval_base = 4180 # Pearl Harbor, HI
+		task_force = {
+			name = "TF 38 / 58 - Fast Carrier Task Force"
+			location = 11932 # Okinawa Staging Base
+			
+			# Fast Fleet Carriers (Essex Class)
+			ship = { name = "USS Essex" definition = carrier start_experience_factor = 0.95 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Yorktown" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Hornet" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Lexington" definition = carrier start_experience_factor = 0.95 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Bunker Hill" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Ticonderoga" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Randolph" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Shangri-La" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			ship = { name = "USS Bennington" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }
+			
+			# Fast Battleships (Iowa & North Carolina Classes)
+			ship = { name = "USS Missouri" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.90 equipment = { ship_hull_heavy_3 = { amount = 1 owner = USA version_name = "Iowa Class" } } }
+			ship = { name = "USS New Jersey" definition = battleship start_experience_factor = 0.90 equipment = { ship_hull_heavy_3 = { amount = 1 owner = USA version_name = "Iowa Class" } } }
+			ship = { name = "USS North Carolina" definition = battleship start_experience_factor = 0.90 equipment = { ship_hull_heavy_3 = { amount = 1 owner = USA version_name = "North Carolina Class" } } }
+			ship = { name = "USS Washington" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_3 = { amount = 1 owner = USA version_name = "North Carolina Class" } } }
+			
+			# Heavy Cruisers (Baltimore Class)
+			ship = { name = "USS Pittsburgh" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Baltimore Class" } } }
+			ship = { name = "USS Saint Paul" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Baltimore Class" } } }
+			ship = { name = "USS Bremerton" definition = heavy_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Baltimore Class" } } }
+			
+			# Light Cruisers (Cleveland Class)
+			ship = { name = "USS Montpelier" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Cleveland Class" } } }
+			ship = { name = "USS Houston" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Cleveland Class" } } }
+			ship = { name = "USS Vicksburg" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Cleveland Class" } } }
+			ship = { name = "USS Miami" definition = light_cruiser start_experience_factor = 0.80 equipment = { ship_hull_cruiser_3 = { amount = 1 owner = USA version_name = "Cleveland Class" } } }
+			
+			# Destroyer Flotillas (Fletcher & Sumner Classes)
+			ship = { name = "USS Cushing" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Colahan" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Hickox" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Hunt" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Lewis Hancock" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Marshall" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Halsey Powell" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Uhlmann" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Benham" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Twining" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Stockham" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+			ship = { name = "USS Wedderburn" definition = destroyer start_experience_factor = 0.80 equipment = { ship_hull_light_3 = { amount = 1 owner = USA version_name = "Fletcher Class" } } }
+		}
+
+		task_force = {
+			name = "Submarine Force Pacific (SUBPAC)"
+			location = 4180 # Pearl Harbor, HI
+			ship = { name = "USS Balao" definition = submarine start_experience_factor = 0.90 equipment = { ship_hull_submarine_3 = { amount = 1 owner = USA version_name = "Balao Class" } } }
+			ship = { name = "USS Bowfin" definition = submarine start_experience_factor = 0.90 equipment = { ship_hull_submarine_3 = { amount = 1 owner = USA version_name = "Balao Class" } } }
+			ship = { name = "USS Tang" definition = submarine start_experience_factor = 0.95 equipment = { ship_hull_submarine_3 = { amount = 1 owner = USA version_name = "Balao Class" } } }
+			ship = { name = "USS Archerfish" definition = submarine start_experience_factor = 0.95 equipment = { ship_hull_submarine_3 = { amount = 1 owner = USA version_name = "Balao Class" } } }
+			ship = { name = "USS Salmon" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Salmon Class" } } }
+			ship = { name = "USS Seal" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Salmon Class" } } }
+			ship = { name = "USS Skipjack" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Salmon Class" } } }
+			ship = { name = "USS Snapper" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Salmon Class" } } }
+		}
+
+		task_force = {
+			name = "TF 51 - Marianas Amphibious Support Group"
+			location = 12140 # Guam
+			ship = { name = "USS Casablanca" definition = carrier start_experience_factor = 0.75 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = USA version_name = "Casablanca Class" } } }
+			ship = { name = "USS Liscome Bay" definition = carrier start_experience_factor = 0.75 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = USA version_name = "Casablanca Class" } } }
+			ship = { name = "USS Corregidor" definition = carrier start_experience_factor = 0.75 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = USA version_name = "Casablanca Class" } } }
+			ship = { name = "USS Mission Bay" definition = carrier start_experience_factor = 0.75 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = USA version_name = "Casablanca Class" } } }
+			ship = { name = "USS Buckley" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Buckley Class" } } }
+			ship = { name = "USS Charles Lawrence" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Buckley Class" } } }
+			ship = { name = "USS Daniel T. Griffin" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Buckley Class" } } }
+			ship = { name = "USS Donald W. Wolf" definition = destroyer start_experience_factor = 0.75 equipment = { ship_hull_light_2 = { amount = 1 owner = USA version_name = "Buckley Class" } } }
+		}
+	}
 }
 
 ##### STARTING NAVAL SHIPYARD PRODUCTION QUEUES #####

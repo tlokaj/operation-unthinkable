@@ -1,0 +1,76 @@
+units = {
+	# =========================================================================
+	# BRITISH FOURTEENTH ARMY & SOUTH EAST ASIA COMMAND (Gen. William Slim)
+	# =========================================================================
+
+	# IV Corps (Rangoon Sector / Lower Burma)
+	division = {
+		name = "2nd British Infantry Division"
+		location = 1358 # Rangoon
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Cameron Nicholson" }
+	}
+	division = {
+		name = "20th Indian Infantry Division"
+		location = 1358 # Rangoon
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Douglas Gracey" }
+	}
+	division = {
+		name = "26th Indian Infantry Division 'Tiger Head'"
+		location = 1358 # Rangoon / Sittang River
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Cyril Lomax" }
+	}
+
+	# XXXIII Corps (Mandalay & Central Burma)
+	division = {
+		name = "19th Indian Infantry Division 'Dagger'"
+		location = 4340 # Mandalay
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.90
+		officer = { name = "Thomas Wynford Rees" }
+	}
+	division = {
+		name = "23rd Indian Infantry Division"
+		location = 4340 # Mandalay
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+		officer = { name = "Arthur Hawthorn" }
+	}
+
+	# Operation Zipper Task Force (Malaya / Singapore preparation)
+	division = {
+		name = "5th Indian Infantry Division 'Ball of Fire'"
+		location = 4410 # Singapore / Johore
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.90
+		officer = { name = "E. C. Mansergh" }
+	}
+	division = {
+		name = "36th British Infantry Division"
+		location = 4410 # Singapore / Malaya
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.85
+		officer = { name = "Francis Festing" }
+	}
+
+	# Ceylon & Strategic Reserve (South East Asia Command)
+	division = {
+		name = "3rd Commando Brigade (Royal Marines)"
+		location = 4256 # Colombo / Ceylon
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.95
+		officer = { name = "Peter Young" }
+	}
+	division = {
+		name = "11th East African Division"
+		location = 4256 # Trincomalee / Ceylon
+		division_template = "British Infantry Division"
+		start_experience_factor = 0.80
+		officer = { name = "William Dimoline" }
+	}
+}
