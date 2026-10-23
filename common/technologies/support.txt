@@ -56,10 +56,9 @@ technologies = {
 		}
 		research_cost = 1.0
 		start_year = 1918
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = @1918 }
 		}
 
 		categories = {
@@ -118,10 +117,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = @1936 }
 		}
 
 		categories = {
@@ -253,10 +251,9 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
-
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 1 }
+			position = { x = 0 y = @1939 }
 		}
 
 		categories = {
@@ -350,10 +347,9 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1942
-
 		folder = {
 			name = support_folder
-			position = { x = 1 y = 3 }
+			position = { x = 0 y = @1942 }
 		}
 
 		categories = {
@@ -498,10 +494,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = 2 y = @1936 }
 		}
 
 		categories = {
@@ -555,10 +550,9 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
-
 		folder = {
 			name = support_folder
-			position = { x = 3 y = 1 }
+			position = { x = 2 y = @1939 }
 		}
 
 		categories = {
@@ -607,10 +601,9 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1942
-
 		folder = {
 			name = support_folder
-			position = { x = 3 y = 3 }
+			position = { x = 2 y = @1942 }
 		}
 
 		categories = {
@@ -649,10 +642,9 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1945
-
 		folder = {
 			name = support_folder
-			position = { x = 3 y = 4 }
+			position = { x = 2 y = @1945 }
 		}
 
 		categories = {
@@ -721,10 +713,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = 4 y = @1936 }
 		}
 
 		categories = {
@@ -958,10 +949,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = 6 y = @1936 }
 		}
 
 		categories = {
@@ -1184,10 +1174,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = @field_hospital_x y = @1936 }
 		}
 
 		categories = {
@@ -1257,10 +1246,9 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
-
 		folder = {
 			name = support_folder
-			position = { x = 5 y = 1 }
+			position = { x = @field_hospital_x y = @1939 }
 		}
 
 		categories = {
@@ -1475,10 +1463,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = @logistic_x y = @1936 }
 		}
 
 		categories = {
@@ -1693,10 +1680,9 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
-
 		folder = {
 			name = support_folder
-			position = { x = 0 y = -1 }
+			position = { x = @signal_x y = @1936 }
 		}
 
 		categories = {
@@ -2474,7 +2460,7 @@ technologies = {
 		recon = { recon = 1.0 maximum_speed = 0.10 }
 		research_cost = 2.0
 		start_year = 1948
-		folder = { name = support_folder position = { x = 3 y = 7 } }
+		folder = { name = support_folder position = { x = 3 y = 12 } }
 		categories = { support_tech }
 		ai_will_do = { factor = 4 }
 	}
@@ -2488,7 +2474,7 @@ technologies = {
 		logistics_company = { supply_consumption_factor = -0.05 }
 		research_cost = 2.5
 		start_year = 1951
-		folder = { name = support_folder position = { x = 3 y = 9 } }
+		folder = { name = support_folder position = { x = 3 y = 14 } }
 		categories = { support_tech }
 		ai_will_do = { factor = 4 }
 	}
@@ -2502,7 +2488,7 @@ technologies = {
 		logistics_company = { supply_consumption_factor = -0.05 }
 		research_cost = 3.0
 		start_year = 1955
-		folder = { name = support_folder position = { x = 3 y = 12 } }
+		folder = { name = support_folder position = { x = 3 y = 17 } }
 		categories = { support_tech }
 		ai_will_do = { factor = 3 }
 	}
@@ -2511,7 +2497,7 @@ technologies = {
 		recon = { soft_attack = 0.25 hard_attack = 0.20 ap_attack = 0.20 }
 		research_cost = 3.5
 		start_year = 1958
-		folder = { name = support_folder position = { x = 3 y = 14 } }
+		folder = { name = support_folder position = { x = 3 y = 19 } }
 		categories = { support_tech }
 		ai_will_do = { factor = 3 }
 	}

@@ -53,10 +53,9 @@ technologies = {
 
 		research_cost = 1.5
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 0 }
 		}
 
 		categories = {
@@ -118,10 +117,9 @@ technologies = {
 
 		start_year = 1936
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 2 }
 		}
 
 		categories = {
@@ -198,10 +196,9 @@ technologies = {
 
 		start_year = 1939
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 1 y = 1 }
+			position = { x = 0 y = 4 }
 		}
 
 		categories = {
@@ -375,10 +372,9 @@ technologies = {
 
 		start_year = 1942
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 1 y = 4 }
+			position = { x = 0 y = 10 }
 		}
 
 		categories = {
@@ -642,10 +638,9 @@ technologies = {
 
 		start_year = 1943
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 4 }
+			position = { x = @rocket_artillery y = 12 }
 		}
 
 		ai_will_do = {
@@ -705,10 +700,9 @@ technologies = {
 
 		start_year = 1936
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = -1 }
+			position = { x = @anti_air y = 2 }
 		}
 
 		ai_will_do = {
@@ -786,10 +780,9 @@ technologies = {
 
 		start_year = 1939
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 1 }
+			position = { x = @anti_air y = 4 }
 		}
 
 		ai_will_do = {
@@ -1035,10 +1028,9 @@ technologies = {
 
 		start_year = 1943
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 4 }
+			position = { x = @anti_air y = 12 }
 		}
 
 		ai_will_do = {
@@ -1113,10 +1105,9 @@ technologies = {
 
 		start_year = 1936
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = -1 }
+			position = { x = @anti_tank y = 2 }
 		}
 
 		ai_will_do = {
@@ -1213,10 +1204,9 @@ technologies = {
 
 		start_year = 1939
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 1 }
+			position = { x = @anti_tank y = 4 }
 		}
 
 		ai_will_do = {
@@ -1528,10 +1518,9 @@ technologies = {
 
 		start_year = 1943
 
-
 		folder = {
 			name = artillery_folder
-			position = { x = 3 y = 4 }
+			position = { x = @anti_tank y = 12 }
 		}
 
 		ai_will_do = {
@@ -2018,7 +2007,7 @@ technologies = {
 		category_artillery = { soft_attack = 0.15 breakthrough = 0.10 }
 		research_cost = 2.0
 		start_year = 1948
-		folder = { name = artillery_folder position = { x = 1 y = 7 } }
+		folder = { name = artillery_folder position = { x = 1 y = 12 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2031,7 +2020,7 @@ technologies = {
 		category_artillery = { soft_attack = 0.20 defense = 0.10 }
 		research_cost = 2.5
 		start_year = 1952
-		folder = { name = artillery_folder position = { x = 1 y = 10 } }
+		folder = { name = artillery_folder position = { x = 1 y = 15 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2040,7 +2029,7 @@ technologies = {
 		category_artillery = { soft_attack = 0.25 breakthrough = 0.15 }
 		research_cost = 3.5
 		start_year = 1957
-		folder = { name = artillery_folder position = { x = 1 y = 13 } }
+		folder = { name = artillery_folder position = { x = 1 y = 18 } }
 		categories = { artillery }
 		ai_will_do = { factor = 3 }
 	}
@@ -2053,7 +2042,7 @@ technologies = {
 		category_anti_tank = { hard_attack = 0.20 ap_attack = 0.25 }
 		research_cost = 2.0
 		start_year = 1948
-		folder = { name = artillery_folder position = { x = 3 y = 7 } }
+		folder = { name = artillery_folder position = { x = 3 y = 12 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2066,7 +2055,7 @@ technologies = {
 		category_anti_tank = { hard_attack = 0.25 ap_attack = 0.30 }
 		research_cost = 2.5
 		start_year = 1953
-		folder = { name = artillery_folder position = { x = 3 y = 10 } }
+		folder = { name = artillery_folder position = { x = 3 y = 15 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2075,7 +2064,7 @@ technologies = {
 		category_anti_tank = { hard_attack = 0.35 ap_attack = 0.40 }
 		research_cost = 3.5
 		start_year = 1958
-		folder = { name = artillery_folder position = { x = 3 y = 13 } }
+		folder = { name = artillery_folder position = { x = 3 y = 19 } }
 		categories = { artillery }
 		ai_will_do = { factor = 3 }
 	}
@@ -2088,7 +2077,7 @@ technologies = {
 		category_rocket_artillery = { soft_attack = 0.25 breakthrough = 0.20 }
 		research_cost = 2.0
 		start_year = 1949
-		folder = { name = artillery_folder position = { x = 7 y = 8 } }
+		folder = { name = artillery_folder position = { x = 7 y = 13 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2097,7 +2086,7 @@ technologies = {
 		category_rocket_artillery = { soft_attack = 0.35 breakthrough = 0.25 }
 		research_cost = 3.0
 		start_year = 1955
-		folder = { name = artillery_folder position = { x = 7 y = 12 } }
+		folder = { name = artillery_folder position = { x = 7 y = 17 } }
 		categories = { artillery }
 		ai_will_do = { factor = 3 }
 	}
@@ -2111,7 +2100,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.20
 		research_cost = 2.0
 		start_year = 1947
-		folder = { name = artillery_folder position = { x = 5 y = 6 } }
+		folder = { name = artillery_folder position = { x = 5 y = 11 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2125,7 +2114,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.30
 		research_cost = 2.5
 		start_year = 1951
-		folder = { name = artillery_folder position = { x = 5 y = 9 } }
+		folder = { name = artillery_folder position = { x = 5 y = 14 } }
 		categories = { artillery }
 		ai_will_do = { factor = 4 }
 	}
@@ -2139,7 +2128,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.40
 		research_cost = 3.0
 		start_year = 1955
-		folder = { name = artillery_folder position = { x = 5 y = 12 } }
+		folder = { name = artillery_folder position = { x = 5 y = 17 } }
 		categories = { artillery }
 		ai_will_do = { factor = 3 }
 	}
@@ -2149,7 +2138,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.50
 		research_cost = 3.5
 		start_year = 1959
-		folder = { name = artillery_folder position = { x = 5 y = 14 } }
+		folder = { name = artillery_folder position = { x = 5 y = 19 } }
 		categories = { artillery }
 		ai_will_do = { factor = 3 }
 	}

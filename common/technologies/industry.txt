@@ -22,10 +22,9 @@ technologies = {
 		
 		research_cost = 1.5
 		start_year = 1936
-
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -57,10 +56,9 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1937
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -91,10 +89,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1939
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -131,10 +128,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -326,10 +322,9 @@ technologies = {
 			dispersed_industry
 		}
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 4 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -397,10 +392,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1937
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 4 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -439,10 +433,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1939
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 2 }
+			position = { x = 4 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -480,10 +473,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 		
-
 		folder = {
 			name = industry_folder
-			position = { x = 2 y = 4 }
+			position = { x = 4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -2152,7 +2144,7 @@ technologies = {
 		line_change_production_efficiency_factor = 0.10
 		research_cost = 2.5
 		start_year = 1948
-		folder = { name = industry_folder position = { x = 0 y = 7 } }
+		folder = { name = industry_folder position = { x = 0 y = 12 } }
 		categories = { industry }
 		ai_will_do = { factor = 4 }
 	}
@@ -2166,7 +2158,7 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.10
 		research_cost = 3.5
 		start_year = 1953
-		folder = { name = industry_folder position = { x = 0 y = 10 } }
+		folder = { name = industry_folder position = { x = 0 y = 15 } }
 		categories = { industry }
 		ai_will_do = { factor = 3 }
 	}
@@ -2177,7 +2169,7 @@ technologies = {
 		line_change_production_efficiency_factor = 0.15
 		research_cost = 4.0
 		start_year = 1958
-		folder = { name = industry_folder position = { x = 0 y = 13 } }
+		folder = { name = industry_folder position = { x = 0 y = 18 } }
 		categories = { industry }
 		ai_will_do = { factor = 3 }
 	}

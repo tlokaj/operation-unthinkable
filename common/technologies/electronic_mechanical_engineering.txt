@@ -40,10 +40,9 @@ technologies = {
 		
 		research_cost = 1
 		start_year = 1936
-
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = -1 }
+			position = { x = -1 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -85,10 +84,9 @@ technologies = {
 		
 		research_cost = 2
 		
-
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = -1 }
+			position = { x = @radio y = 2 }
 		}
 		folder = {
 			name = support_folder
@@ -402,10 +400,9 @@ technologies = {
 		research_cost = 1.25
 		start_year = 1940
 		
-
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 1 }
+			position = { x = @radar y = 10 }
 		}
 		
 		ai_will_do = {
@@ -552,10 +549,9 @@ technologies = {
 		
 		research_cost = 2.5
 		
-
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = -1 }
+			position = { x = 3 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -594,10 +590,9 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1938
 		
-
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 1 }
+			position = { x = @computing y = 6 }
 		}
 		
 		ai_will_do = {
@@ -702,10 +697,9 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1942
 		
-
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 4 }
+			position = { x = @computing y = 14 }
 		}
 		
 		ai_will_do = {
@@ -1679,10 +1673,9 @@ technologies = {
 		start_year = 1940
 		research_cost = 5
 		
-
 		folder = {
 			name = electronics_folder
-			position = { x = 8 y = 1 }
+			position = { x = 0 y = 0 }
 		}
 		
 		ai_will_do = {
@@ -1780,11 +1773,10 @@ technologies = {
 		start_year = 1943
 		research_cost = 5
 		
-
-		folder = {
-			name = electronics_folder
-			position = { x = 8 y = 3 }
-		}
+		#folder = {
+		#	name = electronics_folder
+		#	position = { x = 0 y = 2 }
+		#}
 
 		#path = {
 		#	leads_to_tech = nukes 
@@ -1849,11 +1841,10 @@ technologies = {
 		start_year = 1945
 		research_cost = 5
 		
-
-		folder = {
-			name = electronics_folder
-			position = { x = 8 y = 5 }
-		}
+		#folder = {
+		#	name = electronics_folder
+		#	position = { x = 0 y = 6 }
+		#}
 		
 		ai_will_do = {
 			factor = 10
@@ -2000,7 +1991,7 @@ technologies = {
 		research_speed_factor = 0.06
 		research_cost = 2.5
 		start_year = 1948
-		folder = { name = electronics_folder position = { x = 0 y = 7 } }
+		folder = { name = electronics_folder position = { x = 0 y = 12 } }
 		categories = { electronics }
 		ai_will_do = { factor = 4 }
 	}
@@ -2015,7 +2006,7 @@ technologies = {
 		encryption = 2
 		research_cost = 3.0
 		start_year = 1951
-		folder = { name = electronics_folder position = { x = 0 y = 9 } }
+		folder = { name = electronics_folder position = { x = 0 y = 14 } }
 		categories = { electronics }
 		ai_will_do = { factor = 4 }
 	}
@@ -2030,7 +2021,7 @@ technologies = {
 		encryption = 3
 		research_cost = 3.5
 		start_year = 1955
-		folder = { name = electronics_folder position = { x = 0 y = 12 } }
+		folder = { name = electronics_folder position = { x = 0 y = 17 } }
 		categories = { electronics }
 		ai_will_do = { factor = 3 }
 	}
@@ -2041,7 +2032,7 @@ technologies = {
 		encryption = 4
 		research_cost = 4.0
 		start_year = 1959
-		folder = { name = electronics_folder position = { x = 0 y = 14 } }
+		folder = { name = electronics_folder position = { x = 0 y = 19 } }
 		categories = { electronics }
 		ai_will_do = { factor = 3 }
 	}
@@ -2054,7 +2045,7 @@ technologies = {
 		detection = 0.25
 		research_cost = 2.5
 		start_year = 1948
-		folder = { name = electronics_folder position = { x = 4 y = 7 } }
+		folder = { name = electronics_folder position = { x = 4 y = 12 } }
 		categories = { electronics }
 		ai_will_do = { factor = 4 }
 	}
@@ -2068,7 +2059,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.20
 		research_cost = 3.0
 		start_year = 1953
-		folder = { name = electronics_folder position = { x = 4 y = 10 } }
+		folder = { name = electronics_folder position = { x = 4 y = 15 } }
 		categories = { electronics }
 		ai_will_do = { factor = 4 }
 	}
@@ -2078,7 +2069,7 @@ technologies = {
 		static_anti_air_hit_chance_factor = 0.30
 		research_cost = 4.0
 		start_year = 1958
-		folder = { name = electronics_folder position = { x = 4 y = 13 } }
+		folder = { name = electronics_folder position = { x = 4 y = 18 } }
 		categories = { electronics }
 		ai_will_do = { factor = 3 }
 	}
@@ -2091,7 +2082,7 @@ technologies = {
 		nuclear_production = 0.25
 		research_cost = 3.5
 		start_year = 1949
-		folder = { name = electronics_folder position = { x = 8 y = 8 } }
+		folder = { name = electronics_folder position = { x = 8 y = 13 } }
 		categories = { nuclear }
 		ai_will_do = { factor = 4 }
 	}
@@ -2104,7 +2095,7 @@ technologies = {
 		nuclear_production = 0.50
 		research_cost = 4.0
 		start_year = 1952
-		folder = { name = electronics_folder position = { x = 8 y = 10 } }
+		folder = { name = electronics_folder position = { x = 8 y = 15 } }
 		categories = { nuclear }
 		ai_will_do = { factor = 4 }
 	}
@@ -2117,7 +2108,7 @@ technologies = {
 		nuclear_production = 0.75
 		research_cost = 4.5
 		start_year = 1955
-		folder = { name = electronics_folder position = { x = 8 y = 12 } }
+		folder = { name = electronics_folder position = { x = 8 y = 17 } }
 		categories = { nuclear }
 		ai_will_do = { factor = 3 }
 	}
@@ -2126,7 +2117,7 @@ technologies = {
 		nuclear_production = 1.00
 		research_cost = 5.0
 		start_year = 1959
-		folder = { name = electronics_folder position = { x = 8 y = 14 } }
+		folder = { name = electronics_folder position = { x = 8 y = 19 } }
 		categories = { nuclear }
 		ai_will_do = { factor = 3 }
 	}

@@ -118,10 +118,9 @@ technologies = {
 		
 		research_cost = 2
 		start_year = 1933
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
@@ -198,10 +197,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -315,10 +313,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1940
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -444,10 +441,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1944
 
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = 8 }
 		}
 		
 		categories = {
@@ -567,10 +563,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1945
 
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 0 y = 12 }
 		}
 		
 		categories = {
@@ -1324,10 +1319,9 @@ technologies = {
 		
 		research_cost = 2
 		start_year = 1933
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = -1 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
@@ -1538,10 +1532,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1936
 
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = -1 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -1611,10 +1604,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1940
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 4 y = 1 }
+			position = { x = 2 y = 6 }
 		}
 		
 		categories = {
@@ -1795,10 +1787,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1936
-
 		folder = {
 			name = air_techs_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 4 }
 		}
 		
 		categories = {
@@ -2012,7 +2003,7 @@ technologies = {
 		category_fighter = { maximum_speed = 0.20 air_agility = 0.15 air_attack = 0.15 }
 		research_cost = 2.5
 		start_year = 1947
-		folder = { name = air_techs_folder position = { x = 0 y = 7 } }
+		folder = { name = air_techs_folder position = { x = 0 y = 12 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 4 }
 	}
@@ -2025,7 +2016,7 @@ technologies = {
 		category_fighter = { maximum_speed = 0.20 air_agility = 0.15 air_attack = 0.15 }
 		research_cost = 3.0
 		start_year = 1951
-		folder = { name = air_techs_folder position = { x = 0 y = 9 } }
+		folder = { name = air_techs_folder position = { x = 0 y = 14 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 4 }
 	}
@@ -2038,7 +2029,7 @@ technologies = {
 		category_fighter = { maximum_speed = 0.30 air_agility = 0.20 air_attack = 0.20 }
 		research_cost = 3.5
 		start_year = 1954
-		folder = { name = air_techs_folder position = { x = 0 y = 11 } }
+		folder = { name = air_techs_folder position = { x = 0 y = 16 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 3 }
 	}
@@ -2047,7 +2038,7 @@ technologies = {
 		category_fighter = { maximum_speed = 0.40 air_agility = 0.25 air_attack = 0.25 }
 		research_cost = 4.0
 		start_year = 1958
-		folder = { name = air_techs_folder position = { x = 0 y = 14 } }
+		folder = { name = air_techs_folder position = { x = 0 y = 19 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 3 }
 	}
@@ -2056,7 +2047,7 @@ technologies = {
 		category_fighter = { maximum_speed = 0.15 air_agility = 0.10 air_attack = 0.10 }
 		research_cost = 2.5
 		start_year = 1949
-		folder = { name = air_techs_folder position = { x = 2 y = 8 } }
+		folder = { name = air_techs_folder position = { x = 2 y = 13 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 3 }
 	}
@@ -2070,7 +2061,7 @@ technologies = {
 		category_strat_bomber = { air_bombing = 0.20 maximum_speed = 0.25 air_defence = 0.15 }
 		research_cost = 2.5
 		start_year = 1948
-		folder = { name = air_techs_folder position = { x = 4 y = 7 } }
+		folder = { name = air_techs_folder position = { x = 4 y = 12 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 3 }
 	}
@@ -2084,7 +2075,7 @@ technologies = {
 		category_strat_bomber = { air_bombing = 0.25 maximum_speed = 0.25 air_range = 0.20 }
 		research_cost = 3.0
 		start_year = 1953
-		folder = { name = air_techs_folder position = { x = 4 y = 10 } }
+		folder = { name = air_techs_folder position = { x = 4 y = 15 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 3 }
 	}
@@ -2093,7 +2084,7 @@ technologies = {
 		category_strat_bomber = { air_bombing = 0.35 maximum_speed = 0.20 air_range = 0.40 air_defence = 0.25 }
 		research_cost = 4.0
 		start_year = 1956
-		folder = { name = air_techs_folder position = { x = 4 y = 12 } }
+		folder = { name = air_techs_folder position = { x = 4 y = 17 } }
 		categories = { jet_technology }
 		ai_will_do = { factor = 3 }
 	}

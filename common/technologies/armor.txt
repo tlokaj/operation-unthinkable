@@ -48,10 +48,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1918
-
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 0 }
 		}
 
 		ai_will_do = {
@@ -130,10 +129,9 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1934
-
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = -1 }
+			position = { x = -4 y = 2 }
 		}
 
 		sub_technologies = {
@@ -768,10 +766,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1939
 
-
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 6 }
 		}
 
 		sub_technologies = {
@@ -1005,10 +1002,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 
-
 		folder = {
 			name = armour_folder
-			position = { x = 4 y = 1 }
+			position = { x = 0 y = 8 }
 		}
 
 		sub_technologies = {
@@ -1236,10 +1232,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1943
 
-
 		folder = {
 			name = armour_folder
-			position = { x = 4 y = 3 }
+			position = { x = 0 y = 10 }
 		}
 
 		sub_technologies = {
@@ -1436,10 +1431,9 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1945
 
-
 		folder = {
 			name = armour_folder
-			position = { x = 4 y = 5 }
+			position = { x = 2 y = 12 }
 		}
 
 		sub_technologies = {
@@ -1633,10 +1627,9 @@ technologies = {
 		research_cost = 2
 		start_year = 1934
 
-
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = -1 }
+			position = { x = 4 y = 2 }
 		}
 
 		sub_technologies = {
@@ -2701,7 +2694,7 @@ technologies = {
 		category_all_armor = { soft_attack = 0.15 hard_attack = 0.15 armor_value = 0.15 maximum_speed = 0.10 }
 		research_cost = 2.5
 		start_year = 1948
-		folder = { name = armour_folder position = { x = 4 y = 7 } }
+		folder = { name = armour_folder position = { x = 4 y = 12 } }
 		categories = { armor }
 		ai_will_do = { factor = 4 }
 	}
@@ -2714,7 +2707,7 @@ technologies = {
 		category_all_armor = { soft_attack = 0.15 hard_attack = 0.20 armor_value = 0.20 ap_attack = 0.20 }
 		research_cost = 3.0
 		start_year = 1952
-		folder = { name = armour_folder position = { x = 4 y = 10 } }
+		folder = { name = armour_folder position = { x = 4 y = 15 } }
 		categories = { armor }
 		ai_will_do = { factor = 4 }
 	}
@@ -2723,7 +2716,7 @@ technologies = {
 		category_all_armor = { soft_attack = 0.25 hard_attack = 0.30 armor_value = 0.25 ap_attack = 0.30 maximum_speed = 0.15 }
 		research_cost = 4.0
 		start_year = 1957
-		folder = { name = armour_folder position = { x = 4 y = 13 } }
+		folder = { name = armour_folder position = { x = 4 y = 18 } }
 		categories = { armor }
 		ai_will_do = { factor = 3 }
 	}

@@ -15,10 +15,9 @@ technologies = {
 
 		start_year = 1922
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -93,10 +92,9 @@ technologies = {
 
 		start_year = 1940
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 2 y = 1 }
+			position = { x = 0 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -178,10 +176,9 @@ technologies = {
 
 		start_year = 1922
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = -1 }
+			position = { x = -1 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -370,10 +367,9 @@ technologies = {
 
 		start_year = 1922
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = -1 }
+			position = { x = 1 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -592,10 +588,9 @@ technologies = {
 			}
 		}
 
-
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = -1 }
+			position = { x = 1 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -1005,10 +1000,9 @@ technologies = {
 
 		start_year = 1922
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -1110,10 +1104,9 @@ technologies = {
 			}
 		}
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 6 y = 1 }
+			position = { x = 0 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1159,10 +1152,9 @@ technologies = {
 			}
 		}
 
-
 		folder = {
 			name = naval_folder
-			position = { x = 6 y = 4 }
+			position = { x = 0 y = 19 }
 		}
 		
 		ai_will_do = {
@@ -1218,10 +1210,9 @@ technologies = {
 
 		start_year = 1922
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -1305,10 +1296,9 @@ technologies = {
 
 		start_year = 1940
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 8 y = 1 }
+			position = { x = 0 y = 13 }
 		}
 		
 		ai_will_do = {
@@ -1338,10 +1328,9 @@ technologies = {
 
 		start_year = 1944
 		
-
 		folder = {
 			name = naval_folder
-			position = { x = 8 y = 4 }
+			position = { x = 0 y = 19 }
 		}
 		
 		ai_will_do = {
@@ -1411,7 +1400,7 @@ technologies = {
 		carrier = { sortie_efficiency = 0.20 deck_size = 15 }
 		research_cost = 3.0
 		start_year = 1949
-		folder = { name = naval_folder position = { x = 6 y = 8 } }
+		folder = { name = naval_folder position = { x = 6 y = 13 } }
 		categories = { naval_equipment }
 		ai_will_do = { factor = 3 }
 	}
@@ -1424,7 +1413,7 @@ technologies = {
 		carrier = { sortie_efficiency = 0.25 deck_size = 25 max_strength = 20 }
 		research_cost = 3.5
 		start_year = 1954
-		folder = { name = naval_folder position = { x = 6 y = 11 } }
+		folder = { name = naval_folder position = { x = 6 y = 16 } }
 		categories = { naval_equipment }
 		ai_will_do = { factor = 3 }
 	}
@@ -1433,7 +1422,7 @@ technologies = {
 		carrier = { sortie_efficiency = 0.35 deck_size = 35 naval_range = 1.00 max_strength = 30 }
 		research_cost = 4.5
 		start_year = 1959
-		folder = { name = naval_folder position = { x = 6 y = 14 } }
+		folder = { name = naval_folder position = { x = 6 y = 19 } }
 		categories = { naval_equipment }
 		ai_will_do = { factor = 3 }
 	}
@@ -1446,7 +1435,7 @@ technologies = {
 		submarine = { sub_detection = 0.20 sub_visibility = -0.15 torpedo_attack = 0.20 }
 		research_cost = 2.5
 		start_year = 1948
-		folder = { name = naval_folder position = { x = 8 y = 7 } }
+		folder = { name = naval_folder position = { x = 8 y = 12 } }
 		categories = { naval_equipment }
 		ai_will_do = { factor = 4 }
 	}
@@ -1459,7 +1448,7 @@ technologies = {
 		submarine = { maximum_speed = 0.30 sub_visibility = -0.25 torpedo_attack = 0.30 naval_range = 1.00 }
 		research_cost = 3.5
 		start_year = 1954
-		folder = { name = naval_folder position = { x = 8 y = 11 } }
+		folder = { name = naval_folder position = { x = 8 y = 16 } }
 		categories = { naval_equipment }
 		ai_will_do = { factor = 3 }
 	}
@@ -1468,7 +1457,7 @@ technologies = {
 		submarine = { shore_bombardment = 50 max_strength = 30 sub_visibility = -0.20 }
 		research_cost = 4.0
 		start_year = 1958
-		folder = { name = naval_folder position = { x = 8 y = 14 } }
+		folder = { name = naval_folder position = { x = 8 y = 19 } }
 		categories = { naval_equipment }
 		ai_will_do = { factor = 3 }
 	}
