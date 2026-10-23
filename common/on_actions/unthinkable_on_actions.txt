@@ -3,9 +3,9 @@ on_actions = {
 		effect = {
 			ENG = {
 				unthinkable_setup_1945_world = yes
+				unthinkable_apply_1945_technologies = yes
+				unthinkable_apply_1945_mios = yes
 			}
-			unthinkable_apply_1945_technologies = yes
-			unthinkable_apply_1945_mios = yes
 			# Cold War Tension initialization (1945 Demarcation baseline)
 			set_variable = { global.unthinkable_tension = 35 }
 			# Scheduled historical crisis chain events (July 1945)
@@ -122,9 +122,9 @@ on_actions = {
 			# Fall of Berlin (State 64)
 			if = {
 				limit = {
-					ROOT = { state = 64 }
+					FROM.FROM = { state = 64 }
 					NOT = { has_global_flag = unthinkable_super_event_berlin_done }
-					FROM.FROM = {
+					ROOT = {
 						OR = {
 							original_tag = ENG
 							original_tag = USA
@@ -140,9 +140,9 @@ on_actions = {
 			# Fall of Moscow (State 219)
 			if = {
 				limit = {
-					ROOT = { state = 219 }
+					FROM.FROM = { state = 219 }
 					NOT = { has_global_flag = unthinkable_super_event_moscow_done }
-					FROM.FROM = {
+					ROOT = {
 						OR = {
 							original_tag = ENG
 							original_tag = USA

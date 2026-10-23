@@ -48,9 +48,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1918
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -1 }
 		}
 
 		ai_will_do = {
@@ -129,9 +130,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1934
+
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 2 }
+			position = { x = 0 y = -1 }
 		}
 
 		sub_technologies = {
@@ -766,9 +768,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1939
 
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = -1 }
 		}
 
 		sub_technologies = {
@@ -1002,9 +1005,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1941
 
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 8 }
+			position = { x = 4 y = 1 }
 		}
 
 		sub_technologies = {
@@ -1232,9 +1236,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1943
 
+
 		folder = {
 			name = armour_folder
-			position = { x = 0 y = 10 }
+			position = { x = 4 y = 3 }
 		}
 
 		sub_technologies = {
@@ -1431,9 +1436,10 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1945
 
+
 		folder = {
 			name = armour_folder
-			position = { x = 2 y = 12 }
+			position = { x = 4 y = 5 }
 		}
 
 		sub_technologies = {
@@ -1470,7 +1476,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	
 		path = {
-			leads_to_tech = main_battle_tank_generation_2
+			leads_to_tech = first_generation_mbt
 			research_cost_coeff = 1
 		}
 	}
@@ -1627,9 +1633,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1934
 
+
 		folder = {
 			name = armour_folder
-			position = { x = 4 y = 2 }
+			position = { x = 0 y = -1 }
 		}
 
 		sub_technologies = {
@@ -2686,28 +2693,38 @@ technologies = {
 	
 
 
-	main_battle_tank_generation_2 = {
-		category_all_armor = {
-			hard_attack = 0.20
-			ap_attack = 0.20
-			breakthrough = 0.15
-			armor_value = 0.25
+	first_generation_mbt = {
+		path = {
+			leads_to_tech = advanced_first_gen_mbt
+			research_cost_coeff = 1
 		}
-		modern_armor = {
-			hard_attack = 0.20
-			ap_attack = 0.20
-			breakthrough = 0.15
-			armor_value = 0.25
+		category_all_armor = { soft_attack = 0.15 hard_attack = 0.15 armor_value = 0.15 maximum_speed = 0.10 }
+		research_cost = 2.5
+		start_year = 1948
+		folder = { name = armour_folder position = { x = 4 y = 7 } }
+		categories = { armor }
+		ai_will_do = { factor = 4 }
+	}
+
+	advanced_first_gen_mbt = {
+		path = {
+			leads_to_tech = second_generation_mbt
+			research_cost_coeff = 1
 		}
+		category_all_armor = { soft_attack = 0.15 hard_attack = 0.20 armor_value = 0.20 ap_attack = 0.20 }
 		research_cost = 3.0
-		start_year = 1949
-		folder = {
-			name = armour_folder
-			position = { x = 2 y = 16 }
-		}
-		categories = {
-			armor
-		}
+		start_year = 1952
+		folder = { name = armour_folder position = { x = 4 y = 10 } }
+		categories = { armor }
+		ai_will_do = { factor = 4 }
+	}
+
+	second_generation_mbt = {
+		category_all_armor = { soft_attack = 0.25 hard_attack = 0.30 armor_value = 0.25 ap_attack = 0.30 maximum_speed = 0.15 }
+		research_cost = 4.0
+		start_year = 1957
+		folder = { name = armour_folder position = { x = 4 y = 13 } }
+		categories = { armor }
 		ai_will_do = { factor = 3 }
 	}
 

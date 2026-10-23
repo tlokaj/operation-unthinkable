@@ -56,9 +56,10 @@ technologies = {
 		}
 		research_cost = 1.0
 		start_year = 1918
+
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1918 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -117,9 +118,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -251,9 +253,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
+
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 1 y = 1 }
 		}
 
 		categories = {
@@ -347,9 +350,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1942
+
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 1 y = 3 }
 		}
 
 		categories = {
@@ -494,9 +498,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -550,9 +555,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
+
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1939 }
+			position = { x = 3 y = 1 }
 		}
 
 		categories = {
@@ -601,9 +607,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1942
+
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1942 }
+			position = { x = 3 y = 3 }
 		}
 
 		categories = {
@@ -642,9 +649,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1945
+
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 3 y = 4 }
 		}
 
 		categories = {
@@ -713,9 +721,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -949,9 +958,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -1174,9 +1184,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = @field_hospital_x y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -1246,9 +1257,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1939
+
 		folder = {
 			name = support_folder
-			position = { x = @field_hospital_x y = @1939 }
+			position = { x = 5 y = 1 }
 		}
 
 		categories = {
@@ -1463,9 +1475,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = @logistic_x y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -1680,9 +1693,10 @@ technologies = {
 
 		research_cost = 1.25
 		start_year = 1936
+
 		folder = {
 			name = support_folder
-			position = { x = @signal_x y = @1936 }
+			position = { x = 0 y = -1 }
 		}
 
 		categories = {
@@ -2454,58 +2468,52 @@ technologies = {
 
 	postwar_turboshaft_helicopters = {
 		path = {
+			leads_to_tech = turbine_transport_helicopters
+			research_cost_coeff = 1
+		}
+		recon = { recon = 1.0 maximum_speed = 0.10 }
+		research_cost = 2.0
+		start_year = 1948
+		folder = { name = support_folder position = { x = 3 y = 7 } }
+		categories = { support_tech }
+		ai_will_do = { factor = 4 }
+	}
+
+	turbine_transport_helicopters = {
+		path = {
 			leads_to_tech = heavy_cargo_and_attack_helicopters
 			research_cost_coeff = 1
 		}
-		category_helicopter_support_companies = {
-			maximum_speed = 0.25
-			reliability_factor = 0.15
-			defense = 0.10
-			breakthrough = 0.10
-		}
-		helicopter_recon = {
-			recon = 2.0
-		}
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.15
-			experience_loss_factor = -0.10
-		}
+		recon = { recon = 1.0 }
+		logistics_company = { supply_consumption_factor = -0.05 }
 		research_cost = 2.5
-		start_year = 1947
-		folder = {
-			name = support_folder
-			position = { x = 2 y = 22 }
-		}
-		categories = {
-			support_tech
-			helicopter_tech
-		}
-		ai_will_do = { factor = 2 }
+		start_year = 1951
+		folder = { name = support_folder position = { x = 3 y = 9 } }
+		categories = { support_tech }
+		ai_will_do = { factor = 4 }
 	}
 
 	heavy_cargo_and_attack_helicopters = {
-		category_helicopter_support_companies = {
-			soft_attack = 0.15
-			hard_attack = 0.05
-			maximum_speed = 0.15
+		path = {
+			leads_to_tech = dedicated_attack_helicopter_doctrine
+			research_cost_coeff = 1
 		}
-		helicopter_recon = {
-			recon = 2.5
-		}
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.20
-		}
+		recon = { soft_attack = 0.15 hard_attack = 0.10 }
+		logistics_company = { supply_consumption_factor = -0.05 }
 		research_cost = 3.0
-		start_year = 1950
-		folder = {
-			name = support_folder
-			position = { x = 2 y = 26 }
-		}
-		categories = {
-			support_tech
-			helicopter_tech
-		}
-		ai_will_do = { factor = 2 }
+		start_year = 1955
+		folder = { name = support_folder position = { x = 3 y = 12 } }
+		categories = { support_tech }
+		ai_will_do = { factor = 3 }
+	}
+
+	dedicated_attack_helicopter_doctrine = {
+		recon = { soft_attack = 0.25 hard_attack = 0.20 ap_attack = 0.20 }
+		research_cost = 3.5
+		start_year = 1958
+		folder = { name = support_folder position = { x = 3 y = 14 } }
+		categories = { support_tech }
+		ai_will_do = { factor = 3 }
 	}
 
 }

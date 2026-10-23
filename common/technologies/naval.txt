@@ -15,9 +15,10 @@ technologies = {
 
 		start_year = 1922
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = -1 }
 		}
 		
 		ai_will_do = {
@@ -92,9 +93,10 @@ technologies = {
 
 		start_year = 1940
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 13 }
+			position = { x = 2 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -176,9 +178,10 @@ technologies = {
 
 		start_year = 1922
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = -1 y = 1 }
+			position = { x = 0 y = -1 }
 		}
 		
 		ai_will_do = {
@@ -367,9 +370,10 @@ technologies = {
 
 		start_year = 1922
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 1 y = 1 }
+			position = { x = 0 y = -1 }
 		}
 		
 		ai_will_do = {
@@ -588,9 +592,10 @@ technologies = {
 			}
 		}
 
+
 		folder = {
 			name = naval_folder
-			position = { x = 1 y = 1 }
+			position = { x = 0 y = -1 }
 		}
 		
 		ai_will_do = {
@@ -1000,9 +1005,10 @@ technologies = {
 
 		start_year = 1922
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = -1 }
 		}
 		
 		ai_will_do = {
@@ -1104,9 +1110,10 @@ technologies = {
 			}
 		}
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 13 }
+			position = { x = 6 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -1152,9 +1159,10 @@ technologies = {
 			}
 		}
 
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 19 }
+			position = { x = 6 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -1210,9 +1218,10 @@ technologies = {
 
 		start_year = 1922
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = -1 }
 		}
 		
 		ai_will_do = {
@@ -1296,9 +1305,10 @@ technologies = {
 
 		start_year = 1940
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 13 }
+			position = { x = 8 y = 1 }
 		}
 		
 		ai_will_do = {
@@ -1328,9 +1338,10 @@ technologies = {
 
 		start_year = 1944
 		
+
 		folder = {
 			name = naval_folder
-			position = { x = 0 y = 19 }
+			position = { x = 8 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -1392,44 +1403,74 @@ technologies = {
 	
 
 
-	postwar_fast_attack_submarine = {
-		submarine = {
-			sub_visibility = -0.15
-			sub_detection = 0.20
-			torpedo_attack = 0.15
-			naval_speed = 0.15
+	angled_flight_deck_carriers = {
+		path = {
+			leads_to_tech = postwar_fleet_supercarrier
+			research_cost_coeff = 1
 		}
-		navy_submarine_attack_factor = 0.15
-		navy_submarine_defence_factor = 0.15
-		research_cost = 2.5
-		start_year = 1948
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = 23 }
-		}
-		categories = {
-			naval_equipment
-		}
-		ai_will_do = { factor = 2 }
+		carrier = { sortie_efficiency = 0.20 deck_size = 15 }
+		research_cost = 3.0
+		start_year = 1949
+		folder = { name = naval_folder position = { x = 6 y = 8 } }
+		categories = { naval_equipment }
+		ai_will_do = { factor = 3 }
 	}
 
-	angled_flight_deck_carriers = {
-		navy_carrier_air_attack_factor = 0.15
-		navy_carrier_air_agility_factor = 0.15
-		navy_carrier_air_targetting_factor = 0.15
-		carrier = {
-			naval_speed = 0.05
+	postwar_fleet_supercarrier = {
+		path = {
+			leads_to_tech = nuclear_powered_supercarrier
+			research_cost_coeff = 1
 		}
+		carrier = { sortie_efficiency = 0.25 deck_size = 25 max_strength = 20 }
+		research_cost = 3.5
+		start_year = 1954
+		folder = { name = naval_folder position = { x = 6 y = 11 } }
+		categories = { naval_equipment }
+		ai_will_do = { factor = 3 }
+	}
+
+	nuclear_powered_supercarrier = {
+		carrier = { sortie_efficiency = 0.35 deck_size = 35 naval_range = 1.00 max_strength = 30 }
+		research_cost = 4.5
+		start_year = 1959
+		folder = { name = naval_folder position = { x = 6 y = 14 } }
+		categories = { naval_equipment }
+		ai_will_do = { factor = 3 }
+	}
+
+	postwar_fast_attack_submarine = {
+		path = {
+			leads_to_tech = nuclear_propulsion_submarine
+			research_cost_coeff = 1
+		}
+		submarine = { sub_detection = 0.20 sub_visibility = -0.15 torpedo_attack = 0.20 }
 		research_cost = 2.5
-		start_year = 1949
-		folder = {
-			name = naval_folder
-			position = { x = 0 y = 23 }
+		start_year = 1948
+		folder = { name = naval_folder position = { x = 8 y = 7 } }
+		categories = { naval_equipment }
+		ai_will_do = { factor = 4 }
+	}
+
+	nuclear_propulsion_submarine = {
+		path = {
+			leads_to_tech = ballistic_missile_submarine
+			research_cost_coeff = 1
 		}
-		categories = {
-			naval_equipment
-		}
-		ai_will_do = { factor = 2 }
+		submarine = { maximum_speed = 0.30 sub_visibility = -0.25 torpedo_attack = 0.30 naval_range = 1.00 }
+		research_cost = 3.5
+		start_year = 1954
+		folder = { name = naval_folder position = { x = 8 y = 11 } }
+		categories = { naval_equipment }
+		ai_will_do = { factor = 3 }
+	}
+
+	ballistic_missile_submarine = {
+		submarine = { shore_bombardment = 50 max_strength = 30 sub_visibility = -0.20 }
+		research_cost = 4.0
+		start_year = 1958
+		folder = { name = naval_folder position = { x = 8 y = 14 } }
+		categories = { naval_equipment }
+		ai_will_do = { factor = 3 }
 	}
 
 }
