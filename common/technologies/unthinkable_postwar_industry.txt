@@ -9,7 +9,11 @@ technologies = {
 			production_speed_infrastructure_factor = 0.10
 		}
 		path = {
-			leads_to_tech = commercial_nuclear_power
+			leads_to_tech = automation_transfer_machines
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = levitated_core_implosion
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
@@ -27,7 +31,7 @@ technologies = {
 
 	automation_transfer_machines = {
 		dependencies = {
-			advanced_machine_tools = 1
+			postwar_prefab_construction = 1
 		}
 		modifier = {
 			production_factory_max_efficiency_factor = 0.10
@@ -39,7 +43,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1947
+		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
 			position = { x = 0 y = 1 }
@@ -59,8 +63,12 @@ technologies = {
 			production_factory_efficiency_gain_factor = 0.10
 			industrial_capacity_dockyard = 0.05
 		}
+		path = {
+			leads_to_tech = advanced_synthetic_kerosene
+			research_cost_coeff = 1
+		}
 		research_cost = 2.5
-		start_year = 1948
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
 			position = { x = 0 y = 2 }
@@ -74,16 +82,16 @@ technologies = {
 
 	advanced_synthetic_kerosene = {
 		dependencies = {
-			synth_oil_experiments = 1
+			high_temp_aerospace_alloys = 1
 		}
 		modifier = {
 			fuel_gain_factor = 0.15
 		}
 		research_cost = 2.5
-		start_year = 1949
+		start_year = 1952
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 3 }
 		}
 		categories = {
 			industry
@@ -94,17 +102,17 @@ technologies = {
 
 	commercial_nuclear_power = {
 		dependencies = {
-			postwar_prefab_construction = 1
+			industrial_breeding_reactors = 1
 		}
 		modifier = {
 			consumer_goods_factor = -0.02
 			production_speed_industrial_complex_factor = 0.10
 		}
 		research_cost = 3.0
-		start_year = 1951
+		start_year = 1952
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 3 }
+			position = { x = 1 y = 3 }
 		}
 		categories = {
 			industry

@@ -7,6 +7,14 @@ technologies = {
 			soft_attack = 0.15
 			hard_attack = 0.10
 		}
+		path = {
+			leads_to_tech = infantry_recoilless_rifles
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = radar_directed_anti_air
+			research_cost_coeff = 1
+		}
 		research_cost = 2.5
 		start_year = 1946
 		folder = {
@@ -21,14 +29,18 @@ technologies = {
 
 	infantry_recoilless_rifles = {
 		dependencies = {
-			antitank4 = 1
+			postwar_heavy_howitzers = 1
 		}
 		category_light_infantry = {
 			hard_attack = 0.15
 			ap_attack = 0.20
 		}
+		path = {
+			leads_to_tech = postwar_heavy_mrls
+			research_cost_coeff = 1
+		}
 		research_cost = 2.0
-		start_year = 1947
+		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
 			position = { x = 0 y = 1 }
@@ -42,14 +54,14 @@ technologies = {
 
 	postwar_heavy_mrls = {
 		dependencies = {
-			rocket_artillery = 1
+			infantry_recoilless_rifles = 1
 		}
 		category_artillery = {
 			soft_attack = 0.20
 			breakthrough = 0.05
 		}
 		research_cost = 2.5
-		start_year = 1948
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
 			position = { x = 0 y = 2 }
@@ -63,7 +75,7 @@ technologies = {
 
 	radar_directed_anti_air = {
 		dependencies = {
-			antiair4 = 1
+			postwar_heavy_howitzers = 1
 		}
 		category_anti_air = {
 			air_attack = 0.25
@@ -80,7 +92,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 1 }
+			position = { x = 1 y = 1 }
 		}
 		categories = {
 			artillery
@@ -100,10 +112,10 @@ technologies = {
 			static_anti_air_damage_factor = 0.35
 		}
 		research_cost = 3.0
-		start_year = 1951
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 3 }
+			position = { x = 1 y = 2 }
 		}
 		categories = {
 			artillery

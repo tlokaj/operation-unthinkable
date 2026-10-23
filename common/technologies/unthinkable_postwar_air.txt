@@ -8,6 +8,10 @@ technologies = {
 			air_mission_efficiency = 0.05
 		}
 		path = {
+			leads_to_tech = swept_wing_jet_fighters
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = early_afterburner_reheat
 			research_cost_coeff = 1
 		}
@@ -26,7 +30,7 @@ technologies = {
 
 	swept_wing_jet_fighters = {
 		dependencies = {
-			jet_fighter1 = 1
+			axial_flow_turbojets = 1
 		}
 		modifier = {
 			air_attack_factor = 0.20
@@ -37,11 +41,15 @@ technologies = {
 			leads_to_tech = jet_strike_tactics
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = afterburner_transonic_flight
+			research_cost_coeff = 1
+		}
 		research_cost = 2.5
-		start_year = 1947
+		start_year = 1946
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 0 }
+			position = { x = 1 y = 0 }
 		}
 		categories = {
 			air_equipment
@@ -62,7 +70,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 1 }
+			position = { x = 1 y = 1 }
 		}
 		categories = {
 			air_equipment
@@ -81,7 +89,7 @@ technologies = {
 			air_intercept_efficiency = 0.15
 		}
 		path = {
-			leads_to_tech = afterburner_transonic_flight
+			leads_to_tech = postwar_jet_bombers
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
@@ -99,17 +107,17 @@ technologies = {
 
 	postwar_jet_bombers = {
 		dependencies = {
-			jet_tactical_bomber1 = 1
+			early_afterburner_reheat = 1
 		}
 		modifier = {
 			air_bombing_targetting = 0.15
 			air_maximum_speed_factor = 0.15
 		}
 		research_cost = 2.5
-		start_year = 1949
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = 2 }
 		}
 		categories = {
 			air_equipment
@@ -122,7 +130,6 @@ technologies = {
 
 	afterburner_transonic_flight = {
 		dependencies = {
-			early_afterburner_reheat = 1
 			swept_wing_jet_fighters = 1
 		}
 		modifier = {
@@ -131,10 +138,10 @@ technologies = {
 			air_air_superiority_factor = 0.15
 		}
 		research_cost = 3.0
-		start_year = 1951
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 3 }
+			position = { x = 1 y = 2 }
 		}
 		categories = {
 			air_equipment

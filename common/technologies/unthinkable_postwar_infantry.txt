@@ -15,7 +15,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1947
+		start_year = 1946
 		folder = {
 			name = unthinkable_postwar_folder
 			position = { x = 0 y = 0 }
@@ -36,10 +36,10 @@ technologies = {
 			ap_attack = 0.25
 		}
 		research_cost = 2.5
-		start_year = 1949
+		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 1 }
 		}
 		categories = {
 			infantry_weapons

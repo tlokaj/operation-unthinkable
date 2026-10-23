@@ -11,6 +11,10 @@ technologies = {
 			leads_to_tech = asw_sonobuoys_and_helicopters
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = angled_flight_deck_carriers
+			research_cost_coeff = 1
+		}
 		research_cost = 2.5
 		start_year = 1946
 		folder = {
@@ -36,7 +40,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 1 }
 		}
 		categories = {
 			naval_equipment
@@ -48,7 +52,7 @@ technologies = {
 
 	angled_flight_deck_carriers = {
 		dependencies = {
-			advanced_carrier = 1
+			postwar_fast_attack_submarine = 1
 		}
 		modifier = {
 			navy_carrier_air_attack_factor = 0.15
@@ -58,10 +62,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
-		start_year = 1950
+		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			position = { x = 1 y = 1 }
 		}
 		categories = {
 			naval_equipment
@@ -79,10 +83,10 @@ technologies = {
 			navy_capital_ship_attack_factor = 0.15
 		}
 		research_cost = 3.0
-		start_year = 1952
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 4 }
+			position = { x = 1 y = 2 }
 		}
 		categories = {
 			naval_equipment

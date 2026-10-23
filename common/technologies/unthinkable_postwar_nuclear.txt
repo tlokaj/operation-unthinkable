@@ -1,7 +1,7 @@
 technologies = {
 	levitated_core_implosion = {
 		dependencies = {
-			nukes = 1
+			postwar_prefab_construction = 1
 		}
 		modifier = {
 			nuclear_production = 0.5
@@ -11,15 +11,11 @@ technologies = {
 			leads_to_tech = industrial_breeding_reactors
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tactical_nuclear_warheads
-			research_cost_coeff = 1
-		}
 		research_cost = 2.5
 		start_year = 1946
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 0 }
+			position = { x = 1 y = 0 }
 		}
 		categories = {
 			nuclear
@@ -36,14 +32,18 @@ technologies = {
 			production_speed_nuclear_reactor_factor = 0.20
 		}
 		path = {
-			leads_to_tech = unthinkable_thermonuclear_foundations
+			leads_to_tech = tactical_nuclear_warheads
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = commercial_nuclear_power
 			research_cost_coeff = 1
 		}
 		research_cost = 2.5
 		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			position = { x = 1 y = 1 }
 		}
 		categories = {
 			nuclear
@@ -53,13 +53,17 @@ technologies = {
 
 	tactical_nuclear_warheads = {
 		dependencies = {
-			levitated_core_implosion = 1
+			industrial_breeding_reactors = 1
 		}
 		modifier = {
 			nuclear_production_factor = 0.10
 		}
+		path = {
+			leads_to_tech = unthinkable_thermonuclear_foundations
+			research_cost_coeff = 1
+		}
 		research_cost = 2.5
-		start_year = 1949
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
 			position = { x = 1 y = 2 }
@@ -72,7 +76,7 @@ technologies = {
 
 	unthinkable_thermonuclear_foundations = {
 		dependencies = {
-			industrial_breeding_reactors = 1
+			tactical_nuclear_warheads = 1
 		}
 		modifier = {
 			research_speed_factor = 0.05
@@ -80,10 +84,10 @@ technologies = {
 			nuclear_production_factor = 0.20
 		}
 		research_cost = 3.0
-		start_year = 1950
+		start_year = 1952
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 4 }
+			position = { x = 1 y = 4 }
 		}
 		categories = {
 			nuclear

@@ -17,15 +17,11 @@ technologies = {
 			leads_to_tech = unthinkable_helicopter_medevac_tech
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = unthinkable_helicopter_logistics_tech
-			research_cost_coeff = 1
-		}
 		research_cost = 2.0
 		start_year = 1946
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 1 y = 0 }
+			position = { x = 0 y = 0 }
 		}
 		categories = {
 			support_tech
@@ -35,17 +31,21 @@ technologies = {
 	}
 
 	unthinkable_helicopter_recon_tech = {
-		enable_subunits = {
-			helicopter_recon
-		}
 		dependencies = {
 			early_helicopters = 1
 		}
+		enable_subunits = {
+			helicopter_recon
+		}
+		path = {
+			leads_to_tech = unthinkable_helicopter_logistics_tech
+			research_cost_coeff = 1
+		}
 		research_cost = 2.0
-		start_year = 1947
+		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 0 y = 2 }
+			position = { x = 0 y = 1 }
 		}
 		categories = {
 			support_tech
@@ -56,17 +56,17 @@ technologies = {
 	}
 
 	unthinkable_helicopter_medevac_tech = {
-		enable_subunits = {
-			helicopter_field_hospital
-		}
 		dependencies = {
 			early_helicopters = 1
+		}
+		enable_subunits = {
+			helicopter_field_hospital
 		}
 		research_cost = 2.0
 		start_year = 1948
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 1 y = 2 }
+			position = { x = 1 y = 1 }
 		}
 		categories = {
 			support_tech
@@ -77,17 +77,17 @@ technologies = {
 	}
 
 	unthinkable_helicopter_logistics_tech = {
+		dependencies = {
+			unthinkable_helicopter_recon_tech = 1
+		}
 		enable_subunits = {
 			helicopter_transport
 		}
-		dependencies = {
-			early_helicopters = 1
-		}
 		research_cost = 2.0
-		start_year = 1949
+		start_year = 1950
 		folder = {
 			name = unthinkable_postwar_folder
-			position = { x = 2 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 		categories = {
 			support_tech
