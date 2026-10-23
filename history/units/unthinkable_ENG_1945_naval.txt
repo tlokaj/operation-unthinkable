@@ -142,10 +142,10 @@ units = {
 	##### BRITISH PACIFIC FLEET (TF 57/37 - Adm. Sir Bruce Fraser) #####
 	fleet = {
 		name = "British Pacific Fleet"
-		naval_base = 4296 # Sydney, Australia
+		naval_base = 12406 # Sydney, Australia
 		task_force = {
 			name = "1st Aircraft Carrier Squadron (TF 37)"
-			location = 4296 # Sydney / Manus staging
+			location = 12406 # Sydney / Manus staging
 			
 			# Armoured Fleet Carriers
 			ship = { name = "HMS Indomitable" definition = carrier start_experience_factor = 0.90 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Illustrious Class" } } }
@@ -177,7 +177,7 @@ units = {
 
 		task_force = {
 			name = "4th Submarine Flotilla (Pacific)"
-			location = 4296 # Sydney, Australia
+			location = 12406 # Sydney, Australia
 			ship = { name = "HMS Amphion" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
 			ship = { name = "HMS Astute" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
 			ship = { name = "HMS Auriga" definition = submarine start_experience_factor = 0.80 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Amphion Class" } } }
@@ -188,10 +188,10 @@ units = {
 	##### EAST INDIES FLEET (Adm. Sir Arthur Power) #####
 	fleet = {
 		name = "East Indies Fleet"
-		naval_base = 4256 # Trincomalee, Ceylon
+		naval_base = 7260 # Trincomalee, Ceylon
 		task_force = {
 			name = "Battle Squadron & Escort Group"
-			location = 4256 # Trincomalee, Ceylon
+			location = 7260 # Trincomalee, Ceylon
 			ship = { name = "HMS Queen Elizabeth" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Queen Elizabeth Class" } } }
 			ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_2 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Colossus" definition = carrier start_experience_factor = 0.80 equipment = { ship_hull_carrier_2 = { amount = 1 owner = ENG version_name = "Colossus Class" } } }

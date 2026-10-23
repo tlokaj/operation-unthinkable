@@ -1,3 +1,116 @@
+division_template = {
+	name = "Gvardeyskaya Strelkovaya Diviziya"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Strelkovaya Diviziya"
+	division_names_group = SOV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Gvardeyskiy Tankovyy Korpus"
+	division_names_group = SOV_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Gvardeyskiy Mekhanizirovannyy Korpus"
+	division_names_group = SOV_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Kavaleriskiy Korpus"
+	division_names_group = SOV_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
 units = {
 	# =========================================================================
 	# SOVIET FAR EASTERN THEATER OF OPERATIONS (Marshal Aleksandr Vasilevsky)
@@ -11,15 +124,15 @@ units = {
 	# 6th Guards Tank Army (Gen. Andrey Kravchenko)
 	division = {
 		name = "5th Guards Tank Corps"
-		location = 10582 # Chita
+		location = 4705 # Chita (State 563)
 		division_template = "Gvardeyskiy Tankovyy Korpus"
 		start_experience_factor = 0.95
 		officer = { name = "Mikhail Saveliev" }
 	}
 	division = {
 		name = "9th Guards Mechanized Corps"
-		location = 10582 # Chita
-		division_template = "Mekhanizirovannyy Korpus"
+		location = 4705 # Chita (State 563)
+		division_template = "Gvardeyskiy Mekhanizirovannyy Korpus"
 		start_experience_factor = 0.90
 		officer = { name = "Ivan Volkov" }
 	}
@@ -27,21 +140,21 @@ units = {
 	# 39th Army (Gen. Ivan Lyudnikov)
 	division = {
 		name = "5th Guards Rifle Division"
-		location = 10582 # Chita / Borzya
+		location = 4705 # Chita (State 563)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.90
 		officer = { name = "Nikolay Kazakov" }
 	}
 	division = {
 		name = "19th Guards Rifle Division"
-		location = 10582 # Chita
+		location = 4705 # Chita (State 563)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.85
 		officer = { name = "Vasily Bibikov" }
 	}
 	division = {
 		name = "91st Guards Rifle Division"
-		location = 10582 # Chita
+		location = 4705 # Chita (State 563)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.85
 		officer = { name = "Vasily Kozhanov" }
@@ -50,8 +163,8 @@ units = {
 	# Soviet-Mongolian Cavalry-Mechanized Group (Gen. Issa Pliyev)
 	division = {
 		name = "7th Guards Cavalry Division"
-		location = 10582 # Tamtsak-Bulak staging
-		division_template = "Gvardeyskaya Kavaleriyskaya Diviziya"
+		location = 4705 # Chita staging
+		division_template = "Kavaleriskiy Korpus"
 		start_experience_factor = 0.90
 		officer = { name = "Issa Pliyev" }
 	}
@@ -64,14 +177,14 @@ units = {
 	# 1st Red Banner Army (Gen. Afanasy Beloborodov)
 	division = {
 		name = "22nd Rifle Division"
-		location = 957 # Vladivostok
+		location = 957 # Vladivostok (State 408)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
 		officer = { name = "Gennady Semenov" }
 	}
 	division = {
 		name = "59th Rifle Division"
-		location = 957 # Vladivostok
+		location = 957 # Vladivostok (State 408)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.80
 		officer = { name = "Pavel Fomenko" }
@@ -80,14 +193,14 @@ units = {
 	# 5th Army (Gen. Nikolay Krylov - Heroes of East Prussia)
 	division = {
 		name = "63rd Guards Rifle Division"
-		location = 957 # Ussuriysk / Grodekovo sector
+		location = 957 # Vladivostok (State 408)
 		division_template = "Gvardeyskaya Strelkovaya Diviziya"
 		start_experience_factor = 0.95
 		officer = { name = "Nikolay Polyakov" }
 	}
 	division = {
 		name = "97th Rifle Division"
-		location = 957 # Vladivostok border
+		location = 957 # Vladivostok (State 408)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
 		officer = { name = "Bogdan Gukalo" }
@@ -96,8 +209,8 @@ units = {
 	# 10th Mechanized Corps
 	division = {
 		name = "10th Mechanized Corps"
-		location = 957 # Vladivostok
-		division_template = "Mekhanizirovannyy Korpus"
+		location = 957 # Vladivostok (State 408)
+		division_template = "Gvardeyskiy Mekhanizirovannyy Korpus"
 		start_experience_factor = 0.90
 		officer = { name = "Ivan Vasiliev" }
 	}
@@ -110,14 +223,14 @@ units = {
 	# 2nd Red Banner Army (Gen. Makar Teryokhin - Blagoveshchensk)
 	division = {
 		name = "3rd Rifle Division"
-		location = 7378 # Khabarovsk
+		location = 12189 # Khabarovsk (State 409)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.80
 		officer = { name = "Ivan Karpov" }
 	}
 	division = {
 		name = "12th Rifle Division"
-		location = 7378 # Khabarovsk
+		location = 12189 # Khabarovsk (State 409)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.80
 		officer = { name = "Vasily Malkov" }
@@ -126,14 +239,14 @@ units = {
 	# 16th Army (Gen. Leonty Cheremisov - North Sakhalin & Kamchatka Amphibious Force)
 	division = {
 		name = "79th Rifle Division"
-		location = 7378 # Sakhalin Line (Alexandrovsk)
+		location = 12189 # Khabarovsk (State 409)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
 		officer = { name = "Ivan Baturov" }
 	}
 	division = {
 		name = "101st Rifle Division (Kamchatka Defence)"
-		location = 7378 # Petropavlovsk-Kamchatsky / Kuril Assault
+		location = 12189 # Khabarovsk (State 409)
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.85
 		officer = { name = "Alexey Dyakov" }

@@ -158,7 +158,7 @@ units = {
 	# US Seventh Army (Gen. Alexander Patch - Central Germany / Franconia)
 	division = {
 		name = "10th Armored Division 'Tiger'"
-		location = 9557 # Würzburg
+		location = 9557 # Wurzburg
 		division_template = "US Armored Division"
 		start_experience_factor = 0.85
 		officer = { name = "William H. H. Morris Jr." }
@@ -172,7 +172,7 @@ units = {
 	}
 	division = {
 		name = "45th Infantry Division 'Thunderbird'"
-		location = 9557 # Würzburg
+		location = 9557 # Wurzburg
 		division_template = "US Infantry Division"
 		start_experience_factor = 0.85
 		officer = { name = "Robert T. Frederick" }

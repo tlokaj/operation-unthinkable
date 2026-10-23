@@ -100,14 +100,23 @@ unthinkable_setup_1945_world = {
 		}
 
 		
-		# 3b-1. Pacific War against Imperial Japan (July 1, 1945)
+		# 3b-1. Pacific War against Imperial Japan (handled via history & diplomatic state)
 		if = {
-			limit = { country_exists = JAP }
+			limit = {
+				country_exists = JAP
+				USA = { NOT = { has_war_with = JAP } }
+			}
 			USA = {
 				declare_war_on = {
 					target = JAP
 					type = puppet_wargoal_focus
 				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = JAP
+				ENG = { NOT = { has_war_with = JAP } }
 			}
 			ENG = {
 				declare_war_on = {
@@ -115,17 +124,6 @@ unthinkable_setup_1945_world = {
 					type = puppet_wargoal_focus
 				}
 			}
-			if = { limit = { country_exists = AST } AST = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
-			if = { limit = { country_exists = NZL } NZL = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
-			if = { limit = { country_exists = CAN } CAN = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
-			if = { limit = { country_exists = RAJ } RAJ = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
-			if = { limit = { country_exists = FRA } FRA = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
-			if = { limit = { country_exists = CHI } CHI = { declare_war_on = { target = JAP type = puppet_wargoal_focus } } }
-		}
-		# Pacific Island territories transferred to US liberation forces
-		USA = {
-			transfer_state = 526 # Okinawa
-			transfer_state = 645 # Iwo Jima
 		}
 		# 3c. Factions Alignment (July 1, 1945)
 		ENG = {
@@ -235,21 +233,15 @@ unthinkable_setup_1945_world = {
 			add_ideas = unthinkable_cze_reconstruction
 		}
 
-		# 8. Load Frontline & Pacific 1945 OOBs
+		# 8. Load Additional Pacific & Far East 1945 OOBs
 		ENG = {
-			load_oob = "unthinkable_ENG_1945"
 			load_oob = "unthinkable_ENG_pacific_1945"
 		}
 		USA = {
-			load_oob = "unthinkable_USA_1945"
 			load_oob = "unthinkable_USA_pacific_1945"
 		}
 		SOV = {
-			load_oob = "unthinkable_SOV_1945"
 			load_oob = "unthinkable_SOV_fareast_1945"
-		}
-		CZE = {
-			load_oob = "unthinkable_CZE_1945"
 		}
 	}
 }

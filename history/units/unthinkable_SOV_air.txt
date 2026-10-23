@@ -99,8 +99,8 @@ air_wings = {
 		}
 	}
 
-	# State 562: Khabarovsk / Amur (10th Air Army)
-	562 = {
+	# State 409: Khabarovsk / Amur (10th Air Army)
+	409 = {
 		small_plane_airframe_3 = {
 			owner = "SOV"
 			amount = 100
@@ -118,8 +118,8 @@ air_wings = {
 		}
 	}
 
-	# State 570: Chita / Transbaikal (12th Air Army)
-	570 = {
+	# State 563: Chita / Transbaikal (12th Air Army)
+	563 = {
 		small_plane_airframe_3 = {
 			owner = "SOV"
 			amount = 100

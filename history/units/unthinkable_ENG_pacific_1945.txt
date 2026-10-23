@@ -1,3 +1,51 @@
+division_template = {
+	name = "British Infantry Division"
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "British Armoured Division"
+	division_names_group = ENG_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
 units = {
 	# =========================================================================
 	# BRITISH FOURTEENTH ARMY & SOUTH EAST ASIA COMMAND (Gen. William Slim)
@@ -6,21 +54,21 @@ units = {
 	# IV Corps (Rangoon Sector / Lower Burma)
 	division = {
 		name = "2nd British Infantry Division"
-		location = 1358 # Rangoon
+		location = 1330 # Rangoon (State 995)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.85
 		officer = { name = "Cameron Nicholson" }
 	}
 	division = {
 		name = "20th Indian Infantry Division"
-		location = 1358 # Rangoon
+		location = 1330 # Rangoon (State 995)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.85
 		officer = { name = "Douglas Gracey" }
 	}
 	division = {
 		name = "26th Indian Infantry Division 'Tiger Head'"
-		location = 1358 # Rangoon / Sittang River
+		location = 1330 # Rangoon (State 995)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.85
 		officer = { name = "Cyril Lomax" }
@@ -29,14 +77,14 @@ units = {
 	# XXXIII Corps (Mandalay & Central Burma)
 	division = {
 		name = "19th Indian Infantry Division 'Dagger'"
-		location = 4340 # Mandalay
+		location = 1492 # Mandalay (State 640)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.90
 		officer = { name = "Thomas Wynford Rees" }
 	}
 	division = {
 		name = "23rd Indian Infantry Division"
-		location = 4340 # Mandalay
+		location = 1492 # Mandalay (State 640)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
 		officer = { name = "Arthur Hawthorn" }
@@ -45,14 +93,14 @@ units = {
 	# Operation Zipper Task Force (Malaya / Singapore preparation)
 	division = {
 		name = "5th Indian Infantry Division 'Ball of Fire'"
-		location = 4410 # Singapore / Johore
+		location = 12299 # Singapore (State 1021)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.90
 		officer = { name = "E. C. Mansergh" }
 	}
 	division = {
 		name = "36th British Infantry Division"
-		location = 4410 # Singapore / Malaya
+		location = 12299 # Singapore (State 1021)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.85
 		officer = { name = "Francis Festing" }
@@ -61,14 +109,14 @@ units = {
 	# Ceylon & Strategic Reserve (South East Asia Command)
 	division = {
 		name = "3rd Commando Brigade (Royal Marines)"
-		location = 4256 # Colombo / Ceylon
+		location = 10201 # Colombo / Ceylon (State 422)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.95
 		officer = { name = "Peter Young" }
 	}
 	division = {
 		name = "11th East African Division"
-		location = 4256 # Trincomalee / Ceylon
+		location = 7260 # Trincomalee / Ceylon (State 422)
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.80
 		officer = { name = "William Dimoline" }

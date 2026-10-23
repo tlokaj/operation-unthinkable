@@ -2163,14 +2163,8 @@ if = {
 	retire_character = ENG_bernard_montgomery
 	recruit_character = ENG_bernard_montgomery_unthinkable
 	promote_character = ENG_bernard_montgomery_unthinkable
-	recruit_character = ENG_harold_alexander
 	promote_character = ENG_harold_alexander
-	recruit_character = ENG_alan_brooke
 	promote_character = ENG_alan_brooke
-	recruit_character = ENG_andrew_cunningham
-	recruit_character = ENG_bruce_fraser
-	recruit_character = ENG_louis_mountbatten
-	recruit_character = ENG_arthur_harris
 	recruit_character = ENG_clement_attlee_leader
 	recruit_character = ENG_ernest_bevin_advisor
 	set_research_slots = 5
@@ -2178,6 +2172,10 @@ if = {
 	add_ideas = {
 		unthinkable_war_weariness
 		unthinkable_operation_unthinkable_planning
+	}
+	declare_war_on = {
+		target = JAP
+		type = puppet_wargoal_focus
 	}
 	if = {
 		limit = { has_dlc = "La Resistance" }
@@ -2297,7 +2295,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		improved_heavy_armor_scheme = 1
-		advanced_heavy_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
 		smoke_generator = 1
 		basic_submarine_snorkel = 1
 		mtg_transport = 1
@@ -2381,7 +2379,6 @@ if = {
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = armor_plate_small
-				special_type_zero_slot = empty
 				special_type_slot_2 = self_sealing_fuel_tanks_small
 				special_type_slot_3 = drop_tanks
 			}
@@ -2427,9 +2424,9 @@ if = {
 			tactical_bomber1 = 1
 			tactical_bomber2 = 1
 			tactical_bomber3 = 1
-			strat_bomber1 = 1
-			strat_bomber2 = 1
-			strat_bomber3 = 1
+			strategic_bomber1 = 1
+			strategic_bomber2 = 1
+			strategic_bomber3 = 1
 			early_transport_plane = 1
 		}
 		set_air_oob = "unthinkable_ENG_air_legacy"
@@ -2473,9 +2470,9 @@ if = {
 				fixed_ship_radar_slot = ship_radar_3
 				fixed_ship_engine_slot = carrier_ship_engine_2
 				fixed_ship_secondaries_slot = dp_ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
+				front_1_custom_slot = ship_anti_air_3
 				mid_1_custom_slot = dp_ship_secondaries_2
-				mid_2_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = dp_ship_secondaries_2
 			}
 		}
 

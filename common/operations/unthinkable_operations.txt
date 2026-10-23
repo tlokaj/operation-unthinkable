@@ -38,22 +38,23 @@ operation_unthinkable_atomic_espionage = {
 	}
 
 	outcome_execute = {
-		add_tech_bonus = {
-			name = operation_unthinkable_atomic_espionage_bonus
-			bonus = 2.0
-			ahead_reduction = 2
-			category = nuclear
+		ROOT = {
+			add_tech_bonus = {
+				name = operation_unthinkable_atomic_espionage_bonus
+				bonus = 2.0
+				ahead_reduction = 2
+				category = nuclear
+			}
 		}
 		add_intel = {
 			target = FROM
 			civilian_intel = 25
-			military_intel = 15
+			army_intel = 15
 		}
 	}
 
 	phases = {
-		infiltration_border = { base = 50 }
-		infiltration_civilian = { base = 50 }
+		infiltration_border = { base = 100 }
 	}
 }
 
@@ -92,24 +93,25 @@ operation_unthinkable_paperclip = {
 	}
 
 	outcome_execute = {
-		add_tech_bonus = {
-			name = operation_unthinkable_paperclip_bonus
-			bonus = 1.5
-			ahead_reduction = 1
-			category = rocketry
+		ROOT = {
+			add_tech_bonus = {
+				name = operation_unthinkable_paperclip_bonus
+				bonus = 1.5
+				ahead_reduction = 1
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = operation_unthinkable_paperclip_jet_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				category = jet_technology
+			}
+			air_experience = 30
 		}
-		add_tech_bonus = {
-			name = operation_unthinkable_paperclip_jet_bonus
-			bonus = 1.0
-			ahead_reduction = 1
-			category = jet_technology
-		}
-		add_air_experience = 30
 	}
 
 	phases = {
-		infiltration_border = { base = 50 }
-		infiltration_civilian = { base = 50 }
+		infiltration_border = { base = 100 }
 	}
 }
 
@@ -152,8 +154,7 @@ operation_unthinkable_demarcation_recon = {
 	}
 
 	phases = {
-		infiltration_border = { base = 50 }
-		infiltration_civilian = { base = 50 }
+		infiltration_border = { base = 100 }
 	}
 }
 
@@ -206,12 +207,13 @@ operation_unthinkable_crush_win_insurgency = {
 				add_resistance = -15
 			}
 		}
-		add_political_power = 25
+		ROOT = {
+			add_political_power = 25
+		}
 	}
 
 	phases = {
-		infiltration_border = { base = 50 }
-		infiltration_civilian = { base = 50 }
+		infiltration_border = { base = 100 }
 	}
 }
 
@@ -259,11 +261,12 @@ operation_unthinkable_werwolf_crackdown = {
 				add_resistance = -15
 			}
 		}
-		add_stability = 0.02
+		ROOT = {
+			add_stability = 0.02
+		}
 	}
 
 	phases = {
-		infiltration_border = { base = 50 }
-		infiltration_civilian = { base = 50 }
+		infiltration_border = { base = 100 }
 	}
 }

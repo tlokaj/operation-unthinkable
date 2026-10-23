@@ -42,12 +42,13 @@ if = {
 	}
 }
 
-IF = {
-	limit = {
-		has_dlc = "No Compromise, No Surrender"
-	}
-	create_faction_from_template = faction_template_usa_commonwealth
-}
+# [unthinkable] Disabled separate commonwealth faction in 1945
+# IF = {
+# 	limit = {
+# 		has_dlc = "No Compromise, No Surrender"
+# 	}
+# 	create_faction_from_template = faction_template_usa_commonwealth
+# }
 
 set_research_slots = 4
 set_stability = 0.75
@@ -1551,20 +1552,21 @@ if = {
 	retire_character = USA_dwight_d_eisenhower
 	retire_character = USA_george_s_patton
 	recruit_character = USA_dwight_d_eisenhower_unthinkable
-	recruit_character = USA_omar_bradley
 	recruit_character = USA_george_s_patton_unthinkable
 	promote_character = USA_dwight_d_eisenhower_unthinkable
 	promote_character = USA_george_s_patton_unthinkable
 	promote_character = USA_omar_bradley
+	PHI = { retire_character = USA_douglas_macarthur }
 	recruit_character = USA_douglas_macarthur
 	promote_character = USA_douglas_macarthur
-	recruit_character = USA_chester_w_nimitz
-	recruit_character = USA_ernest_king
-	recruit_character = USA_henry_arnold
 	set_oob = "unthinkable_USA_1945"
 	add_ideas = {
 		unthinkable_pacific_priority
 		unthinkable_demobilization_pressure
+	}
+	declare_war_on = {
+		target = JAP
+		type = puppet_wargoal_focus
 	}
 	if = {
 		limit = { has_dlc = "La Resistance" }
@@ -1690,7 +1692,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		improved_heavy_armor_scheme = 1
-		advanced_heavy_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
 		smoke_generator = 1
 		basic_submarine_snorkel = 1
 		mtg_transport = 1
@@ -1735,9 +1737,9 @@ if = {
 				fixed_ship_radar_slot = ship_radar_3
 				fixed_ship_engine_slot = carrier_ship_engine_2
 				fixed_ship_secondaries_slot = dp_ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
+				front_1_custom_slot = ship_anti_air_3
 				mid_1_custom_slot = dp_ship_secondaries_2
-				mid_2_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = dp_ship_secondaries_2
 			}
 		}
 
@@ -1753,9 +1755,9 @@ if = {
 				fixed_ship_radar_slot = ship_radar_3
 				fixed_ship_engine_slot = carrier_ship_engine_3
 				fixed_ship_secondaries_slot = dp_ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
+				front_1_custom_slot = ship_anti_air_3
 				mid_1_custom_slot = dp_ship_secondaries_2
-				mid_2_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = dp_ship_secondaries_2
 				rear_1_custom_slot = ship_deck_space
 			}
 		}
@@ -2033,9 +2035,9 @@ if = {
 			tactical_bomber1 = 1
 			tactical_bomber2 = 1
 			tactical_bomber3 = 1
-			strat_bomber1 = 1
-			strat_bomber2 = 1
-			strat_bomber3 = 1
+			strategic_bomber1 = 1
+			strategic_bomber2 = 1
+			strategic_bomber3 = 1
 			early_transport_plane = 1
 		}
 		set_air_oob = "unthinkable_USA_air_legacy"
