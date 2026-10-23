@@ -3,7 +3,7 @@ characters = {
 		name = "Bolesław Bierut"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/POL/Portrait_Poland_Generic_1.dds"
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 				small = "GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
@@ -56,7 +56,7 @@ characters = {
 		name = "Stanisław Maczek"
 		portraits = {
 			army = {
-				large = "gfx/leaders/POL/Portrait_Poland_Generic_land_1.dds"
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 				small = "GFX_idea_POL_stanislav_maczek"
 			}
 		}

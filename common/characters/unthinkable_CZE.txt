@@ -43,7 +43,7 @@ characters = {
 		name = "Ludvík Svoboda"
 		portraits = {
 			army = {
-				large = "gfx/leaders/CZE/Portrait_Czech_Generic_land_1.dds"
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 				small = "GFX_idea_CZE_ludvik_svoboda"
 			}
 		}

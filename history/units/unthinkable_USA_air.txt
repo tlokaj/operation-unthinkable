@@ -60,17 +60,13 @@ air_wings = {
 		}
 	}
 
-	# State 638: Guam (XXI Bomber Command - Gen. Curtis LeMay)
+	# State 638: Guam & Marianas Forward Bases (XXI Bomber Command & Seventh Air Force)
 	638 = {
 		large_plane_airframe_2 = {
 			owner = "USA"
 			amount = 200
 			version_name = "B-29 Superfortress"
 		}
-	}
-
-	# State 526: Okinawa (Seventh Air Force)
-	526 = {
 		small_plane_airframe_3 = {
 			owner = "USA"
 			amount = 100

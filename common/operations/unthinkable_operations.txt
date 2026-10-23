@@ -45,11 +45,11 @@ operation_unthinkable_atomic_espionage = {
 				ahead_reduction = 2
 				category = nuclear
 			}
-		}
-		add_intel = {
-			target = FROM
-			civilian_intel = 25
-			army_intel = 15
+			add_intel = {
+				target = FROM
+				civilian_intel = 25
+				army_intel = 15
+			}
 		}
 	}
 
@@ -146,10 +146,12 @@ operation_unthinkable_demarcation_recon = {
 	}
 
 	outcome_execute = {
-		add_intel = {
-			target = FROM
-			army_intel = 25
-			airforce_intel = 20
+		ROOT = {
+			add_intel = {
+				target = FROM
+				army_intel = 25
+				airforce_intel = 20
+			}
 		}
 	}
 

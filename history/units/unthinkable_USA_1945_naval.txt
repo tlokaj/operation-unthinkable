@@ -133,7 +133,7 @@ units = {
 		naval_base = 4180 # Pearl Harbor, HI
 		task_force = {
 			name = "TF 38 / 58 - Fast Carrier Task Force"
-			location = 11932 # Okinawa Staging Base
+			location = 12140 # Guam Forward Fleet Base (CINCPAC)
 			
 			# Fast Fleet Carriers (Essex Class)
 			ship = { name = "USS Essex" definition = carrier start_experience_factor = 0.95 equipment = { ship_hull_carrier_2 = { amount = 1 owner = USA version_name = "Essex Class" } } }

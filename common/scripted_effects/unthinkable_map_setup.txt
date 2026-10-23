@@ -125,6 +125,11 @@ unthinkable_setup_1945_world = {
 				}
 			}
 		}
+		# 3b-2. Pacific Island bases under US military administration
+		USA = {
+			transfer_state = 526 # Okinawa
+			transfer_state = 645 # Iwo Jima
+		}
 		# 3c. Factions Alignment (July 1, 1945)
 		ENG = {
 			if = {
