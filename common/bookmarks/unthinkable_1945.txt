@@ -43,13 +43,6 @@ bookmarks = {
 			}
 		}
 
-		"GER" = {
-			history = "GER_UNTHINKABLE_DESC"
-			ideology = democratic
-			ideas = {
-				unthinkable_war_weariness
-			}
-		}
 
 		"POL" = {
 			history = "POL_UNTHINKABLE_DESC"

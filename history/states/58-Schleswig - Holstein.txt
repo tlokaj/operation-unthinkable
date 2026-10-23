@@ -38,8 +38,8 @@ state = {
 			}
 		}
 			1945.7.1 = {
-			owner = GER
-			controller = GER
+			owner = ENG
+			controller = ENG
 		}
 }
 

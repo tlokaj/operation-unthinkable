@@ -1780,10 +1780,6 @@ if = {
 
 
 1945.7.1 = {
-	set_capital = { state = 42 }
-	give_military_access = USA
-	give_military_access = ENG
-	give_military_access = FRA
 	retire_country_leader = yes
 	recruit_character = GER_konrad_adenauer_unthinkable
 	promote_character = GER_konrad_adenauer_unthinkable
@@ -1792,7 +1788,7 @@ if = {
 		elections_allowed = yes
 	}
 	set_research_slots = 4
-	set_oob = "unthinkable_GER_1945"
+	# OOB is loaded when the Federal Republic is founded (decision unthinkable_found_federal_republic)
 	if = {
 		limit = { has_dlc = "La Resistance" }
 		create_intelligence_agency = yes

@@ -52,8 +52,8 @@ state = {
 			}
 		}
 			1945.7.1 = {
-			owner = GER
-			controller = GER
+			owner = USA
+			controller = USA
 			buildings = {
 				air_base = 8
 			}

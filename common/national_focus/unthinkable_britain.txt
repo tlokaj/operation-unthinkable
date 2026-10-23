@@ -684,6 +684,7 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 5 }
 		completion_reward = {
+			unthinkable_release_federal_republic = yes
 			load_oob = "unthinkable_GER_rearmed_1945"
 			add_manpower = 50000
 			SOV = { country_event = { id = unthinkable.5 hours = 12 } }

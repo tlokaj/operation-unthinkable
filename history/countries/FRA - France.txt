@@ -1415,6 +1415,7 @@ if = {
 		communism = 30
 		fascism = 5
 	}
+	recruit_character = FRA_charles_de_gaulle_unthinkable
 	promote_character = FRA_charles_de_gaulle_unthinkable
 	set_research_slots = 5
 	recruit_character = FRA_jean_de_lattre_de_tassigny_unthinkable

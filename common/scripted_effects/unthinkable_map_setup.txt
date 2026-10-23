@@ -223,3 +223,63 @@ unthinkable_setup_1945_world = {
 		}
 	}
 }
+
+# =============================================================================
+# RE-ESTABLISH GERMAN FEDERAL REPUBLIC (WEST GERMANY)
+# =============================================================================
+unthinkable_release_federal_republic = {
+	if = {
+		limit = {
+			NOT = { country_exists = GER }
+		}
+		# Transfer Western Allied Occupation States to GER
+		GER = {
+			transfer_state = 42  # Rhineland / Bonn (Capital)
+			transfer_state = 50  # Baden
+			transfer_state = 51  # Moselland
+			transfer_state = 52  # Württemberg
+			transfer_state = 978 # Actual Baden
+			transfer_state = 53  # Oberbayern
+			transfer_state = 54  # Franken
+			transfer_state = 55  # Hessen
+			transfer_state = 56  # Weser-Ems
+			transfer_state = 57  # Westfalen
+			transfer_state = 58  # Holstein
+			transfer_state = 59  # Hannover
+			transfer_state = 909 # South Schleswig
+
+			set_capital = { state = 42 }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 75
+				communism = 15
+				fascism = 10
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Konrad Adenauer"
+				desc = "POLITICS_KONRAD_ADENAUER_DESC"
+				picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
+				expire = "1967.1.1"
+				ideology = conservatism
+				traits = {
+					anti_communist
+				}
+			}
+			add_ideas = economic_miracle_idea
+			load_oob = "unthinkable_GER_1945"
+		}
+		if = {
+			limit = { is_in_faction_with = ENG }
+			ENG = { add_to_faction = GER }
+		}
+		if = {
+			limit = { is_in_faction_with = USA }
+			USA = { add_to_faction = GER }
+		}
+		set_global_flag = unthinkable_germany_reestablished
+	}
+}

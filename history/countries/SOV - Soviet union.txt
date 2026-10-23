@@ -2055,7 +2055,7 @@ if = {
 	set_popularities = {
 		communism = 100
 	}
-	promote_character = SOV_iosef_stalin
+	promote_character = SOV_iosif_stalin
 	set_research_slots = 5
 	recruit_character = SOV_georgy_zhukov_unthinkable
 	recruit_character = SOV_konstantin_rokossovsky_unthinkable

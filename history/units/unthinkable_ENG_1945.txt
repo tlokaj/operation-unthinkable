@@ -220,19 +220,19 @@ units = {
 	# =========================================================================
 	division = {
 		name = "1st Infantry Division"
-		location = 126 # Greater London
+		location = 6103 # London
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.75
 	}
 	division = {
 		name = "2nd Infantry Division"
-		location = 341 # Dover
+		location = 3501 # Dover
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.75
 	}
 	division = {
 		name = "46th Infantry Division"
-		location = 133 # Edinburgh
+		location = 3273 # Edinburgh/Glasgow
 		division_template = "British Infantry Division"
 		start_experience_factor = 0.70
 	}
