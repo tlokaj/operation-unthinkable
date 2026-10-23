@@ -39,7 +39,7 @@ state = {
 			add_core_of = GER
 		}
 		1945.7.1 = {
-			owner = AUS
+			owner = ENG
 			controller = ENG
 			add_core_of = AUS
 			remove_core_of = GER

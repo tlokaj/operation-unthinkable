@@ -2,10 +2,10 @@ units = {
 	##### US NAVAL FORCES EUROPE (12th Fleet) #####
 	fleet = {
 		name = "United States Naval Forces Europe"
-		naval_base = 9434 # Cherbourg
+		naval_base = 788 # Norfolk (own port; historically Cherbourg)
 		task_force = {
 			name = "TF 125 - European Battleship & Strike Group"
-			location = 9434 # Cherbourg
+			location = 788 # Norfolk (own port; historically Cherbourg)
 			
 			ship = { name = "USS Iowa" definition = battleship start_experience_factor = 0.75 equipment = { battleship_3 = { amount = 1 owner = USA } } }
 			ship = { name = "USS Wisconsin" definition = battleship start_experience_factor = 0.70 equipment = { battleship_3 = { amount = 1 owner = USA } } }
@@ -40,7 +40,7 @@ units = {
 
 		task_force = {
 			name = "TF 126 - Atlantic Hunter-Killer ASW Group"
-			location = 9434 # Cherbourg
+			location = 788 # Norfolk (own port; historically Cherbourg)
 			
 			ship = { name = "USS Guadalcanal" definition = carrier start_experience_factor = 0.80 equipment = { carrier_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS Mission Bay" definition = carrier start_experience_factor = 0.75 equipment = { carrier_1 = { amount = 1 owner = USA } } }
@@ -62,7 +62,7 @@ units = {
 
 		task_force = {
 			name = "TF 127 - 8th Submarine Squadron"
-			location = 9434 # Cherbourg
+			location = 788 # Norfolk (own port; historically Cherbourg)
 			
 			ship = { name = "USS Balao" definition = submarine start_experience_factor = 0.85 equipment = { submarine_3 = { amount = 1 owner = USA } } }
 			ship = { name = "USS Billfish" definition = submarine start_experience_factor = 0.80 equipment = { submarine_3 = { amount = 1 owner = USA } } }

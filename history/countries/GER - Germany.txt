@@ -7,13 +7,13 @@ if = {
 			has_dlc = "No Step Back"
 		}
 	}
-	set_oob = "GER_1936"
+	# [unthinkable: disabled vanilla OOB] set_oob = "GER_1936"
 }
 if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	set_oob = "GER_1936_nsb"
+	# [unthinkable: disabled vanilla OOB] set_oob = "GER_1936_nsb"
 }
 
 add_breakthrough_progress = {
@@ -37,7 +37,7 @@ set_grand_doctrine = new_battlefield_support
 
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "GER_1936_air_bba"
+		# [unthinkable: disabled vanilla OOB] set_air_oob = "GER_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
@@ -54,7 +54,7 @@ if = {
 			bba_early_transport_plane = 1
 		}
 	else = {
-		set_air_oob = "GER_1936_air_legacy"
+		# [unthinkable: disabled vanilla OOB] set_air_oob = "GER_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			fighter1 = 1
@@ -141,7 +141,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
+	# [unthinkable: disabled vanilla OOB] set_naval_oob = "GER_1936_naval"
 }
 if = {
 	limit = {
@@ -171,7 +171,7 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "GER_1936_naval_mtg"
+	# [unthinkable: disabled vanilla OOB] set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -439,12 +439,7 @@ set_war_support = 0.3
 # SETUP THE 1939 SCENARIO
 1939.1.1 = {
 
-	# Setting up the required world tension
-	add_named_threat = { 
-		threat = 40 
-		name = 1939_bookmark_threat 
-	}
-
+	# [unthinkable: removed 1939 world tension]
 	# Starting Stats of various kinds for the 39 scenario
 	set_war_support = 0.7
 	add_political_power = 1000
@@ -479,27 +474,7 @@ set_war_support = 0.3
 	}
 	
 	
-	# Slovakia is set up as a subject manually
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	give_military_access = SLO
-
-	# So that the war can fire immediately 
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 762 807 85 } # Zaolzie Krakow Kielce Lodz Poznan Katowice Gdynia Danzig
-	}
-
-	# Setup Trade with the Soviets
-	create_import = {
-		resource = oil
-		factories = 2
-		exporter = SOV
-	}
-
+	# [unthinkable: removed SLO puppet / POL wargoal / SOV import]
 	# This has already been done at this point
 	set_country_flag = GER_constructed_the_westwall
 
@@ -511,18 +486,7 @@ set_war_support = 0.3
 		create_intelligence_agency = yes
 	}
 
-	# Molotov-Ribbentrop pact effect, also has a part scripted in soviet history file, since it cannot be completed in a normal way
-	unlock_national_focus = GER_molotov_ribbentrop_pact 
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	# Molotov-Ribbentrop pact end :0 
-	
+	# [unthinkable: removed Molotov-Ribbentrop pact]
 	# COMPLETING FOCUSES
 
 	# ONES THAT CAN JUST BE COMPLETED NORMALLY
@@ -604,7 +568,7 @@ set_war_support = 0.3
 
 
 	# These events have already happaned at this point in time
-	set_global_flag = end_of_czechoslovakia
+	# [unthinkable: removed end_of_czechoslovakia flag]
 	set_global_flag = olympics_1936
 
 	set_variable = { 
@@ -649,39 +613,7 @@ set_war_support = 0.3
 	#Remove too much PP from focuses
 	add_political_power = -150
 
-	#Bohemia related setup - Pfot
-	activate_decision = GER_reichsprotektorat_bohemia_moravia
-	set_nationality = {
-		target_country = RKH
-		character = GER_konstantin_von_neurath
-	}
-	RKH = {
-		add_ideas = GER_reichsprotectorate_idea
-		GER_konstantin_von_neurath = {
-			add_country_leader_role = {
-				promote_leader = yes
-				country_leader = {
-					ideology = nazism
-					expire = 1960.1.1
-					traits = { GER_reichsprotektor_trait } 
-				}
-			}	
-		}
-		set_research_slots = 3	#otherwise inherits Germany's 5
-	}
-
-	if = {
-		limit = {
-			has_dlc = "Peace For Our Time"
-		}
-		unlock_national_focus = GER_integrate_czech_manufacturers
-		RKH = {
-			add_ideas = {
-				CZE_form_the_government_army_idea
-			}
-		}
-	}
-
+	# [unthinkable: removed Reichsprotektorat Bohemia (RKH)]
 	#Remove cooldown flag
 	clr_country_flag = GER_inner_circle_cd_flag
 
@@ -795,7 +727,7 @@ set_war_support = 0.3
 		set_technology = {
 			basic_medium_tank = 1 
 		}
-		set_oob = "GER_1939"
+		# [unthinkable: disabled vanilla OOB] set_oob = "GER_1939"
 	}
 	if = {
 		limit = {
@@ -804,7 +736,7 @@ set_war_support = 0.3
 		set_technology = {
 			basic_medium_tank_chassis = 1 
 		}
-		set_oob = "GER_1939_nsb"
+		# [unthinkable: disabled vanilla OOB] set_oob = "GER_1939_nsb"
 	}
 
 	if = {
@@ -821,7 +753,7 @@ set_war_support = 0.3
 			basic_carrier = 1
 			improved_carrier = 1
 		}
-		set_naval_oob = "GER_1939_naval_legacy"
+		# [unthinkable: disabled vanilla OOB] set_naval_oob = "GER_1939_naval_legacy"
 	}
 	if = {
 		limit = {
@@ -835,14 +767,14 @@ set_war_support = 0.3
 			improved_heavy_battery = 1
 			basic_heavy_armor_scheme = 1
 		}
-		set_naval_oob = "GER_1939_naval_mtg"
+		# [unthinkable: disabled vanilla OOB] set_naval_oob = "GER_1939_naval_mtg"
 	}
 
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "GER_1939_air_bba"
+			# [unthinkable: disabled vanilla OOB] set_air_oob = "GER_1939_air_bba"
 		else = {
-			set_air_oob = "GER_1939_air_legacy"
+			# [unthinkable: disabled vanilla OOB] set_air_oob = "GER_1939_air_legacy"
 			set_technology = {
 				CAS2 = 1
 				heavy_fighter1 = 1
@@ -868,8 +800,7 @@ set_popularities = {
 
 
 # Wowow nice faction
-create_faction_from_template = faction_template_axis
-add_to_faction = GER
+# [unthinkable: removed Axis faction]
 
 # Setup of National Spirits
 add_ideas = {
@@ -880,7 +811,7 @@ add_ideas = {
 }
 
 # Activates the MEFO Bills Mission
-activate_mission = GER_mefo_bills_mission
+# [unthinkable: removed MEFO mission]
 
 # Character Recruitment
 recruit_character = GER_wilhelm_pieck
@@ -1850,6 +1781,9 @@ if = {
 
 1945.7.1 = {
 	set_capital = { state = 42 }
+	give_military_access = USA
+	give_military_access = ENG
+	give_military_access = FRA
 	retire_country_leader = yes
 	recruit_character = GER_konrad_adenauer_unthinkable
 	promote_character = GER_konrad_adenauer_unthinkable

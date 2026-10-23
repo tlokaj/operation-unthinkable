@@ -154,7 +154,7 @@ units = {
 	# Metropolitan Reserve
 	division = {
 		name = "10e Division d'Infanterie (Billiotte)"
-		location = 16 # Paris
+		location = 11506 # Paris
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.70
 	}

@@ -29,7 +29,7 @@ state = {
 		}
 
 		1945.7.1 = {
-			owner = AUS
+			owner = SOV
 			controller = SOV
 			add_core_of = AUS
 			remove_core_of = GER
